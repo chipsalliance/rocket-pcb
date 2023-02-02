@@ -1,5 +1,150 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 387bfcf1-ae49-4b85-be89-3bb02ce2e960)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 71.12 76.2) (size 27.94 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 050a965f-1566-4fd5-8eeb-6ab96a9baeba)
+    (property "Sheetname" "UART" (at 71.12 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "uart.kicad_sch" (at 71.12 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 38.1 25.4) (size 228.6 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4338fda8-0ea2-4bf2-b1c2-c685ef11d6a0)
+    (property "Sheetname" "FMC" (at 38.1 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "fmc.kicad_sch" (at 38.1 51.3846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 203.2 76.2) (size 26.67 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4ff80468-3372-4da6-9aa6-0708696df1f4)
+    (property "Sheetname" "USB" (at 203.2 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb.kicad_sch" (at 203.2 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 38.1 76.2) (size 27.94 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 82dd16e5-ea53-4288-95e9-d311496c7627)
+    (property "Sheetname" "JTAG" (at 38.1 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "jtag.kicad_sch" (at 38.1 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 137.16 76.2) (size 27.94 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 8f11314c-d9eb-415d-8d76-07f3be42979a)
+    (property "Sheetname" "GPIO" (at 137.16 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "gpio.kicad_sch" (at 137.16 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 38.1 127) (size 228.6 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9cd800a1-5b4a-4dab-b708-f8f78f4f7813)
+    (property "Sheetname" "POWER" (at 38.1 126.2884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 38.1 152.9846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 104.14 76.2) (size 27.94 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid dc9f6e10-2e8e-48ac-b16a-cc17c057f50a)
+    (property "Sheetname" "SPI FLASH" (at 104.14 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "spi_flash.kicad_sch" (at 104.14 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 170.18 76.2) (size 27.94 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid ee2d37c4-eb99-4eca-94f7-bc755b7135e3)
+    (property "Sheetname" "SDIO" (at 170.18 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "sdio.kicad_sch" (at 170.18 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "7"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
