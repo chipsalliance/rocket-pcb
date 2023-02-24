@@ -431,7 +431,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "template/chipsalliance.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -448,6 +448,10 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.15
     },
@@ -457,12 +461,21 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
-    "plot_directory": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
+    "page_layout_descr_file": "template/chipsalliance.kicad_wks",
+    "plot_directory": "test",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
     "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
