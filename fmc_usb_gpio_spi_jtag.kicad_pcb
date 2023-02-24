@@ -237,7 +237,7 @@
   (net 159 "unconnected-(J1D-h39-PadH39)")
   (net 160 "unconnected-(J1D-h40-PadH40)")
 
-  (footprint "Vowstar_Connector:Samtec_FMC_ASP-134604-01_4x40_P1.27mm" (layer "F.Cu")
+  (footprint "CHIPSAlliance_Connector:Samtec_FMC_ASP-134604-01_4x40_P1.27mm" (layer "F.Cu")
     (tstamp 1e041136-701c-43d6-bfaf-3f52bd06424b)
     (at 176.809 99)
     (descr "https://www.marutsu.co.jp/contents/shop/marutsu/ds/asp-134604-01.pdf")
@@ -2844,7 +2844,7 @@
       (net 159 "unconnected-(J1D-h39-PadH39)") (pinfunction "h39") (pintype "passive") (solder_paste_margin 0.125) (tstamp 4698c336-c5e1-4edf-8ddd-97c400686b2a))
     (pad "H40" smd circle (at -24.765 3.175 180) (size 0.64 0.64) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 160 "unconnected-(J1D-h40-PadH40)") (pinfunction "h40") (pintype "passive") (solder_paste_margin 0.125) (tstamp 1bfef41e-21cf-43c3-8d68-e8984b40ed2f))
-    (model "${KIPRJMOD}/Vowstar_Connector.3dshapes/Samtec_FMC_ASP-134604-01_4x40_P1.27mm.STEP"
+    (model "${KIPRJMOD}/library/Connector.3dshapes/Samtec_FMC_ASP-134604-01_4x40_P1.27mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
