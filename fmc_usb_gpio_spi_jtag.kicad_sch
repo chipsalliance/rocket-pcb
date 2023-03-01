@@ -1937,6 +1937,26 @@
     (property "Sheetfile" "fmc.kicad_sch" (at 38.1 51.3846 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+    (pin "12VP0" output (at 260.35 50.8 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e3e95ebe-6f13-421f-80ef-649be8827020)
+    )
+    (pin "3P3VAUX" output (at 257.81 50.8 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid f5b4a705-6e62-4127-af94-27013e53323c)
+    )
+    (pin "GND" output (at 255.27 50.8 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid bfde0e2d-a7a9-4d70-8372-c67469b25a31)
+    )
+    (pin "3P3V" output (at 252.73 50.8 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid af854235-7041-4469-87ba-3700596ca526)
+    )
+    (pin "VADJ" output (at 250.19 50.8 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 5942efe7-5d23-436f-b779-511f7095db96)
+    )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
         (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "2"))
@@ -1954,7 +1974,7 @@
     (property "Sheetfile" "usb.kicad_sch" (at 203.2 107.2646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "USB_FS{USB_FS}" bidirectional (at 219.71 76.2 90)
+    (pin "USB_FS{USB_FS}" bidirectional (at 215.9 76.2 90)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 13b909c7-c8c5-4ee6-b42d-7e8953cb9271)
     )
@@ -1975,6 +1995,10 @@
     (property "Sheetfile" "jtag.kicad_sch" (at 38.1 107.2646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+    (pin "JTAG{JTAG}" input (at 50.8 76.2 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 9df0827a-0551-4b08-ad7f-b62234393c0a)
+    )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
         (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960" (page "3"))
@@ -1991,6 +2015,10 @@
     )
     (property "Sheetfile" "gpio.kicad_sch" (at 137.16 107.2646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "GPIO[0..19]" input (at 151.13 76.2 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 43bdb4ca-ae75-408c-81a3-49cea54cd917)
     )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
@@ -2046,6 +2074,10 @@
     )
     (property "Sheetfile" "sdio.kicad_sch" (at 170.18 107.2646 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "SDIO{SDIO}" input (at 182.88 76.2 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid c955484f-2e4f-4919-aa17-e6ab468bf6c6)
     )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
