@@ -601,6 +601,10 @@
           (name "DAT2A" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
+        (pin input line (at 12.7 -49.53 90) (length 2.54) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "25" (effects (font (size 1.27 1.27))))
+        )
         (pin bidirectional line (at -2.54 -17.78 0) (length 2.54)
           (name "DAT3A" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
@@ -1823,6 +1827,7 @@
     (pin "8" (uuid 188246e6-e512-4984-b08f-a0948c5f5e51))
     (pin "9" (uuid c759e621-7963-4b69-9b91-d6ff87e050a2))
     (pin "1" (uuid f1e7fbe9-fe72-4531-b3bf-8d0f57252321))
+    (pin "25" (uuid 6812d19d-8170-4bc5-b161-9667b1fb5fae))
     (pin "3" (uuid 76511f86-b0a6-464d-931a-3543e32dc75f))
     (pin "4" (uuid 7f8d1299-c62c-48c9-8918-2acd5a0f93b6))
     (pin "5" (uuid 40c96524-39f3-494e-b113-93a36387996c))
