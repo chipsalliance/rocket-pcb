@@ -674,11 +674,18 @@
   )
 
   (text_box "\nThe flash voltage to be used here must match the VADJ voltage, and it is recommended to use GD25WQ128E (1.65-3.6V) with a wide voltage range."
-    (at 198.12 69.85 0) (size 30.48 19.05)
+    (at 198.12 68.58 0) (size 30.48 19.05)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 0a1a7bcf-155b-4a8d-89bc-0e9cca38d02e)
+  )
+  (text_box "VADJ voltage: 1.65 V to 3.3V"
+    (at 198.12 88.9 0) (size 30.48 3.81)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 415d575d-1853-4fa2-a4eb-b54110e8510f)
   )
 
   (text "DO/IO1" (at 204.47 106.68 0)
