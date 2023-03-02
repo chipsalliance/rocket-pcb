@@ -1070,8 +1070,8 @@
     )
   )
 
-  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~RI"))
+  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (junction (at 173.99 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 02dde134-c671-4cd7-acde-2e19c4398968)
   )
