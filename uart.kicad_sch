@@ -1122,8 +1122,8 @@
     )
   )
 
-  (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~{RI}"))
   (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
+  (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~{RI}"))
   (junction (at 173.99 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 02dde134-c671-4cd7-acde-2e19c4398968)
   )
@@ -1645,7 +1645,7 @@
     (uuid 99b5dd34-6306-4c35-a2bf-68e0df93afb5)
   )
   (text_box "VADJ voltage: 1.8 V to 3.3V"
-    (at 134.62 17.78 0) (size 27.94 3.81)
+    (at 127 17.78 0) (size 31.75 3.81)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
