@@ -1060,8 +1060,8 @@
     )
   )
 
-  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~RI"))
+  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (junction (at 173.99 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 02dde134-c671-4cd7-acde-2e19c4398968)
   )
@@ -1581,6 +1581,13 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 99b5dd34-6306-4c35-a2bf-68e0df93afb5)
+  )
+  (text_box "VADJ voltage: 1.8 V to 3.3V"
+    (at 134.62 17.78 0) (size 27.94 3.81)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid b3721532-054c-4d5a-a2fc-2d3d1a739c74)
   )
   (text_box "For self-powered systems where VDD and VIO may be unpowered when VBUS is connected to 5 V, a resistor divider (or functionally-equivalent circuit) on VBUS is required to meet the absolute maximum voltage on VBUS specification in the Electrical Characteristics section."
     (at 209.55 17.78 0) (size 52.07 15.24)
