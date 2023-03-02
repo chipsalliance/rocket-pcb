@@ -129,7 +129,7 @@
     )
   )
 
-  (bus_alias "USB_FS" (members "VBUSDET" "CON" "~{OE}" "RCV" "VP" "VM" "SPD" "SUS"))
+  (bus_alias "USB_FS" (members "DET" "CON" "~{OE}" "RCV" "VP" "VM" "SPD" "SUS"))
 
   (text "Fiducials" (at 110.49 173.99 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
