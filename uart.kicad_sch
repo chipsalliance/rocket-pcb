@@ -1122,8 +1122,8 @@
     )
   )
 
-  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~{RI}"))
+  (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
   (junction (at 173.99 24.13) (diameter 0) (color 0 0 0 0)
     (uuid 02dde134-c671-4cd7-acde-2e19c4398968)
   )
@@ -1769,7 +1769,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 295a1ac1-4f20-4ec8-981e-704e05a0e9e3)
   )
-  (hierarchical_label "GPIO[0..23]" (shape tri_state) (at 148.59 74.93 180) (fields_autoplaced)
+  (hierarchical_label "GPIO[0..31]" (shape tri_state) (at 148.59 74.93 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid bf8c9493-43c7-4e42-9e8f-670761d53966)
   )
