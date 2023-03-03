@@ -150,7 +150,7 @@
     (uuid fe3cbae7-6aba-40b0-bb0b-df2afbb686b8)
   )
 
-  (wire (pts (xy 240.03 88.9) (xy 240.03 100.33))
+  (wire (pts (xy 238.76 88.9) (xy 238.76 100.33))
     (stroke (width 0) (type default))
     (uuid 023c5845-03a4-4bed-8c37-e40453184bc0)
   )
@@ -173,6 +173,11 @@
   (polyline (pts (xy 75.565 184.785) (xy 76.2 185.42))
     (stroke (width 0) (type default))
     (uuid 1d0059ca-14b0-4a29-9537-0c21fc9bd35a)
+  )
+
+  (wire (pts (xy 241.3 88.9) (xy 241.3 100.33))
+    (stroke (width 0) (type default))
+    (uuid 2f35ab9d-ef1a-4a95-bf84-803cb079121b)
   )
   (polyline (pts (xy 86.36 184.15) (xy 129.54 184.15))
     (stroke (width 0) (type default))
@@ -752,7 +757,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 8fd31d01-36b7-4b10-8a42-1c3c99fbe473)
     )
-    (pin "WS2812" output (at 240.03 88.9 270)
+    (pin "WS2812" output (at 238.76 88.9 270)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid bdb2c3ac-6899-4d43-b62e-00df95daaa9c)
     )
@@ -775,6 +780,10 @@
     (pin "I3C{I3C}" bidirectional (at 214.63 88.9 270)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 153906ab-6596-4a1a-841a-8d93530d487e)
+    )
+    (pin "GX0011" bidirectional (at 241.3 88.9 270)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e69f2bd7-3564-4587-b970-405e9177de24)
     )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
@@ -856,9 +865,13 @@
     (property "Sheetfile" "power.kicad_sch" (at 249.5046 130.81 90)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "WS2812" input (at 240.03 100.33 90)
+    (pin "WS2812" input (at 238.76 100.33 90)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 6fcc73bc-ea09-4735-a5c4-fda76006677b)
+    )
+    (pin "GX0011" bidirectional (at 241.3 100.33 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 86ebc1e9-c6c6-428c-aeb9-63bb5e0b07f4)
     )
     (instances
       (project "fmc_usb_gpio_spi_jtag"
