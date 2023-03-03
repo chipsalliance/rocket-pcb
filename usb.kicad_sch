@@ -1160,6 +1160,13 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 89d05214-fd6b-425f-9ff9-366975e06104)
   )
+  (text_box "Full speed pull-up resistor selection input. If RSEL = 0 the internal pull-up resistor connected to D+ is disabled and an external resistor connected to VPU pin must be used."
+    (at 52.07 101.6 0) (size 76.2 12.7)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid bd2bc3bb-c760-4ba6-8fd1-97eec92cee49)
+  )
 
   (label "USB_FS.CON" (at 55.88 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))

@@ -1073,7 +1073,7 @@
   )
 
   (text_box "The select (SEL) input is used to choose between the B0 port and B1 port. \nWhen SEL = Low, B0 port is selected.\nWhen SEL = High, B1 port is selected.\nSEL is referenced to VCCA. For the unselected B port, the clock output is held low, whereas the data and command I/Os are pulled high to their respective VCCB through a 70kΩ resistor (±30% tolerance)."
-    (at 85.09 129.54 0) (size 78.74 15.24)
+    (at 68.58 129.54 0) (size 78.74 15.24)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
@@ -1085,6 +1085,11 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid bba67aee-9726-4a8e-98f8-8aa9640bf919)
+  )
+
+  (text "YELLOW" (at 172.72 111.76 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f629266a-ddc8-45cd-87b0-32486dd32a66)
   )
 
   (label "SD_DAT0" (at 151.13 81.28 180) (fields_autoplaced)
@@ -1245,7 +1250,7 @@
     (property "Footprint" "LED_SMD:LED_1206_3216Metric" (at 175.26 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 175.26 105.41 0)
+    (property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200820/C93094_6F5D01A021C9A31E770105D1A06BBAC1.pdf" (at 175.26 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 353f8c69-729d-41ab-9998-a5f68e389c30))
@@ -1644,7 +1649,7 @@
     (property "Reference" "R1" (at 78.74 115.57 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "47k" (at 78.74 105.41 90)
+    (property "Value" "10k" (at 78.74 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 81.788 110.49 90)
