@@ -691,6 +691,57 @@
         )
       )
     )
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -1206,6 +1257,34 @@
     )
   )
 
+  (symbol (lib_id "CHIPSAlliance_Power:GND") (at 125.73 120.65 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3186afd9-3c81-4bd5-b3c3-e4438131f16b)
+    (property "Reference" "#PWR0266" (at 125.73 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 125.73 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 125.73 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 125.73 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 44526572-9aa8-4a28-8218-15932fb57355))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "#PWR0266") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "#PWR0189") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 190.5 105.41 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 328df6cc-1f1e-4cc5-9409-ecfc5de21d9d)
@@ -1233,6 +1312,34 @@
         )
         (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
           (reference "R18") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "CHIPSAlliance_Power:VADJ") (at 118.11 113.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 44013713-e6d9-4d91-acde-045870511496)
+    (property "Reference" "#PWR0249" (at 118.11 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VADJ" (at 118.11 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 118.11 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 118.11 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8bd85c95-4518-488a-af75-3fe437a0fd5c))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "#PWR0249") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "#PWR0119") (unit 1)
         )
       )
     )
@@ -1396,6 +1503,34 @@
     )
   )
 
+  (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 125.73 113.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 705f6d1a-8658-4174-af6a-7a5cd1cecbc2)
+    (property "Reference" "#PWR0260" (at 125.73 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "3P3V" (at 125.73 109.22 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 125.73 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 125.73 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e6cbeb7f-6a5e-42a0-8efc-ebcd28dc8be6))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "#PWR0260") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "#PWR0172") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 199.39 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70e9a4fd-5967-4520-94c8-20435631df6f)
@@ -1416,6 +1551,47 @@
       (project "fmc_usb_gpio_spi_jtag"
         (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
           (reference "#PWR0181") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 125.73 116.84 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7a5df967-39bc-48ad-9098-4a0d3a47f847)
+    (property "Reference" "C1" (at 125.73 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100n" (at 125.73 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 126.6952 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 125.73 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9eff429f-3ec4-4397-b8a0-4a30840f7254))
+    (pin "2" (uuid 47a92cf1-4a7b-4916-ac77-0f5323b40008))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/4338fda8-0ea2-4bf2-b1c2-c685ef11d6a0"
+          (reference "C1") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/4ff80468-3372-4da6-9aa6-0708696df1f4"
+          (reference "C2") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/dc9f6e10-2e8e-48ac-b16a-cc17c057f50a"
+          (reference "C5") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/050a965f-1566-4fd5-8eeb-6ab96a9baeba"
+          (reference "C13") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "C38") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "C40") (unit 1)
         )
       )
     )
@@ -1675,6 +1851,34 @@
     )
   )
 
+  (symbol (lib_id "CHIPSAlliance_Power:GND") (at 118.11 120.65 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e812ad62-1f8b-41fe-8561-bf3bd2566605)
+    (property "Reference" "#PWR0255" (at 118.11 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 118.11 125.73 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 118.11 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 118.11 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6d5dd81d-30b4-460d-bbcf-147ea689b25c))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "#PWR0255") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "#PWR0170") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 97.79 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f1abce55-638b-4503-8336-1fbda4dbca71)
@@ -1695,6 +1899,47 @@
       (project "fmc_usb_gpio_spi_jtag"
         (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
           (reference "#PWR0175") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 118.11 116.84 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f22a1947-e8e7-4f16-8001-71bb16412973)
+    (property "Reference" "C1" (at 118.11 114.3 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100n" (at 118.11 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 119.0752 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 118.11 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b20ebd7c-ea9c-485a-a8a0-9ffebc303479))
+    (pin "2" (uuid 71c690f6-c02c-466f-adef-09c03a895896))
+    (instances
+      (project "fmc_usb_gpio_spi_jtag"
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/4338fda8-0ea2-4bf2-b1c2-c685ef11d6a0"
+          (reference "C1") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/4ff80468-3372-4da6-9aa6-0708696df1f4"
+          (reference "C2") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/dc9f6e10-2e8e-48ac-b16a-cc17c057f50a"
+          (reference "C5") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/050a965f-1566-4fd5-8eeb-6ab96a9baeba"
+          (reference "C12") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/8f11314c-d9eb-415d-8d76-07f3be42979a"
+          (reference "C37") (unit 1)
+        )
+        (path "/387bfcf1-ae49-4b85-be89-3bb02ce2e960/ee2d37c4-eb99-4eca-94f7-bc755b7135e3"
+          (reference "C39") (unit 1)
         )
       )
     )
