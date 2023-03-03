@@ -1150,6 +1150,13 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 6545caf7-b41d-4704-973c-48ecd2aca290)
   )
+  (text_box "The select (SEL) input is used to choose between the B0 port and B1 port. \nWhen SEL = Low, B0 port is selected.\nWhen SEL = High, B1 port is selected.\nSEL is referenced to VCCA. For the unselected B port, the clock output is held low, whereas the data and command I/Os are pulled high to their respective VCCB through a 70kΩ resistor (±30% tolerance)."
+    (at 130.81 137.16 0) (size 78.74 15.24)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 67be1950-a07e-4cf1-aa71-91f060e2f81c)
+  )
 
   (label "TCK" (at 149.86 101.6 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1696,7 +1703,7 @@
     (property "Reference" "R1" (at 151.13 123.19 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "47k" (at 151.13 113.03 90)
+    (property "Value" "10k" (at 151.13 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 154.178 118.11 90)

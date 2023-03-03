@@ -4922,6 +4922,13 @@
     (uuid fedde460-291f-41ce-958a-b805268bf055)
   )
 
+  (text_box "•If no cards are attached to the FMC ports, the VADJ voltage is set to 1.8V.\n•When one FMC card is attached, its IIC EEPROM is read to find a VADJ voltage supported by both the VCU118 board and the FMC module, within the available choices of 1.2V, 1.5V, 1.8V, and 0.0V.\n•When two FMC cards are attached with differing VADJ requirements, VADJ_1V8 is set to the lowest value compatible with the VCU118 board and the FMC modules, within the available choices of 1.2V, 1.5V, 1.8V, and 0.0V.\n•If no valid information is found in the IIC EEPROMs, the VADJ_1V8 rail is set to 0.0V."
+    (at 87.63 149.86 0) (size 46.99 36.83)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 6bc95668-83b0-4f84-94d1-19ff65c0a43c)
+  )
   (text_box "Before use, you need to program the eeprom with a programmer, you can generate eeprom firmware at\nhttps://opalkelly.com/tools/fmceepromgenerator"
     (at 27.94 177.8 0) (size 54.61 8.89)
     (stroke (width 0) (type default))
