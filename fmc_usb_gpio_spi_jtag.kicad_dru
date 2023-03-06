@@ -2,8 +2,20 @@
 (rule "BGA neckdown"
     (constraint track_width (min 6mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
-    (condition "A.insideCourtyard('MMC5603NJ')"))
+    (condition "A.intersectsBackCourtyard('x')('U25')"))
 (rule "BGA neckdown"
     (constraint track_width (min 6mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
-    (condition "A.insideCourtyard('SAMTEC_ASP-134604-01')"))
+    (condition "A.intersectsBackCourtyard('J1')"))
+(rule "USB neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('J3')"))
+(rule "USB neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('J4')"))
+(rule "USB neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.NetClass == 'Diff"))
