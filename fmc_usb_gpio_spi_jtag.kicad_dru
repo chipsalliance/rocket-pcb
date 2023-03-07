@@ -2,11 +2,27 @@
 (rule "BGA neckdown"
     (constraint track_width (min 6mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
-    (condition "A.intersectsBackCourtyard('x')('U25')"))
+    (condition "A.intersectsBackCourtyard('U25')"))
 (rule "BGA neckdown"
     (constraint track_width (min 6mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
     (condition "A.intersectsBackCourtyard('J1')"))
+(rule "USON neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U12')"))
+(rule "USON neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U18')"))
+(rule "USON neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U19')"))
+(rule "USON neckdown"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U20')"))
 (rule "USB neckdown"
     (constraint track_width (min 5mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
