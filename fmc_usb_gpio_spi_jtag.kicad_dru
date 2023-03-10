@@ -38,3 +38,7 @@
     (constraint clearance (min 5mil) (opt 6mil))
     (constraint annular_width (min 0.1mm) (opt 0.15mm))
     (condition "A.NetClass == 'Diff"))
+(rule "QFN neckdown U2"
+    (constraint track_width (min 6mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U2')"))
