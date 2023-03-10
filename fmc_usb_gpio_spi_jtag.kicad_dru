@@ -39,6 +39,18 @@
     (constraint annular_width (min 0.1mm) (opt 0.15mm))
     (condition "A.NetClass == 'Diff"))
 (rule "QFN neckdown U2"
-    (constraint track_width (min 6mil) (opt 10mil))
+    (constraint track_width (min 5mil) (opt 10mil))
     (constraint clearance (min 5mil) (opt 6mil))
     (condition "A.intersectsBackCourtyard('U2')"))
+(rule "Mounting holes H1"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H1')"))
+(rule "Mounting holes H2"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H2')"))
+(rule "Mounting holes H3"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H3')"))
+(rule "Mounting holes H4"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H4')"))
