@@ -483,7 +483,12 @@
       "/USB/D+": "Diff",
       "/USB/D-": "Diff"
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Diff",
+        "pattern": "/FMC/I3C.SDA"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
