@@ -1,6 +1,6 @@
 # FMC_BASIC_PERI
 
-The basic peripherals of the FPGA mezzanine board, including JTAG, UART, GPIO,
+The basic peripherals of the FPGA mezzanine card, including JTAG, UART, GPIO,
 USB, I3C, etc., can be used for prototype verification of the basic peripherals
 of the SoC.
 
