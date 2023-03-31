@@ -6,4 +6,4 @@ projects.
 
 |                      project                       |          Introduction          |
 | -------------------------------------------------- | ------------------------------ |
-| [FMC_BASIC_PERI](./fmc_basic_peripheral/README.md) | JTAG, UART, GPIO, USB, I3C FMC |
+| [FMC_BASIC_PERI](./fmc_basic_peripheral) | JTAG, UART, GPIO, USB, I3C FMC |
