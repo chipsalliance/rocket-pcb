@@ -325,6 +325,9 @@
       (property "Datasheet" "https://www.st.com/resource/en/datasheet/stusb03e.pdf" (at 0 -46.99 0)
         (effects (font (size 1.524 1.524)) (justify left) hide)
       )
+      (property "ki_description" "Single-chip USB-FS transceiver" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
       (property "ki_fp_filters" "QFN_B03EQR_STM QFN_B03EQR_STM-M QFN_B03EQR_STM-L" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
@@ -873,6 +876,7 @@
       )
     )
   )
+
 
   (junction (at 67.31 60.96) (diameter 0) (color 0 0 0 0)
     (uuid 17ced929-3ad0-4c6c-9520-89012282ceb7)
