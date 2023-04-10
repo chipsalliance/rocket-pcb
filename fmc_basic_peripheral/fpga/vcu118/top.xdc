@@ -16,10 +16,10 @@ set_property PACKAGE_PIN AT40            [get_ports "tdo"                 ] ;# B
 set_property IOSTANDARD  LVCMOS18        [get_ports "tdo"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4N_T0U_N7_DBC_AD7N_43 - FMCP_HSPC_LA03_N - GPIO3
 
 # UART
-set_property PACKAGE_PIN AL30            [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16P_T2U_N6_QBC_AD3P_43 - FMCP_HSPC_LA01_CC_P - UART_TXD
-set_property IOSTANDARD  LVCMOS18        [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16P_T2U_N6_QBC_AD3P_43 - FMCP_HSPC_LA01_CC_P - UART_TXD
-set_property PACKAGE_PIN AL31            [get_ports "uart_rx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
-set_property IOSTANDARD  LVCMOS18        [get_ports "uart_rx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
+set_property PACKAGE_PIN AL30            [get_ports "uart_rx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16P_T2U_N6_QBC_AD3P_43 - FMCP_HSPC_LA01_CC_P - UART_TXD
+set_property IOSTANDARD  LVCMOS18        [get_ports "uart_rx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16P_T2U_N6_QBC_AD3P_43 - FMCP_HSPC_LA01_CC_P - UART_TXD
+set_property PACKAGE_PIN AL31            [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
+set_property IOSTANDARD  LVCMOS18        [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
 
 # TODO
 # set_property PACKAGE_PIN AK30            [get_ports "FMCP_HSPC_LA08_N"    ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_43 - FMCP_HSPC_LA08_N - GPIO4
