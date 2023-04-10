@@ -4046,6 +4046,11 @@
     (stroke (width 0) (type default))
     (uuid 144d8d4e-7470-4509-8762-6735dd2b735b)
   )
+  (polyline (pts (xy 88.9 45.72) (xy 92.71 45.72))
+    (stroke (width 0) (type default))
+    (uuid 1567bb7f-a8fa-4ed5-9539-0ed4e3eb9fd4)
+  )
+
   (wire (pts (xy 242.57 93.98) (xy 254 93.98))
     (stroke (width 0) (type default))
     (uuid 1571fbbf-3411-4c47-a1e3-953374f5040c)
@@ -4075,6 +4080,11 @@
     (stroke (width 0) (type default))
     (uuid 1ee3277a-5335-40aa-b647-996190ac72f0)
   )
+  (polyline (pts (xy 91.44 46.101) (xy 92.71 45.72))
+    (stroke (width 0) (type default))
+    (uuid 1eff7275-137f-4467-94a4-1d1a45bc1464)
+  )
+
   (wire (pts (xy 105.41 101.6) (xy 114.3 101.6))
     (stroke (width 0) (type default))
     (uuid 21bbafac-714c-4723-b307-0ccc577e54f6)
@@ -4526,6 +4536,11 @@
     (uuid 96c65ae0-2e6a-44a7-ad1e-92a73f743b4f)
   )
 
+  (polyline (pts (xy 91.44 45.339) (xy 91.44 46.101))
+    (stroke (width 0) (type default))
+    (uuid 97a79a05-5458-48cc-8d6c-b23c498671b3)
+  )
+
   (wire (pts (xy 173.99 53.34) (xy 185.42 53.34))
     (stroke (width 0) (type default))
     (uuid 99152f36-a58c-480c-91c4-4081b22f5fda)
@@ -4771,6 +4786,11 @@
     (uuid d35d894b-7c98-4c91-a2aa-ccb2f0dc40fa)
   )
 
+  (polyline (pts (xy 91.44 45.339) (xy 92.71 45.72))
+    (stroke (width 0) (type default))
+    (uuid d38509de-04af-4a22-b384-1c7c6b0e9199)
+  )
+
   (wire (pts (xy 45.72 35.56) (xy 34.29 35.56))
     (stroke (width 0) (type default))
     (uuid d437cee9-48d5-4f2d-9163-d0c289daccf9)
@@ -4915,7 +4935,7 @@
   )
 
   (text_box "•If no cards are attached to the FMC ports, the VADJ voltage is set to 1.8V.\n•When one FMC card is attached, its IIC EEPROM is read to find a VADJ voltage supported by both the VCU118 board and the FMC module, within the available choices of 1.2V, 1.5V, 1.8V, and 0.0V.\n•When two FMC cards are attached with differing VADJ requirements, VADJ_1V8 is set to the lowest value compatible with the VCU118 board and the FMC modules, within the available choices of 1.2V, 1.5V, 1.8V, and 0.0V.\n•If no valid information is found in the IIC EEPROMs, the VADJ_1V8 rail is set to 0.0V."
-    (at 87.63 149.86 0) (size 46.99 36.83)
+    (at 125.73 149.86 0) (size 46.99 36.83)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left))
@@ -4927,6 +4947,13 @@
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 93dea87c-d77f-4e91-bcff-3959c5b6b8d0)
+  )
+  (text_box "WARNING: This UART must be cross connected."
+    (at 76.2 38.481 0) (size 12.7 13.97)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27) (color 255 0 0 1)) (justify left))
+    (uuid a149c7cb-ce70-46f3-869f-d0e5b8735864)
   )
 
   (text "DP0_C2M_P" (at 59.69 30.48 0)
