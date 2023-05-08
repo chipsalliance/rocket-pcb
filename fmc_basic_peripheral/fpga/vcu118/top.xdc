@@ -65,6 +65,24 @@ set_property IOSTANDARD  LVCMOS18        [get_ports "key[2]"              ] ;# B
 set_property PACKAGE_PIN N37             [get_ports "key[3]"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_45 - FMCP_HSPC_LA31_N - GPIO19
 set_property IOSTANDARD  LVCMOS18        [get_ports "key[3]"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_45 - FMCP_HSPC_LA31_N - GPIO19
 
+# USB
+set_property PACKAGE_PIN AP35            [get_ports "usb_det"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L3P_T0L_N4_AD15P_43 - FMCP_HSPC_LA10_P - USB_DET
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_det"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L3P_T0L_N4_AD15P_43 - FMCP_HSPC_LA10_P - USB_DET
+set_property PACKAGE_PIN AR35            [get_ports "usb_con"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L3N_T0L_N5_AD15N_43 - FMCP_HSPC_LA10_N - USB_CON
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_con"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L3N_T0L_N5_AD15N_43 - FMCP_HSPC_LA10_N - USB_CON
+set_property PACKAGE_PIN AG31            [get_ports "usb_oen"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L23P_T3U_N8_43 - FMCP_HSPC_LA14_P - USB_OEN
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_oen"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L23P_T3U_N8_43 - FMCP_HSPC_LA14_P - USB_OEN
+set_property PACKAGE_PIN AH31            [get_ports "usb_rcv"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L23N_T3U_N9_43 - FMCP_HSPC_LA14_N - USB_RCV
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_rcv"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L23N_T3U_N9_43 - FMCP_HSPC_LA14_N - USB_RCV
+set_property PACKAGE_PIN R31             [get_ports "usb_vp"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L10P_T1U_N6_QBC_AD4P_45 - FMCP_HSPC_LA18_CC_P - USB_VP
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_vp"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L10P_T1U_N6_QBC_AD4P_45 - FMCP_HSPC_LA18_CC_P - USB_VP
+set_property PACKAGE_PIN P31             [get_ports "usb_vm"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L10N_T1U_N7_QBC_AD4N_45 - FMCP_HSPC_LA18_CC_N - USB_VM
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_vm"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L10N_T1U_N7_QBC_AD4N_45 - FMCP_HSPC_LA18_CC_N - USB_VM
+set_property PACKAGE_PIN V33             [get_ports "usb_spd"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5P_T0U_N8_AD14P_45 - FMCP_HSPC_LA27_P - USB_SPD
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_spd"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5P_T0U_N8_AD14P_45 - FMCP_HSPC_LA27_P - USB_SPD
+set_property PACKAGE_PIN V34             [get_ports "usb_sus"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5N_T0U_N9_AD14N_45 - FMCP_HSPC_LA27_N - USB_SUS
+set_property IOSTANDARD  LVCMOS18        [get_ports "usb_sus"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5N_T0U_N9_AD14N_45 - FMCP_HSPC_LA27_N - USB_SUS
+
 # Not recommended settings, it's just a dirty fix
 set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
 set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
