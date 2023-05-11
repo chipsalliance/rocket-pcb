@@ -87,9 +87,9 @@ assign led[7:0] =
 
 assign rst_n = key[0] | key[3];
 
-wire uart_loop_valid;
-wire uart_loop_data;
-wire uart_loop_accept;
+(* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_valid;
+(* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_accept;
+(* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire [7:0] uart_loop_data;
 
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire usb_pads_rx_dn_w;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire usb_pads_rx_dp_w;
@@ -99,15 +99,6 @@ wire uart_loop_accept;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire usb_pads_tx_oen_w;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire [31:0] counter_probe;
 assign counter_probe[31:0] = counter[31:0];
-
-// wire clk_usb;
-
-// wire usb_pads_rx_dn_w;
-// wire usb_pads_rx_dp_w;
-// wire usb_pads_rx_rcv_w;
-// wire usb_pads_tx_dn_w;
-// wire usb_pads_tx_dp_w;
-// wire usb_pads_tx_oen_w;
 
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire utmi_dmpulldown_w;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire utmi_dppulldown_w;
@@ -132,12 +123,6 @@ mmcm mmcm_inst
 	.locked()
 );
 
-`define REAL_USB 1
-// `define USB_TX 1
-// `define USB_RX 1
-
-`ifdef REAL_USB
-
 usb_cdc_core usb_cdc_core_inst
 (
     .clk_i(clk_usb),
@@ -159,12 +144,12 @@ usb_cdc_core usb_cdc_core_inst
     .utmi_dppulldown_o(utmi_dppulldown_w),
     .utmi_dmpulldown_o(utmi_dmpulldown_w),
 
-    // Device -> Host
+    /* Device -> Host */
     .inport_valid_i(uart_loop_valid),
     .inport_data_i(uart_loop_data),
     .inport_accept_o(uart_loop_accept),
 
-    // Host -> Device
+    /* Host -> Device */
     .outport_valid_o(uart_loop_valid),
     .outport_data_o(uart_loop_data),
     .outport_accept_i(uart_loop_accept)
@@ -172,7 +157,7 @@ usb_cdc_core usb_cdc_core_inst
 
 usb_fs_phy u_usb_phy
 (
-    // Inputs
+    /* Inputs */
      .clk_i(clk_usb)
     ,.rst_i(~rst_n)
     ,.utmi_data_out_i(utmi_data_out_w)
@@ -187,7 +172,7 @@ usb_fs_phy u_usb_phy
     ,.usb_rx_dn_i(usb_pads_rx_dn_w)
     ,.usb_reset_assert_i(1'b0)
 
-    // Outputs
+    /* Outputs */
     ,.utmi_data_in_o(utmi_data_in_w)
     ,.utmi_txready_o(utmi_txready_w)
     ,.utmi_rxvalid_o(utmi_rxvalid_w)
@@ -222,60 +207,5 @@ assign usb_con = 1'b1;
 assign usb_sus = 1'b0;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) assign usb_pads_rx_rcv_w = usb_rcv;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) assign usb_oen = usb_pads_tx_oen_w;
-
-`endif
-
-`ifdef USB_TX
-
-assign usb_spd = 1'b1;
-assign usb_con = 1'b1;
-assign usb_sus = 1'b0;
-assign usb_oen = 1'b0;
-
-IOBUF iobuf_usb_vp_inst
-(
-	.O(),
-	.IO(usb_vp),
-	.I(counter[2]),
-	.T(usb_oen)
-);
-
-IOBUF iobuf_usb_vm_inst
-(
-	.O(),
-	.IO(usb_vm),
-	.I(~counter[2]),
-	.T(usb_oen)
-);
-
-`endif
-
-`ifdef USB_RX
-
-assign usb_spd = 1'b1;
-assign usb_con = 1'b1;
-assign usb_sus = 1'b0;
-assign usb_oen = 1'b1;
-
-(* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire usb_vp_test1;
-(* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire usb_vm_test1;
-
-IOBUF iobuf_usb_vp_inst
-(
-	.O(usb_vp_test1),
-	.IO(usb_vp),
-	.I(1'b1),
-	.T(usb_oen)
-);
-
-IOBUF iobuf_usb_vm_inst
-(
-	.O(usb_vm_test1),
-	.IO(usb_vm),
-	.I(1'b1),
-	.T(usb_oen)
-);
-
-`endif
 
 endmodule
