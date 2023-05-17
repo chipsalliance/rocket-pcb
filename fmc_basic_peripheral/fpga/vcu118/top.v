@@ -8,6 +8,8 @@ module top(
 	input clk_p,
 	input clk_n,
 	/* jtag */
+	input trst,
+	input srst,
 	input tck,
 	input tms,
 	input tdi,
@@ -29,7 +31,9 @@ module top(
 	inout usb_vm,
 	output usb_con,
 	output usb_sus,
-	output usb_oen
+	output usb_oen,
+	/* GPIO */
+	output [15:0] gpio
 );
 
 wire rst_n;
@@ -85,7 +89,8 @@ assign led[7:0] =
 	status == 2'b00 ? {{(8-1){usb_det}}, ~usb_det} :
 	8'b11111111;
 
-assign rst_n = key[0] | key[3];
+assign gpio[15:0] = counter[31:16];
+assign rst_n = key[0] | key[3] & trst & srst;
 
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_valid;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_accept;
@@ -204,7 +209,7 @@ IOBUF iobuf_usb_vm_inst
 
 assign usb_spd = 1'b1;
 assign usb_con = 1'b1;
-assign usb_sus = 1'b0;
+assign usb_sus = ~usb_det;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) assign usb_pads_rx_rcv_w = usb_rcv;
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) assign usb_oen = usb_pads_tx_oen_w;
 

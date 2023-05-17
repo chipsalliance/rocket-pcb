@@ -6,14 +6,20 @@ set_property PACKAGE_PIN AW26            [get_ports "clk_p"               ] ;# B
 set_property IOSTANDARD  DIFF_SSTL12     [get_ports "clk_p"               ] ;# Bank  41 VCCO - VCC1V2_FPGA - IO_L13P_T2L_N0_GC_QBC_41
 
 # JTAG
-set_property PACKAGE_PIN AL35            [get_ports "tdi"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7P_T1L_N0_QBC_AD13P_43 - FMCP_HSPC_LA00_CC_P - GPIO0
-set_property IOSTANDARD  LVCMOS18        [get_ports "tdi"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7P_T1L_N0_QBC_AD13P_43 - FMCP_HSPC_LA00_CC_P - GPIO0
-set_property PACKAGE_PIN AL36            [get_ports "tms"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7N_T1L_N1_QBC_AD13N_43 - FMCP_HSPC_LA00_CC_N - GPIO1
-set_property IOSTANDARD  LVCMOS18        [get_ports "tms"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7N_T1L_N1_QBC_AD13N_43 - FMCP_HSPC_LA00_CC_N - GPIO1
-set_property PACKAGE_PIN AT39            [get_ports "tck"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4P_T0U_N6_DBC_AD7P_43 - FMCP_HSPC_LA03_P - GPIO2
-set_property IOSTANDARD  LVCMOS18        [get_ports "tck"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4P_T0U_N6_DBC_AD7P_43 - FMCP_HSPC_LA03_P - GPIO2
-set_property PACKAGE_PIN AT40            [get_ports "tdo"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4N_T0U_N7_DBC_AD7N_43 - FMCP_HSPC_LA03_N - GPIO3
-set_property IOSTANDARD  LVCMOS18        [get_ports "tdo"                 ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4N_T0U_N7_DBC_AD7N_43 - FMCP_HSPC_LA03_N - GPIO3
+set_property PULLUP true                 [get_ports "trst"                ]
+set_property PULLUP true                 [get_ports "srst"                ]
+set_property PACKAGE_PIN R34             [get_ports "trst"                ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L13P_T2L_N0_GC_QBC_45 - FMCP_HSPC_LA17_CC_P - JTAG_TRSTN
+set_property IOSTANDARD  LVCMOS18        [get_ports "trst"                ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L13P_T2L_N0_GC_QBC_45 - FMCP_HSPC_LA17_CC_P - JTAG_TRSTN
+set_property PACKAGE_PIN P34             [get_ports "srst"                ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L13N_T2L_N1_GC_QBC_45 - FMCP_HSPC_LA17_CC_N - JTAG_SRSTN
+set_property IOSTANDARD  LVCMOS18        [get_ports "srst"                ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L13N_T2L_N1_GC_QBC_45 - FMCP_HSPC_LA17_CC_N - JTAG_SRSTN
+set_property PACKAGE_PIN Y32             [get_ports "tms"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L1P_T0L_N0_DBC_45 - FMCP_HSPC_LA23_P - JTAG_TMS
+set_property IOSTANDARD  LVCMOS18        [get_ports "tms"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L1P_T0L_N0_DBC_45 - FMCP_HSPC_LA23_P - JTAG_TMS
+set_property PACKAGE_PIN W32             [get_ports "tdo"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L1N_T0L_N1_DBC_45- FMCP_HSPC_LA23_N - JTAG_TDO
+set_property IOSTANDARD  LVCMOS18        [get_ports "tdo"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L1N_T0L_N1_DBC_45 - FMCP_HSPC_LA23_N - JTAG_TDO
+set_property PACKAGE_PIN V32             [get_ports "tdi"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L2P_T0L_N2_45 - FMCP_HSPC_LA26_P - JTAG_TDI
+set_property IOSTANDARD  LVCMOS18        [get_ports "tdi"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L2P_T0L_N2_45 - FMCP_HSPC_LA26_P - JTAG_TDI
+set_property PACKAGE_PIN U33             [get_ports "tck"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L2N_T0L_N3_45 - FMCP_HSPC_LA26_N - JTAG_TCK
+set_property IOSTANDARD  LVCMOS18        [get_ports "tck"                 ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L2N_T0L_N3_45 - FMCP_HSPC_LA26_N - JTAG_TCK
 
 # UART
 set_property PACKAGE_PIN AL30            [get_ports "uart_rx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16P_T2U_N6_QBC_AD3P_43 - FMCP_HSPC_LA01_CC_P - UART_TXD
@@ -21,11 +27,39 @@ set_property IOSTANDARD  LVCMOS18        [get_ports "uart_rx"             ] ;# B
 set_property PACKAGE_PIN AL31            [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
 set_property IOSTANDARD  LVCMOS18        [get_ports "uart_tx"             ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L16N_T2U_N7_QBC_AD3N_43 - FMCP_HSPC_LA01_CC_N - UART_RXD
 
-# TODO
-# set_property PACKAGE_PIN AK30            [get_ports "FMCP_HSPC_LA08_N"    ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_43 - FMCP_HSPC_LA08_N - GPIO4
-# set_property IOSTANDARD  LVCMOS18        [get_ports "FMCP_HSPC_LA08_N"    ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_43 - FMCP_HSPC_LA08_N - GPIO4
-# set_property PACKAGE_PIN AK29            [get_ports "FMCP_HSPC_LA08_P"    ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_43 - FMCP_HSPC_LA08_P - GPIO5
-# set_property IOSTANDARD  LVCMOS18        [get_ports "FMCP_HSPC_LA08_P"    ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_43 - FMCP_HSPC_LA08_P - GPIO5
+# GPIO
+set_property PACKAGE_PIN AL35            [get_ports "gpio[0]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7P_T1L_N0_QBC_AD13P_43 - FMCP_HSPC_LA00_CC_P - GPIO0
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[0]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7P_T1L_N0_QBC_AD13P_43 - FMCP_HSPC_LA00_CC_P - GPIO0
+set_property PACKAGE_PIN AL36            [get_ports "gpio[1]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7N_T1L_N1_QBC_AD13N_43 - FMCP_HSPC_LA00_CC_N - GPIO1
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[1]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L7N_T1L_N1_QBC_AD13N_43 - FMCP_HSPC_LA00_CC_N - GPIO1
+set_property PACKAGE_PIN AT39            [get_ports "gpio[2]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4P_T0U_N6_DBC_AD7P_43 - FMCP_HSPC_LA03_P - GPIO2
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[2]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4P_T0U_N6_DBC_AD7P_43 - FMCP_HSPC_LA03_P - GPIO2
+set_property PACKAGE_PIN AT40            [get_ports "gpio[3]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4N_T0U_N7_DBC_AD7N_43 - FMCP_HSPC_LA03_N - GPIO3
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[3]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L4N_T0U_N7_DBC_AD7N_43 - FMCP_HSPC_LA03_N - GPIO3
+set_property PACKAGE_PIN AK29            [get_ports "gpio[4]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_43 - FMCP_HSPC_LA08_P - GPIO4
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[4]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_43 - FMCP_HSPC_LA08_P - GPIO4
+set_property PACKAGE_PIN AK30            [get_ports "gpio[5]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_43 - FMCP_HSPC_LA08_N - GPIO5
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[5]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_43 - FMCP_HSPC_LA08_N - GPIO5
+set_property PACKAGE_PIN AH33            [get_ports "gpio[6]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L21P_T3L_N4_AD8P_43 - FMCP_HSPC_LA12_P - GPIO6
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[6]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L21P_T3L_N4_AD8P_43 - FMCP_HSPC_LA12_P - GPIO6
+set_property PACKAGE_PIN AH34            [get_ports "gpio[7]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_43 - FMCP_HSPC_LA12_N - GPIO7
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[7]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_43 - FMCP_HSPC_LA12_N - GPIO7
+set_property PACKAGE_PIN AG34            [get_ports "gpio[8]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L22P_T3U_N6_DBC_AD0P_43 - FMCP_HSPC_LA16_P - GPIO8
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[8]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L22P_T3U_N6_DBC_AD0P_43 - FMCP_HSPC_LA16_P - GPIO8
+set_property PACKAGE_PIN AH35            [get_ports "gpio[9]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L22N_T3U_N7_DBC_AD0N_43 - FMCP_HSPC_LA16_N - GPIO9
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[9]"              ] ;# Bank  43 VCCO - VADJ_1V8_FPGA - IO_L22N_T3U_N7_DBC_AD0N_43 - FMCP_HSPC_LA16_N - GPIO9
+set_property PACKAGE_PIN N32             [get_ports "gpio[10]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L23P_T3U_N8_45 - FMCP_HSPC_LA20_P - GPIO10
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[10]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L23P_T3U_N8_45 - FMCP_HSPC_LA20_P - GPIO10
+set_property PACKAGE_PIN M32             [get_ports "gpio[11]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L23N_T3U_N9_45 - FMCP_HSPC_LA20_N - GPIO11
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[11]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L23N_T3U_N9_45 - FMCP_HSPC_LA20_N - GPIO11
+set_property PACKAGE_PIN N34             [get_ports "gpio[12]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L20P_T3L_N2_AD1P_45 - FMCP_HSPC_LA22_P - GPIO12
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[12]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L20P_T3L_N2_AD1P_45 - FMCP_HSPC_LA22_P - GPIO12
+set_property PACKAGE_PIN N35             [get_ports "gpio[13]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L20N_T3L_N3_AD1N_45 - FMCP_HSPC_LA22_N - GPIO13
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[13]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L20N_T3L_N3_AD1N_45 - FMCP_HSPC_LA22_N - GPIO13
+set_property PACKAGE_PIN Y34             [get_ports "gpio[14]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L3P_T0L_N4_AD15P_45 - FMCP_HSPC_LA25_P - GPIO14
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[14]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L3P_T0L_N4_AD15P_45 - FMCP_HSPC_LA25_P - GPIO14
+set_property PACKAGE_PIN W34             [get_ports "gpio[15]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L3N_T0L_N5_AD15N_45 - FMCP_HSPC_LA25_N - GPIO15
+set_property IOSTANDARD  LVCMOS18        [get_ports "gpio[15]"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L3N_T0L_N5_AD15N_45 - FMCP_HSPC_LA25_N - GPIO15
 
 # LED
 set_property PACKAGE_PIN L34             [get_ports "led[0]"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L19P_T3L_N0_DBC_AD9P_45 - FMCP_HSPC_LA33_P - GPIO20
