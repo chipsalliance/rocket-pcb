@@ -131,6 +131,20 @@ set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_cmd"            ] ;# B
 set_property PACKAGE_PIN K33             [get_ports "sdio_clk"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_45 - FMCP_HSPC_LA32_N - SDIO_CLK
 set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_clk"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_45 - FMCP_HSPC_LA32_N - SDIO_CLK
 
+# SPI flash
+set_property PACKAGE_PIN N33             [get_ports "spi_cs"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L22P_T3U_N6_DBC_AD0P_45 - FMCP_HSPC_LA19_P - SPI_CS
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_cs"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L22P_T3U_N6_DBC_AD0P_45 - FMCP_HSPC_LA19_P - SPI_CS
+set_property PACKAGE_PIN M33             [get_ports "spi_do"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L22N_T3U_N7_DBC_AD0N_45 - FMCP_HSPC_LA19_N - SPI_DO
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_do"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L22N_T3U_N7_DBC_AD0N_45 - FMCP_HSPC_LA19_N - SPI_DO
+set_property PACKAGE_PIN M35             [get_ports "spi_wpn"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L24P_T3U_N10_45 - FMCP_HSPC_LA21_P - SPI_WPN
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_wpn"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L24P_T3U_N10_45 - FMCP_HSPC_LA21_P - SPI_WPN
+set_property PACKAGE_PIN L35             [get_ports "spi_holdn"           ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L24N_T3U_N11_45 - FMCP_HSPC_LA21_N - SPI_HOLDN
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_holdn"           ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L24N_T3U_N11_45 - FMCP_HSPC_LA21_N - SPI_HOLDN
+set_property PACKAGE_PIN T34             [get_ports "spi_clk"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L6P_T0U_N10_AD6P_45 - FMCP_HSPC_LA24_P - SPI_CLK
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_clk"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L6P_T0U_N10_AD6P_45 - FMCP_HSPC_LA24_P - SPI_CLK
+set_property PACKAGE_PIN T35             [get_ports "spi_di"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L6N_T0U_N11_AD6N_45 - FMCP_HSPC_LA24_N - SPI_DI
+set_property IOSTANDARD  LVCMOS18        [get_ports "spi_di"              ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L6N_T0U_N11_AD6N_45 - FMCP_HSPC_LA24_N - SPI_DI
+
 # Not recommended settings, it's just a dirty fix
 set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
 set_property SEVERITY {Warning} [get_drc_checks UCIO-1]

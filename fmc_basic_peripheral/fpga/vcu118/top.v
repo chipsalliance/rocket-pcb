@@ -37,7 +37,14 @@ module top(
 	/* SDIO */
 	output [3:0] sdio_dat,
 	output sdio_cmd,
-	output sdio_clk
+	output sdio_clk,
+	/* SPI flash */
+	output spi_cs,
+	output spi_do,
+	output spi_wpn,
+	output spi_holdn,
+	output spi_clk,
+	output spi_di
 );
 
 wire rst_n;
@@ -97,6 +104,13 @@ assign gpio[15:0] = {counter[23:16], counter[23:16]};
 assign sdio_dat[3:0] = counter[19:16];
 assign sdio_cmd = counter[17];
 assign sdio_clk = counter[18];
+assign spi_cs = counter[17];
+assign spi_do = counter[17];
+assign spi_wpn = counter[17];
+assign spi_holdn = counter[17];
+assign spi_clk = counter[17];
+assign spi_di = counter[17];
+
 assign rst_n = (key[0] | key[3]) & trst & srst;
 
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_valid;
