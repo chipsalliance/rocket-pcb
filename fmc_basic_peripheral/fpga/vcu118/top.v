@@ -76,7 +76,7 @@ end
 always@(posedge clk_usb,negedge rst_n) begin
 	if(!rst_n)
 		status <= 0;
-	else if (!(key[1] | key[2]))
+	else if (!(key[1] | key[3]))
 		status <= status + 1;
 	else
 		status <= status;
@@ -89,7 +89,7 @@ assign led[7:0] =
 	status == 2'b00 ? {{(8-1){usb_det}}, ~usb_det} :
 	8'b11111111;
 
-assign gpio[15:0] = counter[31:16];
+assign gpio[15:0] = {counter[31:24], counter[31:24]};
 assign rst_n = (key[0] | key[3]) & trst & srst;
 
 (* keep="true",mark_debug,mark_debug_valid="true",mark_debug_clock="mmcm_inst/inst/clk_out1" *) wire uart_loop_valid;
