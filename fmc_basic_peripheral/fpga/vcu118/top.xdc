@@ -117,6 +117,20 @@ set_property IOSTANDARD  LVCMOS18        [get_ports "usb_spd"             ] ;# B
 set_property PACKAGE_PIN V34             [get_ports "usb_sus"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5N_T0U_N9_AD14N_45 - FMCP_HSPC_LA27_N - USB_SUS
 set_property IOSTANDARD  LVCMOS18        [get_ports "usb_sus"             ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L5N_T0U_N9_AD14N_45 - FMCP_HSPC_LA27_N - USB_SUS
 
+# SDIO
+set_property PACKAGE_PIN M36             [get_ports "sdio_dat[0]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L17P_T2U_N8_AD10P_45 - FMCP_HSPC_LA28_P - SDIO_DAT0
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_dat[0]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L17P_T2U_N8_AD10P_45 - FMCP_HSPC_LA28_P - SDIO_DAT0
+set_property PACKAGE_PIN L36             [get_ports "sdio_dat[1]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L17N_T2U_N9_AD10N_45 - FMCP_HSPC_LA28_N - SDIO_DAT1
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_dat[1]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L17N_T2U_N9_AD10N_45 - FMCP_HSPC_LA28_N - SDIO_DAT1
+set_property PACKAGE_PIN N38             [get_ports "sdio_dat[2]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_45 - FMCP_HSPC_LA30_P - SDIO_DAT2
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_dat[2]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L18P_T2U_N10_AD2P_45 - FMCP_HSPC_LA30_P - SDIO_DAT2
+set_property PACKAGE_PIN M38             [get_ports "sdio_dat[3]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_45 - FMCP_HSPC_LA30_N - SDIO_DAT3
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_dat[3]"         ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L18N_T2U_N11_AD2N_45 - FMCP_HSPC_LA30_N - SDIO_DAT3
+set_property PACKAGE_PIN L33             [get_ports "sdio_cmd"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21P_T3L_N4_AD8P_45 - FMCP_HSPC_LA32_P - SDIO_CMD
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_cmd"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21P_T3L_N4_AD8P_45 - FMCP_HSPC_LA32_P - SDIO_CMD
+set_property PACKAGE_PIN K33             [get_ports "sdio_clk"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_45 - FMCP_HSPC_LA32_N - SDIO_CLK
+set_property IOSTANDARD  LVCMOS18        [get_ports "sdio_clk"            ] ;# Bank  45 VCCO - VADJ_1V8_FPGA - IO_L21N_T3L_N5_AD8N_45 - FMCP_HSPC_LA32_N - SDIO_CLK
+
 # Not recommended settings, it's just a dirty fix
 set_property SEVERITY {Warning} [get_drc_checks NSTD-1]
 set_property SEVERITY {Warning} [get_drc_checks UCIO-1]
