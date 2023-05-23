@@ -234,6 +234,10 @@ if {[file exist "ip"]} {
     }
 }
 
+if {![file exist "ip"]} {
+    file mkdir ip
+}
+
 create_ip -vendor xilinx.com -library ip -version 6.0 -name clk_wiz -module_name mmcm -dir ip -force
 set_property -dict [list CONFIG.Component_Name {mmcm} CONFIG.PRIM_IN_FREQ 250.0 CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {48.0} CONFIG.RESET_TYPE {ACTIVE_LOW}] [get_ips mmcm]
 generate_target all [get_files mmcm.xci]
