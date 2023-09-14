@@ -4,6 +4,8 @@ The basic peripherals of the FPGA mezzanine card, including JTAG, UART, GPIO,
 USB, I3C, etc., can be used for prototype verification of the basic peripherals
 of the SoC.
 
+![3D VIEW](./image/fmc_basic_peri_3d.jpg)
+
 ## Preparation
 
 Install kicad7, cmake, ninja, frugy.
