@@ -7,7 +7,7 @@
   (title_block
     (title "UART")
     (date "2023-04-23")
-    (rev "1.0.6")
+    (rev "1.0.7")
     (company "CHIPS Alliance")
     (comment 1 "Rui Huang (2023-03-02)")
     (comment 2 "Rui Huang (2023-03-02)")
@@ -1445,8 +1445,8 @@
     )
   )
 
-  (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~{RI}"))
   (bus_alias "SDIO" (members "DAT0" "DAT1" "DAT2" "DAT3" "CMD" "CLK"))
+  (bus_alias "UART" (members "TXD" "RXD" "~{RTS}" "~{CTS}" "~{DSR}" "~{DTR}" "~{DCD}" "~{RI}"))
   (junction (at 198.12 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 05a8c2f5-bac9-47d9-9846-cff54f36116f)
   )
