@@ -1,0 +1,62 @@
+(version 1)
+(rule "BGA neckdown U25"
+    (constraint track_width (min 6mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U25')"))
+(rule "BGA neckdown J1"
+    (constraint track_width (min 6mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('J1')"))
+(rule "USON neckdown U12"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U12')"))
+(rule "USON neckdown U18"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U18')"))
+(rule "USON neckdown U19"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U19')"))
+(rule "USON neckdown U20"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U20')"))
+(rule "USB neckdown J3"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.intersectsBackCourtyard('J3')"))
+(rule "USB neckdown J4"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.intersectsBackCourtyard('J4')"))
+(rule "USB neckdown Diff"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.NetClass == 'Diff"))
+(rule "QFN neckdown U2"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U2')"))
+(rule "Mounting holes H1"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H1')"))
+(rule "Mounting holes H2"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H2')"))
+(rule "Mounting holes H3"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H3')"))
+(rule "Mounting holes H4"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H4')"))
+(rule "Filled zone VADJ"
+	(constraint edge_clearance (min 50mil))
+    (condition "A.Name == 'VADJ_L2' || A.Name == 'VADJ_L4' "))
+(rule "Filled zone 3P3V"
+	(constraint edge_clearance (min 50mil))
+    (condition "A.Name == '3P3V_L3' || A.Name == '3P3V_L4' "))
