@@ -2374,7 +2374,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 256.54 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03e20e4c-9313-4b4a-899b-ddd9ecd7587b)
-    (property "Reference" "#PWR06" (at 256.54 134.62 0)
+    (property "Reference" "#PWR019" (at 256.54 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 256.54 127 0)
@@ -2390,7 +2390,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -2407,7 +2407,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 256.54 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08f42037-df58-4887-98f9-6741dfae3880)
-    (property "Reference" "#PWR020" (at 256.54 88.9 0)
+    (property "Reference" "#PWR018" (at 256.54 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 256.54 87.63 0)
@@ -2423,7 +2423,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -2440,7 +2440,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 46.99 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09c4162f-df87-4525-934a-cab88253469f)
-    (property "Reference" "#PWR03" (at 53.34 96.52 0)
+    (property "Reference" "#PWR04" (at 53.34 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.8 96.52 90)
@@ -2456,7 +2456,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
       (project "fmc_usb2p0_utmi"
@@ -2475,7 +2475,7 @@
   (symbol (lib_id "CHIPSAlliance_Power_Protection:RCLAMP0524P") (at 121.92 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c266502-6c49-4f74-8437-ffca9e090974)
-    (property "Reference" "U1" (at 96.52 152.4 90)
+    (property "Reference" "U2" (at 96.52 152.4 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RCLAMP0524P" (at 107.95 152.4 90)
@@ -2500,7 +2500,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "U1") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -2633,7 +2633,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 93.98 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3108c1d3-a562-4159-82d6-5e8d5db2346b)
-    (property "Reference" "#PWR024" (at 93.98 154.94 0)
+    (property "Reference" "#PWR07" (at 93.98 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 93.98 152.4 0)
@@ -2649,7 +2649,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -2669,7 +2669,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 264.16 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3186afd9-3c81-4bd5-b3c3-e4438131f16b)
-    (property "Reference" "#PWR09" (at 264.16 144.78 0)
+    (property "Reference" "#PWR024" (at 264.16 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 264.16 143.51 0)
@@ -2685,7 +2685,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -2702,7 +2702,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 229.87 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e5b7c42-4834-48dc-bf7b-5cac10f72c30)
-    (property "Reference" "#PWR013" (at 229.87 123.19 0)
+    (property "Reference" "#PWR014" (at 229.87 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 228.6 115.57 0)
@@ -2718,7 +2718,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -2737,7 +2737,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 196.85 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41237486-a8b3-477a-98e1-698d51c44800)
-    (property "Reference" "#PWR010" (at 196.85 154.94 0)
+    (property "Reference" "#PWR011" (at 196.85 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 152.4 0)
@@ -2753,7 +2753,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -2890,7 +2890,7 @@
   (symbol (lib_id "Device:C") (at 264.16 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55a359ac-5ca5-4d9e-9060-e042d5eca6b4)
-    (property "Reference" "C4" (at 264.16 76.2 0)
+    (property "Reference" "C3" (at 264.16 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 264.16 81.28 0)
@@ -2907,7 +2907,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "C4") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3003,7 +3003,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 199.39 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5fd57e0c-fd34-4f03-ab12-6ab0133f9d50)
-    (property "Reference" "#PWR011" (at 199.39 123.19 0)
+    (property "Reference" "#PWR012" (at 199.39 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 198.12 115.57 0)
@@ -3019,7 +3019,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3038,7 +3038,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 35.56 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 615e83ed-f0cf-4155-881a-1b8313d4dab1)
-    (property "Reference" "#PWR023" (at 35.56 153.67 0)
+    (property "Reference" "#PWR03" (at 35.56 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 35.56 151.13 0)
@@ -3054,7 +3054,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3074,7 +3074,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 191.77 77.47 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 68363ee7-e6d2-4796-b54b-f209e8002ff4)
-    (property "Reference" "#PWR015" (at 195.58 77.47 0)
+    (property "Reference" "#PWR08" (at 195.58 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 189.23 76.2 90)
@@ -3090,7 +3090,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3150,7 +3150,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 64.77 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b4d533f-cc27-447f-b8b0-fc64d1831a2d)
-    (property "Reference" "#PWR05" (at 64.77 67.31 0)
+    (property "Reference" "#PWR06" (at 64.77 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 64.77 59.69 0)
@@ -3166,7 +3166,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3183,7 +3183,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 264.16 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 705f6d1a-8658-4174-af6a-7a5cd1cecbc2)
-    (property "Reference" "#PWR08" (at 264.16 134.62 0)
+    (property "Reference" "#PWR023" (at 264.16 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 264.16 127 0)
@@ -3199,7 +3199,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3216,7 +3216,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 191.77 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70e9a4fd-5967-4520-94c8-20435631df6f)
-    (property "Reference" "#PWR017" (at 191.77 99.06 0)
+    (property "Reference" "#PWR010" (at 191.77 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.77 97.79 0)
@@ -3232,7 +3232,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3281,7 +3281,7 @@
   (symbol (lib_id "Device:C") (at 264.16 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a5df967-39bc-48ad-9098-4a0d3a47f847)
-    (property "Reference" "C2" (at 264.16 132.08 0)
+    (property "Reference" "C4" (at 264.16 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 264.16 137.16 0)
@@ -3298,7 +3298,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "C2") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3327,7 +3327,7 @@
   (symbol (lib_id "CHIPSAlliance_Power_Protection:RCLAMP0524P") (at 63.5 139.7 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7e83a5c4-a8f4-4c64-ba96-5d696c1c8178)
-    (property "Reference" "U?" (at 38.1 151.13 90)
+    (property "Reference" "U1" (at 38.1 151.13 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "RCLAMP0524P" (at 49.53 151.13 90)
@@ -3352,7 +3352,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "U?") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3448,7 +3448,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 234.95 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8711625b-02d6-4d8e-b8ab-ec15567870cd)
-    (property "Reference" "#PWR014" (at 234.95 154.94 0)
+    (property "Reference" "#PWR016" (at 234.95 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 152.4 0)
@@ -3464,7 +3464,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3525,7 +3525,7 @@
   (symbol (lib_id "CHIPSAlliance_Logic:AIP74LVC1T45GB236TR") (at 204.47 130.81 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9aeeee1e-24eb-47e4-a217-1f2431830aff)
-    (property "Reference" "U2" (at 195.58 129.54 0)
+    (property "Reference" "U3" (at 195.58 129.54 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AIP74LVC1T45GB236TR" (at 210.82 128.27 0)
@@ -3549,7 +3549,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "U2") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3577,7 +3577,7 @@
   (symbol (lib_id "Device:C") (at 256.54 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a5e5a694-049c-444b-8b5a-2dc4e657d812)
-    (property "Reference" "C3" (at 256.54 76.2 0)
+    (property "Reference" "C1" (at 256.54 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 256.54 81.28 0)
@@ -3594,7 +3594,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "C3") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3660,7 +3660,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 234.95 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b1d9c3c2-aa74-47a3-9ef3-d845758257b1)
-    (property "Reference" "#PWR018" (at 234.95 99.06 0)
+    (property "Reference" "#PWR015" (at 234.95 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 97.79 0)
@@ -3676,7 +3676,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3729,7 +3729,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 46.99 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c73cad8f-ece5-4cdb-9ee9-a38e4ff85a3a)
-    (property "Reference" "#PWR04" (at 43.18 99.06 0)
+    (property "Reference" "#PWR05" (at 43.18 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 55.88 99.06 90)
@@ -3745,7 +3745,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
       (project "fmc_usb2p0_utmi"
@@ -3764,7 +3764,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 191.77 82.55 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1469df1-c9d6-4a08-bb21-3c4ca5ae109e)
-    (property "Reference" "#PWR016" (at 185.42 82.55 0)
+    (property "Reference" "#PWR09" (at 185.42 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 189.23 81.28 90)
@@ -3780,7 +3780,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3794,7 +3794,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 207.01 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e3328804-f66d-4e6c-a0ad-58acf0bd4b0e)
-    (property "Reference" "#PWR012" (at 207.01 154.94 0)
+    (property "Reference" "#PWR013" (at 207.01 154.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 152.4 0)
@@ -3810,7 +3810,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
       (project "fmc_usb_gpio_spi_jtag"
@@ -3875,7 +3875,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:GND") (at 256.54 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e812ad62-1f8b-41fe-8561-bf3bd2566605)
-    (property "Reference" "#PWR07" (at 256.54 144.78 0)
+    (property "Reference" "#PWR020" (at 256.54 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 256.54 143.51 0)
@@ -3891,7 +3891,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3908,7 +3908,7 @@
   (symbol (lib_id "Device:C") (at 256.54 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f22a1947-e8e7-4f16-8001-71bb16412973)
-    (property "Reference" "C1" (at 256.54 132.08 0)
+    (property "Reference" "C2" (at 256.54 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 256.54 137.16 0)
@@ -3925,7 +3925,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "C1") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
       (project "pmod_microsd"
@@ -3991,7 +3991,7 @@
   (symbol (lib_id "CHIPSAlliance_Power:3P3V") (at 256.54 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f674741b-78e2-45d5-a5b1-cf03139efb06)
-    (property "Reference" "#PWR019" (at 256.54 78.74 0)
+    (property "Reference" "#PWR017" (at 256.54 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3P3V" (at 256.54 71.12 0)
@@ -4007,7 +4007,7 @@
     (instances
       (project "pmod_microsd"
         (path "/0959ba5b-cfb3-4101-b57a-b405f558c0e6"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
       (project "pmod_microsd"
