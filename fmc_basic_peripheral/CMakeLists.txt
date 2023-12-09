@@ -80,13 +80,13 @@ add_custom_command(
         --disable-aperture-macros
         --no-x2
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/"
-        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In1.Cu,In2.Cu,In3.Cu,In4.Cu"
+        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In1.Cu,In2.Cu,In3.Cu,In4.Cu,User.Drawings"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
     COMMAND
         ${KICADCLI_PROGRAM} pcb export drill
         --excellon-separate-th
-        --separate-files
-        --units mm
+        --generate-map
+        --excellon-units mm
         --excellon-zeros-format suppressleading
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
@@ -125,7 +125,7 @@ add_custom_command(
     COMMAND
         ${KICADCLI_PROGRAM} pcb export pdf
         --ibt
-        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In1.Cu,In2.Cu,In3.Cu,In4.Cu,*"
+        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In1.Cu,In2.Cu,In3.Cu,In4.Cu,User.Drawings,*"
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_pcb.pdf"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
     DEPENDS
