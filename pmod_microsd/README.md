@@ -35,13 +35,13 @@ Here is their mapping relationship.
 
 ### LED
 
-There are two LEDs on the PCB, the orange one is the power indicator and the
-yellow one is the card detection indicator.
+There are two LEDs on the PCB, the yellow one is the card detection indicator
+and the orange one is the power indicator.
 
 | LED | COLOR  |         FUNCTION         |          ON           |       OFF       |
 | --- | ------ | ------------------------ | --------------------- | --------------- |
-| 1   | Yellow | Power indicator          | Power on              | Power off       |
-| 2   | Orange | Card detection indicator | MicroSD Card inserted | No MicroSD card |
+| 1   | Yellow | Card detection indicator | MicroSD Card inserted | No MicroSD card |
+| 2   | Orange | Power indicator          | Power on              | Power off       |
 
 ### Special signal
 
