@@ -1,0 +1,8 @@
+(version 1)
+
+# Kinghelm KH-TYPE-C-16P, drawing A0 (2017-06-09): the recommended
+# 0.65 mm locating holes are about 0.122 mm from the adjacent ground lands.
+# This applies only to the locating holes and pads of J1, not routing.
+(rule "J1 manufacturer land-to-locating-hole clearance"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('J1') && B.memberOfFootprint('J1') && (A.Pad_Number == '' || B.Pad_Number == '')")
+    (constraint hole_clearance (min 0.10mm)))
