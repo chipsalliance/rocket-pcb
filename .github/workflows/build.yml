@@ -1,0 +1,39 @@
+name: KiCad Project Build and Validation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    name: KiCad Project Build and Validation
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    - name: Add KiCad Repository
+      run: |
+        sudo add-apt-repository ppa:kicad/kicad-8.0-releases
+        sudo apt update
+    - name: Cache Required Packages
+      uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: cmake ninja-build kicad kicad-library-all
+        version: 1.0
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - run: pip install frugy
+    - name: Build and Validate KiCad Project
+      run: |
+        pushd ${{github.workspace}}/fmc_basic_peripheral
+        cmake -B ./build -G Ninja
+        cmake --build ./build --target erc
+        cmake --build ./build --target drc
+        cmake --build ./build --target production
+        cmake --build ./build --target pdf
+        popd
