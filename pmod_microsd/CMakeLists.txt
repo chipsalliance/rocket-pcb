@@ -104,3 +104,37 @@ add_custom_command(
     DEPENDS
         ${PROJECT_SCH_FILES}
 )
+
+add_custom_target(erc
+    ALL
+    DEPENDS
+        "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_erc.rpt"
+)
+
+add_custom_command(
+    OUTPUT
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_erc.rpt"
+    COMMAND
+        ${KICADCLI_PROGRAM} sch erc
+        --severity-error
+        --exit-code-violations
+        -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_erc.rpt"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_sch"
+)
+
+add_custom_target(drc
+    ALL
+    DEPENDS
+        "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
+)
+
+add_custom_command(
+    OUTPUT
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
+    COMMAND
+        ${KICADCLI_PROGRAM} pcb drc
+        --severity-error
+        --exit-code-violations
+        -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
+)
