@@ -30,10 +30,16 @@ jobs:
     - run: pip install frugy
     - name: Build and Validate KiCad Project
       run: |
-        pushd ${{github.workspace}}/fmc_basic_peripheral
-        cmake -B ./build -G Ninja
-        cmake --build ./build --target erc
-        cmake --build ./build --target drc
-        cmake --build ./build --target production
-        cmake --build ./build --target pdf
+        pushd ${{github.workspace}}
+        PROJECT_DIRS=$(ls -d */ | sed 's:/*$::')
         popd
+        for DIR in $PROJECT_DIRS; do
+          echo "Processing directory: $DIR"
+          pushd ${{github.workspace}}/$DIR
+          cmake -B ./build -G Ninja
+          cmake --build ./build --target erc
+          cmake --build ./build --target drc
+          cmake --build ./build --target production
+          cmake --build ./build --target pdf
+          popd
+        done
