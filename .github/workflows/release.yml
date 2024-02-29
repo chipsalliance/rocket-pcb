@@ -45,9 +45,9 @@ jobs:
           pushd ${{github.workspace}}/$DIR
           cmake -B ./build -G Ninja
           cmake --build ./build
-          find ./build -name \*.pdf -exec cp {} ${{github.workspace}}/ \;
-          find ./build -name \*.zip -exec cp {} ${{github.workspace}}/ \;
-          find ./build -name \*.bin -exec cp {} ${{github.workspace}}/ \;
+          find ./build -maxdepth 1 -name "*.pdf" -exec cp {} ${{github.workspace}}/ \;
+          find ./build -maxdepth 1 -name "*.zip" -exec cp {} ${{github.workspace}}/ \;
+          find ./build -maxdepth 1 -name "*.bin" -exec cp {} ${{github.workspace}}/ \;
           popd
         done
     - name: Create Release
