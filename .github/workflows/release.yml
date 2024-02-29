@@ -33,13 +33,13 @@ jobs:
       id: get_tag
       run: |
         TAG_NAME=${GITHUB_REF#refs/tags/}
-        BASE_NAME=$(echo $TAG_NAME | cut -d '_' -f 1)
+        BASE_NAME=${TAG_NAME%_*}
         echo "Full tag name: $TAG_NAME"
         echo "Base name: $BASE_NAME"
-        echo "##[set-output name=tag_base_name;]$BASE_NAME"
+        echo "TAG_BASE_NAME=$BASE_NAME" >> $GITHUB_ENV
     - name: Build and Validate KiCad Project
       run: |
-        PROJECT_DIRS="${{ steps.get_tag.outputs.tag_base_name }}"
+        PROJECT_DIRS=$TAG_BASE_NAME
         for DIR in $PROJECT_DIRS; do
           echo "Processing directory: $DIR"
           pushd ${{github.workspace}}/$DIR
