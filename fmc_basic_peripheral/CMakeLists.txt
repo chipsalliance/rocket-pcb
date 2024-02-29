@@ -96,8 +96,9 @@ add_custom_command(
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_positions.csv"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
         COMMAND
-        ${KICADCLI_PROGRAM} sch export python-bom
-        -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_bom.xml"
+        ${KICADCLI_PROGRAM} sch export bom
+        --preset "Grouped By Value"
+        -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_bom.csv"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_sch"
     COMMAND
         ${CMAKE_COMMAND} -E tar "cfv" "${CMAKE_PROJECT_NAME}_gerber.zip" --format=zip
