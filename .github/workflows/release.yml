@@ -1,0 +1,56 @@
+name: KiCad Project Build and Release
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    name: KiCad Project Build and Release
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    - name: Add KiCad Repository
+      run: |
+        sudo add-apt-repository ppa:kicad/kicad-8.0-releases
+        sudo apt update
+    - name: Cache Required Packages
+      uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: cmake ninja-build kicad kicad-library-all
+        version: 1.0
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - run: pip install frugy
+    - name: Extract Tag Base Name
+      id: get_tag
+      run: |
+        TAG_NAME=${GITHUB_REF#refs/tags/}
+        BASE_NAME=$(echo $TAG_NAME | cut -d '_' -f 1)
+        echo "Full tag name: $TAG_NAME"
+        echo "Base name: $BASE_NAME"
+        echo "##[set-output name=tag_base_name;]$BASE_NAME"
+    - name: Build and Validate KiCad Project
+      run: |
+        PROJECT_DIRS="${{ steps.get_tag.outputs.tag_base_name }}"
+        for DIR in $PROJECT_DIRS; do
+          echo "Processing directory: $DIR"
+          pushd ${{github.workspace}}/$DIR
+          cmake -B ./build -G Ninja
+          cmake --build ./build
+          find ./build -name \*.pdf -exec cp {} ${{github.workspace}}/ \;
+          find ./build -name \*.zip -exec cp {} ${{github.workspace}}/ \;
+          find ./build -name \*.bin -exec cp {} ${{github.workspace}}/ \;
+          popd
+        done
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "*.pdf,*.zip,*.bin"
