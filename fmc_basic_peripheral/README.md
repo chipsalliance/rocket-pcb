@@ -8,7 +8,7 @@ of the SoC.
 
 ## Preparation
 
-Install kicad7, cmake, ninja, frugy.
+Install kicad 8, cmake, ninja, frugy.
 
 ## Precautions
 
