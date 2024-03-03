@@ -6,6 +6,16 @@ and is pin compatible with a 12-pin Pmod port capable of SPI communication.
 This board is specially designed to adapt to VCU118, and the pull-up resistor
 for SDIO is modified to 330 ohm.
 
+## 3D view
+
+### Top view
+
+![3D VIEW TOP](./image/pmod_microsd_3d_top.png)
+
+### Bottom view
+
+![3D VIEW BOTTOM](./image/pmod_microsd_3d_bot.png)
+
 ## Introduction
 
 ### PMOD
@@ -53,19 +63,9 @@ low, please check the power supply and there may be a fault.
 | #DET(#CD) | No MicroSD card      | MicroSD Card inserted    |
 | #WP       | Write protect is off | This state is impossible |
 
-## 3D view
-
-### Top view
-
-![3D VIEW TOP](./image/pmod_microsd_3d_top.png)
-
-### Bottom view
-
-![3D VIEW BOTTOM](./image/pmod_microsd_3d_bot.png)
-
 ## Preparation
 
-Install kicad7, cmake, ninja.
+Install kicad 8, cmake, ninja.
 
 ## Build
 
