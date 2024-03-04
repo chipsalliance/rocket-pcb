@@ -4,6 +4,13 @@ This project includes the following sub-projects, please read the relevant
 documents of sub-projects carefully before starting to use the corresponding
 projects.
 
+## FPGA
+
+|            PROJECT         |                     INTRODUCTION                  |
+| -------------------------- | ------------------------------------------------- |
+| [Candelabra](./candelabra) | XCVU13P development board with DDR4, FMC and PCIE |
+
+
 ## FMC
 
 |                 PROJECT                  |          INTRODUCTION          |
