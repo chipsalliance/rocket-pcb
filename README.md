@@ -8,7 +8,7 @@ projects.
 
 |            PROJECT         |                     INTRODUCTION                  |
 | -------------------------- | ------------------------------------------------- |
-| [Candelabra](./candelabra) | XCVU13P development board with DDR4, FMC and PCIE |
+| [FPGA_CANDELABRA](./fpga_candelabra) | XCVU13P development board with DDR4, FMC and PCIE |
 
 
 ## FMC
