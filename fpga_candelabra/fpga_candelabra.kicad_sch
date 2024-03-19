@@ -45,6 +45,45 @@
 		)
 	)
 	(sheet
+		(at 151.13 134.62)
+		(size 12.7 30.48)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "095efde8-9348-4a17-b275-a6dd2c6e4f2b")
+		(property "Sheetname" "Power Supply SODIMM"
+			(at 151.13 133.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply_sodimm.kicad_sch"
+			(at 151.13 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 21.59 20.32)
 		(size 12.7 25.4)
 		(fields_autoplaced yes)
@@ -79,6 +118,45 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 135.89)
+		(size 12.7 29.21)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "17daca4d-9880-4389-ac02-d851102b3566")
+		(property "Sheetname" "Power Supply Main"
+			(at 82.55 135.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply_main.kicad_sch"
+			(at 82.55 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "11")
 				)
 			)
 		)
@@ -201,6 +279,45 @@
 		)
 	)
 	(sheet
+		(at 162.56 92.71)
+		(size 16.51 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "6e49f76b-3285-4cad-85ef-772e1e7f43fe")
+		(property "Sheetname" "SYSMON MCU"
+			(at 162.56 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sysmon_mcu.kicad_sch"
+			(at 162.56 128.8546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 50.8 20.32)
 		(size 12.7 25.4)
 		(fields_autoplaced yes)
@@ -235,6 +352,45 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 49.53 135.89)
+		(size 12.7 29.21)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "71464998-e6a3-44ea-8374-02c0d3dd3014")
+		(property "Sheetname" "Power FPGA"
+			(at 49.53 135.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_fpga.kicad_sch"
+			(at 49.53 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "13")
 				)
 			)
 		)
@@ -312,7 +468,46 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "10")
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 134.62)
+		(size 12.7 30.48)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "ef6f4311-052d-4a14-a485-64d16c370478")
+		(property "Sheetname" "Power VADJ"
+			(at 118.11 133.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_vadj.kicad_sch"
+			(at 118.11 165.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "14")
 				)
 			)
 		)
