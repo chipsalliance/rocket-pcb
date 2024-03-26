@@ -4,6 +4,9 @@
 	(generator_version "8.0")
 	(uuid "966cb40d-8feb-4452-9938-a1bde6cfac99")
 	(paper "A4")
+	(title_block
+		(title "Power FMC VADJ")
+	)
 	(lib_symbols
 		(symbol "CHIPSAlliance_Potentiometer_Digital:MCP4631-xxxx-ST"
 			(exclude_from_sim no)
@@ -3857,7 +3860,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "158cdfcd-21c4-48f1-b45b-5f26271340ba")
 		(property "Reference" "R65"
@@ -3869,7 +3872,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "DNP/2.2k"
 			(at 217.3986 41.8521 0)
 			(effects
 				(font
@@ -4461,7 +4464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V"
 			(at 58.2041 102.8184 0)
 			(effects
 				(font
@@ -4691,7 +4694,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "38177886-40f1-4fdb-9631-36679ddce910")
 		(property "Reference" "R64"
@@ -4703,7 +4706,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "DNP/2.2k"
 			(at 225.0186 41.8521 0)
 			(effects
 				(font
@@ -4975,7 +4978,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22uF 25V"
 			(at 106.4641 62.1784 0)
 			(effects
 				(font
@@ -6144,7 +6147,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V"
 			(at 48.0441 102.8184 0)
 			(effects
 				(font
@@ -7123,7 +7126,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22uF 25V"
 			(at 106.4641 126.9484 0)
 			(effects
 				(font
@@ -7193,7 +7196,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V"
 			(at 58.2041 38.0484 0)
 			(effects
 				(font
@@ -7804,7 +7807,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V"
 			(at 48.0441 38.0484 0)
 			(effects
 				(font
