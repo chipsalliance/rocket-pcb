@@ -536,7 +536,7 @@
           "group_by": false,
           "label": "LCSC Part",
           "name": "LCSC Part",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -555,7 +555,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -656,6 +656,14 @@
     [
       "095efde8-9348-4a17-b275-a6dd2c6e4f2b",
       "Power Supply SODIMM"
+    ],
+    [
+      "4ce9bd16-15e9-4d50-ae03-1ab90ec38449",
+      "FPGA Decoupling"
+    ],
+    [
+      "da9ca5a6-681c-4f68-b894-107ae37cfb74",
+      "DDR4 SODIMM"
     ]
   ],
   "text_variables": {}

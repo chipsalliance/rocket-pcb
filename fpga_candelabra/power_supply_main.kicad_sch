@@ -1028,12 +1028,20 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:HT75xx-1-SOT89"
+		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -5.08 -3.81 0)
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117-3.3"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1041,26 +1049,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "HT75xx-1-SOT89"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-				(at 0 8.255 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
-				(at 0 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1068,7 +1058,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1077,7 +1076,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "100mA LDO Regulator Fixed Positive"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1086,7 +1085,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?89*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1095,10 +1094,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "HT75xx-1-SOT89_0_1"
+			(symbol "AMS1117-3.3_0_1"
 				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -2.54)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1108,9 +1107,9 @@
 					)
 				)
 			)
-			(symbol "HT75xx-1-SOT89_1_1"
+			(symbol "AMS1117-3.3_1_1"
 				(pin power_in line
-					(at 0 -5.08 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1127,10 +1126,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 2.54 0)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "VIN"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1145,10 +1144,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 2.54 180)
+				(pin power_in line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "VOUT"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1443,12 +1442,6 @@
 		(uuid "701e6294-ab7d-4f3e-ad8c-5903fc242b0a")
 	)
 	(junction
-		(at 151.13 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "708221d0-de9f-44a3-8b6b-92dd96053557")
-	)
-	(junction
 		(at 124.46 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1491,6 +1484,12 @@
 		(uuid "ca3ea9b9-7fb0-4d9b-9296-228ef6dbb77b")
 	)
 	(junction
+		(at 154.94 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce234396-854e-4b50-ba72-e28a41c23555")
+	)
+	(junction
 		(at 66.04 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1507,6 +1506,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfbea40c-51e1-4fe6-8456-7b70d6b8aa6a")
+	)
+	(junction
+		(at 144.78 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0551942-0bdf-4d09-8c7e-a1c5355c7c63")
+	)
+	(junction
+		(at 144.78 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5bc2c70-58b1-4bbf-b02c-114f6c6f07be")
 	)
 	(wire
 		(pts
@@ -1560,7 +1571,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 46.99) (xy 135.89 46.99)
+			(xy 144.78 46.99) (xy 154.94 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1597,6 +1608,26 @@
 			(type default)
 		)
 		(uuid "2bd947c3-589b-4a9b-9e7c-c651e8b5583e")
+	)
+	(wire
+		(pts
+			(xy 144.78 54.61) (xy 135.89 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2deb209b-eb24-406a-93a9-d71e57f14f3c")
+	)
+	(wire
+		(pts
+			(xy 144.78 46.99) (xy 135.89 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33068e13-7109-4d61-83ff-64c11eec61d4")
 	)
 	(wire
 		(pts
@@ -1840,7 +1871,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 53.34) (xy 151.13 54.61)
+			(xy 154.94 53.34) (xy 154.94 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1877,6 +1908,16 @@
 			(type default)
 		)
 		(uuid "7becab19-8af8-46ad-ace0-b97a35b381ab")
+	)
+	(wire
+		(pts
+			(xy 54.61 140.97) (xy 54.61 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f4c0741-0044-41da-9e79-b58a4680810d")
 	)
 	(wire
 		(pts
@@ -1980,7 +2021,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 48.26) (xy 151.13 46.99)
+			(xy 154.94 48.26) (xy 154.94 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1997,6 +2038,16 @@
 			(type default)
 		)
 		(uuid "ab496040-614f-4ece-9ce5-1d10a9427d9c")
+	)
+	(wire
+		(pts
+			(xy 144.78 53.34) (xy 144.78 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b070000b-99c2-4a1b-b098-792e73a9561e")
 	)
 	(wire
 		(pts
@@ -2060,16 +2111,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 140.97) (xy 54.61 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf4de233-da07-423e-8b4e-032630ba13b5")
-	)
-	(wire
-		(pts
 			(xy 40.64 140.97) (xy 40.64 143.51)
 		)
 		(stroke
@@ -2097,6 +2138,16 @@
 			(type default)
 		)
 		(uuid "d270bcd8-c3c5-4b3d-a8e0-104c5bb05547")
+	)
+	(wire
+		(pts
+			(xy 144.78 46.99) (xy 144.78 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d53c42f4-3386-4953-b042-5c252cd4e0ef")
 	)
 	(wire
 		(pts
@@ -2230,7 +2281,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 54.61) (xy 135.89 54.61)
+			(xy 154.94 54.61) (xy 144.78 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2240,7 +2291,7 @@
 	)
 	(rectangle
 		(start 31.75 121.92)
-		(end 77.47 157.48)
+		(end 80.01 157.48)
 		(stroke
 			(width 0)
 			(type default)
@@ -2262,7 +2313,7 @@
 		)
 		(uuid cf1074b9-571c-4405-b722-7e90689cf80e)
 	)
-	(text "12V Input -> 3.3V 50mA Aux\n(Always on, for SYSMON MCU)"
+	(text "5V Main -> 3.3V 500mA Aux\n(Always on, for SYSMON MCU)"
 		(exclude_from_sim no)
 		(at 54.356 153.162 0)
 		(effects
@@ -2470,6 +2521,75 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 144.78 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d2293d9-a19a-41fd-9a03-3afa90e6d9d8")
+		(property "Reference" "C170"
+			(at 147.1041 49.5941 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 147.1041 52.0184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "569b2667-d1a2-4082-b500-45b25fb04b03")
+		)
+		(pin "2"
+			(uuid "49b88d17-e860-47e2-b727-010f5e9994e1")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C170")
 					(unit 1)
 				)
 			)
@@ -3213,6 +3333,75 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 114.3 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "54ce829b-213d-490c-b7c2-c0c846ad3315")
+		(property "Reference" "C68"
+			(at 116.6241 88.9641 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 116.6241 91.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 114.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 114.3 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ef8bc7b-31e6-45bf-8563-6c4e75676db0")
+		)
+		(pin "2"
+			(uuid "589bdb80-00b3-4fd4-ac6c-395e37400a5b")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 95.25 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3276,6 +3465,75 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "C65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 104.14 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55a37de1-8ad2-44c4-bc21-830771b0841e")
+		(property "Reference" "C67"
+			(at 106.4641 88.9641 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 106.4641 91.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 104.14 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 104.14 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e57dcfbd-b005-45e9-871f-01521eebab37")
+		)
+		(pin "2"
+			(uuid "a04e1697-6ab5-4cb4-af11-9f7af9646f15")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C67")
 					(unit 1)
 				)
 			)
@@ -3352,78 +3610,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 114.3 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "702a232d-69e9-4da4-8499-07f54ef9cc36")
-		(property "Reference" "C68"
-			(at 116.6241 88.9641 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF"
-			(at 116.6241 91.3884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 114.3 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "edf404cb-fcd1-4b58-b6f8-a3809070ce53")
-		)
-		(pin "2"
-			(uuid "b1aee257-48ef-43dc-b62e-040cb0a86d81")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "C68")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 151.13 46.99 0)
+		(at 154.94 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3432,7 +3620,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c209fd9-d3ff-4b41-9d57-241da4662435")
 		(property "Reference" "#PWR086"
-			(at 151.13 50.8 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3629,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 151.13 42.8569 0)
+			(at 154.94 42.8569 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +3637,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 46.99 0)
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,7 +3646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 46.99 0)
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3467,7 +3655,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 151.13 46.99 0)
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3482,76 +3670,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 135.89 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ce7b8e0-d2c7-46ed-b7da-1de817bb57c7")
-		(property "Reference" "C70"
-			(at 138.2141 49.5941 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF 10V"
-			(at 138.2141 52.0184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08e77c08-deae-4da0-8434-98fb8f7365c5")
-		)
-		(pin "2"
-			(uuid "0bc6cf79-5295-4522-9028-6384b4c88871")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "C70")
 					(unit 1)
 				)
 			)
@@ -3619,78 +3737,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:HT75xx-1-SOT89")
-		(at 54.61 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8197be91-6e7c-4081-8419-f62c972417e8")
-		(property "Reference" "U9"
-			(at 54.61 126.6655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HT7533-1"
-			(at 54.61 129.0898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
-			(at 54.61 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf"
-			(at 54.61 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100mA Low Dropout Voltage Regulator, Fixed Output, SOT89"
-			(at 54.61 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1211c356-ddb7-4a8d-b48c-e81cd4ff705e")
-		)
-		(pin "2"
-			(uuid "56e749e8-2ad2-4091-af95-531342960dfb")
-		)
-		(pin "1"
-			(uuid "3f635cdc-47b0-4ebb-b190-4da6533c90f6")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -3967,7 +4013,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 151.13 50.8 0)
+		(at 154.94 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3976,7 +4022,7 @@
 		(fields_autoplaced yes)
 		(uuid "8eabff15-74b1-4c34-a20d-f01d08e77f69")
 		(property "Reference" "C71"
-			(at 153.4541 49.5941 0)
+			(at 157.2641 49.5941 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +4031,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 153.4541 52.0184 0)
+			(at 157.2641 52.0184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +4040,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 151.13 50.8 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4049,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 50.8 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,7 +4058,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 151.13 50.8 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4176,76 +4222,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 104.14 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3b0d3f1-34fe-44b2-b89b-a3bf160f30e6")
-		(property "Reference" "C67"
-			(at 106.4641 88.9641 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF"
-			(at 106.4641 91.3884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 104.14 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 104.14 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa60ca2c-924f-4100-a641-772d5ada7fbb")
-		)
-		(pin "2"
-			(uuid "93822f0d-2399-460a-8dd6-7abf34fbdc9b")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Iron")
 		(at 106.68 46.99 90)
 		(unit 1)
@@ -4316,6 +4292,76 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a929007d-446a-4069-9dad-e1ef791eb56b")
+		(property "Reference" "C72"
+			(at 42.9641 137.2241 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF 10V"
+			(at 42.9641 139.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 40.64 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 40.64 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "029ce62e-3d6b-40c0-800b-1bf910122896")
+		)
+		(pin "2"
+			(uuid "9b38003d-e766-4a26-a720-6a5f5ee60905")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -4656,44 +4702,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 67.31 138.43 0)
+		(lib_id "Regulator_Linear:AMS1117-3.3")
+		(at 54.61 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c9b119eb-f812-4d1e-8edb-d2d5f798309f")
-		(property "Reference" "C73"
-			(at 69.6341 137.2241 0)
+		(uuid "cae03e04-fc37-43f8-876a-b96c73f1738e")
+		(property "Reference" "U9"
+			(at 54.61 127.3005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "1uF"
-			(at 69.6341 139.6484 0)
+		(property "Value" "AMS1117-3.3"
+			(at 54.61 129.7248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 67.31 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 138.43 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 54.61 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,8 +4736,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 67.31 138.43 0)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 57.15 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,86 +4745,28 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "95f6e75d-68c7-4504-bb2f-1779d45f8d80")
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 54.61 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c45160dd-b7f0-4cec-877d-1b911a81ffbe")
 		)
 		(pin "2"
-			(uuid "149757b6-6773-4214-ad3c-91d0e973b9a9")
+			(uuid "5b98e12f-a28d-4986-b493-18be43f8e239")
+		)
+		(pin "1"
+			(uuid "6c5e53e8-2cad-49ac-b267-12a9c7859c4b")
 		)
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "C73")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 40.64 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca4bde5f-ac57-46fa-9355-a78e3739a9c9")
-		(property "Reference" "C72"
-			(at 42.9641 137.2241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 42.9641 139.6484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 40.64 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 40.64 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59beecdb-24a2-4f91-bf90-a41ea67fc6a0")
-		)
-		(pin "2"
-			(uuid "71d1c717-cae3-40a3-8e76-8e78ddb814fb")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
-					(reference "C72")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -4926,6 +4903,75 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 135.89 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1b4a8ab-eda9-462c-a03d-308bc5d87351")
+		(property "Reference" "C70"
+			(at 138.2141 49.5941 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 138.2141 52.0184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 135.89 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 135.89 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09ac8ae2-977e-4b54-a57f-75d32fc6e832")
+		)
+		(pin "2"
+			(uuid "8365254e-420b-4a5e-8652-3fac77fd1cfb")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C70")
 					(unit 1)
 				)
 			)
@@ -5263,6 +5309,75 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
 					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 67.31 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc88a2f9-b6ee-4288-ad4a-85bed1d0f128")
+		(property "Reference" "C73"
+			(at 69.6341 137.2241 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF 25V"
+			(at 69.6341 139.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 67.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9fcd265-c351-423a-b219-f5f146f76476")
+		)
+		(pin "2"
+			(uuid "f1a00d01-4783-4994-8563-47b112878cf8")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/17daca4d-9880-4389-ac02-d851102b3566"
+					(reference "C73")
 					(unit 1)
 				)
 			)
