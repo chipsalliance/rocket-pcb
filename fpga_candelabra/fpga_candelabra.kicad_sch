@@ -327,6 +327,44 @@
 		)
 		(uuid "fd4f321e-64dc-436f-8954-95f2b4b16863")
 	)
+	(text_box "Bank allocation:\nSLR0\n  - Bank 61\n  - Bank 62\n  - Bank 63\nSLR1\n  - Bank 64\n  - Bank 65\n  - Bank 66\n  - Bank 67\nSLR2\n  - Bank 68\n  - Bank 69\n  - Bank 70\n  - Bank 71\nSLR3\n  - Bank 72 (1.2V): DDR DQ[63..32]\n  - Bank 73 (1.2V): DDR CCA + CB[7..0]\n  - Bank 74 (1.2V): DDR DQ[31..0]"
+		(exclude_from_sim no)
+		(at 219.71 19.05 0)
+		(size 60.96 41.91)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a115bdcc-7774-4f07-9653-10316015c636")
+	)
+	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127\n  - Quad 224-227\n    - PCIE\n\nSLR2\n  - Quad 128-131\n  - Quad 228-231\n\nSLR3\n  - Quad 133\n  - Quad 232-233"
+		(exclude_from_sim no)
+		(at 219.71 68.58 0)
+		(size 60.96 41.91)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
+	)
 	(label "SPD_I2C_SDA"
 		(at 39.37 161.29 0)
 		(fields_autoplaced yes)
@@ -384,7 +422,7 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "048d3720-1b47-40c5-b543-cd301b5cf3fd")
-		(property "Sheetname" "FPGA Bank 69-72"
+		(property "Sheetname" "FPGA IO SLR2"
 			(at 113.03 19.6084 0)
 			(effects
 				(font
@@ -393,7 +431,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_bank_69_72.kicad_sch"
+		(property "Sheetfile" "fpga_io_slr2.kicad_sch"
 			(at 113.03 46.3046 0)
 			(effects
 				(font
@@ -474,13 +512,13 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "15")
+					(page "16")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 21.59 20.32)
+		(at 22.86 20.32)
 		(size 12.7 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -492,8 +530,8 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "0df37852-5abd-4cfe-b75c-3e9a6ffc61f9")
-		(property "Sheetname" "FPGA Bank 0"
-			(at 21.59 19.6084 0)
+		(property "Sheetname" "FPGA Config"
+			(at 22.86 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -501,8 +539,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_bank_0.kicad_sch"
-			(at 21.59 46.3046 0)
+		(property "Sheetfile" "fpga_config.kicad_sch"
+			(at 22.86 46.3046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -562,7 +600,46 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "11")
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 59.69)
+		(size 12.7 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "1d07e2f1-4b18-4d01-8623-639a08041484")
+		(property "Sheetname" "FPGA MGT SLR3"
+			(at 81.28 58.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "fpga_mgt_slr3.kicad_sch"
+			(at 81.28 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "9")
 				)
 			)
 		)
@@ -580,7 +657,7 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "310973a6-bc21-45fe-bd00-1791bfe6ed49")
-		(property "Sheetname" "FPGA Quad 124-133"
+		(property "Sheetname" "FPGA MGT SLR1"
 			(at 22.86 58.9784 0)
 			(effects
 				(font
@@ -589,7 +666,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_quad_124_133.kicad_sch"
+		(property "Sheetfile" "fpga_mgt_slr1.kicad_sch"
 			(at 22.86 86.9446 0)
 			(effects
 				(font
@@ -607,7 +684,7 @@
 		)
 	)
 	(sheet
-		(at 201.93 92.71)
+		(at 142.24 114.3)
 		(size 12.7 35.56)
 		(fields_autoplaced yes)
 		(stroke
@@ -620,7 +697,7 @@
 		)
 		(uuid "4ce9bd16-15e9-4d50-ae03-1ab90ec38449")
 		(property "Sheetname" "FPGA Decoupling"
-			(at 201.93 91.9984 0)
+			(at 142.24 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -629,7 +706,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_decoupling.kicad_sch"
-			(at 201.93 128.8546 0)
+			(at 142.24 150.4446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -640,7 +717,7 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "16")
+					(page "17")
 				)
 			)
 		)
@@ -658,7 +735,7 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "5db380f9-cfea-4726-897e-a7a0af44c8e1")
-		(property "Sheetname" "FPGA Bank 65-68"
+		(property "Sheetname" "FPGA IO SLR1"
 			(at 81.28 19.6084 0)
 			(effects
 				(font
@@ -667,7 +744,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_bank_65_68.kicad_sch"
+		(property "Sheetfile" "fpga_io_slr1.kicad_sch"
 			(at 81.28 46.3046 0)
 			(effects
 				(font
@@ -697,7 +774,7 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "68a04483-887a-4f96-a7ac-ff48e9ea8a41")
-		(property "Sheetname" "FPGA Bank 73-74"
+		(property "Sheetname" "FPGA IO SLR3"
 			(at 140.97 19.6084 0)
 			(effects
 				(font
@@ -706,7 +783,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_bank_73_74.kicad_sch"
+		(property "Sheetfile" "fpga_io_slr3.kicad_sch"
 			(at 140.97 46.3046 0)
 			(effects
 				(font
@@ -1027,7 +1104,7 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "10")
+					(page "11")
 				)
 			)
 		)
@@ -1045,7 +1122,7 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "7068e078-a22b-4ea0-8b1f-88b1ba691cbb")
-		(property "Sheetname" "FPGA Bank 61-64"
+		(property "Sheetname" "FPGA IO SLR0"
 			(at 50.8 19.6084 0)
 			(effects
 				(font
@@ -1054,7 +1131,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_bank_61_64.kicad_sch"
+		(property "Sheetfile" "fpga_io_slr0.kicad_sch"
 			(at 50.8 46.3046 0)
 			(effects
 				(font
@@ -1185,13 +1262,13 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "13")
+					(page "14")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 96.52 59.69)
+		(at 140.97 58.42)
 		(size 12.7 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -1204,7 +1281,7 @@
 		)
 		(uuid "8691c66c-5a64-4c17-8ed2-cfe2f553eb70")
 		(property "Sheetname" "FPGA Power"
-			(at 96.52 58.9784 0)
+			(at 140.97 57.7084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1213,7 +1290,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_power.kicad_sch"
-			(at 96.52 85.6746 0)
+			(at 140.97 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,7 +1301,7 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "9")
+					(page "10")
 				)
 			)
 		)
@@ -1313,13 +1390,13 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "12")
+					(page "13")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 205.74 25.4)
+		(at 177.8 20.32)
 		(size 12.7 40.64)
 		(fields_autoplaced yes)
 		(stroke
@@ -1332,7 +1409,7 @@
 		)
 		(uuid "da9ca5a6-681c-4f68-b894-107ae37cfb74")
 		(property "Sheetname" "DDR4 SODIMM"
-			(at 205.74 24.6884 0)
+			(at 177.8 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1341,7 +1418,7 @@
 			)
 		)
 		(property "Sheetfile" "ddr4_sodimm.kicad_sch"
-			(at 205.74 66.6246 0)
+			(at 177.8 61.5446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1352,7 +1429,7 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "17")
+					(page "18")
 				)
 			)
 		)
@@ -1451,13 +1528,13 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
-					(page "14")
+					(page "15")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 63.5 59.69)
+		(at 50.8 59.69)
 		(size 12.7 26.67)
 		(fields_autoplaced yes)
 		(stroke
@@ -1469,8 +1546,8 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "fa9c3262-83d7-482a-91ab-582631ac4fc5")
-		(property "Sheetname" "FPGA Quad 224-233"
-			(at 63.5 58.9784 0)
+		(property "Sheetname" "FPGA MGT SLR2"
+			(at 50.8 58.9784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,8 +1555,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "fpga_quad_224_233.kicad_sch"
-			(at 63.5 86.9446 0)
+		(property "Sheetfile" "fpga_mgt_slr2.kicad_sch"
+			(at 50.8 86.9446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
