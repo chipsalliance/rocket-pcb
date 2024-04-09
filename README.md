@@ -23,3 +23,4 @@ projects.
 |            PROJECT             |      INTRODUCTION      |
 | ------------------------------ | ---------------------- |
 | [PMOD_MICROSD](./pmod_microsd) | PMOD microSD card slot |
+| [PMOD_FT_LINK](./pmod_ft_link/README.md) | FT2232HL USB JTAG and UART adapter for 3.3 V Pmod GPIO ports |
