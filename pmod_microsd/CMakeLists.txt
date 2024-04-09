@@ -7,7 +7,7 @@ project(pmod_microsd
 
 find_program(KICADCLI_PROGRAM "kicad-cli")
 if(NOT KICADCLI_PROGRAM)
-    message(FATAL_ERROR "kicad-cli not found, please install kicad7")
+    message(FATAL_ERROR "kicad-cli not found, please install kicad 8")
 endif()
 
 file(GLOB_RECURSE PROJECT_SCH_FILES ${CMAKE_CURRENT_LIST_DIR} "*.kicad_sch")
