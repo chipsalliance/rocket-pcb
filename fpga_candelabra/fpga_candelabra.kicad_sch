@@ -5,6 +5,22 @@
 	(uuid "01ed9e92-4e50-4b41-90dc-10444aaec5f7")
 	(paper "A4")
 	(lib_symbols)
+	(bus_alias "DDR4"
+		(members "A0" "A1" "A2" "A3" "A4" "A5" "A6" "A7" "A8" "A9" "A10" "A11"
+			"A12" "A13" "A14" "A15" "A16" "BA0" "BA1" "BG0" "BG1" "CK0+" "CK0-" "CKE0"
+			"CK1+" "CK1-" "CKE1" "CS0" "CS1" "CS2" "CS3" "ODT0" "ODT1" "~{ACT}" "PARITY"
+			"~{ALERT}" "~{RESET}" "DQS0+" "DQS1+" "DQS2+" "DQS3+" "DQS4+" "DQS5+"
+			"DQS6+" "DQS7+" "DQS8+" "DQS0-" "DQS1-" "DQS2-" "DQS3-" "DQS4-" "DQS5-"
+			"DQS6-" "DQS7-" "DQS8-" "DM0" "DM1" "DM2" "DM3" "DM4" "DM5" "DM6" "DM7"
+			"DM8" "DQ0" "DQ1" "DQ2" "DQ3" "DQ4" "DQ5" "DQ6" "DQ7" "DQ8" "DQ9" "DQ10"
+			"DQ11" "DQ12" "DQ13" "DQ14" "DQ15" "DQ16" "DQ17" "DQ18" "DQ19" "DQ20"
+			"DQ21" "DQ22" "DQ23" "DQ24" "DQ25" "DQ26" "DQ27" "DQ28" "DQ29" "DQ30"
+			"DQ31" "DQ32" "DQ33" "DQ34" "DQ35" "DQ36" "DQ37" "DQ38" "DQ39" "DQ40"
+			"DQ41" "DQ42" "DQ43" "DQ44" "DQ45" "DQ46" "DQ47" "DQ48" "DQ49" "DQ50"
+			"DQ51" "DQ52" "DQ53" "DQ54" "DQ55" "DQ56" "DQ57" "DQ58" "DQ59" "DQ60"
+			"DQ61" "DQ62" "DQ63" "CB0" "CB1" "CB2" "CB3" "CB4" "CB5" "CB6" "CB7"
+		)
+	)
 	(junction
 		(at 97.79 132.08)
 		(diameter 0)
@@ -47,6 +63,16 @@
 		)
 		(uuid "117b103c-74f3-46bd-8112-56bb2ea4d9b9")
 	)
+	(bus
+		(pts
+			(xy 246.38 129.54) (xy 259.08 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1962f438-64df-4ece-b077-f835ceb9cfba")
+	)
 	(wire
 		(pts
 			(xy 99.06 129.54) (xy 99.06 153.67)
@@ -66,6 +92,16 @@
 			(type default)
 		)
 		(uuid "2eff59a1-6d35-47f0-a9b7-125322218193")
+	)
+	(wire
+		(pts
+			(xy 241.3 152.4) (xy 259.08 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb1080d-8b6f-4892-85b2-e513bc08b2e3")
 	)
 	(wire
 		(pts
@@ -259,6 +295,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 154.94) (xy 259.08 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbf2886-91d2-4be0-8b8c-e6165dd13a39")
+	)
+	(wire
+		(pts
 			(xy 38.1 149.86) (xy 55.88 149.86)
 		)
 		(stroke
@@ -346,7 +392,7 @@
 		)
 		(uuid "a115bdcc-7774-4f07-9653-10316015c636")
 	)
-	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127\n  - Quad 224-227\n    - PCIE\n\nSLR2\n  - Quad 128-131\n  - Quad 228-231\n\nSLR3\n  - Quad 133\n  - Quad 232-233"
+	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127 X0Y16-X0Y31\n  - Quad 224-227 X1Y16-X1Y31\n    - PCIE\n\nSLR2\n  - Quad 128-131 X0Y32-X0Y47\n  - Quad 228-231 X1Y32-X1Y47\n\nSLR3\n  - Quad 133     X0Y52-X0Y55\n  - Quad 232-233 X1Y48-X1Y55"
 		(exclude_from_sim no)
 		(at 219.71 68.58 0)
 		(size 60.96 41.91)
@@ -398,6 +444,17 @@
 		)
 		(uuid "44281e41-ee1a-4f6a-b987-3dde1acbff34")
 	)
+	(label "SPD_I2C_SDA"
+		(at 242.57 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fb63463-fe4e-4f9e-b936-0544c61deed1")
+	)
 	(label "IPMI_SDA"
 		(at 39.37 168.91 0)
 		(fields_autoplaced yes)
@@ -408,6 +465,17 @@
 			(justify left bottom)
 		)
 		(uuid "6d219917-b298-4e2f-91a5-01ee63bf5141")
+	)
+	(label "SPD_I2C_SCL"
+		(at 242.57 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c98107a-5401-4fb5-8253-f27ae7eeca38")
 	)
 	(sheet
 		(at 113.03 20.32)
@@ -762,8 +830,8 @@
 		)
 	)
 	(sheet
-		(at 140.97 20.32)
-		(size 12.7 25.4)
+		(at 229.87 118.11)
+		(size 16.51 15.24)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -775,7 +843,7 @@
 		)
 		(uuid "68a04483-887a-4f96-a7ac-ff48e9ea8a41")
 		(property "Sheetname" "FPGA IO SLR3"
-			(at 140.97 19.6084 0)
+			(at 229.87 117.3984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -784,13 +852,43 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr3.kicad_sch"
-			(at 140.97 46.3046 0)
+			(at 229.87 133.9346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "DDR_CLK_N" input
+			(at 229.87 123.19 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "be74c396-4d24-4660-a1f8-9e2041997a70")
+		)
+		(pin "DDR_CLK_P" input
+			(at 229.87 120.65 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "055593ba-ea7f-4502-9bd5-5deaa70a89ee")
+		)
+		(pin "DDR4{DDR4}" bidirectional
+			(at 246.38 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c4bb6474-e62a-4c04-8970-91cdde863d14")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -1396,8 +1494,8 @@
 		)
 	)
 	(sheet
-		(at 177.8 20.32)
-		(size 12.7 40.64)
+		(at 259.08 118.11)
+		(size 16.51 40.64)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1409,7 +1507,7 @@
 		)
 		(uuid "da9ca5a6-681c-4f68-b894-107ae37cfb74")
 		(property "Sheetname" "DDR4 SODIMM"
-			(at 177.8 19.6084 0)
+			(at 259.08 117.3984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1418,13 +1516,43 @@
 			)
 		)
 		(property "Sheetfile" "ddr4_sodimm.kicad_sch"
-			(at 177.8 61.5446 0)
+			(at 259.08 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "SPD_SCL" input
+			(at 259.08 152.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f2fc95ef-b304-405a-98e3-f74c56f18204")
+		)
+		(pin "SPD_SDA" bidirectional
+			(at 259.08 154.94 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e0980717-0057-4e1d-b6a6-497093a27014")
+		)
+		(pin "DDR4{DDR4}" bidirectional
+			(at 259.08 129.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4b712582-d839-4d3a-9c4a-5b7f8f5c0887")
 		)
 		(instances
 			(project "fpga_candelabra"

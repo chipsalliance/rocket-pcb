@@ -5081,6 +5081,128 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Foxconn_AS0A826-H2SB-7H_1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -10437,9 +10559,13 @@
 		(color 0 0 0 0)
 		(uuid "e3e985f6-8725-4070-ba6a-e1be217d4c02")
 	)
+	(no_connect
+		(at 74.93 71.12)
+		(uuid "adf8911d-b4e2-45b3-8db9-30f027595723")
+	)
 	(wire
 		(pts
-			(xy 162.56 30.48) (xy 170.18 30.48)
+			(xy 160.02 30.48) (xy 171.45 30.48)
 		)
 		(stroke
 			(width 0)
@@ -10467,29 +10593,9 @@
 		)
 		(uuid "01f564a1-930b-487d-947e-5e5a6b564211")
 	)
-	(bus
-		(pts
-			(xy 205.74 110.49) (xy 218.44 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02c66353-2457-45da-889a-7e9df30440d0")
-	)
-	(bus
-		(pts
-			(xy 276.86 143.51) (xy 255.27 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "038729b7-d60a-4af8-925e-02fa24973a4e")
-	)
 	(wire
 		(pts
-			(xy 238.76 38.1) (xy 246.38 38.1)
+			(xy 238.76 38.1) (xy 250.19 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10497,19 +10603,19 @@
 		)
 		(uuid "04f8ab56-90f5-4d6a-a2fb-e72606abc13d")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 205.74 125.73) (xy 223.52 125.73)
+			(xy 120.65 128.27) (xy 132.08 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "065ea4c3-efd2-4dd4-8431-c18db13e925b")
+		(uuid "0583890b-2787-44db-b198-beee06b65525")
 	)
 	(wire
 		(pts
-			(xy 199.39 27.94) (xy 207.01 27.94)
+			(xy 199.39 27.94) (xy 210.82 27.94)
 		)
 		(stroke
 			(width 0)
@@ -10519,7 +10625,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 45.72) (xy 207.01 45.72)
+			(xy 199.39 45.72) (xy 210.82 45.72)
 		)
 		(stroke
 			(width 0)
@@ -10529,7 +10635,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 33.02) (xy 207.01 33.02)
+			(xy 199.39 33.02) (xy 210.82 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10539,7 +10645,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 33.02) (xy 26.67 33.02)
+			(xy 21.59 33.02) (xy 31.75 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10547,19 +10653,9 @@
 		)
 		(uuid "0a57cdc5-4c10-446e-81b4-60017f543568")
 	)
-	(bus
-		(pts
-			(xy 205.74 120.65) (xy 223.52 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bc738dd-4e5e-4a48-9168-593d7c858c6b")
-	)
 	(wire
 		(pts
-			(xy 127 80.01) (xy 134.62 80.01)
+			(xy 120.65 80.01) (xy 132.08 80.01)
 		)
 		(stroke
 			(width 0)
@@ -10569,7 +10665,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 50.8) (xy 170.18 50.8)
+			(xy 160.02 50.8) (xy 171.45 50.8)
 		)
 		(stroke
 			(width 0)
@@ -10579,7 +10675,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 92.71) (xy 134.62 92.71)
+			(xy 120.65 92.71) (xy 132.08 92.71)
 		)
 		(stroke
 			(width 0)
@@ -10589,7 +10685,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 25.4) (xy 69.85 25.4)
+			(xy 60.96 25.4) (xy 74.93 25.4)
 		)
 		(stroke
 			(width 0)
@@ -10599,7 +10695,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 88.9) (xy 26.67 88.9)
+			(xy 21.59 88.9) (xy 31.75 88.9)
 		)
 		(stroke
 			(width 0)
@@ -10609,7 +10705,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 71.12) (xy 26.67 71.12)
+			(xy 21.59 71.12) (xy 31.75 71.12)
 		)
 		(stroke
 			(width 0)
@@ -10619,7 +10715,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 80.01) (xy 246.38 80.01)
+			(xy 238.76 80.01) (xy 250.19 80.01)
 		)
 		(stroke
 			(width 0)
@@ -10629,7 +10725,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 85.09) (xy 134.62 85.09)
+			(xy 120.65 85.09) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
@@ -10639,7 +10735,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 90.17) (xy 134.62 90.17)
+			(xy 120.65 113.03) (xy 132.08 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a0cda3-ba27-4b1e-9c7b-2b0ba961bfa7")
+	)
+	(wire
+		(pts
+			(xy 120.65 90.17) (xy 132.08 90.17)
 		)
 		(stroke
 			(width 0)
@@ -10659,7 +10765,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 43.18) (xy 246.38 43.18)
+			(xy 238.76 43.18) (xy 250.19 43.18)
 		)
 		(stroke
 			(width 0)
@@ -10669,7 +10775,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 30.48) (xy 134.62 30.48)
+			(xy 121.92 30.48) (xy 132.08 30.48)
 		)
 		(stroke
 			(width 0)
@@ -10679,17 +10785,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 116.84) (xy 134.62 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d2c3576-55ce-4a8b-a04f-79971f241c29")
-	)
-	(wire
-		(pts
-			(xy 199.39 40.64) (xy 207.01 40.64)
+			(xy 199.39 40.64) (xy 210.82 40.64)
 		)
 		(stroke
 			(width 0)
@@ -10699,7 +10795,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 48.26) (xy 134.62 48.26)
+			(xy 121.92 48.26) (xy 132.08 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10709,7 +10805,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 48.26) (xy 26.67 48.26)
+			(xy 21.59 48.26) (xy 31.75 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10719,17 +10815,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 127) (xy 134.62 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "236460e0-d7f6-46e9-9165-f74e3b391049")
-	)
-	(wire
-		(pts
-			(xy 127 74.93) (xy 134.62 74.93)
+			(xy 120.65 74.93) (xy 132.08 74.93)
 		)
 		(stroke
 			(width 0)
@@ -10739,7 +10825,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 60.96) (xy 26.67 60.96)
+			(xy 21.59 60.96) (xy 31.75 60.96)
 		)
 		(stroke
 			(width 0)
@@ -10747,19 +10833,9 @@
 		)
 		(uuid "245e082d-33f1-43bd-b47d-0e42ff32eb49")
 	)
-	(bus
-		(pts
-			(xy 276.86 130.81) (xy 255.27 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "247ab3bf-b685-49b9-976d-eff15b779ca2")
-	)
 	(wire
 		(pts
-			(xy 238.76 33.02) (xy 246.38 33.02)
+			(xy 238.76 33.02) (xy 250.19 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10769,7 +10845,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 92.71) (xy 170.18 92.71)
+			(xy 160.02 92.71) (xy 171.45 92.71)
 		)
 		(stroke
 			(width 0)
@@ -10779,7 +10855,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 33.02) (xy 69.85 33.02)
+			(xy 120.65 130.81) (xy 132.08 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "287ffa75-6545-4499-8123-49645b836efd")
+	)
+	(wire
+		(pts
+			(xy 60.96 33.02) (xy 74.93 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10799,7 +10885,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 73.66) (xy 69.85 73.66)
+			(xy 68.58 73.66) (xy 74.93 73.66)
 		)
 		(stroke
 			(width 0)
@@ -10809,7 +10895,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 43.18) (xy 26.67 43.18)
+			(xy 21.59 43.18) (xy 31.75 43.18)
 		)
 		(stroke
 			(width 0)
@@ -10819,7 +10905,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 134.62 45.72)
+			(xy 121.92 45.72) (xy 132.08 45.72)
 		)
 		(stroke
 			(width 0)
@@ -10827,19 +10913,9 @@
 		)
 		(uuid "32b8ee27-6a2a-49a9-b915-9040a9915f4b")
 	)
-	(bus
-		(pts
-			(xy 205.74 118.11) (xy 218.44 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32dcb23d-e124-4547-9dc5-ae30ee8bc840")
-	)
 	(wire
 		(pts
-			(xy 238.76 40.64) (xy 246.38 40.64)
+			(xy 238.76 40.64) (xy 250.19 40.64)
 		)
 		(stroke
 			(width 0)
@@ -10859,7 +10935,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 69.85) (xy 134.62 69.85)
+			(xy 120.65 69.85) (xy 132.08 69.85)
 		)
 		(stroke
 			(width 0)
@@ -10869,7 +10945,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 53.34) (xy 69.85 53.34)
+			(xy 60.96 53.34) (xy 74.93 53.34)
 		)
 		(stroke
 			(width 0)
@@ -10879,7 +10955,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 35.56) (xy 207.01 35.56)
+			(xy 199.39 35.56) (xy 210.82 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10889,7 +10965,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 80.01) (xy 207.01 80.01)
+			(xy 199.39 80.01) (xy 210.82 80.01)
 		)
 		(stroke
 			(width 0)
@@ -10899,7 +10975,17 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 91.44) (xy 26.67 91.44)
+			(xy 60.96 43.18) (xy 74.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3642c53d-a2c1-4f42-b60c-6b5b779cce3b")
+	)
+	(wire
+		(pts
+			(xy 21.59 91.44) (xy 31.75 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10909,7 +10995,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 48.26) (xy 69.85 48.26)
+			(xy 60.96 48.26) (xy 74.93 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10919,17 +11005,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 132.08) (xy 134.62 132.08)
+			(xy 120.65 110.49) (xy 132.08 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39a329f6-8708-426a-bea3-c58a54aa4947")
+		(uuid "3b0ddc20-af5b-499f-8c51-d8f4e482d2e7")
 	)
 	(wire
 		(pts
-			(xy 128.27 33.02) (xy 134.62 33.02)
+			(xy 121.92 33.02) (xy 132.08 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10937,19 +11023,9 @@
 		)
 		(uuid "3b5d9958-5823-487e-be2c-cf0879aaa9ae")
 	)
-	(bus
-		(pts
-			(xy 276.86 123.19) (xy 255.27 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bbcf6ce-408c-440a-a335-af836a027195")
-	)
 	(wire
 		(pts
-			(xy 162.56 43.18) (xy 170.18 43.18)
+			(xy 160.02 43.18) (xy 171.45 43.18)
 		)
 		(stroke
 			(width 0)
@@ -10959,7 +11035,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 48.26) (xy 246.38 48.26)
+			(xy 238.76 48.26) (xy 250.19 48.26)
 		)
 		(stroke
 			(width 0)
@@ -10969,7 +11045,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 35.56) (xy 134.62 35.56)
+			(xy 121.92 35.56) (xy 132.08 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10979,23 +11055,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 121.92) (xy 134.62 121.92)
+			(xy 120.65 125.73) (xy 132.08 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3f75566d-1557-4f22-a7ab-341fc8f5c2b4")
-	)
-	(wire
-		(pts
-			(xy 127 134.62) (xy 134.62 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45c39144-3ae2-46a0-95d4-c869dae15a13")
+		(uuid "423e81fa-20b7-48aa-9eae-c5f883e7aa42")
 	)
 	(wire
 		(pts
@@ -11007,19 +11073,9 @@
 		)
 		(uuid "45f8c6c5-2ee6-4eb7-9ac5-8a43e361e342")
 	)
-	(bus
-		(pts
-			(xy 276.86 148.59) (xy 255.27 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45faa25f-c309-4b6e-a650-661898c358c9")
-	)
 	(wire
 		(pts
-			(xy 128.27 27.94) (xy 134.62 27.94)
+			(xy 121.92 27.94) (xy 132.08 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11049,7 +11105,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 92.71) (xy 246.38 92.71)
+			(xy 238.76 92.71) (xy 250.19 92.71)
 		)
 		(stroke
 			(width 0)
@@ -11057,19 +11113,9 @@
 		)
 		(uuid "4eeccd14-26a8-4b3e-8f5e-3951a31e5472")
 	)
-	(bus
-		(pts
-			(xy 276.86 133.35) (xy 255.27 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f7a90bf-cf9c-4a07-83dd-e8fa9404afa0")
-	)
 	(wire
 		(pts
-			(xy 21.59 86.36) (xy 26.67 86.36)
+			(xy 21.59 86.36) (xy 31.75 86.36)
 		)
 		(stroke
 			(width 0)
@@ -11077,19 +11123,9 @@
 		)
 		(uuid "5107bebe-9cc7-4816-adae-1026a9f454f8")
 	)
-	(bus
-		(pts
-			(xy 276.86 120.65) (xy 255.27 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51c27385-3e20-4eba-a1dd-d933ea275025")
-	)
 	(wire
 		(pts
-			(xy 127 82.55) (xy 134.62 82.55)
+			(xy 120.65 82.55) (xy 132.08 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11099,7 +11135,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 72.39) (xy 170.18 72.39)
+			(xy 160.02 72.39) (xy 171.45 72.39)
 		)
 		(stroke
 			(width 0)
@@ -11109,7 +11145,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 134.62 43.18)
+			(xy 121.92 43.18) (xy 132.08 43.18)
 		)
 		(stroke
 			(width 0)
@@ -11119,7 +11155,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 67.31) (xy 170.18 67.31)
+			(xy 160.02 67.31) (xy 171.45 67.31)
 		)
 		(stroke
 			(width 0)
@@ -11129,7 +11165,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 33.02) (xy 170.18 33.02)
+			(xy 160.02 33.02) (xy 171.45 33.02)
 		)
 		(stroke
 			(width 0)
@@ -11139,17 +11175,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 129.54) (xy 134.62 129.54)
+			(xy 80.01 95.25) (xy 80.01 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a92b308-4dcd-4a13-9814-644e587ad576")
+		(uuid "5b84232c-d2fb-42c8-9dee-b5281168d357")
 	)
 	(wire
 		(pts
-			(xy 21.59 50.8) (xy 26.67 50.8)
+			(xy 21.59 50.8) (xy 31.75 50.8)
 		)
 		(stroke
 			(width 0)
@@ -11159,7 +11195,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 85.09) (xy 246.38 85.09)
+			(xy 238.76 85.09) (xy 250.19 85.09)
 		)
 		(stroke
 			(width 0)
@@ -11169,7 +11205,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 69.85) (xy 246.38 69.85)
+			(xy 238.76 69.85) (xy 250.19 69.85)
 		)
 		(stroke
 			(width 0)
@@ -11179,7 +11215,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 85.09) (xy 207.01 85.09)
+			(xy 199.39 85.09) (xy 210.82 85.09)
 		)
 		(stroke
 			(width 0)
@@ -11189,7 +11225,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 45.72) (xy 246.38 45.72)
+			(xy 238.76 45.72) (xy 250.19 45.72)
 		)
 		(stroke
 			(width 0)
@@ -11199,27 +11235,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 114.3) (xy 134.62 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bba2065-b311-4248-b0c0-1dba6f6e03bb")
-	)
-	(bus
-		(pts
-			(xy 276.86 128.27) (xy 255.27 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bc69232-aa72-4d00-a8e9-07a8d955b590")
-	)
-	(wire
-		(pts
-			(xy 21.59 73.66) (xy 26.67 73.66)
+			(xy 21.59 73.66) (xy 31.75 73.66)
 		)
 		(stroke
 			(width 0)
@@ -11229,7 +11245,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 48.26) (xy 207.01 48.26)
+			(xy 199.39 48.26) (xy 210.82 48.26)
 		)
 		(stroke
 			(width 0)
@@ -11237,29 +11253,19 @@
 		)
 		(uuid "6e54482e-3ef6-4962-a8c9-cbcdd126c943")
 	)
-	(wire
-		(pts
-			(xy 59.69 43.18) (xy 69.85 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7246b9f7-0e2d-491d-93aa-d17a908ec44c")
-	)
 	(bus
 		(pts
-			(xy 205.74 128.27) (xy 223.52 128.27)
+			(xy 259.08 102.87) (xy 273.05 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7372ca24-9a03-448d-9b11-b6ea89aaedf1")
+		(uuid "72212eff-272a-4f87-9b87-fec798ab91a7")
 	)
 	(wire
 		(pts
-			(xy 59.69 76.2) (xy 69.85 76.2)
+			(xy 68.58 76.2) (xy 74.93 76.2)
 		)
 		(stroke
 			(width 0)
@@ -11269,7 +11275,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 74.93) (xy 246.38 74.93)
+			(xy 238.76 74.93) (xy 250.19 74.93)
 		)
 		(stroke
 			(width 0)
@@ -11277,19 +11283,9 @@
 		)
 		(uuid "7679383a-f92b-4c5f-a1d4-188b0159f83d")
 	)
-	(bus
-		(pts
-			(xy 255.27 153.67) (xy 276.86 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7850005d-e9f9-43e3-a8ed-0b43a270ddde")
-	)
 	(wire
 		(pts
-			(xy 162.56 74.93) (xy 170.18 74.93)
+			(xy 160.02 74.93) (xy 171.45 74.93)
 		)
 		(stroke
 			(width 0)
@@ -11299,7 +11295,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 72.39) (xy 134.62 72.39)
+			(xy 120.65 107.95) (xy 132.08 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79e0cae1-eb0e-4e10-b155-5a333f9efd2f")
+	)
+	(wire
+		(pts
+			(xy 120.65 72.39) (xy 132.08 72.39)
 		)
 		(stroke
 			(width 0)
@@ -11309,7 +11315,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 67.31) (xy 246.38 67.31)
+			(xy 238.76 67.31) (xy 250.19 67.31)
 		)
 		(stroke
 			(width 0)
@@ -11319,7 +11325,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 30.48) (xy 246.38 30.48)
+			(xy 238.76 30.48) (xy 250.19 30.48)
 		)
 		(stroke
 			(width 0)
@@ -11329,7 +11335,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 30.48) (xy 26.67 30.48)
+			(xy 21.59 30.48) (xy 31.75 30.48)
 		)
 		(stroke
 			(width 0)
@@ -11339,7 +11345,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 30.48) (xy 69.85 30.48)
+			(xy 60.96 30.48) (xy 74.93 30.48)
 		)
 		(stroke
 			(width 0)
@@ -11347,19 +11353,9 @@
 		)
 		(uuid "7d5e06b0-2491-4e54-9291-e8077280c9d6")
 	)
-	(bus
-		(pts
-			(xy 276.86 146.05) (xy 255.27 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e614939-113e-4e1f-8947-33eb90ce3cdd")
-	)
 	(wire
 		(pts
-			(xy 199.39 82.55) (xy 207.01 82.55)
+			(xy 199.39 82.55) (xy 210.82 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11369,7 +11365,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 90.17) (xy 246.38 90.17)
+			(xy 238.76 90.17) (xy 250.19 90.17)
 		)
 		(stroke
 			(width 0)
@@ -11379,7 +11375,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 40.64) (xy 170.18 40.64)
+			(xy 160.02 40.64) (xy 171.45 40.64)
 		)
 		(stroke
 			(width 0)
@@ -11389,7 +11385,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 58.42) (xy 26.67 58.42)
+			(xy 21.59 58.42) (xy 31.75 58.42)
 		)
 		(stroke
 			(width 0)
@@ -11399,7 +11395,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 72.39) (xy 207.01 72.39)
+			(xy 199.39 72.39) (xy 210.82 72.39)
 		)
 		(stroke
 			(width 0)
@@ -11409,7 +11405,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 66.04) (xy 26.67 66.04)
+			(xy 21.59 66.04) (xy 31.75 66.04)
 		)
 		(stroke
 			(width 0)
@@ -11417,19 +11413,19 @@
 		)
 		(uuid "860a27a4-a48e-4b08-a7f9-63bd3b4bfd93")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 276.86 138.43) (xy 255.27 138.43)
+			(xy 120.65 123.19) (xy 132.08 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c4828ad-69b0-469f-b69d-93546077955e")
+		(uuid "874ee7d9-720d-47cb-840a-3142bba5d127")
 	)
 	(wire
 		(pts
-			(xy 199.39 25.4) (xy 207.01 25.4)
+			(xy 199.39 25.4) (xy 210.82 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11439,7 +11435,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 27.94) (xy 26.67 27.94)
+			(xy 21.59 27.94) (xy 31.75 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11449,7 +11445,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 82.55) (xy 170.18 82.55)
+			(xy 160.02 82.55) (xy 171.45 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11457,19 +11453,19 @@
 		)
 		(uuid "8de70e47-106d-47c7-9362-0b9765ac9985")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 255.27 156.21) (xy 276.86 156.21)
+			(xy 120.65 133.35) (xy 132.08 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e13b36c-f95f-4b4c-ae20-b6810cda4533")
+		(uuid "9034dc8d-2dba-4fb2-ac0f-453c6d68a708")
 	)
 	(wire
 		(pts
-			(xy 162.56 85.09) (xy 170.18 85.09)
+			(xy 160.02 85.09) (xy 171.45 85.09)
 		)
 		(stroke
 			(width 0)
@@ -11479,7 +11475,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 55.88) (xy 69.85 55.88)
+			(xy 60.96 55.88) (xy 74.93 55.88)
 		)
 		(stroke
 			(width 0)
@@ -11489,7 +11485,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 40.64) (xy 26.67 40.64)
+			(xy 21.59 40.64) (xy 31.75 40.64)
 		)
 		(stroke
 			(width 0)
@@ -11499,17 +11495,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 111.76) (xy 134.62 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94d4ccce-b49c-490c-bc61-bbc366af9cec")
-	)
-	(wire
-		(pts
-			(xy 60.96 38.1) (xy 69.85 38.1)
+			(xy 60.96 38.1) (xy 74.93 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11519,7 +11505,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 87.63) (xy 134.62 87.63)
+			(xy 120.65 87.63) (xy 132.08 87.63)
 		)
 		(stroke
 			(width 0)
@@ -11529,7 +11515,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 35.56) (xy 26.67 35.56)
+			(xy 21.59 35.56) (xy 31.75 35.56)
 		)
 		(stroke
 			(width 0)
@@ -11537,29 +11523,9 @@
 		)
 		(uuid "95e89b6b-cf91-4407-bd07-224f3de56426")
 	)
-	(bus
-		(pts
-			(xy 205.74 113.03) (xy 218.44 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "963d84a5-932e-4c0f-8395-59d46c365568")
-	)
 	(wire
 		(pts
-			(xy 59.69 71.12) (xy 69.85 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98c98ed4-6708-43f9-b04c-6591952dd2c3")
-	)
-	(wire
-		(pts
-			(xy 199.39 69.85) (xy 207.01 69.85)
+			(xy 199.39 69.85) (xy 210.82 69.85)
 		)
 		(stroke
 			(width 0)
@@ -11569,7 +11535,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 45.72) (xy 69.85 45.72)
+			(xy 60.96 45.72) (xy 74.93 45.72)
 		)
 		(stroke
 			(width 0)
@@ -11579,7 +11545,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 67.31) (xy 134.62 67.31)
+			(xy 120.65 118.11) (xy 132.08 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc954df-be80-47df-a4c5-e9df19761450")
+	)
+	(wire
+		(pts
+			(xy 120.65 67.31) (xy 132.08 67.31)
 		)
 		(stroke
 			(width 0)
@@ -11589,7 +11565,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 77.47) (xy 170.18 77.47)
+			(xy 160.02 77.47) (xy 171.45 77.47)
 		)
 		(stroke
 			(width 0)
@@ -11597,19 +11573,9 @@
 		)
 		(uuid "9dabc0c5-ed39-4d15-8269-963c4cca1538")
 	)
-	(bus
-		(pts
-			(xy 205.74 123.19) (xy 223.52 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e637308-7411-40b9-a2cc-2005c57e4e13")
-	)
 	(wire
 		(pts
-			(xy 162.56 48.26) (xy 170.18 48.26)
+			(xy 160.02 48.26) (xy 171.45 48.26)
 		)
 		(stroke
 			(width 0)
@@ -11619,7 +11585,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 35.56) (xy 246.38 35.56)
+			(xy 238.76 35.56) (xy 250.19 35.56)
 		)
 		(stroke
 			(width 0)
@@ -11629,7 +11595,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 63.5) (xy 26.67 63.5)
+			(xy 21.59 63.5) (xy 31.75 63.5)
 		)
 		(stroke
 			(width 0)
@@ -11639,17 +11605,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 66.04) (xy 69.85 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a587ebe7-a091-4d3c-ac5a-37d82ed5a50a")
-	)
-	(wire
-		(pts
-			(xy 199.39 87.63) (xy 207.01 87.63)
+			(xy 199.39 87.63) (xy 210.82 87.63)
 		)
 		(stroke
 			(width 0)
@@ -11659,7 +11615,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 77.47) (xy 134.62 77.47)
+			(xy 120.65 77.47) (xy 132.08 77.47)
 		)
 		(stroke
 			(width 0)
@@ -11669,17 +11625,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 63.5) (xy 69.85 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a868af24-68d9-477b-bad8-e7a0182335c6")
-	)
-	(wire
-		(pts
-			(xy 238.76 87.63) (xy 246.38 87.63)
+			(xy 238.76 87.63) (xy 250.19 87.63)
 		)
 		(stroke
 			(width 0)
@@ -11689,7 +11635,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 38.1) (xy 207.01 38.1)
+			(xy 199.39 38.1) (xy 210.82 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11699,7 +11645,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 90.17) (xy 170.18 90.17)
+			(xy 160.02 90.17) (xy 171.45 90.17)
 		)
 		(stroke
 			(width 0)
@@ -11709,7 +11655,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 38.1) (xy 170.18 38.1)
+			(xy 160.02 38.1) (xy 171.45 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11719,7 +11665,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 58.42) (xy 69.85 58.42)
+			(xy 60.96 58.42) (xy 74.93 58.42)
 		)
 		(stroke
 			(width 0)
@@ -11729,7 +11675,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 69.85) (xy 170.18 69.85)
+			(xy 160.02 69.85) (xy 171.45 69.85)
 		)
 		(stroke
 			(width 0)
@@ -11749,7 +11695,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 25.4) (xy 170.18 25.4)
+			(xy 160.02 25.4) (xy 171.45 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11759,7 +11705,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 67.31) (xy 207.01 67.31)
+			(xy 199.39 67.31) (xy 210.82 67.31)
 		)
 		(stroke
 			(width 0)
@@ -11769,7 +11715,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 25.4) (xy 134.62 25.4)
+			(xy 121.92 25.4) (xy 132.08 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11779,7 +11725,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 25.4) (xy 26.67 25.4)
+			(xy 21.59 25.4) (xy 31.75 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11789,7 +11735,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 50.8) (xy 207.01 50.8)
+			(xy 199.39 50.8) (xy 210.82 50.8)
 		)
 		(stroke
 			(width 0)
@@ -11799,7 +11745,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 27.94) (xy 170.18 27.94)
+			(xy 160.02 27.94) (xy 171.45 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11807,29 +11753,9 @@
 		)
 		(uuid "b620c0bd-2a5f-4234-b674-eca7d4579cc2")
 	)
-	(bus
-		(pts
-			(xy 276.86 113.03) (xy 255.27 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b73b7070-eb54-4e14-9df9-648c2f790085")
-	)
 	(wire
 		(pts
-			(xy 127 124.46) (xy 134.62 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8458772-882d-4b83-b180-25c2da0d31ac")
-	)
-	(wire
-		(pts
-			(xy 238.76 82.55) (xy 246.38 82.55)
+			(xy 238.76 82.55) (xy 250.19 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11839,7 +11765,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 27.94) (xy 246.38 27.94)
+			(xy 120.65 115.57) (xy 132.08 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcd90423-44ec-4fdf-93ea-addfda6b93f5")
+	)
+	(wire
+		(pts
+			(xy 238.76 27.94) (xy 250.19 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11849,17 +11785,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 109.22) (xy 134.62 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c29c6895-c6d0-420f-8ccc-36976e9c9cfb")
-	)
-	(wire
-		(pts
-			(xy 21.59 53.34) (xy 26.67 53.34)
+			(xy 21.59 53.34) (xy 31.75 53.34)
 		)
 		(stroke
 			(width 0)
@@ -11869,7 +11795,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 72.39) (xy 246.38 72.39)
+			(xy 63.5 87.63) (xy 80.01 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c437513e-d6db-419e-995f-53068dd97280")
+	)
+	(wire
+		(pts
+			(xy 238.76 72.39) (xy 250.19 72.39)
 		)
 		(stroke
 			(width 0)
@@ -11879,7 +11815,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 92.71) (xy 207.01 92.71)
+			(xy 199.39 92.71) (xy 210.82 92.71)
 		)
 		(stroke
 			(width 0)
@@ -11897,16 +11833,6 @@
 		)
 		(uuid "cd65d0c6-b374-4033-a49c-edc82215697d")
 	)
-	(bus
-		(pts
-			(xy 276.86 140.97) (xy 255.27 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0183c77-2061-4141-9129-c75c3ad2b6ee")
-	)
 	(wire
 		(pts
 			(xy 48.26 128.27) (xy 54.61 128.27)
@@ -11917,19 +11843,9 @@
 		)
 		(uuid "d0860e9e-095f-4c9a-be3c-2b6a12c1ab04")
 	)
-	(bus
-		(pts
-			(xy 276.86 135.89) (xy 255.27 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7c8ba1d-540d-477b-9370-8fc612be6c76")
-	)
 	(wire
 		(pts
-			(xy 162.56 80.01) (xy 170.18 80.01)
+			(xy 160.02 80.01) (xy 171.45 80.01)
 		)
 		(stroke
 			(width 0)
@@ -11937,19 +11853,9 @@
 		)
 		(uuid "d8bbbdff-9056-4c16-a042-103cba8ddf0f")
 	)
-	(bus
-		(pts
-			(xy 205.74 115.57) (xy 218.44 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da1fc8cf-8e8b-4ecb-9443-ddc70669bc54")
-	)
 	(wire
 		(pts
-			(xy 60.96 35.56) (xy 69.85 35.56)
+			(xy 60.96 35.56) (xy 74.93 35.56)
 		)
 		(stroke
 			(width 0)
@@ -11959,23 +11865,13 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 45.72) (xy 26.67 45.72)
+			(xy 21.59 45.72) (xy 31.75 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dd8af0a0-a5ce-4aaa-9de1-2ba82552dc39")
-	)
-	(wire
-		(pts
-			(xy 127 119.38) (xy 134.62 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de03078e-38ac-46fb-ac39-c0f55a14f2cc")
 	)
 	(wire
 		(pts
@@ -11989,7 +11885,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 27.94) (xy 69.85 27.94)
+			(xy 60.96 27.94) (xy 74.93 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11999,27 +11895,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 68.58) (xy 69.85 68.58)
+			(xy 60.96 66.04) (xy 74.93 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1a8e42b-3603-48dc-9ac8-63664a149a0d")
-	)
-	(bus
-		(pts
-			(xy 276.86 110.49) (xy 255.27 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e74ea5c2-70c8-4735-85ac-bebacb396941")
+		(uuid "e04baaa7-a01b-45cf-af56-e8fcae99df62")
 	)
 	(wire
 		(pts
-			(xy 199.39 30.48) (xy 207.01 30.48)
+			(xy 60.96 63.5) (xy 74.93 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e45ccabd-38d8-413f-adfb-ec28114981e6")
+	)
+	(wire
+		(pts
+			(xy 199.39 30.48) (xy 210.82 30.48)
 		)
 		(stroke
 			(width 0)
@@ -12029,7 +11925,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 50.8) (xy 69.85 50.8)
+			(xy 60.96 50.8) (xy 74.93 50.8)
 		)
 		(stroke
 			(width 0)
@@ -12039,7 +11935,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 45.72) (xy 170.18 45.72)
+			(xy 160.02 45.72) (xy 171.45 45.72)
 		)
 		(stroke
 			(width 0)
@@ -12049,7 +11945,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 38.1) (xy 134.62 38.1)
+			(xy 121.92 38.1) (xy 132.08 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12059,7 +11955,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 50.8) (xy 246.38 50.8)
+			(xy 238.76 50.8) (xy 250.19 50.8)
 		)
 		(stroke
 			(width 0)
@@ -12067,29 +11963,9 @@
 		)
 		(uuid "eabbdc24-4fdf-431f-b099-d5be970f5740")
 	)
-	(bus
-		(pts
-			(xy 276.86 115.57) (xy 255.27 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb3c35c6-b259-4baf-8749-f1b89b517dab")
-	)
-	(bus
-		(pts
-			(xy 276.86 118.11) (xy 255.27 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb551e74-5b14-4d93-8310-0d2da20677fc")
-	)
 	(wire
 		(pts
-			(xy 128.27 50.8) (xy 134.62 50.8)
+			(xy 121.92 50.8) (xy 132.08 50.8)
 		)
 		(stroke
 			(width 0)
@@ -12109,7 +11985,17 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 38.1) (xy 26.67 38.1)
+			(xy 120.65 120.65) (xy 132.08 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edcb1234-76f8-4e42-8926-4849923ce353")
+	)
+	(wire
+		(pts
+			(xy 21.59 38.1) (xy 31.75 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12119,7 +12005,17 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 74.93) (xy 207.01 74.93)
+			(xy 80.01 87.63) (xy 80.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f32e6934-aad1-4474-8fd0-205c79f7e141")
+	)
+	(wire
+		(pts
+			(xy 199.39 74.93) (xy 210.82 74.93)
 		)
 		(stroke
 			(width 0)
@@ -12129,7 +12025,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 40.64) (xy 134.62 40.64)
+			(xy 121.92 40.64) (xy 132.08 40.64)
 		)
 		(stroke
 			(width 0)
@@ -12137,19 +12033,9 @@
 		)
 		(uuid "f4b70185-c8aa-43e4-81bd-9282e174f99e")
 	)
-	(bus
-		(pts
-			(xy 276.86 125.73) (xy 255.27 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f50af035-96f8-435c-8a6a-7b83d258b45b")
-	)
 	(wire
 		(pts
-			(xy 238.76 77.47) (xy 246.38 77.47)
+			(xy 238.76 77.47) (xy 250.19 77.47)
 		)
 		(stroke
 			(width 0)
@@ -12169,7 +12055,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 90.17) (xy 207.01 90.17)
+			(xy 199.39 90.17) (xy 210.82 90.17)
 		)
 		(stroke
 			(width 0)
@@ -12179,7 +12065,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 43.18) (xy 207.01 43.18)
+			(xy 199.39 43.18) (xy 210.82 43.18)
 		)
 		(stroke
 			(width 0)
@@ -12189,7 +12075,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 55.88) (xy 26.67 55.88)
+			(xy 21.59 55.88) (xy 31.75 55.88)
 		)
 		(stroke
 			(width 0)
@@ -12199,7 +12085,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 87.63) (xy 170.18 87.63)
+			(xy 60.96 68.58) (xy 74.93 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8b2d471-2134-424d-952e-044fbfa9bb67")
+	)
+	(wire
+		(pts
+			(xy 160.02 87.63) (xy 171.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -12209,7 +12105,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 78.74) (xy 26.67 78.74)
+			(xy 21.59 78.74) (xy 31.75 78.74)
 		)
 		(stroke
 			(width 0)
@@ -12219,7 +12115,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 35.56) (xy 170.18 35.56)
+			(xy 160.02 35.56) (xy 171.45 35.56)
 		)
 		(stroke
 			(width 0)
@@ -12239,7 +12135,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 25.4) (xy 246.38 25.4)
+			(xy 238.76 25.4) (xy 250.19 25.4)
 		)
 		(stroke
 			(width 0)
@@ -12249,7 +12145,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 81.28) (xy 26.67 81.28)
+			(xy 21.59 81.28) (xy 31.75 81.28)
 		)
 		(stroke
 			(width 0)
@@ -12259,7 +12155,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 77.47) (xy 207.01 77.47)
+			(xy 199.39 77.47) (xy 210.82 77.47)
 		)
 		(stroke
 			(width 0)
@@ -12267,7 +12163,7 @@
 		)
 		(uuid "ff5fbd13-877b-4a4c-a48e-9790770bbc56")
 	)
-	(label "CK0+"
+	(label "DDR4.CK0+"
 		(at 60.96 27.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12278,7 +12174,7 @@
 		)
 		(uuid "025eb518-70fc-49de-9a40-b52df43f81fe")
 	)
-	(label "A10"
+	(label "DDR4.A10"
 		(at 21.59 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12289,7 +12185,7 @@
 		)
 		(uuid "038b42e8-9f6e-4b3d-bec2-68db5be135a0")
 	)
-	(label "DQS7-"
+	(label "DDR4.DQS7-"
 		(at 238.76 90.17 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12300,7 +12196,7 @@
 		)
 		(uuid "03af6cd2-cac7-4bc7-bd20-570013e5e3b8")
 	)
-	(label "A4"
+	(label "DDR4.A4"
 		(at 21.59 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12311,18 +12207,7 @@
 		)
 		(uuid "03b7f16e-737b-4198-ab9d-42e7ce3f8c21")
 	)
-	(label "DQ[15..8]"
-		(at 256.54 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "046727c6-eedd-46ca-8e5e-55072c021cc2")
-	)
-	(label "A3"
+	(label "DDR4.A3"
 		(at 21.59 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12333,7 +12218,7 @@
 		)
 		(uuid "0949b1b6-61ec-4906-bd9b-4073844aff14")
 	)
-	(label "CKE0"
+	(label "DDR4.CKE0"
 		(at 60.96 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12344,18 +12229,18 @@
 		)
 		(uuid "0976f0e8-6484-467d-a0d8-4d92397a9c1d")
 	)
-	(label "CB5"
-		(at 134.62 124.46 180)
+	(label "DDR4.CB5"
+		(at 120.65 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "0a307830-3976-4454-b1c5-e3ff8121152d")
 	)
-	(label "BG1"
+	(label "DDR4.BG1"
 		(at 21.59 81.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12366,19 +12251,8 @@
 		)
 		(uuid "0a30dbc9-5db5-4b9d-80ac-1e04c8cdba9e")
 	)
-	(label "CB1"
-		(at 134.62 114.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0dfd7af6-d12f-41f1-9e7d-b6d9e01060c2")
-	)
-	(label "SA[2..0]"
-		(at 207.01 118.11 0)
+	(label "DDR4.CB1"
+		(at 120.65 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12386,20 +12260,20 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0e1b266a-2676-4aee-9ca4-f3a46e4215b9")
+		(uuid "0dfd7af6-d12f-41f1-9e7d-b6d9e01060c2")
 	)
-	(label "CB4"
-		(at 134.62 121.92 180)
+	(label "DDR4.CB4"
+		(at 120.65 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "1139a436-ec26-4fa2-9561-7b0088906ea9")
 	)
-	(label "DQ58"
+	(label "DDR4.DQ58"
 		(at 238.76 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12410,8 +12284,8 @@
 		)
 		(uuid "14916538-712f-485b-94eb-513237796958")
 	)
-	(label "DQ32"
-		(at 127 69.85 0)
+	(label "DDR4.DQ32"
+		(at 120.65 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12421,7 +12295,7 @@
 		)
 		(uuid "154dbef1-61b2-445b-802d-7d09331b0f15")
 	)
-	(label "DQ22"
+	(label "DDR4.DQ22"
 		(at 199.39 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12432,7 +12306,7 @@
 		)
 		(uuid "17295b6e-8767-44fb-aff4-adbe52cf1b39")
 	)
-	(label "DQ54"
+	(label "DDR4.DQ54"
 		(at 199.39 85.09 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12443,19 +12317,8 @@
 		)
 		(uuid "1d3ac6e8-9628-4e4e-ae6f-fc541f62b9bd")
 	)
-	(label "CK{1+, 1-, E1}"
-		(at 207.01 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1d527af1-1e16-4c4d-8042-2e0bbf4d85ba")
-	)
-	(label "DQ14"
-		(at 162.56 43.18 0)
+	(label "DDR4.DQ14"
+		(at 160.02 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12465,19 +12328,19 @@
 		)
 		(uuid "1f71ad36-746c-4b2d-b7da-af7f63c6f060")
 	)
-	(label "CB6"
-		(at 134.62 127 180)
+	(label "DDR4.CB6"
+		(at 120.65 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "203cf885-81f3-42f8-ae38-b81d5757a0b0")
 	)
-	(label "DQS1+"
-		(at 162.56 50.8 0)
+	(label "DDR4.DQS1+"
+		(at 160.02 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12487,8 +12350,8 @@
 		)
 		(uuid "2084072c-1aa7-4bbe-b382-c4f919f72b67")
 	)
-	(label "DQ5"
-		(at 128.27 40.64 0)
+	(label "DDR4.DQ5"
+		(at 121.92 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12498,7 +12361,7 @@
 		)
 		(uuid "20b062ae-0b52-424e-878f-98b24d92e505")
 	)
-	(label "DQ57"
+	(label "DDR4.DQ57"
 		(at 238.76 72.39 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12509,7 +12372,7 @@
 		)
 		(uuid "236c3f39-4a3d-4f6d-bf86-687c8dcb5352")
 	)
-	(label "DQ26"
+	(label "DDR4.DQ26"
 		(at 238.76 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12520,8 +12383,8 @@
 		)
 		(uuid "28ab616f-a952-45ec-8a57-63d631d34f18")
 	)
-	(label "DQ37"
-		(at 127 82.55 0)
+	(label "DDR4.DQ37"
+		(at 120.65 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12531,19 +12394,19 @@
 		)
 		(uuid "28fd72bd-3742-4a90-b762-2621a8a223ca")
 	)
-	(label "CB7"
-		(at 134.62 129.54 180)
+	(label "DDR4.CB7"
+		(at 120.65 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "29594868-86f6-4246-9b64-7db87882e11d")
 	)
-	(label "DQ33"
-		(at 127 72.39 0)
+	(label "DDR4.DQ33"
+		(at 120.65 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12553,8 +12416,8 @@
 		)
 		(uuid "2989da9b-80ab-4b57-8ccf-affda14c3679")
 	)
-	(label "DQ2"
-		(at 128.27 33.02 0)
+	(label "DDR4.DQ2"
+		(at 121.92 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12564,7 +12427,7 @@
 		)
 		(uuid "29e0f6fb-cc99-4704-9782-8f3430540e9a")
 	)
-	(label "A6"
+	(label "DDR4.A6"
 		(at 21.59 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12575,7 +12438,7 @@
 		)
 		(uuid "2bebce12-525f-467d-9f08-2bef15986050")
 	)
-	(label "CS0"
+	(label "DDR4.CS0"
 		(at 60.96 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12586,8 +12449,8 @@
 		)
 		(uuid "2c08260c-fc2b-420c-b869-fc714bf413cb")
 	)
-	(label "DQ10"
-		(at 162.56 33.02 0)
+	(label "DDR4.DQ10"
+		(at 160.02 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12597,8 +12460,8 @@
 		)
 		(uuid "2c425a49-38b6-4068-a210-6cbd13c50da2")
 	)
-	(label "DQ11"
-		(at 162.56 35.56 0)
+	(label "DDR4.DQ11"
+		(at 160.02 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12608,7 +12471,7 @@
 		)
 		(uuid "2c810eb4-57af-4000-a427-4e01db77a117")
 	)
-	(label "PARITY"
+	(label "DDR4.PARITY"
 		(at 60.96 66.04 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12619,7 +12482,7 @@
 		)
 		(uuid "2ca45682-0331-46e7-80f3-c1fb4d8bcdb8")
 	)
-	(label "DM7"
+	(label "DDR4.DM7"
 		(at 238.76 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12630,7 +12493,7 @@
 		)
 		(uuid "2cace600-efc6-4c10-bd77-33d276f01e48")
 	)
-	(label "CK1+"
+	(label "DDR4.CK1+"
 		(at 60.96 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12641,18 +12504,7 @@
 		)
 		(uuid "2cff801a-0a48-4b41-8ec0-91c636993cf4")
 	)
-	(label "DQ[55..48]"
-		(at 256.54 146.05 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2ebcdadf-afa4-4eef-8b1e-6f070f616bb3")
-	)
-	(label "DQ20"
+	(label "DDR4.DQ20"
 		(at 199.39 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12663,8 +12515,8 @@
 		)
 		(uuid "309f98cf-b098-47a1-9fea-1d53ee2ff2ad")
 	)
-	(label "DQ6"
-		(at 128.27 43.18 0)
+	(label "DDR4.DQ6"
+		(at 121.92 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12674,7 +12526,7 @@
 		)
 		(uuid "30a9a664-3497-43df-8586-75b398731964")
 	)
-	(label "A1"
+	(label "DDR4.A1"
 		(at 21.59 27.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12685,8 +12537,8 @@
 		)
 		(uuid "31d63594-d425-4fe5-abdc-4040a3c105b3")
 	)
-	(label "DQ36"
-		(at 127 80.01 0)
+	(label "DDR4.DQ36"
+		(at 120.65 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12696,7 +12548,7 @@
 		)
 		(uuid "32653f07-2874-4cf9-9136-898b6eb2f589")
 	)
-	(label "DQ53"
+	(label "DDR4.DQ53"
 		(at 199.39 82.55 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12707,7 +12559,7 @@
 		)
 		(uuid "344af150-15d3-4852-a82a-a6111b8bd4f7")
 	)
-	(label "DQ63"
+	(label "DDR4.DQ63"
 		(at 238.76 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12718,18 +12570,7 @@
 		)
 		(uuid "353fe3e7-537c-4bc2-ac62-4f1b7354081d")
 	)
-	(label "D{QS7+, QS7-, M7}"
-		(at 256.54 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "36431928-5350-4843-a9de-13945fd178b9")
-	)
-	(label "DQS2+"
+	(label "DDR4.DQS2+"
 		(at 199.39 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12740,8 +12581,8 @@
 		)
 		(uuid "364a935b-2d26-44ac-9e33-7812eb9568a8")
 	)
-	(label "DQS0+"
-		(at 128.27 50.8 0)
+	(label "DDR4.DQS0+"
+		(at 121.92 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12751,7 +12592,7 @@
 		)
 		(uuid "383404dc-8521-46fe-b4e2-dfd5567303db")
 	)
-	(label "BA1"
+	(label "DDR4.BA1"
 		(at 21.59 73.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12762,7 +12603,7 @@
 		)
 		(uuid "38fe77e4-cd2c-4667-9750-2228f186c4a8")
 	)
-	(label "DQ55"
+	(label "DDR4.DQ55"
 		(at 199.39 87.63 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12773,8 +12614,8 @@
 		)
 		(uuid "396b2f96-863b-44ce-bbc8-a00a5e475c65")
 	)
-	(label "DQ47"
-		(at 162.56 87.63 0)
+	(label "DDR4.DQ47"
+		(at 160.02 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12784,7 +12625,7 @@
 		)
 		(uuid "39ed6af9-e752-4164-960b-65b8f685302d")
 	)
-	(label "DM3"
+	(label "DDR4.DM3"
 		(at 238.76 25.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12795,7 +12636,7 @@
 		)
 		(uuid "3a8f29b2-a97a-453f-956d-1253d51efa8f")
 	)
-	(label "A15"
+	(label "DDR4.A15"
 		(at 21.59 63.5 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12806,18 +12647,18 @@
 		)
 		(uuid "3e377189-edfb-4dd3-ad3a-7f33c70fdcc1")
 	)
-	(label "CB2"
-		(at 134.62 116.84 180)
+	(label "DDR4.CB2"
+		(at 120.65 115.57 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "3e4b9792-cc1f-4747-b04a-ae88acdbf6c6")
 	)
-	(label "A14"
+	(label "DDR4.A14"
 		(at 21.59 60.96 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12828,29 +12669,18 @@
 		)
 		(uuid "3f9b31ca-b393-4e7a-a44c-af9b333a4673")
 	)
-	(label "DQ[63..56]"
-		(at 256.54 148.59 0)
+	(label "DDR4.RESET_n"
+		(at 78.74 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "3fda7f50-a870-4fb8-91ab-2f6285694885")
+		(uuid "415a79f1-c0ee-4277-89ea-a1b46110686d")
 	)
-	(label "D{QS8+, QS8-, M8}"
-		(at 256.54 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43336884-221a-4b3b-b4c9-61b57b764b02")
-	)
-	(label "DQ25"
+	(label "DDR4.DQ25"
 		(at 238.76 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12861,19 +12691,8 @@
 		)
 		(uuid "4356bd5a-76a9-4b21-bbc5-7ba88582be98")
 	)
-	(label "D{QS1+, QS1-, M1}"
-		(at 256.54 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4452b411-7b5b-4ad9-bda1-180d1c7ee660")
-	)
-	(label "DQ9"
-		(at 162.56 30.48 0)
+	(label "DDR4.DQ9"
+		(at 160.02 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12883,18 +12702,18 @@
 		)
 		(uuid "4497c88f-9ce3-4a79-a6c7-808271c2e7fc")
 	)
-	(label "DM8"
-		(at 134.62 109.22 180)
+	(label "DDR4.DM8"
+		(at 120.65 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "45f5070b-b620-4f95-854f-14e87e1a9894")
 	)
-	(label "SA2"
+	(label "DDR4.SA2"
 		(at 21.59 91.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12905,18 +12724,7 @@
 		)
 		(uuid "47d9cda5-f301-4d4a-a8c6-734bfbd5f238")
 	)
-	(label "D{QS6+, QS6-, M6}"
-		(at 256.54 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "481dfc75-c140-46eb-8324-92d94624092c")
-	)
-	(label "A13"
+	(label "DDR4.A13"
 		(at 21.59 58.42 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12927,7 +12735,7 @@
 		)
 		(uuid "48aa7f41-47f8-4930-a0bf-781f24b51402")
 	)
-	(label "DQ50"
+	(label "DDR4.DQ50"
 		(at 199.39 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12938,8 +12746,8 @@
 		)
 		(uuid "48bf8a80-21ec-404d-a007-daf40a9dc398")
 	)
-	(label "DQS4-"
-		(at 127 90.17 0)
+	(label "DDR4.DQS4-"
+		(at 120.65 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12949,19 +12757,8 @@
 		)
 		(uuid "495b202d-b4a6-442e-8953-1ad4ece7696f")
 	)
-	(label "DQ[39..32]"
-		(at 256.54 140.97 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b740181-3aaa-45a7-972c-a57c60f5fda6")
-	)
-	(label "DQ15"
-		(at 162.56 45.72 0)
+	(label "DDR4.DQ15"
+		(at 160.02 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12971,8 +12768,8 @@
 		)
 		(uuid "4b9d3e71-125f-4249-9031-fe90ca6aa657")
 	)
-	(label "DQ1"
-		(at 128.27 30.48 0)
+	(label "DDR4.DQ1"
+		(at 121.92 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12982,7 +12779,7 @@
 		)
 		(uuid "4bc996f2-2a38-4f81-b04a-d8c9bfccff84")
 	)
-	(label "DQ31"
+	(label "DDR4.DQ31"
 		(at 238.76 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12993,30 +12790,8 @@
 		)
 		(uuid "4d729ecf-ed54-418f-9fe0-e0d05c717bb0")
 	)
-	(label "D{QS2+, QS2-, M2}"
-		(at 256.54 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ed728db-dee8-4088-bff3-4fd4275b7fdf")
-	)
-	(label "DQ[23..16]"
-		(at 256.54 135.89 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fe7a5ab-b11c-44d9-ba18-26099817b784")
-	)
-	(label "DQ43"
-		(at 162.56 77.47 0)
+	(label "DDR4.DQ43"
+		(at 160.02 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13026,8 +12801,8 @@
 		)
 		(uuid "505829e1-2016-42d8-9b36-12a137b04277")
 	)
-	(label "DQ8"
-		(at 162.56 27.94 0)
+	(label "DDR4.DQ8"
+		(at 160.02 27.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13037,7 +12812,7 @@
 		)
 		(uuid "51f663a8-fe5d-4d96-94ae-c91775727277")
 	)
-	(label "DQ48"
+	(label "DDR4.DQ48"
 		(at 199.39 69.85 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13048,8 +12823,8 @@
 		)
 		(uuid "529225d9-15fa-4aaf-986e-0ec33bb83180")
 	)
-	(label "DQ46"
-		(at 162.56 85.09 0)
+	(label "DDR4.DQ46"
+		(at 160.02 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13059,19 +12834,19 @@
 		)
 		(uuid "54355486-15d4-4dd3-84b7-8ca385db2b8c")
 	)
-	(label "CB3"
-		(at 134.62 119.38 180)
+	(label "DDR4.CB3"
+		(at 120.65 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "5676e91e-fef4-4fcd-8afb-c6c9ca2ea85d")
 	)
-	(label "DQS1-"
-		(at 162.56 48.26 0)
+	(label "DDR4.DQS1-"
+		(at 160.02 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13081,7 +12856,7 @@
 		)
 		(uuid "58340798-c283-49aa-98ee-f717da9d5986")
 	)
-	(label "A2"
+	(label "DDR4.A2"
 		(at 21.59 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13092,8 +12867,8 @@
 		)
 		(uuid "5bdec3b1-7b02-4695-b5e7-e562c136e757")
 	)
-	(label "DM1"
-		(at 162.56 25.4 0)
+	(label "DDR4.DM1"
+		(at 160.02 25.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13103,18 +12878,7 @@
 		)
 		(uuid "5d07a05d-527b-4041-a4c6-53c843789b67")
 	)
-	(label "D{QS4+, QS4-, M4}"
-		(at 256.54 120.65 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5d9113db-075a-4115-86e1-1ef4eba8fb32")
-	)
-	(label "A12"
+	(label "DDR4.A12"
 		(at 21.59 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13125,19 +12889,19 @@
 		)
 		(uuid "60d4cc2a-2f66-4955-b3f9-1c3ce6c914f0")
 	)
-	(label "CB0"
-		(at 134.62 111.76 180)
+	(label "DDR4.CB0"
+		(at 120.65 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "62019131-dff7-4a7c-9527-49c273b7ed45")
 	)
-	(label "DM0"
-		(at 128.27 25.4 0)
+	(label "DDR4.DM0"
+		(at 121.92 25.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13147,8 +12911,8 @@
 		)
 		(uuid "64541b07-c39b-4807-8801-efa1fbfcbe48")
 	)
-	(label "DQ41"
-		(at 162.56 72.39 0)
+	(label "DDR4.DQ41"
+		(at 160.02 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13158,8 +12922,8 @@
 		)
 		(uuid "64b6dce7-8cbf-4371-85a8-714cf6ed6fe1")
 	)
-	(label "DM4"
-		(at 127 67.31 0)
+	(label "DDR4.DM4"
+		(at 120.65 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13169,7 +12933,7 @@
 		)
 		(uuid "65067043-8244-410e-8a48-e438a364ac60")
 	)
-	(label "DQ56"
+	(label "DDR4.DQ56"
 		(at 238.76 69.85 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13180,7 +12944,18 @@
 		)
 		(uuid "65b0d497-2e3b-4a58-905a-e2762e4fd2ea")
 	)
-	(label "DQ62"
+	(label "DDR4{DDR4}"
+		(at 260.35 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "669989c8-c1a6-477c-a945-d89a5cafc53c")
+	)
+	(label "DDR4.DQ62"
 		(at 238.76 85.09 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13191,8 +12966,8 @@
 		)
 		(uuid "6753081d-6b8e-4a8d-be8b-1084118ea023")
 	)
-	(label "DQS5-"
-		(at 162.56 90.17 0)
+	(label "DDR4.DQS5-"
+		(at 160.02 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13202,7 +12977,7 @@
 		)
 		(uuid "69105524-680e-478e-9d1f-c17a97abcf78")
 	)
-	(label "DQS6-"
+	(label "DDR4.DQS6-"
 		(at 199.39 90.17 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13213,18 +12988,18 @@
 		)
 		(uuid "6bc9a9b6-1448-41fa-b166-579ec84acbb7")
 	)
-	(label "DQS8+"
-		(at 134.62 134.62 180)
+	(label "DDR4.DQS8+"
+		(at 120.65 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "6ca4d754-1d17-4028-8e9d-2253ede621f9")
 	)
-	(label "ODT0"
+	(label "DDR4.ODT0"
 		(at 60.96 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13235,8 +13010,8 @@
 		)
 		(uuid "6fa52ba5-7748-4af8-83d6-0e1541abcdd4")
 	)
-	(label "DQS5+"
-		(at 162.56 92.71 0)
+	(label "DDR4.DQS5+"
+		(at 160.02 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13246,8 +13021,8 @@
 		)
 		(uuid "706017f8-76d8-42d1-8767-f56fa33d3c19")
 	)
-	(label "DQ42"
-		(at 162.56 74.93 0)
+	(label "DDR4.DQ42"
+		(at 160.02 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13257,8 +13032,8 @@
 		)
 		(uuid "7118bb8c-0224-4633-80eb-408efec4373d")
 	)
-	(label "DQ45"
-		(at 162.56 82.55 0)
+	(label "DDR4.DQ45"
+		(at 160.02 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13268,7 +13043,7 @@
 		)
 		(uuid "72e3a8c8-0338-4add-b3c3-40ace736d75e")
 	)
-	(label "A5"
+	(label "DDR4.A5"
 		(at 21.59 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13279,8 +13054,8 @@
 		)
 		(uuid "73472047-3ccb-4c8b-b2b7-85b049b8f900")
 	)
-	(label "DQ39"
-		(at 127 87.63 0)
+	(label "DDR4.DQ39"
+		(at 120.65 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13290,8 +13065,8 @@
 		)
 		(uuid "754e10ce-bf81-423c-a814-12297a210a78")
 	)
-	(label "DQ34"
-		(at 127 74.93 0)
+	(label "DDR4.DQ34"
+		(at 120.65 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13301,29 +13076,7 @@
 		)
 		(uuid "766d7921-38c2-4e90-ab0f-796cd4b5c532")
 	)
-	(label "DQ[31..24]"
-		(at 256.54 138.43 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "77ed8605-b94a-47a1-8aa3-528b73e9afe4")
-	)
-	(label "ALERT_n"
-		(at 60.96 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79d057b6-0343-42dd-9ae5-0d26ff671771")
-	)
-	(label "DQ18"
+	(label "DDR4.DQ18"
 		(at 199.39 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13334,7 +13087,7 @@
 		)
 		(uuid "7a04b8d2-6c54-441c-9734-a8bd37786ff6")
 	)
-	(label "DQS6+"
+	(label "DDR4.DQS6+"
 		(at 199.39 92.71 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13345,7 +13098,7 @@
 		)
 		(uuid "7c7b220c-5914-4293-b615-6081e413d757")
 	)
-	(label "SA1"
+	(label "DDR4.SA1"
 		(at 21.59 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13356,18 +13109,18 @@
 		)
 		(uuid "7f48b0cb-db4d-432a-bd96-cc5821354274")
 	)
-	(label "DQS8-"
-		(at 134.62 132.08 180)
+	(label "DDR4.DQS8-"
+		(at 120.65 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "81442fb5-ffc4-4edf-9b36-4115b25dac4f")
 	)
-	(label "BA0"
+	(label "DDR4.BA0"
 		(at 21.59 71.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13378,8 +13131,8 @@
 		)
 		(uuid "822a96dd-7eb3-4087-b194-ae34f9cea59c")
 	)
-	(label "DQ44"
-		(at 162.56 80.01 0)
+	(label "DDR4.DQ44"
+		(at 160.02 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13389,19 +13142,8 @@
 		)
 		(uuid "84213578-56c6-4dbc-9a6a-30ed05f868b5")
 	)
-	(label "D{QS5+, QS5-, M5}"
-		(at 256.54 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8520fd43-8c76-435e-a6cb-eec7df1a46dd")
-	)
-	(label "DQ38"
-		(at 127 85.09 0)
+	(label "DDR4.DQ38"
+		(at 120.65 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13411,8 +13153,8 @@
 		)
 		(uuid "8a063706-f035-45c6-85fa-aa36939d9c58")
 	)
-	(label "DQ40"
-		(at 162.56 69.85 0)
+	(label "DDR4.DQ40"
+		(at 160.02 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13422,18 +13164,7 @@
 		)
 		(uuid "8aed2017-84f2-4892-a210-d48f6ba74fa8")
 	)
-	(label "A[16..0]"
-		(at 207.01 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bb63834-89e5-4897-91e4-e5002be55bfd")
-	)
-	(label "DQS3+"
+	(label "DDR4.DQS3+"
 		(at 238.76 50.8 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13444,7 +13175,7 @@
 		)
 		(uuid "8bb6b9ec-8390-43df-8800-f2ece2f8ec0d")
 	)
-	(label "DM2"
+	(label "DDR4.DM2"
 		(at 199.39 25.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13455,7 +13186,7 @@
 		)
 		(uuid "8f94a542-c29a-48dd-88b4-73e833ece547")
 	)
-	(label "A9"
+	(label "DDR4.A9"
 		(at 21.59 48.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13466,8 +13197,8 @@
 		)
 		(uuid "9067f04d-1dd2-4271-b17d-d6093ab7c954")
 	)
-	(label "DQS0-"
-		(at 128.27 48.26 0)
+	(label "DDR4.DQS0-"
+		(at 121.92 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13477,7 +13208,7 @@
 		)
 		(uuid "923b2a07-f33b-4010-b2f7-c201e0c044db")
 	)
-	(label "DQ30"
+	(label "DDR4.DQ30"
 		(at 238.76 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13488,7 +13219,7 @@
 		)
 		(uuid "9287e1fe-177f-42ed-aae6-14dc4ffa037f")
 	)
-	(label "A7"
+	(label "DDR4.A7"
 		(at 21.59 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13499,7 +13230,7 @@
 		)
 		(uuid "9333214a-11fa-48af-bdce-15561c6f957e")
 	)
-	(label "CS2"
+	(label "DDR4.CS2"
 		(at 60.96 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13510,19 +13241,8 @@
 		)
 		(uuid "94b57654-77b2-4c25-8ff9-646944d61574")
 	)
-	(label "BG[1..0]"
-		(at 207.01 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97ee8138-fbbd-4ce0-8e5d-eea44ef8201f")
-	)
-	(label "DQ3"
-		(at 128.27 35.56 0)
+	(label "DDR4.DQ3"
+		(at 121.92 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13532,7 +13252,7 @@
 		)
 		(uuid "983b6395-e4be-4e63-98f9-8ce90948af5c")
 	)
-	(label "CK1-"
+	(label "DDR4.CK1-"
 		(at 60.96 33.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13543,7 +13263,7 @@
 		)
 		(uuid "99ebeb26-7488-4818-a643-bdb55f65c457")
 	)
-	(label "DQ60"
+	(label "DDR4.DQ60"
 		(at 238.76 80.01 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13554,7 +13274,7 @@
 		)
 		(uuid "9a4c1946-2214-42a4-9b9c-dd6da728eb93")
 	)
-	(label "DQ19"
+	(label "DDR4.DQ19"
 		(at 199.39 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13565,7 +13285,7 @@
 		)
 		(uuid "9e1400be-e6de-4494-b146-c62ef3d3deb1")
 	)
-	(label "CKE1"
+	(label "DDR4.CKE1"
 		(at 60.96 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13576,7 +13296,7 @@
 		)
 		(uuid "9fd9adf9-bbb3-4328-9adf-ce1ab754df0b")
 	)
-	(label "DQS7+"
+	(label "DDR4.DQS7+"
 		(at 238.76 92.71 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13587,8 +13307,8 @@
 		)
 		(uuid "a30d7a14-b0df-4c54-a557-5cef5014114f")
 	)
-	(label "DM5"
-		(at 162.56 67.31 0)
+	(label "DDR4.DM5"
+		(at 160.02 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13598,18 +13318,7 @@
 		)
 		(uuid "a33cabd1-c5ba-4ce6-b022-cc9d5aabcfa2")
 	)
-	(label "CS[3..0]"
-		(at 207.01 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8aa18c9-5501-40ae-a78c-5775272a1c8a")
-	)
-	(label "DQ59"
+	(label "DDR4.DQ59"
 		(at 238.76 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13620,7 +13329,7 @@
 		)
 		(uuid "af001cc1-8ace-4ddc-9649-411b8871c271")
 	)
-	(label "DQ24"
+	(label "DDR4.DQ24"
 		(at 238.76 27.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13631,7 +13340,7 @@
 		)
 		(uuid "b0fb9e6b-9bd0-4d28-94dd-bebfb46a4327")
 	)
-	(label "DQ29"
+	(label "DDR4.DQ29"
 		(at 238.76 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13642,7 +13351,7 @@
 		)
 		(uuid "b1bddaf8-175f-4c66-9640-70be8c785bc7")
 	)
-	(label "SA0"
+	(label "DDR4.SA0"
 		(at 21.59 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13653,7 +13362,7 @@
 		)
 		(uuid "b566f3ba-26b1-419c-b667-ce93eaf5d369")
 	)
-	(label "DQ52"
+	(label "DDR4.DQ52"
 		(at 199.39 80.01 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13664,7 +13373,7 @@
 		)
 		(uuid "b7de19ed-9e94-4f36-80ce-9622b0170972")
 	)
-	(label "DQ23"
+	(label "DDR4.DQ23"
 		(at 199.39 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13675,7 +13384,7 @@
 		)
 		(uuid "b939cae2-ae1a-4840-b7ca-33872248cf25")
 	)
-	(label "DQ61"
+	(label "DDR4.DQ61"
 		(at 238.76 82.55 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13686,7 +13395,7 @@
 		)
 		(uuid "be860a89-70f0-46c8-a251-670ec4d7c532")
 	)
-	(label "CS1"
+	(label "DDR4.CS1"
 		(at 60.96 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13697,7 +13406,7 @@
 		)
 		(uuid "bfc99014-a0af-47d6-80b0-0c89e8600f60")
 	)
-	(label "DQS2-"
+	(label "DDR4.DQS2-"
 		(at 199.39 48.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13708,8 +13417,8 @@
 		)
 		(uuid "c025af35-a121-43d7-a399-73c784982a0a")
 	)
-	(label "D{QS0+, QS0-, M0}"
-		(at 256.54 110.49 0)
+	(label "DDR4.ALERT_n"
+		(at 60.96 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13717,20 +13426,9 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c1ac4802-0f6f-4cf6-ad8b-f863509f3dea")
+		(uuid "c17d2ff8-fbe3-4456-92b9-91fd58f28b86")
 	)
-	(label "BA[1..0]"
-		(at 207.01 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1af0bfb-9cef-4753-bcc5-4b4e9f321365")
-	)
-	(label "DQ51"
+	(label "DDR4.DQ51"
 		(at 199.39 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13741,7 +13439,7 @@
 		)
 		(uuid "c44a800c-70a5-4a24-b9a3-68be6accf089")
 	)
-	(label "DQ17"
+	(label "DDR4.DQ17"
 		(at 199.39 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13752,8 +13450,8 @@
 		)
 		(uuid "c52ccb2f-193d-47e0-9517-f990fbc7a1c2")
 	)
-	(label "DQ0"
-		(at 128.27 27.94 0)
+	(label "DDR4.DQ0"
+		(at 121.92 27.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13763,7 +13461,7 @@
 		)
 		(uuid "c66963fa-09ea-45dd-9ad5-bce91e821a36")
 	)
-	(label "A16"
+	(label "DDR4.A16"
 		(at 21.59 66.04 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13774,7 +13472,7 @@
 		)
 		(uuid "c6b342ae-ebc2-4fa2-837d-5dc0e1cc7932")
 	)
-	(label "BG0"
+	(label "DDR4.BG0"
 		(at 21.59 78.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13785,8 +13483,8 @@
 		)
 		(uuid "c7279571-cbf8-4142-ba11-a68edff5996e")
 	)
-	(label "DQ35"
-		(at 127 77.47 0)
+	(label "DDR4.DQ35"
+		(at 120.65 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13796,18 +13494,7 @@
 		)
 		(uuid "c7705067-95d9-4838-a7f9-55a27102e533")
 	)
-	(label "D{QS3+, QS3-, M3}"
-		(at 256.54 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c7788a8d-6a7a-49f7-a401-017f6fa6c10f")
-	)
-	(label "DQ21"
+	(label "DDR4.DQ21"
 		(at 199.39 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13818,7 +13505,7 @@
 		)
 		(uuid "c856f2f5-86a2-469e-90be-3c74ae292b46")
 	)
-	(label "DQS3-"
+	(label "DDR4.DQS3-"
 		(at 238.76 48.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13829,7 +13516,7 @@
 		)
 		(uuid "ca236e31-5dce-44c1-9cab-fd7c1186636d")
 	)
-	(label "CK0-"
+	(label "DDR4.CK0-"
 		(at 60.96 25.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13840,7 +13527,7 @@
 		)
 		(uuid "cb4090de-1ff7-4879-97a8-463b31d48046")
 	)
-	(label "DM6"
+	(label "DDR4.DM6"
 		(at 199.39 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13851,30 +13538,8 @@
 		)
 		(uuid "cee1eb05-4762-4cd2-9c15-1dd8ad1de423")
 	)
-	(label "DQ[7..0]"
-		(at 256.54 130.81 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf839977-eccb-4de5-b538-834638e3a5b5")
-	)
-	(label "CB[7..0]"
-		(at 256.54 156.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfabd1de-d99d-4c09-b6e6-cca538b8f65c")
-	)
-	(label "DQS4+"
-		(at 127 92.71 0)
+	(label "DDR4.DQS4+"
+		(at 120.65 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13884,18 +13549,7 @@
 		)
 		(uuid "d296e050-d8cf-48a6-a1a8-eb165c597160")
 	)
-	(label "RESET_n"
-		(at 60.96 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4028d8f-6fcc-4519-9c07-3ab31003a287")
-	)
-	(label "ODT1"
+	(label "DDR4.ODT1"
 		(at 60.96 48.26 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13906,7 +13560,7 @@
 		)
 		(uuid "d44d4c1c-5ff5-4b3a-923d-6cad5d0830a1")
 	)
-	(label "A11"
+	(label "DDR4.A11"
 		(at 21.59 53.34 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13917,7 +13571,7 @@
 		)
 		(uuid "d71d1859-4916-41fd-b7d2-82d34ac0520d")
 	)
-	(label "A0"
+	(label "DDR4.A0"
 		(at 21.59 25.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13928,7 +13582,7 @@
 		)
 		(uuid "d886ef57-3346-475e-b02f-996f43022969")
 	)
-	(label "DQ27"
+	(label "DDR4.DQ27"
 		(at 238.76 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13939,19 +13593,8 @@
 		)
 		(uuid "d8e721e2-05b7-4a17-9aa7-0d918dc6df51")
 	)
-	(label "EVENT_n"
-		(at 60.96 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0d528aa-b6df-4424-b1a7-5224571a39eb")
-	)
-	(label "DQ13"
-		(at 162.56 40.64 0)
+	(label "DDR4.DQ13"
+		(at 160.02 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13961,7 +13604,7 @@
 		)
 		(uuid "e1ea794f-d1dd-41a9-9c8e-7e94b316d70f")
 	)
-	(label "DQ28"
+	(label "DDR4.DQ28"
 		(at 238.76 38.1 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13972,7 +13615,18 @@
 		)
 		(uuid "e3896f1c-4ebd-43b9-bc14-57d150457724")
 	)
-	(label "ACT_n"
+	(label "DDR4.RESET_n"
+		(at 60.96 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6703ee0-ab37-4c54-b48f-db1b9c594b5e")
+	)
+	(label "DDR4.ACT_n"
 		(at 60.96 43.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -13983,18 +13637,7 @@
 		)
 		(uuid "e722a729-6993-4229-bbc7-afe3f7d5373f")
 	)
-	(label "CK{0+, 0-, E0}"
-		(at 207.01 120.65 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e724b630-33c1-46a9-a9c8-9cd0645a791f")
-	)
-	(label "A8"
+	(label "DDR4.A8"
 		(at 21.59 45.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -14005,7 +13648,7 @@
 		)
 		(uuid "ea03dc89-f3b1-432f-a569-7b8599e3fa6d")
 	)
-	(label "DQ49"
+	(label "DDR4.DQ49"
 		(at 199.39 72.39 0)
 		(fields_autoplaced yes)
 		(effects
@@ -14016,7 +13659,7 @@
 		)
 		(uuid "ea2f9b75-d071-4e09-88c4-43871d55c0da")
 	)
-	(label "DQ16"
+	(label "DDR4.DQ16"
 		(at 199.39 27.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -14027,8 +13670,8 @@
 		)
 		(uuid "ea4e3c3e-7de6-477d-bf7d-e1e8c92076e6")
 	)
-	(label "DQ4"
-		(at 128.27 38.1 0)
+	(label "DDR4.DQ4"
+		(at 121.92 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14038,8 +13681,8 @@
 		)
 		(uuid "ecfe0d8a-4aea-4282-bbac-9b3e4e7cacee")
 	)
-	(label "DQ7"
-		(at 128.27 45.72 0)
+	(label "DDR4.DQ7"
+		(at 121.92 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14049,8 +13692,8 @@
 		)
 		(uuid "f1a3a9f6-198f-4845-a3ed-8165568b39a2")
 	)
-	(label "DQ12"
-		(at 162.56 38.1 0)
+	(label "DDR4.DQ12"
+		(at 160.02 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14060,18 +13703,7 @@
 		)
 		(uuid "f1f3488f-6957-49c9-af55-b4b3a708ef87")
 	)
-	(label "ODT[1..0]"
-		(at 207.01 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f99dbd1f-3de0-4597-9555-ecfb3c1b721e")
-	)
-	(label "CS3"
+	(label "DDR4.CS3"
 		(at 60.96 58.42 0)
 		(fields_autoplaced yes)
 		(effects
@@ -14082,20 +13714,9 @@
 		)
 		(uuid "fc92c88b-f381-43d2-9bdf-537326e748f5")
 	)
-	(label "DQ[47..40]"
-		(at 256.54 143.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fed82614-db87-47e8-b8fb-0d8bf9601c99")
-	)
-	(hierarchical_label "DQ[7..0]"
+	(hierarchical_label "DDR4{DDR4}"
 		(shape bidirectional)
-		(at 255.27 130.81 180)
+		(at 259.08 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14103,203 +13724,11 @@
 			)
 			(justify right)
 		)
-		(uuid "09e5b275-d0b9-4e56-802f-4e166de22d94")
-	)
-	(hierarchical_label "D{QS7+, QS7-, M7}"
-		(shape input)
-		(at 255.27 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0b0d7993-72b1-4fe7-8b21-90cd52c0ce56")
-	)
-	(hierarchical_label "D{QS4+, QS4-, M4}"
-		(shape input)
-		(at 255.27 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0e44d405-7a9c-42b6-8f51-c0556edf839e")
-	)
-	(hierarchical_label "D{QS3+, QS3-, M3}"
-		(shape input)
-		(at 255.27 118.11 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1d44064c-a8cc-4c5d-80d0-dc2e71f52d3e")
-	)
-	(hierarchical_label "ACT_n"
-		(shape input)
-		(at 59.69 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3bb0a283-ef8c-4ea0-9776-5d5008f949cc")
-	)
-	(hierarchical_label "DQ[15..8]"
-		(shape bidirectional)
-		(at 255.27 133.35 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "47455823-1c72-47f8-91be-31fd15a49f2d")
-	)
-	(hierarchical_label "SA[2..0]"
-		(shape input)
-		(at 205.74 118.11 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "530def61-6cdd-44dc-b1d3-059d9198d446")
-	)
-	(hierarchical_label "DQ[23..16]"
-		(shape bidirectional)
-		(at 255.27 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5cc1376c-15f4-43e0-a94d-e6414c5cff1e")
-	)
-	(hierarchical_label "D{QS1+, QS1-, M1}"
-		(shape input)
-		(at 255.27 113.03 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5e5959f8-82b6-4cc7-9dfc-d645c94959d8")
-	)
-	(hierarchical_label "BG[1..0]"
-		(shape input)
-		(at 205.74 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "62756b3e-0548-40fc-b882-6f329fb1cee0")
-	)
-	(hierarchical_label "CB[7..0]"
-		(shape bidirectional)
-		(at 255.27 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "723f96aa-2b1e-49fa-85c4-d82ee02542d8")
-	)
-	(hierarchical_label "D{QS2+, QS2-, M2}"
-		(shape input)
-		(at 255.27 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78d3404e-feca-462c-9646-974ccaeb77c9")
-	)
-	(hierarchical_label "ALERT_n"
-		(shape input)
-		(at 59.69 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78e9759f-344d-46f3-8801-0af806c55eee")
-	)
-	(hierarchical_label "DQ[31..24]"
-		(shape bidirectional)
-		(at 255.27 138.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7ba973cf-5b54-4b76-9ceb-47e71c727f85")
-	)
-	(hierarchical_label "DQ[39..32]"
-		(shape bidirectional)
-		(at 255.27 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b7ffcd9-045d-4e22-a143-5a8fb6780a4f")
-	)
-	(hierarchical_label "D{QS5+, QS5-, M5}"
-		(shape input)
-		(at 255.27 123.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8bdcf679-da6d-4544-abaf-833ff18bec83")
-	)
-	(hierarchical_label "RESET_n"
-		(shape input)
-		(at 59.69 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "90d700d4-67c7-492c-9279-b5ae30587ad6")
+		(uuid "928c0d94-a0cc-4a9a-b8c1-3dbfeecf95ba")
 	)
 	(hierarchical_label "SPD_SDA"
-		(shape input)
-		(at 59.69 76.2 180)
+		(shape bidirectional)
+		(at 68.58 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14309,81 +13738,9 @@
 		)
 		(uuid "96bcb70e-e8ad-4931-a363-0442b3f7730a")
 	)
-	(hierarchical_label "DQ[47..40]"
-		(shape bidirectional)
-		(at 255.27 143.51 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "985e0b90-a204-4b31-b915-e75cfc5a5570")
-	)
-	(hierarchical_label "CK{1+, 1-, E1}"
-		(shape input)
-		(at 205.74 123.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9b4b4be0-71f8-4c6d-a9df-0c57ce9fe8d8")
-	)
-	(hierarchical_label "EVENT_n"
-		(shape input)
-		(at 59.69 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a4836814-9152-4bde-9b03-25230f61eb18")
-	)
-	(hierarchical_label "CS[3..0]"
-		(shape input)
-		(at 205.74 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "adea2b18-c430-4086-b74f-53d921cd4bb5")
-	)
-	(hierarchical_label "D{QS6+, QS6-, M6}"
-		(shape input)
-		(at 255.27 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b5214ec7-2bab-4ee5-98af-dcd7cd4dcd83")
-	)
-	(hierarchical_label "ODT[1..0]"
-		(shape input)
-		(at 205.74 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b671c4bf-b17f-4a55-ad74-6b3b5a661bc9")
-	)
 	(hierarchical_label "SPD_SCL"
 		(shape input)
-		(at 59.69 73.66 180)
+		(at 68.58 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14393,105 +13750,9 @@
 		)
 		(uuid "b6e8ebca-bf0d-4eeb-944a-9623a9dbfdc0")
 	)
-	(hierarchical_label "D{QS0+, QS0-, M0}"
-		(shape input)
-		(at 255.27 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c05800dc-a081-46f2-a38a-ee8449f36e41")
-	)
-	(hierarchical_label "BA[1..0]"
-		(shape input)
-		(at 205.74 113.03 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d67ec91c-7898-4028-ae18-bfe2bfe3d104")
-	)
-	(hierarchical_label "DQ[55..48]"
-		(shape bidirectional)
-		(at 255.27 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e05ef443-e335-4ef8-a300-ab7c304b4873")
-	)
-	(hierarchical_label "CK{0+, 0-, E0}"
-		(shape input)
-		(at 205.74 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e2d02a01-c5c0-4075-a1c6-7b89e51d1afc")
-	)
-	(hierarchical_label "A[16..0]"
-		(shape input)
-		(at 205.74 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e30d3dce-cb5e-414c-bbe1-2fe07c36b1d2")
-	)
-	(hierarchical_label "PARITY"
-		(shape input)
-		(at 59.69 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e339b1c7-8ec5-42a8-953e-b913cde07422")
-	)
-	(hierarchical_label "DQ[63..56]"
-		(shape bidirectional)
-		(at 255.27 148.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec43af57-b0de-415c-94b7-4b8a41c3457d")
-	)
-	(hierarchical_label "D{QS8+, QS8-, M8}"
-		(shape input)
-		(at 255.27 153.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f17d6987-d9e0-4d71-8c2b-6c76c5af214a")
-	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 170.18 67.31 0)
+		(at 171.45 67.31 0)
 		(unit 8)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14500,7 +13761,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b435422-93f0-486d-896d-744be5ed84a8")
 		(property "Reference" "U20"
-			(at 184.15 60.6255 0)
+			(at 185.42 60.6255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14508,7 +13769,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 184.15 63.0498 0)
+			(at 185.42 63.0498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14516,7 +13777,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 175.26 66.04 0)
+			(at 176.53 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14526,7 +13787,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 175.26 71.12 0)
+			(at 176.53 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14536,7 +13797,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 125.73 82.55 0)
+			(at 127 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15341,7 +14602,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 26.67 25.4 0)
+		(at 31.75 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15349,7 +14610,7 @@
 		(dnp no)
 		(uuid "1cbb2f6c-c294-4f5f-aef7-11141b2ccfa7")
 		(property "Reference" "U20"
-			(at 38.1 18.7155 0)
+			(at 43.18 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15357,7 +14618,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 38.1 21.1398 0)
+			(at 43.18 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15365,7 +14626,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 31.75 24.13 0)
+			(at 36.83 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15375,7 +14636,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 31.75 29.21 0)
+			(at 36.83 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15385,7 +14646,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at -17.78 40.64 0)
+			(at -12.7 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16398,7 +15659,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 134.62 109.22 0)
+		(at 132.08 107.95 0)
 		(unit 11)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16407,7 +15668,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ac3fe28-3a9c-44b7-90f8-f2e87c707c0a")
 		(property "Reference" "U20"
-			(at 149.86 102.5355 0)
+			(at 147.32 101.2655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16415,7 +15676,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 149.86 104.9598 0)
+			(at 147.32 103.6898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16423,7 +15684,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 139.7 107.95 0)
+			(at 137.16 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16433,7 +15694,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 139.7 113.03 0)
+			(at 137.16 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16443,7 +15704,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 90.17 124.46 0)
+			(at 87.63 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17314,7 +16575,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 134.62 25.4 0)
+		(at 132.08 25.4 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17323,7 +16584,7 @@
 		(fields_autoplaced yes)
 		(uuid "53d7e392-50f1-49e5-8bcd-7ba7c9203624")
 		(property "Reference" "U20"
-			(at 148.59 18.7155 0)
+			(at 146.05 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17331,7 +16592,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 148.59 21.1398 0)
+			(at 146.05 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17339,7 +16600,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 139.7 24.13 0)
+			(at 137.16 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17349,7 +16610,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 139.7 29.21 0)
+			(at 137.16 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17359,7 +16620,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 90.17 40.64 0)
+			(at 87.63 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18523,7 +17784,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 207.01 67.31 0)
+		(at 210.82 67.31 0)
 		(unit 9)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18532,7 +17793,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e6d61b7-5fdd-4733-a2ce-60f6aecba22d")
 		(property "Reference" "U20"
-			(at 220.98 60.6255 0)
+			(at 224.79 60.6255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18540,7 +17801,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 220.98 63.0498 0)
+			(at 224.79 63.0498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18548,7 +17809,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 212.09 66.04 0)
+			(at 215.9 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18558,7 +17819,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 212.09 71.12 0)
+			(at 215.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18568,7 +17829,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 162.56 82.55 0)
+			(at 166.37 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19439,7 +18700,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 134.62 67.31 0)
+		(at 132.08 67.31 0)
 		(unit 7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19448,7 +18709,7 @@
 		(fields_autoplaced yes)
 		(uuid "7236be7c-7445-4cc6-9a9b-113fc65a04cb")
 		(property "Reference" "U20"
-			(at 148.59 60.6255 0)
+			(at 146.05 60.6255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19456,7 +18717,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 148.59 63.0498 0)
+			(at 146.05 63.0498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19464,7 +18725,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 139.7 66.04 0)
+			(at 137.16 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19474,7 +18735,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 139.7 71.12 0)
+			(at 137.16 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19484,7 +18745,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 90.17 82.55 0)
+			(at 87.63 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20434,7 +19695,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 246.38 25.4 0)
+		(at 250.19 25.4 0)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20443,7 +19704,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0688b8f-cb58-4a5e-b938-36df42fcd95d")
 		(property "Reference" "U20"
-			(at 260.35 18.7155 0)
+			(at 264.16 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20451,7 +19712,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 260.35 21.1398 0)
+			(at 264.16 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20459,7 +19720,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 251.46 24.13 0)
+			(at 255.27 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20469,7 +19730,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 251.46 29.21 0)
+			(at 255.27 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20479,7 +19740,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 201.93 40.64 0)
+			(at 205.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21284,7 +20545,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 69.85 25.4 0)
+		(at 74.93 25.4 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21292,7 +20553,7 @@
 		(dnp no)
 		(uuid "b2e48b6c-7785-45a6-af0e-279e20c3849c")
 		(property "Reference" "U20"
-			(at 82.55 18.7155 0)
+			(at 87.63 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21300,7 +20561,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 82.55 21.1398 0)
+			(at 87.63 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21308,7 +20569,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 74.93 24.13 0)
+			(at 80.01 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21318,7 +20579,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 74.93 29.21 0)
+			(at 80.01 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21328,7 +20589,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 25.4 40.64 0)
+			(at 30.48 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22134,7 +21395,7 @@
 	(symbol
 		(lib_name "Foxconn_AS0A826-H2SB-7H_1")
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 170.18 25.4 0)
+		(at 171.45 25.4 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22143,7 +21404,7 @@
 		(fields_autoplaced yes)
 		(uuid "b34b3c0a-0312-4534-ac82-dcdb25c96405")
 		(property "Reference" "U20"
-			(at 184.15 18.7155 0)
+			(at 185.42 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22151,7 +21412,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 184.15 21.1398 0)
+			(at 185.42 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22159,7 +21420,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 175.26 24.13 0)
+			(at 176.53 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22169,7 +21430,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 175.26 29.21 0)
+			(at 176.53 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22179,7 +21440,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 125.73 40.64 0)
+			(at 127 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22978,6 +22239,73 @@
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/da9ca5a6-681c-4f68-b894-107ae37cfb74"
 					(reference "U20")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 80.01 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b61076ad-f85a-4d35-9143-4da03d13cf59")
+		(property "Reference" "#PWR0282"
+			(at 80.01 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 80.01 101.9231 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 80.01 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "790ff54d-17d0-4c2e-95aa-25bb339583e5")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/da9ca5a6-681c-4f68-b894-107ae37cfb74"
+					(reference "#PWR0282")
+					(unit 1)
 				)
 			)
 		)
@@ -24100,7 +23428,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 246.38 67.31 0)
+		(at 250.19 67.31 0)
 		(unit 10)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24109,7 +23437,7 @@
 		(fields_autoplaced yes)
 		(uuid "cee6c627-143b-435e-9a5f-e413e7c45506")
 		(property "Reference" "U20"
-			(at 260.35 60.6255 0)
+			(at 264.16 60.6255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24117,7 +23445,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 260.35 63.0498 0)
+			(at 264.16 63.0498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24125,7 +23453,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 251.46 66.04 0)
+			(at 255.27 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24135,7 +23463,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 251.46 71.12 0)
+			(at 255.27 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24145,7 +23473,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 201.93 82.55 0)
+			(at 205.74 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25513,7 +24841,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Foxconn_AS0A826-H2SB-7H")
-		(at 207.01 25.4 0)
+		(at 210.82 25.4 0)
 		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25522,7 +24850,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2d72834-696a-48f1-91a6-00cc8dfa0cce")
 		(property "Reference" "U20"
-			(at 220.98 18.7155 0)
+			(at 224.79 18.7155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25530,7 +24858,7 @@
 			)
 		)
 		(property "Value" "Foxconn_AS0A826-H2SB-7H"
-			(at 220.98 21.1398 0)
+			(at 224.79 21.1398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25538,7 +24866,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:Foxconn_SODDR4_AS0A821-H4SB-7H_2x130P_P0.5mm"
-			(at 212.09 24.13 0)
+			(at 215.9 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25548,7 +24876,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210401/C2761525_3F51BA39DB17DA636510977C03EC04F0.pdf"
-			(at 212.09 29.21 0)
+			(at 215.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25558,7 +24886,7 @@
 			)
 		)
 		(property "Description" "Foxconn SMD AS0A826-H2SB-7H DDR4 SODIMM socket"
-			(at 162.56 40.64 0)
+			(at 166.37 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26357,6 +25685,77 @@
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/da9ca5a6-681c-4f68-b894-107ae37cfb74"
 					(reference "U20")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 80.01 92.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f786d80b-62d4-459d-af82-36d9e5463b2a")
+		(property "Reference" "R99"
+			(at 78.5114 91.4978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 78.5114 93.9221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 80.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 80.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5fc54a5c-9588-4ad2-9e62-b5c667085664")
+		)
+		(pin "1"
+			(uuid "f890657f-6161-4dfc-b674-10eb97b597ff")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/da9ca5a6-681c-4f68-b894-107ae37cfb74"
+					(reference "R99")
+					(unit 1)
 				)
 			)
 		)
