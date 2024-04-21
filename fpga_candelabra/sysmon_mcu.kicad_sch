@@ -8,7 +8,7 @@
 		(title "System Monitor RP2040 MCU")
 	)
 	(lib_symbols
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -23,7 +23,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(effects
 					(font
@@ -49,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,10 +76,32 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
 					(stroke
 						(width 0)
 						(type default)
@@ -166,7 +188,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -367,7 +389,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -469,6 +491,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -595,6 +635,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3708,8 +3766,16 @@
 		(uuid "fe19659d-2e57-4558-a900-bc4a75674ca6")
 	)
 	(no_connect
+		(at 59.69 147.32)
+		(uuid "586699f5-23b1-4c0c-bfd3-c46b7e79674e")
+	)
+	(no_connect
 		(at 59.69 119.38)
 		(uuid "9b99f911-0555-47c4-beb9-3da727a06fc1")
+	)
+	(no_connect
+		(at 59.69 149.86)
+		(uuid "f2f4dc25-1f7d-40ca-b40d-ff23f6befc45")
 	)
 	(wire
 		(pts
@@ -5281,10 +5347,10 @@
 		)
 		(uuid "ffe4621b-e336-4029-87d6-5e00963641ca")
 	)
-	(text_box "MGMT I2C Bus:\n - (3.3V) 0b1100111 TPS53667 PMBus\n - (3.3V) 0b0101001 FMC VADJ DigiPot\n - (2.5V) 0b1010xxx DDR4 SPD (set by SAx)"
+	(text_box "MGMT I2C Bus:\n - (3.3V) 0b1100111 TPS53667 PMBus\n - (3.3V) 0b0101111 FMC VADJ DigiPot\n - (3.3V) 0b1010100 CDCM6208 PLL\n - (2.5V) 0b1010000 DDR4 SPD R/W\n - (2.5V) 0b0110000 DDR4 SPD Utility"
 		(exclude_from_sim no)
 		(at 219.71 27.94 0)
-		(size 52.07 13.97)
+		(size 59.69 13.97)
 		(stroke
 			(width 0)
 			(type default)
@@ -5302,7 +5368,7 @@
 	)
 	(text "Self-powered USB device"
 		(exclude_from_sim no)
-		(at 69.596 143.51 0)
+		(at 61.214 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5868,7 +5934,7 @@
 		)
 		(uuid "4ab81d0a-ba64-4f02-90aa-ad95be35c8c9")
 	)
-	(hierarchical_label "FMC0_VADJ_PG"
+	(hierarchical_label "FMC_VADJ_PG"
 		(shape input)
 		(at 182.88 113.03 0)
 		(fields_autoplaced yes)
@@ -5892,7 +5958,7 @@
 		)
 		(uuid "592b199c-f61d-4c00-bb59-0040b0f7d115")
 	)
-	(hierarchical_label "FMC0_VADJ_EN"
+	(hierarchical_label "FMC_EN"
 		(shape output)
 		(at 182.88 110.49 0)
 		(fields_autoplaced yes)
@@ -6036,8 +6102,8 @@
 		)
 		(uuid "e604721a-8ec6-48d3-a307-e5e2e527462a")
 	)
-	(hierarchical_label "FMC1_VADJ_EN"
-		(shape output)
+	(hierarchical_label "FMC_3P3V_PG"
+		(shape input)
 		(at 182.88 115.57 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6071,18 +6137,6 @@
 			(justify left)
 		)
 		(uuid "ef6f9b87-16b3-4af7-ba38-1ecfa2f6a2d9")
-	)
-	(hierarchical_label "FMC1_VADJ_PG"
-		(shape input)
-		(at 182.88 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fbdf2b80-d25a-449f-97ee-11043ada7395")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -9185,7 +9239,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 44.45 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9202,7 +9256,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+		(property "Value" "TYPE-C-31-M-12"
 			(at 44.45 115.1198 0)
 			(effects
 				(font
@@ -9281,6 +9335,12 @@
 		)
 		(pin "A4"
 			(uuid "b5d68d9a-df83-4c88-9340-d6245df7fa94")
+		)
+		(pin "A8"
+			(uuid "bd5cda4a-8a7f-443b-8f7d-884b00973422")
+		)
+		(pin "B8"
+			(uuid "bae100fc-9c38-4278-b301-3d8a5a1b425e")
 		)
 		(instances
 			(project "fpga_candelabra"

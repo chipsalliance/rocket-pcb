@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.049999999999999996,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,13 +24,13 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,11 +41,11 @@
           "height": 1.524,
           "width": 1.524
         },
-        "silk_line_width": 0.09999999999999999,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.09999999999999999,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
@@ -114,15 +114,15 @@
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -415,7 +415,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -555,7 +555,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Footprint"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -655,19 +655,35 @@
     ],
     [
       "ef6f4311-052d-4a14-a485-64d16c370478",
-      "Power VADJ"
+      "Power FMC"
     ],
     [
       "095efde8-9348-4a17-b275-a6dd2c6e4f2b",
-      "Power Supply SODIMM"
+      "Power SODIMM"
     ],
     [
       "4ce9bd16-15e9-4d50-ae03-1ab90ec38449",
       "FPGA Decoupling"
     ],
     [
+      "eab1a82a-282e-4db4-9209-0d8dbaed4ca3",
+      "System Clock"
+    ],
+    [
       "da9ca5a6-681c-4f68-b894-107ae37cfb74",
       "DDR4 SODIMM"
+    ],
+    [
+      "ebaa4c3d-2a51-4589-83c9-6df564f83c95",
+      "PCIE Edge Conn"
+    ],
+    [
+      "73c34a20-6094-4678-a785-5f319bc772f0",
+      "FMC HPC 0"
+    ],
+    [
+      "dc60a56e-2881-49d2-a0ae-ce083844b529",
+      "FMC HPC 1"
     ]
   ],
   "text_variables": {}

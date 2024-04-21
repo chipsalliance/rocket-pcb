@@ -4,7 +4,382 @@
 	(generator_version "8.0")
 	(uuid "01ed9e92-4e50-4b41-90dc-10444aaec5f7")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:Earth"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
 	(bus_alias "DDR4"
 		(members "A0" "A1" "A2" "A3" "A4" "A5" "A6" "A7" "A8" "A9" "A10" "A11"
 			"A12" "A13" "A14" "A15" "A16" "BA0" "BA1" "BG0" "BG1" "CK0+" "CK0-" "CKE0"
@@ -21,21 +396,57 @@
 			"DQ61" "DQ62" "DQ63" "CB0" "CB1" "CB2" "CB3" "CB4" "CB5" "CB6" "CB7"
 		)
 	)
-	(junction
-		(at 97.79 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b6c1c31-c61b-422a-a4e5-b16b254c6b34")
+	(bus_alias "FMC_HPC"
+		(members "CLK0_M2C+" "CLK0_M2C-" "CLK1_M2C+" "CLK1_M2C-" "CLK2_BID+" "CLK2_BID-"
+			"CLK3_BID+" "CLK3_BID-" "CLK_DIR" "DP0_C2M+" "DP0_C2M-" "DP0_M2C+" "DP0_M2C-"
+			"DP1_C2M+" "DP1_C2M-" "DP1_M2C+" "DP1_M2C-" "DP2_C2M+" "DP2_C2M-" "DP2_M2C+"
+			"DP2_M2C-" "DP3_C2M+" "DP3_C2M-" "DP3_M2C+" "DP3_M2C-" "DP4_C2M+" "DP4_C2M-"
+			"DP4_M2C+" "DP4_M2C-" "DP5_C2M+" "DP5_C2M-" "DP5_M2C+" "DP5_M2C-" "DP6_C2M+"
+			"DP6_C2M-" "DP6_M2C+" "DP6_M2C-" "DP7_C2M+" "DP7_C2M-" "DP7_M2C+" "DP7_M2C-"
+			"DP8_C2M+" "DP8_C2M-" "DP8_M2C+" "DP8_M2C-" "DP9_C2M+" "DP9_C2M-" "DP9_M2C+"
+			"DP9_M2C-" "GBTCLK0+" "GBTCLK0-" "GBTCLK1+" "GBTCLK1-" "HA00_CC+" "HA00_CC-"
+			"HA01_CC+" "HA01_CC-" "HA02+" "HA02-" "HA03+" "HA03-" "HA04+" "HA04-"
+			"HA05+" "HA05-" "HA06+" "HA06-" "HA07+" "HA07-" "HA08+" "HA08-" "HA09+"
+			"HA09-" "HA10+" "HA10-" "HA11+" "HA11-" "HA12+" "HA12-" "HA13+" "HA13-"
+			"HA14+" "HA14-" "HA15+" "HA15-" "HA16+" "HA16-" "HA17_CC+" "HA17_CC-"
+			"HA18+" "HA18-" "HA19+" "HA19-" "HA20+" "HA20-" "HA21+" "HA21-" "HA22+"
+			"HA22-" "HA23+" "HA23-" "HB00_CC+" "HB00_CC-" "HB01+" "HB01-" "HB02+"
+			"HB02-" "HB03+" "HB03-" "HB04+" "HB04-" "HB05+" "HB05-" "HB06_CC+" "HB06_CC-"
+			"HB07+" "HB07-" "HB08+" "HB08-" "HB09+" "HB09-" "HB10+" "HB10-" "HB11+"
+			"HB11-" "HB12+" "HB12-" "HB13+" "HB13-" "HB14+" "HB14-" "HB15+" "HB15-"
+			"HB16+" "HB16-" "HB17_CC+" "HB17_CC-" "HB18+" "HB18-" "HB19+" "HB19-"
+			"HB20+" "HB20-" "HB21+" "HB21-" "LA00_CC+" "LA00_CC-" "LA01_CC+" "LA01_CC-"
+			"LA02+" "LA02-" "LA03+" "LA03-" "LA04+" "LA04-" "LA05+" "LA05-" "LA06+"
+			"LA06-" "LA07+" "LA07-" "LA08+" "LA08-" "LA09+" "LA09-" "LA10+" "LA10-"
+			"LA11+" "LA11-" "LA12+" "LA12-" "LA13+" "LA13-" "LA14+" "LA14-" "LA15+"
+			"LA15-" "LA16+" "LA16-" "LA17_CC+" "LA17_CC-" "LA18_CC+" "LA18_CC-" "LA19+"
+			"LA19-" "LA20+" "LA20-" "LA21+" "LA21-" "LA22+" "LA22-" "LA23+" "LA23-"
+			"LA24+" "LA24-" "LA25+" "LA25-" "LA26+" "LA26-" "LA27+" "LA27-" "LA28+"
+			"LA28-" "LA29+" "LA29-" "LA30+" "LA30-" "LA31+" "LA31-" "LA32+" "LA32-"
+			"LA33+" "LA33-" "PG_C2M" "PG_M2C" "~{PRSNT_M2C}" "SCL" "SDA" "TCK" "TDI"
+			"TDO" "TMS" "~{TRST}"
+		)
+	)
+	(bus_alias "PCIE_X16"
+		(members "PET0+" "PET1+" "PET2+" "PET3+" "PET4+" "PET5+" "PET6+" "PET7+"
+			"PET8+" "PET9+" "PET10+" "PET11+" "PET12+" "PET13+" "PET14+" "PET15+"
+			"PER0+" "PER1+" "PER2+" "PER3+" "PER4+" "PER5+" "PER6+" "PER7+" "PER8+"
+			"PER9+" "PER10+" "PER11+" "PER12+" "PER13+" "PER14+" "PER15+" "PET0-"
+			"PET1-" "PET2-" "PET3-" "PET4-" "PET5-" "PET6-" "PET7-" "PET8-" "PET9-"
+			"PET10-" "PET11-" "PET12-" "PET13-" "PET14-" "PET15-" "PER0-" "PER1-"
+			"PER2-" "PER3-" "PER4-" "PER5-" "PER6-" "PER7-" "PER8-" "PER9-" "PER10-"
+			"PER11-" "PER12-" "PER13-" "PER14-" "PER15-" "REFCLK+" "REFCLK-"
+		)
 	)
 	(junction
-		(at 99.06 129.54)
+		(at 167.64 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a6fc567d-1d78-44ec-a843-3bb485dd6462")
+		(uuid "9fdb0193-db99-4ad4-9fa3-308842fc14d2")
 	)
 	(wire
 		(pts
-			(xy 92.71 144.78) (xy 104.14 144.78)
+			(xy 92.71 144.78) (xy 106.68 144.78)
 		)
 		(stroke
 			(width 0)
@@ -55,7 +466,27 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 180.34) (xy 104.14 180.34)
+			(xy 177.8 69.85) (xy 180.34 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08dda5e0-9b6b-4e47-b3bc-3804ce43912c")
+	)
+	(wire
+		(pts
+			(xy 168.91 119.38) (xy 181.61 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b865f18-eb50-45b6-a2f6-397905e20974")
+	)
+	(wire
+		(pts
+			(xy 92.71 180.34) (xy 106.68 180.34)
 		)
 		(stroke
 			(width 0)
@@ -63,9 +494,19 @@
 		)
 		(uuid "117b103c-74f3-46bd-8112-56bb2ea4d9b9")
 	)
+	(wire
+		(pts
+			(xy 198.12 59.69) (xy 199.39 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17504379-9b48-4634-8596-e4806c553a83")
+	)
 	(bus
 		(pts
-			(xy 246.38 129.54) (xy 259.08 129.54)
+			(xy 245.11 125.73) (xy 259.08 125.73)
 		)
 		(stroke
 			(width 0)
@@ -75,17 +516,37 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 129.54) (xy 99.06 153.67)
+			(xy 167.64 71.12) (xy 167.64 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1a65e291-9244-4805-a4db-57d0ab88f2ca")
+		(uuid "28dc731d-eb16-45b9-ba96-0e1cf5766557")
+	)
+	(bus
+		(pts
+			(xy 41.91 60.96) (xy 62.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29bb2769-360b-43a7-a2c6-b289ad262e31")
 	)
 	(wire
 		(pts
-			(xy 92.71 151.13) (xy 104.14 151.13)
+			(xy 177.8 41.91) (xy 180.34 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb15476-17ae-42f4-bbc0-2ee7b1e7d2aa")
+	)
+	(wire
+		(pts
+			(xy 92.71 151.13) (xy 106.68 151.13)
 		)
 		(stroke
 			(width 0)
@@ -95,7 +556,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 152.4) (xy 259.08 152.4)
+			(xy 240.03 148.59) (xy 259.08 148.59)
 		)
 		(stroke
 			(width 0)
@@ -115,17 +576,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 123.19) (xy 104.14 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36e3d6d8-ee0c-4b8b-a859-80b51ca952dc")
-	)
-	(wire
-		(pts
-			(xy 92.71 116.84) (xy 104.14 116.84)
+			(xy 92.71 116.84) (xy 106.68 116.84)
 		)
 		(stroke
 			(width 0)
@@ -135,23 +586,33 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 125.73) (xy 104.14 125.73)
+			(xy 95.25 153.67) (xy 106.68 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4462a058-451c-437e-9b06-28ed88ba2bcc")
+		(uuid "3d6dc3ea-552a-444a-8906-e9e9e12b5b00")
 	)
 	(wire
 		(pts
-			(xy 97.79 132.08) (xy 97.79 156.21)
+			(xy 179.07 31.75) (xy 180.34 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "452a75af-6cbf-4f50-a4ea-41db2848fe3f")
+		(uuid "4056fe6e-d1c9-4461-8fc6-a84b219bad1f")
+	)
+	(wire
+		(pts
+			(xy 167.64 69.85) (xy 172.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47480718-391b-4523-8750-6e575b8060a9")
 	)
 	(wire
 		(pts
@@ -162,6 +623,16 @@
 			(type default)
 		)
 		(uuid "4864aee2-2525-4edb-95ed-77d5593961bf")
+	)
+	(wire
+		(pts
+			(xy 168.91 116.84) (xy 181.61 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4938902d-9626-4e49-a0c2-9a7fa420d605")
 	)
 	(wire
 		(pts
@@ -185,17 +656,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 132.08) (xy 97.79 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "571e78d2-0396-4043-8d51-b40eca2daf0d")
-	)
-	(wire
-		(pts
-			(xy 97.79 156.21) (xy 104.14 156.21)
+			(xy 95.25 156.21) (xy 106.68 156.21)
 		)
 		(stroke
 			(width 0)
@@ -205,7 +666,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 119.38) (xy 104.14 119.38)
+			(xy 92.71 119.38) (xy 106.68 119.38)
 		)
 		(stroke
 			(width 0)
@@ -215,13 +676,33 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 129.54) (xy 99.06 129.54)
+			(xy 179.07 62.23) (xy 180.34 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c81b0f-5a6e-4736-8fc3-8035cd3f2296")
+	)
+	(wire
+		(pts
+			(xy 92.71 129.54) (xy 106.68 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6ba988d7-9026-4b4b-8c3e-f43fbf77ba61")
+	)
+	(wire
+		(pts
+			(xy 198.12 31.75) (xy 199.39 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c019baa-5189-43e5-92cd-d1aa1ee5c46b")
 	)
 	(wire
 		(pts
@@ -255,7 +736,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 182.88) (xy 104.14 182.88)
+			(xy 207.01 116.84) (xy 228.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a984919-0720-48cc-b9dd-72ca54ea0a7a")
+	)
+	(wire
+		(pts
+			(xy 92.71 182.88) (xy 106.68 182.88)
 		)
 		(stroke
 			(width 0)
@@ -265,7 +756,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 142.24) (xy 104.14 142.24)
+			(xy 92.71 142.24) (xy 106.68 142.24)
 		)
 		(stroke
 			(width 0)
@@ -275,7 +766,27 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 132.08) (xy 97.79 132.08)
+			(xy 167.64 39.37) (xy 167.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac427665-d32a-4d75-ba2a-8c62aaa960eb")
+	)
+	(wire
+		(pts
+			(xy 167.64 43.18) (xy 167.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af50f1c2-6e03-43fd-b86b-d2ac69644958")
+	)
+	(wire
+		(pts
+			(xy 92.71 132.08) (xy 106.68 132.08)
 		)
 		(stroke
 			(width 0)
@@ -285,23 +796,43 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 153.67) (xy 104.14 153.67)
+			(xy 177.8 39.37) (xy 180.34 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b28224d9-b1c9-4f7b-b985-960bb8bf4094")
+		(uuid "b6ace568-1fbc-4d07-9046-86f4bef4318c")
 	)
 	(wire
 		(pts
-			(xy 241.3 154.94) (xy 259.08 154.94)
+			(xy 167.64 41.91) (xy 172.72 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8f47624-bce2-4b41-bc41-ee4db431e4fe")
+	)
+	(wire
+		(pts
+			(xy 240.03 151.13) (xy 259.08 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bdbf2886-91d2-4be0-8b8c-e6165dd13a39")
+	)
+	(wire
+		(pts
+			(xy 179.07 34.29) (xy 180.34 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c26d13a7-d339-4f0b-97e8-0e330e66206b")
 	)
 	(wire
 		(pts
@@ -315,13 +846,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 177.8) (xy 104.14 177.8)
+			(xy 92.71 177.8) (xy 106.68 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c8947d66-e008-45fe-911e-43a246f6da18")
+	)
+	(wire
+		(pts
+			(xy 179.07 59.69) (xy 180.34 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0916280-3421-4be7-b528-300914f11de0")
 	)
 	(wire
 		(pts
@@ -332,6 +873,26 @@
 			(type default)
 		)
 		(uuid "d11a2080-a17e-4b59-b6d3-2af7c75795bd")
+	)
+	(wire
+		(pts
+			(xy 92.71 121.92) (xy 106.68 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4aa8251-187e-4667-a213-c7a7b213da4c")
+	)
+	(wire
+		(pts
+			(xy 172.72 39.37) (xy 167.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6b7d573-4762-43ae-9bf0-bd1de894dcc6")
 	)
 	(wire
 		(pts
@@ -355,6 +916,26 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 67.31) (xy 180.34 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db448c65-7fdc-47b1-aa1c-4ae788aa3a5a")
+	)
+	(wire
+		(pts
+			(xy 207.01 119.38) (xy 228.6 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eee7978d-ddd2-4e70-b6d3-fdca0a88f53d")
+	)
+	(wire
+		(pts
 			(xy 38.1 116.84) (xy 55.88 116.84)
 		)
 		(stroke
@@ -365,13 +946,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 129.54) (xy 99.06 129.54)
+			(xy 172.72 67.31) (xy 167.64 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd4f321e-64dc-436f-8954-95f2b4b16863")
+		(uuid "f8ad23f5-2eab-4eca-b873-2334ee4d06ff")
 	)
 	(text_box "Bank allocation:\nSLR0\n  - Bank 61\n  - Bank 62\n  - Bank 63\nSLR1\n  - Bank 64\n  - Bank 65\n  - Bank 66\n  - Bank 67\nSLR2\n  - Bank 68\n  - Bank 69\n  - Bank 70\n  - Bank 71\nSLR3\n  - Bank 72 (1.2V): DDR DQ[63..32]\n  - Bank 73 (1.2V): DDR CCA + CB[7..0]\n  - Bank 74 (1.2V): DDR DQ[31..0]"
 		(exclude_from_sim no)
@@ -392,10 +973,29 @@
 		)
 		(uuid "a115bdcc-7774-4f07-9653-10316015c636")
 	)
+	(text_box "FMC0  GA=0b00\nFMC1  GA=0b01"
+		(exclude_from_sim no)
+		(at 180.34 77.47 0)
+		(size 17.78 5.08)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d02b2786-556b-485c-ac2b-bf46005bb049")
+	)
 	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127 X0Y16-X0Y31\n  - Quad 224-227 X1Y16-X1Y31\n    - PCIE\n\nSLR2\n  - Quad 128-131 X0Y32-X0Y47\n  - Quad 228-231 X1Y32-X1Y47\n\nSLR3\n  - Quad 133     X0Y52-X0Y55\n  - Quad 232-233 X1Y48-X1Y55"
 		(exclude_from_sim no)
 		(at 219.71 68.58 0)
-		(size 60.96 41.91)
+		(size 60.96 30.48)
 		(stroke
 			(width 0)
 			(type default)
@@ -411,6 +1011,28 @@
 		)
 		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
 	)
+	(label "MGMT_SCL"
+		(at 95.25 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "198479ed-a935-4e68-bec1-7f326ba4489e")
+	)
+	(label "MGMT_SCL"
+		(at 170.18 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "21b4a038-cdb6-4e46-ab1b-93fd752fd011")
+	)
 	(label "SPD_I2C_SDA"
 		(at 39.37 161.29 0)
 		(fields_autoplaced yes)
@@ -421,6 +1043,17 @@
 			(justify left bottom)
 		)
 		(uuid "2f50a0e8-86e8-468e-a5af-c06585320000")
+	)
+	(label "PCIE{PCIE_X16}"
+		(at 44.45 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3676f389-b81b-498d-848f-cc2a47bdec3d")
 	)
 	(label "IPMI_SCL"
 		(at 39.37 166.37 0)
@@ -445,7 +1078,7 @@
 		(uuid "44281e41-ee1a-4f6a-b987-3dde1acbff34")
 	)
 	(label "SPD_I2C_SDA"
-		(at 242.57 154.94 0)
+		(at 241.3 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -454,6 +1087,17 @@
 			(justify left bottom)
 		)
 		(uuid "4fb63463-fe4e-4f9e-b936-0544c61deed1")
+	)
+	(label "MGMT_SDA"
+		(at 170.18 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b1a9a3a-e516-4959-aed5-72eecba20929")
 	)
 	(label "IPMI_SDA"
 		(at 39.37 168.91 0)
@@ -467,7 +1111,7 @@
 		(uuid "6d219917-b298-4e2f-91a5-01ee63bf5141")
 	)
 	(label "SPD_I2C_SCL"
-		(at 242.57 152.4 0)
+		(at 241.3 148.59 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -476,6 +1120,925 @@
 			(justify left bottom)
 		)
 		(uuid "7c98107a-5401-4fb5-8253-f27ae7eeca38")
+	)
+	(label "MGMT_SCL"
+		(at 95.25 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a414f77-e70e-4dff-bd17-fb8c162bc507")
+	)
+	(label "DDR4{DDR4}"
+		(at 246.38 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b950b47b-c183-4645-9f3d-559f7f1b32fd")
+	)
+	(label "MGMT_SDA"
+		(at 95.25 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c569bac7-b543-4980-82e4-dd26ed9758f7")
+	)
+	(label "MGMT_SDA"
+		(at 95.25 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c70369b0-8e20-4ab5-9e26-a38a4f1b3958")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 175.26 41.91 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ad3008b-b5fa-4f6a-b2da-8babed7d367b")
+		(property "Reference" "R112"
+			(at 170.688 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 178.562 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 175.26 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 175.26 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e5be90f-29d8-40ff-80ee-9a541ab1f6ad")
+		)
+		(pin "1"
+			(uuid "d6780a6a-dbb7-475d-9356-50acf6a70b40")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "R112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 199.39 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e0ca4c7-fab4-4913-984a-c9d16ec64c23")
+		(property "Reference" "#PWR0165"
+			(at 195.58 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC0_VADJ"
+			(at 202.565 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 199.39 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ef899aa-66c3-43d2-acf1-89e9278dc301")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 199.39 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52acaf0d-9ed3-4707-abf0-8c97296df1b1")
+		(property "Reference" "#PWR0167"
+			(at 195.58 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC1_VADJ"
+			(at 202.565 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 199.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6315886a-66c1-46a6-aae3-b4101163f413")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0167")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 167.64 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5af21022-e25f-4ef8-8011-bba0d9be0ba9")
+		(property "Reference" "#PWR0490"
+			(at 167.64 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 167.64 47.3131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 167.64 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5dd70de5-e7af-4d5f-9b83-c74e6063640e")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0490")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 179.07 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d9fe467-094f-42bb-b5f5-8c89884424f0")
+		(property "Reference" "#PWR0161"
+			(at 182.88 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC0_12P0V"
+			(at 175.895 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 179.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbdcbb36-6320-44ad-855f-bbf64c44b6c2")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0161")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 167.64 71.12 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60fdfe55-32a2-46a9-bd74-a01e4ed24fd6")
+		(property "Reference" "#PWR0602"
+			(at 167.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 167.64 75.2531 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 167.64 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8728b787-f2c9-4c52-ae34-c0c018b9f448")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 167.64 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "709e883a-68c3-4ab8-8a9b-6abcdec222c9")
+		(property "Reference" "#PWR0666"
+			(at 171.45 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VAUX"
+			(at 164.465 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VAUX\""
+			(at 167.64 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e89cd81c-5b2b-479d-b319-aa7f1b51d047")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0666")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 179.07 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "749cc81c-9495-4f35-877d-e3941c31f12f")
+		(property "Reference" "#PWR0162"
+			(at 182.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC1_12P0V"
+			(at 175.895 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 179.07 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12369876-6ae3-4d5f-b354-a62ae45659e5")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 179.07 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7522e5d8-ec9e-4127-854f-723e79fe70f9")
+		(property "Reference" "#PWR0164"
+			(at 182.88 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC1_3P3V"
+			(at 175.8951 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 179.07 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2e6f398-b37b-4c00-9ace-174127914321")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0164")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 175.26 39.37 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ac08e8e-741d-4dbc-875c-973036722472")
+		(property "Reference" "R111"
+			(at 170.688 38.354 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 178.562 38.354 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 175.26 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cb62cb2b-5888-4201-9d3c-8b0ef185ce39")
+		)
+		(pin "1"
+			(uuid "1860943f-3117-468f-a409-9216a83f4456")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 175.26 69.85 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6f04686-62df-4f9f-a426-1250cb368732")
+		(property "Reference" "R114"
+			(at 170.688 68.834 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 178.562 68.834 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 175.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 175.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a8cf9e8e-fc90-4165-8575-0e20e20d66bc")
+		)
+		(pin "1"
+			(uuid "4da30beb-52b5-4ebb-9ea0-0d6d18c95ef1")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "R114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 179.07 34.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2a3b3d1-24bf-427a-8b98-0c7bf4ae1d17")
+		(property "Reference" "#PWR0163"
+			(at 182.88 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC0_3P3V"
+			(at 175.8951 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf5d6779-2b74-4d30-8c9b-bb390b280871")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 175.26 67.31 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc61987f-7276-4d69-8687-bea220a0915b")
+		(property "Reference" "R113"
+			(at 170.688 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 178.562 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 175.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 175.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "33338902-9d97-43ec-abba-2ab118aac86c")
+		)
+		(pin "1"
+			(uuid "b5fb1b79-b2b2-4950-9cf5-400d622b1e7d")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "R113")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet
 		(at 113.03 20.32)
@@ -517,7 +2080,7 @@
 		)
 	)
 	(sheet
-		(at 104.14 175.26)
+		(at 106.68 175.26)
 		(size 17.78 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -529,8 +2092,8 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "095efde8-9348-4a17-b275-a6dd2c6e4f2b")
-		(property "Sheetname" "Power Supply SODIMM"
-			(at 104.14 174.5484 0)
+		(property "Sheetname" "Power SODIMM"
+			(at 106.68 174.5484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -538,8 +2101,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power_supply_sodimm.kicad_sch"
-			(at 104.14 186.0046 0)
+		(property "Sheetfile" "power_sodimm.kicad_sch"
+			(at 106.68 186.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -548,7 +2111,7 @@
 			)
 		)
 		(pin "DDR4_EN" input
-			(at 104.14 177.8 180)
+			(at 106.68 177.8 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -558,7 +2121,7 @@
 			(uuid "378c6c25-3a39-4d63-ae42-c45b8f871e60")
 		)
 		(pin "DDR4_VDDQ_PG" output
-			(at 104.14 180.34 180)
+			(at 106.68 180.34 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -568,7 +2131,7 @@
 			(uuid "756d7f35-606e-47c3-8628-47ae4c85e1cf")
 		)
 		(pin "DDR4_VPP_PG" output
-			(at 104.14 182.88 180)
+			(at 106.68 182.88 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -674,7 +2237,7 @@
 		)
 	)
 	(sheet
-		(at 81.28 59.69)
+		(at 125.73 57.15)
 		(size 12.7 26.67)
 		(fields_autoplaced yes)
 		(stroke
@@ -687,7 +2250,7 @@
 		)
 		(uuid "1d07e2f1-4b18-4d01-8623-639a08041484")
 		(property "Sheetname" "FPGA MGT SLR3"
-			(at 81.28 58.9784 0)
+			(at 125.73 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -696,7 +2259,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr3.kicad_sch"
-			(at 81.28 86.9446 0)
+			(at 125.73 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -713,8 +2276,8 @@
 		)
 	)
 	(sheet
-		(at 22.86 59.69)
-		(size 12.7 26.67)
+		(at 22.86 57.15)
+		(size 19.05 25.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -726,7 +2289,7 @@
 		)
 		(uuid "310973a6-bc21-45fe-bd00-1791bfe6ed49")
 		(property "Sheetname" "FPGA MGT SLR1"
-			(at 22.86 58.9784 0)
+			(at 22.86 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -735,13 +2298,23 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr1.kicad_sch"
-			(at 22.86 86.9446 0)
+			(at 22.86 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "PCIE{PCIE_X16}" bidirectional
+			(at 41.91 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d81443d1-280b-4ed5-b35e-74fa12249780")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -752,8 +2325,8 @@
 		)
 	)
 	(sheet
-		(at 142.24 114.3)
-		(size 12.7 35.56)
+		(at 143.51 175.26)
+		(size 12.7 10.16)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -765,7 +2338,7 @@
 		)
 		(uuid "4ce9bd16-15e9-4d50-ae03-1ab90ec38449")
 		(property "Sheetname" "FPGA Decoupling"
-			(at 142.24 113.5884 0)
+			(at 143.51 174.5484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -774,7 +2347,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_decoupling.kicad_sch"
-			(at 142.24 150.4446 0)
+			(at 143.51 186.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -830,7 +2403,7 @@
 		)
 	)
 	(sheet
-		(at 229.87 118.11)
+		(at 228.6 114.3)
 		(size 16.51 15.24)
 		(fields_autoplaced yes)
 		(stroke
@@ -843,7 +2416,7 @@
 		)
 		(uuid "68a04483-887a-4f96-a7ac-ff48e9ea8a41")
 		(property "Sheetname" "FPGA IO SLR3"
-			(at 229.87 117.3984 0)
+			(at 228.6 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +2425,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr3.kicad_sch"
-			(at 229.87 133.9346 0)
+			(at 228.6 130.1246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -860,8 +2433,8 @@
 				(justify left top)
 			)
 		)
-		(pin "DDR_CLK_N" input
-			(at 229.87 123.19 180)
+		(pin "DDR_CLK-" input
+			(at 228.6 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,8 +2443,8 @@
 			)
 			(uuid "be74c396-4d24-4660-a1f8-9e2041997a70")
 		)
-		(pin "DDR_CLK_P" input
-			(at 229.87 120.65 180)
+		(pin "DDR_CLK+" input
+			(at 228.6 116.84 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -881,7 +2454,7 @@
 			(uuid "055593ba-ea7f-4502-9bd5-5deaa70a89ee")
 		)
 		(pin "DDR4{DDR4}" bidirectional
-			(at 246.38 129.54 0)
+			(at 245.11 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -968,46 +2541,6 @@
 				(justify left)
 			)
 			(uuid "8d12e966-8b27-4fa3-8e26-ebfeb9187ae6")
-		)
-		(pin "FMC1_VADJ_EN" output
-			(at 92.71 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "27657086-9e53-4bad-b295-6f34b5f051dd")
-		)
-		(pin "FMC0_VADJ_EN" output
-			(at 92.71 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9963f5cd-dd4c-4a21-8e43-374cd60eaaaf")
-		)
-		(pin "FMC0_VADJ_PG" input
-			(at 92.71 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "bd14d2c8-ed20-46e7-b6b3-699471f9c4da")
-		)
-		(pin "FMC1_VADJ_PG" input
-			(at 92.71 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5193501e-4247-4cc0-a992-3a13857fb23c")
 		)
 		(pin "MGTAVCC_PG" input
 			(at 55.88 137.16 180)
@@ -1199,6 +2732,36 @@
 			)
 			(uuid "6abadf4e-4326-480a-9319-95714adb677a")
 		)
+		(pin "FMC_3P3V_PG" input
+			(at 92.71 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3507b955-fea8-4899-944a-6a4330544750")
+		)
+		(pin "FMC_EN" output
+			(at 92.71 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "837ec4af-e00f-480d-9e0d-e31f52239eeb")
+		)
+		(pin "FMC_VADJ_PG" input
+			(at 92.71 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2ecf845a-1f84-4ab8-b6a0-1eec529742a7")
+		)
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
@@ -1366,8 +2929,137 @@
 		)
 	)
 	(sheet
-		(at 140.97 58.42)
-		(size 12.7 25.4)
+		(at 180.34 22.86)
+		(size 17.78 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "73c34a20-6094-4678-a785-5f319bc772f0")
+		(property "Sheetname" "FMC HPC 0"
+			(at 180.34 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "fmc_hpc.kicad_sch"
+			(at 180.34 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GA0" input
+			(at 180.34 39.37 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7cd9c2da-a3c2-413c-83e7-8ea49a3a0a7a")
+		)
+		(pin "GA1" input
+			(at 180.34 41.91 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1989b2ba-e39b-4df7-99fa-682cb4f9dbad")
+		)
+		(pin "FMC{FMC_HPC}" bidirectional
+			(at 180.34 25.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "45afb691-f0f3-47b2-838e-f6dc5dbad904")
+		)
+		(pin "12P0V" input
+			(at 180.34 31.75 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f3fb2056-c865-4071-8ed3-cfc0bb75cfa3")
+		)
+		(pin "3P3V" input
+			(at 180.34 34.29 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ea446a45-4b3a-462d-a50a-510e01c90cd2")
+		)
+		(pin "VADJ" input
+			(at 198.12 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7191a45f-b946-4f8d-af78-65bdb22e2347")
+		)
+		(pin "VIO_B" output
+			(at 198.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c4d8080d-36cb-4734-b3ef-5f7de0772a26")
+		)
+		(pin "VREF_B" output
+			(at 198.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "130a4137-4f7f-409f-bb94-76c032c1db0f")
+		)
+		(pin "VREF_A" output
+			(at 198.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "efd63f07-2904-4f90-a63b-94ebe6613325")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 143.51 158.75)
+		(size 12.7 10.16)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1379,7 +3071,7 @@
 		)
 		(uuid "8691c66c-5a64-4c17-8ed2-cfe2f553eb70")
 		(property "Sheetname" "FPGA Power"
-			(at 140.97 57.7084 0)
+			(at 143.51 158.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,7 +3080,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_power.kicad_sch"
-			(at 140.97 84.4046 0)
+			(at 143.51 169.4946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1405,7 +3097,7 @@
 		)
 	)
 	(sheet
-		(at 104.14 139.7)
+		(at 106.68 139.7)
 		(size 17.78 19.05)
 		(fields_autoplaced yes)
 		(stroke
@@ -1418,7 +3110,7 @@
 		)
 		(uuid "beaa4e74-1d18-44b4-b7c5-122d2a26ede8")
 		(property "Sheetname" "Power VCCINT"
-			(at 104.14 138.9884 0)
+			(at 106.68 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1427,7 +3119,7 @@
 			)
 		)
 		(property "Sheetfile" "power_vccint.kicad_sch"
-			(at 104.14 159.3346 0)
+			(at 106.68 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1436,7 +3128,7 @@
 			)
 		)
 		(pin "VR_RDY" output
-			(at 104.14 144.78 180)
+			(at 106.68 144.78 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,7 +3138,7 @@
 			(uuid "de003579-ecd3-456b-9479-a72ac512fa12")
 		)
 		(pin "ENABLE" input
-			(at 104.14 142.24 180)
+			(at 106.68 142.24 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +3148,7 @@
 			(uuid "46dbb575-1049-45ae-abc9-5ad52e941120")
 		)
 		(pin "~{PMB_ALERT}" output
-			(at 104.14 151.13 180)
+			(at 106.68 151.13 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1466,7 +3158,7 @@
 			(uuid "dd289955-8206-4512-b72c-3047f02b7a3f")
 		)
 		(pin "PMB_CLK" input
-			(at 104.14 153.67 180)
+			(at 106.68 153.67 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1476,7 +3168,7 @@
 			(uuid "9ca9e99f-30de-492a-a34b-b46f89d31b8f")
 		)
 		(pin "PMB_DIO" bidirectional
-			(at 104.14 156.21 180)
+			(at 106.68 156.21 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,7 +3186,7 @@
 		)
 	)
 	(sheet
-		(at 259.08 118.11)
+		(at 259.08 114.3)
 		(size 16.51 40.64)
 		(fields_autoplaced yes)
 		(stroke
@@ -1507,7 +3199,7 @@
 		)
 		(uuid "da9ca5a6-681c-4f68-b894-107ae37cfb74")
 		(property "Sheetname" "DDR4 SODIMM"
-			(at 259.08 117.3984 0)
+			(at 259.08 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +3208,7 @@
 			)
 		)
 		(property "Sheetfile" "ddr4_sodimm.kicad_sch"
-			(at 259.08 159.3346 0)
+			(at 259.08 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,7 +3217,7 @@
 			)
 		)
 		(pin "SPD_SCL" input
-			(at 259.08 152.4 180)
+			(at 259.08 148.59 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,7 +3227,7 @@
 			(uuid "f2fc95ef-b304-405a-98e3-f74c56f18204")
 		)
 		(pin "SPD_SDA" bidirectional
-			(at 259.08 154.94 180)
+			(at 259.08 151.13 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,7 +3237,7 @@
 			(uuid "e0980717-0057-4e1d-b6a6-497093a27014")
 		)
 		(pin "DDR4{DDR4}" bidirectional
-			(at 259.08 129.54 180)
+			(at 259.08 125.73 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1557,14 +3249,371 @@
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 180.34 50.8)
+		(size 17.78 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "dc60a56e-2881-49d2-a0ae-ce083844b529")
+		(property "Sheetname" "FMC HPC 1"
+			(at 180.34 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "fmc_hpc.kicad_sch"
+			(at 180.34 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GA0" input
+			(at 180.34 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "88e366fd-7531-4c43-80a6-2ad6f63ea507")
+		)
+		(pin "GA1" input
+			(at 180.34 69.85 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cef3c156-3379-4bba-9d88-85079c8cd050")
+		)
+		(pin "FMC{FMC_HPC}" bidirectional
+			(at 180.34 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "24c1dece-e515-404a-8086-972fcec01603")
+		)
+		(pin "12P0V" input
+			(at 180.34 59.69 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "edd6128b-e982-4d21-adf5-5ef221fe05b7")
+		)
+		(pin "3P3V" input
+			(at 180.34 62.23 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9d622cf9-54a2-40b9-9db5-c227b456f048")
+		)
+		(pin "VADJ" input
+			(at 198.12 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5fe41489-2424-4895-8d58-6db46d1dfa5d")
+		)
+		(pin "VIO_B" output
+			(at 198.12 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0e3bdad2-e2c9-4329-ac91-24fa48364edb")
+		)
+		(pin "VREF_B" output
+			(at 198.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "eab7053a-9841-48c3-b59f-958c323b9305")
+		)
+		(pin "VREF_A" output
+			(at 198.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "12931bea-39a0-46be-a42c-f8e69b1b6a96")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 114.3)
+		(size 25.4 36.83)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "eab1a82a-282e-4db4-9209-0d8dbaed4ca3")
+		(property "Sheetname" "System Clock"
+			(at 181.61 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "system_clock.kicad_sch"
+			(at 181.61 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 181.61 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6472d267-d91e-42f5-9f9d-c0762ea469e4")
+		)
+		(pin "I2C_SCL" input
+			(at 181.61 119.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bdf54707-8f4c-4806-bf7f-885c36e90217")
+		)
+		(pin "DDR_CLK+" output
+			(at 207.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f9f0534b-ef02-4e68-9138-7e8b3d889c11")
+		)
+		(pin "DDR_CLK-" output
+			(at 207.01 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8cda06a5-bd7f-4f09-b46e-6efeb15e937f")
+		)
+		(pin "QSFP2_CLK-" output
+			(at 207.01 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cc44a45f-59a6-4890-969f-23a2178368f0")
+		)
+		(pin "SYS_CLK+" output
+			(at 207.01 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "71fe2616-fc25-490d-a139-d036f85a5a84")
+		)
+		(pin "SYS_CLK-" output
+			(at 207.01 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b3e48068-0608-4269-89bd-30f116a9d569")
+		)
+		(pin "QSFP3_CLK-" output
+			(at 207.01 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9395e144-6d63-471b-94a6-4ba9831905ad")
+		)
+		(pin "QSFP0_CLK-" output
+			(at 207.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b767110a-b763-4821-85ce-2b0fd5abc570")
+		)
+		(pin "QSFP2_CLK+" output
+			(at 207.01 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6c3c713a-3cbe-4ff6-bd0f-5cc8dcb6cc7e")
+		)
+		(pin "QSFP0_CLK+" output
+			(at 207.01 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7ccb8011-edcb-4d88-8ed6-7d439d6490d0")
+		)
+		(pin "QSFP1_CLK+" output
+			(at 207.01 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "62d3eefa-a3f7-4567-98d2-25df245a03b6")
+		)
+		(pin "QSFP3_CLK+" output
+			(at 207.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7452e781-b5d4-4abb-8c47-b59f047ca66b")
+		)
+		(pin "QSFP1_CLK-" output
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "db0d7467-3c0f-4acb-bc7a-0cf4c24128d6")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(page "18")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 104.14 114.3)
-		(size 16.51 20.32)
+		(at 62.23 57.15)
+		(size 19.05 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "ebaa4c3d-2a51-4589-83c9-6df564f83c95")
+		(property "Sheetname" "PCIE Edge Conn"
+			(at 62.23 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pcie_edge_conn.kicad_sch"
+			(at 62.23 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PCIE{PCIE_X16}" bidirectional
+			(at 62.23 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8447023e-53a3-4166-aeff-65c319b5699f")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 114.3)
+		(size 17.78 20.32)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1575,8 +3624,8 @@
 			(color 255 255 255 0.0000)
 		)
 		(uuid "ef6f4311-052d-4a14-a485-64d16c370478")
-		(property "Sheetname" "Power VADJ"
-			(at 104.14 113.5884 0)
+		(property "Sheetname" "Power FMC"
+			(at 106.68 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,8 +3633,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power_vadj.kicad_sch"
-			(at 104.14 135.2046 0)
+		(property "Sheetfile" "power_fmc.kicad_sch"
+			(at 106.68 135.2046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,7 +3643,7 @@
 			)
 		)
 		(pin "DPOT_SDA" bidirectional
-			(at 104.14 132.08 180)
+			(at 106.68 132.08 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1604,7 +3653,7 @@
 			(uuid "8b845e3e-2ca1-494a-b183-94966e063d1e")
 		)
 		(pin "DPOT_SCL" input
-			(at 104.14 129.54 180)
+			(at 106.68 129.54 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,45 +3662,35 @@
 			)
 			(uuid "e999ac8c-9b3d-4520-bff4-968e752c5ba7")
 		)
-		(pin "FMC1_VADJ_PG" output
-			(at 104.14 125.73 180)
+		(pin "FMC_VADJ_PG" output
+			(at 106.68 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "090bb695-e3e0-4d86-b490-5e037e998316")
+			(uuid "c78badc1-ee78-4e40-a189-6530b1eb63c6")
 		)
-		(pin "FMC1_VADJ_EN" input
-			(at 104.14 123.19 180)
+		(pin "FMC_EN" input
+			(at 106.68 116.84 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "77fb5a50-2c15-4ba3-98a9-b96c39cfaf84")
+			(uuid "36412781-51c8-477d-a031-38fb9e4b6f23")
 		)
-		(pin "FMC0_VADJ_EN" input
-			(at 104.14 116.84 180)
+		(pin "FMC_3P3V_PG" output
+			(at 106.68 121.92 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9a23c589-3374-4cf4-b124-938628ed0685")
-		)
-		(pin "FMC0_VADJ_PG" output
-			(at 104.14 119.38 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "528ef66f-6fc7-464b-aea4-1f12900e46e2")
+			(uuid "b49b8ece-90a3-4781-a79a-837ca91d9330")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -1662,7 +3701,7 @@
 		)
 	)
 	(sheet
-		(at 50.8 59.69)
+		(at 95.25 57.15)
 		(size 12.7 26.67)
 		(fields_autoplaced yes)
 		(stroke
@@ -1675,7 +3714,7 @@
 		)
 		(uuid "fa9c3262-83d7-482a-91ab-582631ac4fc5")
 		(property "Sheetname" "FPGA MGT SLR2"
-			(at 50.8 58.9784 0)
+			(at 95.25 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,7 +3723,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr2.kicad_sch"
-			(at 50.8 86.9446 0)
+			(at 95.25 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
