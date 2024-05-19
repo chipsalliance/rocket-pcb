@@ -38423,6 +38423,290 @@
 				)
 			)
 		)
+		(symbol "power:+1V8"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+1V8"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V8\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+1V8_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V8_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 30.48 170.18) (xy 33.02 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b8946e4-67f4-49d7-990a-0e5a82f63cd4")
+	)
+	(bus
+		(pts
+			(xy 154.94 189.23) (xy 172.72 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "664ec241-fcdc-41b8-9d63-1de2fd66751b")
+	)
+	(bus
+		(pts
+			(xy 154.94 193.04) (xy 172.72 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88011cef-0691-4bce-a28d-94734130f7cb")
+	)
+	(label "QSFP0.TXDIS"
+		(at 20.32 181.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d446a48-c7f1-4224-8255-8867c4a3ef04")
+	)
+	(label "QSFP1.~{MODPRS}"
+		(at 20.32 186.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60c0e075-be7e-4fd2-bfc8-26c6ac188059")
+	)
+	(label "QSFP0.~{MODPRS}"
+		(at 20.32 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61dfc25e-32cf-424d-bbf9-692014ca889d")
+	)
+	(label "QSFP1.~{RXLOS}"
+		(at 20.32 189.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "95ce6b58-5342-4d82-b57e-43c36e955476")
+	)
+	(label "QSFP0.~{RESET}"
+		(at 20.32 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b6a3a7f-9c69-44e9-a070-5f48b5fdb18e")
+	)
+	(label "QSFP0{QSFP}"
+		(at 156.21 189.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e449588-d86a-48ae-84f0-57f6eb2d8076")
+	)
+	(label "QSFP1.TXDIS"
+		(at 20.32 191.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a73ab584-b4a8-40fc-aea0-1c33876928db")
+	)
+	(label "QSFP1.~{RESET}"
+		(at 20.32 184.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b86fb315-adc5-4432-9551-bc3a0fe3e256")
+	)
+	(label "QSFP1{QSFP}"
+		(at 156.21 193.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e77709e7-8c71-4256-b775-0bbed1af5176")
+	)
+	(label "QSFP0.~{RXLOS}"
+		(at 20.32 179.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec1f0cd4-1b29-41f9-bb52-fb4f5df7fded")
+	)
+	(hierarchical_label "QSFP0{QSFP}"
+		(shape bidirectional)
+		(at 154.94 189.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "107d6b93-3db3-4da6-b3d9-4c897865d19a")
+	)
+	(hierarchical_label "QSFP1{QSFP}"
+		(shape bidirectional)
+		(at 154.94 193.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d60ceed-ed0e-4087-90a6-b471671902f8")
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_FPGA_Xilinx_Virtex_UltraScale_Plus:XCVU13P-B2104")
@@ -44798,6 +45082,73 @@
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
 					(reference "U1")
 					(unit 12)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 30.48 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aeaf6d8e-e65a-4518-b4e5-27dca75f15ad")
+		(property "Reference" "#PWR0707"
+			(at 34.29 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCCO_1V8"
+			(at 27.3051 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 30.48 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9ee07aa-ca70-4eb3-b431-9facae20c1cf")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0707")
+					(unit 1)
 				)
 			)
 		)
