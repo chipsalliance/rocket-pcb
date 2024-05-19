@@ -5,6 +5,93 @@
 	(uuid "e39e06ed-2b4d-4df2-ad2c-46325aea9961")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CHIPSAlliance_Mechanical:FMC_Outline_SingleWidth"
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FM"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FMC_Outline_SingleWidth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "CHIPSAlliance_Connector:FMC_Module_Outline"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Outline drawing for single width FMC module"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FMC_Outline_SingleWidth_1_1"
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "FMC"
+					(at 1.27 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "MH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Samtec_ASP-134486-01"
 			(pin_names
 				(offset 1.016) hide)
@@ -17170,6 +17257,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 25.4) (xy 107.95 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27341997-d1cd-479a-8417-989db49381bf")
+	)
+	(wire
+		(pts
 			(xy 209.55 124.46) (xy 193.04 124.46)
 		)
 		(stroke
@@ -17937,16 +18034,6 @@
 			(type default)
 		)
 		(uuid "764838b8-52c6-4582-bc05-f70bf908e0f5")
-	)
-	(wire
-		(pts
-			(xy 90.17 25.4) (xy 107.95 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7799ce06-6cbe-4542-b3d2-0c7c3bd35132")
 	)
 	(wire
 		(pts
@@ -36080,17 +36167,6 @@
 		)
 		(uuid "1addd4b1-8fbc-4b44-b4e8-c414faa54199")
 	)
-	(label "FMC.PG_C2M"
-		(at 91.44 25.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1aea2a0c-cd9c-47ac-b626-04295a4b710b")
-	)
 	(label "FMC.TCK"
 		(at 91.44 96.52 0)
 		(fields_autoplaced yes)
@@ -38358,6 +38434,18 @@
 		)
 		(uuid "0d08ddfc-c46a-41ff-82d8-7455396068fa")
 	)
+	(hierarchical_label "PG_C2M"
+		(shape input)
+		(at 104.14 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1876b6f7-cfe3-4fa7-b568-b6e9fb693c67")
+	)
 	(hierarchical_label "FMC{FMC_HPC}"
 		(shape bidirectional)
 		(at 262.89 161.29 180)
@@ -38518,10 +38606,6 @@
 					(reference "#PWR0404")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0566")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -38587,10 +38671,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0396")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0558")
 					(unit 1)
 				)
 			)
@@ -38660,10 +38740,6 @@
 					(reference "#PWR0370")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0531")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -38729,10 +38805,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0383")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0544")
 					(unit 1)
 				)
 			)
@@ -38802,10 +38874,6 @@
 					(reference "#PWR0346")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0507")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -38835,7 +38903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 215.9 19.05 0)
 			(effects
 				(font
@@ -40068,10 +40136,6 @@
 					(reference "J5")
 					(unit 8)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 8)
-				)
 			)
 		)
 	)
@@ -40137,10 +40201,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0461")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0608")
 					(unit 1)
 				)
 			)
@@ -40210,10 +40270,6 @@
 					(reference "#PWR0418")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0580")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40279,10 +40335,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0378")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0539")
 					(unit 1)
 				)
 			)
@@ -40352,10 +40404,6 @@
 					(reference "#PWR0337")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0498")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40421,10 +40469,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0458")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0605")
 					(unit 1)
 				)
 			)
@@ -40494,10 +40538,6 @@
 					(reference "#PWR0317")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0476")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40563,10 +40603,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0442")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0618")
 					(unit 1)
 				)
 			)
@@ -40636,10 +40672,6 @@
 					(reference "#PWR0417")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0579")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40705,10 +40737,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0329")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0488")
 					(unit 1)
 				)
 			)
@@ -40778,10 +40806,6 @@
 					(reference "#PWR0342")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0503")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40847,10 +40871,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0471")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0634")
 					(unit 1)
 				)
 			)
@@ -40920,10 +40940,6 @@
 					(reference "#PWR0334")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0495")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -40991,10 +41007,6 @@
 					(reference "#PWR0455")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0601")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -41024,7 +41036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 241.3 19.05 0)
 			(effects
 				(font
@@ -42257,10 +42269,6 @@
 					(reference "J5")
 					(unit 9)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 9)
-				)
 			)
 		)
 	)
@@ -42326,10 +42334,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0394")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0556")
 					(unit 1)
 				)
 			)
@@ -42399,10 +42403,6 @@
 					(reference "#PWR0448")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0624")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -42468,10 +42468,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0398")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0560")
 					(unit 1)
 				)
 			)
@@ -42541,10 +42537,6 @@
 					(reference "#PWR0439")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0615")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -42610,10 +42602,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0415")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0577")
 					(unit 1)
 				)
 			)
@@ -42683,10 +42671,6 @@
 					(reference "#PWR0320")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0479")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -42752,10 +42736,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0465")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0628")
 					(unit 1)
 				)
 			)
@@ -42825,10 +42805,6 @@
 					(reference "#PWR0354")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0515")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -42894,10 +42870,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0438")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0614")
 					(unit 1)
 				)
 			)
@@ -42967,10 +42939,6 @@
 					(reference "#PWR0359")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0520")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43036,10 +43004,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0374")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0535")
 					(unit 1)
 				)
 			)
@@ -43109,10 +43073,6 @@
 					(reference "#PWR0355")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0516")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43178,10 +43138,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0368")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0529")
 					(unit 1)
 				)
 			)
@@ -43251,10 +43207,6 @@
 					(reference "#PWR0395")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0557")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43320,10 +43272,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0454")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0600")
 					(unit 1)
 				)
 			)
@@ -43393,10 +43341,6 @@
 					(reference "#PWR0456")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0603")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43462,10 +43406,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0401")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0563")
 					(unit 1)
 				)
 			)
@@ -43535,10 +43475,6 @@
 					(reference "#PWR0381")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0542")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43604,10 +43540,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0348")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0509")
 					(unit 1)
 				)
 			)
@@ -43677,10 +43609,6 @@
 					(reference "#PWR0357")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0518")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43746,10 +43674,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0353")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0514")
 					(unit 1)
 				)
 			)
@@ -43819,10 +43743,6 @@
 					(reference "#PWR0339")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0500")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -43888,10 +43808,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0467")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0630")
 					(unit 1)
 				)
 			)
@@ -43961,10 +43877,6 @@
 					(reference "#PWR0416")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0578")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -44030,10 +43942,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0400")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0562")
 					(unit 1)
 				)
 			)
@@ -44103,10 +44011,6 @@
 					(reference "#PWR0352")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0513")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -44172,10 +44076,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0358")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0519")
 					(unit 1)
 				)
 			)
@@ -44245,10 +44145,6 @@
 					(reference "#PWR0361")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0522")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -44314,10 +44210,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0411")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0573")
 					(unit 1)
 				)
 			)
@@ -44387,10 +44279,6 @@
 					(reference "#PWR0436")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0612")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -44420,7 +44308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 139.7 19.05 0)
 			(effects
 				(font
@@ -45653,10 +45541,6 @@
 					(reference "J5")
 					(unit 5)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 5)
-				)
 			)
 		)
 	)
@@ -45685,7 +45569,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Samtec:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 38.1 19.05 0)
 			(effects
 				(font
@@ -46918,10 +46802,6 @@
 					(reference "J5")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -46987,10 +46867,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0377")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0538")
 					(unit 1)
 				)
 			)
@@ -47060,10 +46936,6 @@
 					(reference "#PWR0372")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0533")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47129,10 +47001,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0330")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0489")
 					(unit 1)
 				)
 			)
@@ -47202,10 +47070,6 @@
 					(reference "#PWR0429")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0591")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47271,10 +47135,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0408")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0570")
 					(unit 1)
 				)
 			)
@@ -47344,10 +47204,6 @@
 					(reference "#PWR0435")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0611")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47413,10 +47269,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0399")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0561")
 					(unit 1)
 				)
 			)
@@ -47486,10 +47338,6 @@
 					(reference "#PWR0440")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0616")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47555,10 +47403,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0343")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0504")
 					(unit 1)
 				)
 			)
@@ -47628,8 +47472,71 @@
 					(reference "#PWR0384")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0545")
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 241.3 151.13 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57d8df0b-bebe-4a26-81d9-f6c7e36087eb")
+		(property "Reference" "#PWR0477"
+			(at 241.3 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 241.3 155.2631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 241.3 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee43f1ca-1391-429b-8217-b7153b67ce59")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
+					(reference "#PWR0477")
 					(unit 1)
 				)
 			)
@@ -47699,10 +47606,6 @@
 					(reference "#PWR0362")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0523")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47768,10 +47671,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0452")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0598")
 					(unit 1)
 				)
 			)
@@ -47841,10 +47740,6 @@
 					(reference "#PWR0327")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0486")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -47910,10 +47805,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0457")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0604")
 					(unit 1)
 				)
 			)
@@ -47983,10 +47874,6 @@
 					(reference "#PWR0365")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0526")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48052,10 +47939,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0425")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0587")
 					(unit 1)
 				)
 			)
@@ -48125,10 +48008,6 @@
 					(reference "#PWR0380")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0541")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48194,10 +48073,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0376")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0537")
 					(unit 1)
 				)
 			)
@@ -48267,10 +48142,6 @@
 					(reference "#PWR0364")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0525")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48336,10 +48207,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0421")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0583")
 					(unit 1)
 				)
 			)
@@ -48409,10 +48276,6 @@
 					(reference "#PWR0491")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0548")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48478,10 +48341,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0434")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0610")
 					(unit 1)
 				)
 			)
@@ -48551,10 +48410,6 @@
 					(reference "#PWR0369")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0530")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48620,10 +48475,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0464")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0627")
 					(unit 1)
 				)
 			)
@@ -48693,10 +48544,6 @@
 					(reference "#PWR0466")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0629")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48762,10 +48609,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0419")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0581")
 					(unit 1)
 				)
 			)
@@ -48835,10 +48678,6 @@
 					(reference "#PWR0385")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0546")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -48904,10 +48743,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0423")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0585")
 					(unit 1)
 				)
 			)
@@ -48977,10 +48812,6 @@
 					(reference "#PWR0402")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0564")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -49046,10 +48877,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0407")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0569")
 					(unit 1)
 				)
 			)
@@ -49119,10 +48946,6 @@
 					(reference "#PWR0430")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0592")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -49188,10 +49011,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0432")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0594")
 					(unit 1)
 				)
 			)
@@ -49261,10 +49080,6 @@
 					(reference "#PWR0414")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0576")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -49330,10 +49145,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0462")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0625")
 					(unit 1)
 				)
 			)
@@ -49403,10 +49214,6 @@
 					(reference "#PWR0406")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0568")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -49474,10 +49281,6 @@
 					(reference "#PWR0331")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0492")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -49507,7 +49310,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 88.9 19.05 0)
 			(effects
 				(font
@@ -50740,10 +50543,6 @@
 					(reference "J5")
 					(unit 3)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 3)
-				)
 			)
 		)
 	)
@@ -50775,7 +50574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 266.7 19.05 0)
 			(effects
 				(font
@@ -52008,10 +51807,6 @@
 					(reference "J5")
 					(unit 10)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 10)
-				)
 			)
 		)
 	)
@@ -52077,10 +51872,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0397")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0559")
 					(unit 1)
 				)
 			)
@@ -52150,10 +51941,6 @@
 					(reference "#PWR0323")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0482")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52219,10 +52006,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0356")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0517")
 					(unit 1)
 				)
 			)
@@ -52292,10 +52075,6 @@
 					(reference "#PWR0390")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0552")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52361,10 +52140,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0433")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0609")
 					(unit 1)
 				)
 			)
@@ -52434,10 +52209,6 @@
 					(reference "#PWR0472")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0635")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52503,10 +52274,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0447")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0623")
 					(unit 1)
 				)
 			)
@@ -52576,10 +52343,6 @@
 					(reference "#PWR0335")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0496")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52645,10 +52408,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0437")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0613")
 					(unit 1)
 				)
 			)
@@ -52718,10 +52477,6 @@
 					(reference "#PWR0392")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0554")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52787,10 +52542,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0410")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0572")
 					(unit 1)
 				)
 			)
@@ -52860,10 +52611,6 @@
 					(reference "#PWR0375")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0536")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -52931,8 +52678,71 @@
 					(reference "#PWR0363")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0524")
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:FMC_Outline_SingleWidth")
+		(at 251.46 151.13 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99edbc3d-b370-4464-8bc5-8ce5f06af469")
+		(property "Reference" "FM1"
+			(at 257.175 149.9178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FMC_Outline_SingleWidth"
+			(at 257.175 152.3421 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CHIPSAlliance_Connector:FMC_Module_Outline"
+			(at 251.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Outline drawing for single width FMC module"
+			(at 251.46 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "MH"
+			(uuid "88e9187b-17ed-4c09-9bf3-7df9458f34ea")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
+					(reference "FM1")
 					(unit 1)
 				)
 			)
@@ -53002,10 +52812,6 @@
 					(reference "#PWR0366")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0527")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -53071,10 +52877,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0388")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0550")
 					(unit 1)
 				)
 			)
@@ -53144,10 +52946,6 @@
 					(reference "#PWR0324")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0483")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -53213,10 +53011,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0386")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0547")
 					(unit 1)
 				)
 			)
@@ -53286,10 +53080,6 @@
 					(reference "#PWR0345")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0506")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -53355,10 +53145,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0474")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0637")
 					(unit 1)
 				)
 			)
@@ -53428,10 +53214,6 @@
 					(reference "#PWR0347")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0508")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -53461,7 +53243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 63.5 19.05 0)
 			(effects
 				(font
@@ -54694,10 +54476,6 @@
 					(reference "J5")
 					(unit 2)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 2)
-				)
 			)
 		)
 	)
@@ -54765,10 +54543,6 @@
 					(reference "#PWR0328")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0487")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -54798,7 +54572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 190.5 19.05 0)
 			(effects
 				(font
@@ -56031,10 +55805,6 @@
 					(reference "J5")
 					(unit 7)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 7)
-				)
 			)
 		)
 	)
@@ -56100,10 +55870,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0426")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0588")
 					(unit 1)
 				)
 			)
@@ -56173,10 +55939,6 @@
 					(reference "#PWR0371")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0532")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56242,10 +56004,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0431")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0593")
 					(unit 1)
 				)
 			)
@@ -56315,10 +56073,6 @@
 					(reference "#PWR0420")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0582")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56384,10 +56138,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0413")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0575")
 					(unit 1)
 				)
 			)
@@ -56457,10 +56207,6 @@
 					(reference "#PWR0344")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0505")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56526,10 +56272,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0319")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0478")
 					(unit 1)
 				)
 			)
@@ -56599,10 +56341,6 @@
 					(reference "#PWR0450")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0596")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56668,10 +56406,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0451")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0597")
 					(unit 1)
 				)
 			)
@@ -56741,10 +56475,6 @@
 					(reference "#PWR0427")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0589")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56810,10 +56540,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0393")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0555")
 					(unit 1)
 				)
 			)
@@ -56883,10 +56609,6 @@
 					(reference "#PWR0428")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0590")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -56952,10 +56674,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0463")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0626")
 					(unit 1)
 				)
 			)
@@ -57025,10 +56743,6 @@
 					(reference "#PWR0318")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0477")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57094,10 +56808,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0468")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0631")
 					(unit 1)
 				)
 			)
@@ -57167,10 +56877,6 @@
 					(reference "#PWR0422")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0584")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57236,10 +56942,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0360")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0521")
 					(unit 1)
 				)
 			)
@@ -57309,10 +57011,6 @@
 					(reference "#PWR0349")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0510")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57378,10 +57076,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0382")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0543")
 					(unit 1)
 				)
 			)
@@ -57451,10 +57145,6 @@
 					(reference "#PWR0326")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0485")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57520,10 +57210,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0412")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0574")
 					(unit 1)
 				)
 			)
@@ -57593,10 +57279,6 @@
 					(reference "#PWR0351")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0512")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57662,10 +57344,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0409")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0571")
 					(unit 1)
 				)
 			)
@@ -57735,10 +57413,6 @@
 					(reference "#PWR0350")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0511")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57804,10 +57478,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0391")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0553")
 					(unit 1)
 				)
 			)
@@ -57877,10 +57547,6 @@
 					(reference "#PWR0469")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0632")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -57946,10 +57612,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0332")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0493")
 					(unit 1)
 				)
 			)
@@ -58019,10 +57681,6 @@
 					(reference "#PWR0444")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0620")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -58090,10 +57748,6 @@
 					(reference "#PWR0453")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0599")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -58123,7 +57777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 114.3 19.05 0)
 			(effects
 				(font
@@ -59356,10 +59010,6 @@
 					(reference "J5")
 					(unit 4)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
-					(unit 4)
-				)
 			)
 		)
 	)
@@ -59425,10 +59075,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0470")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0633")
 					(unit 1)
 				)
 			)
@@ -59498,10 +59144,6 @@
 					(reference "#PWR0325")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0484")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -59567,10 +59209,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0336")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0497")
 					(unit 1)
 				)
 			)
@@ -59640,10 +59278,6 @@
 					(reference "#PWR0341")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0502")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -59709,10 +59343,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0321")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0480")
 					(unit 1)
 				)
 			)
@@ -59782,10 +59412,6 @@
 					(reference "#PWR0459")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0606")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -59851,10 +59477,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0443")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0619")
 					(unit 1)
 				)
 			)
@@ -59924,10 +59546,6 @@
 					(reference "#PWR0333")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0494")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -59993,10 +59611,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0441")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0617")
 					(unit 1)
 				)
 			)
@@ -60066,10 +59680,6 @@
 					(reference "#PWR0405")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0567")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60135,10 +59745,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0387")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0549")
 					(unit 1)
 				)
 			)
@@ -60208,10 +59814,6 @@
 					(reference "#PWR0379")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0540")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60277,10 +59879,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0424")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0586")
 					(unit 1)
 				)
 			)
@@ -60350,10 +59948,6 @@
 					(reference "#PWR0340")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0501")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60419,10 +60013,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0389")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0551")
 					(unit 1)
 				)
 			)
@@ -60492,10 +60082,6 @@
 					(reference "#PWR0460")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0607")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60561,10 +60147,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0338")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0499")
 					(unit 1)
 				)
 			)
@@ -60634,10 +60216,6 @@
 					(reference "#PWR0322")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0481")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60703,10 +60281,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0446")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0622")
 					(unit 1)
 				)
 			)
@@ -60776,10 +60350,6 @@
 					(reference "#PWR0367")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0528")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60845,10 +60415,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0445")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0621")
 					(unit 1)
 				)
 			)
@@ -60918,10 +60484,6 @@
 					(reference "#PWR0449")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0595")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -60987,10 +60549,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0373")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0534")
 					(unit 1)
 				)
 			)
@@ -61060,10 +60618,6 @@
 					(reference "#PWR0473")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0636")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -61129,10 +60683,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "#PWR0403")
-					(unit 1)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0565")
 					(unit 1)
 				)
 			)
@@ -61202,10 +60752,6 @@
 					(reference "#PWR0316")
 					(unit 1)
 				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "#PWR0475")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -61235,7 +60781,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "CHIPSAlliance_Connector:Samtec_FMC_ASP-134486-01_10x40_P1.27mm_Vertical"
 			(at 165.1 19.05 0)
 			(effects
 				(font
@@ -62466,10 +62012,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/73c34a20-6094-4678-a785-5f319bc772f0"
 					(reference "J5")
-					(unit 6)
-				)
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/dc60a56e-2881-49d2-a0ae-ce083844b529"
-					(reference "J6")
 					(unit 6)
 				)
 			)

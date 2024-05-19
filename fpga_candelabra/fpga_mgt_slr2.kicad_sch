@@ -38424,6 +38424,72 @@
 			)
 		)
 	)
+	(bus
+		(pts
+			(xy 264.16 158.75) (xy 283.21 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e929b2-cbf7-4157-9f55-1c0a79705e59")
+	)
+	(bus
+		(pts
+			(xy 264.16 162.56) (xy 281.94 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5696dc06-1170-4737-866a-610ab4d87c6a")
+	)
+	(label "FMC1{FMC_HPC}"
+		(at 265.43 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26f18e55-c3c3-4eeb-9494-66ee96876a90")
+	)
+	(label "IPEX4{IPEX_XCVR}"
+		(at 265.43 158.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d1104e4-32ec-4aa9-8bad-13267347e227")
+	)
+	(hierarchical_label "IPEX4{IPEX_XCVR}"
+		(shape bidirectional)
+		(at 264.16 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e70c33e-991b-4d69-a83d-02a7fcaea643")
+	)
+	(hierarchical_label "FMC1{FMC_HPC}"
+		(shape bidirectional)
+		(at 264.16 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b53258c9-fe4e-4444-8055-99999caecffe")
+	)
 	(symbol
 		(lib_id "CHIPSAlliance_FPGA_Xilinx_Virtex_UltraScale_Plus:XCVU13P-B2104")
 		(at 166.37 29.21 0)
@@ -38432,10 +38498,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "214362ce-e99f-4a0c-a3bf-b7f081a310dc")
 		(property "Reference" "U1"
-			(at 192.532 52.1278 0)
+			(at 179.578 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38444,7 +38509,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 192.532 54.5521 0)
+			(at 173.482 25.0303 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44804,16 +44869,15 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_FPGA_Xilinx_Virtex_UltraScale_Plus:XCVU13P-B2104")
-		(at 223.52 30.48 0)
+		(at 223.52 29.21 0)
 		(unit 23)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4fd70c31-bd48-4d30-9c7e-d268c2e1e60e")
 		(property "Reference" "U1"
-			(at 249.682 53.3978 0)
+			(at 236.728 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44822,7 +44886,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 249.682 55.8221 0)
+			(at 230.632 25.0303 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44831,7 +44895,7 @@
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Package_BGA:Xilinx_FHGB2104_VU13P_PkgLength"
-			(at 222.25 29.21 0)
+			(at 222.25 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44841,7 +44905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 67.31 0)
+			(at 222.25 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44851,7 +44915,7 @@
 			)
 		)
 		(property "Description" "Virtex UltraScale+ 13P XCVU13P-B2104"
-			(at 223.52 30.48 0)
+			(at 223.52 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51188,10 +51252,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "582cdaa2-fd78-4f93-ab5c-cd96eecbc683")
 		(property "Reference" "U1"
-			(at 249.682 121.9778 0)
+			(at 236.728 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51200,7 +51263,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 249.682 124.4021 0)
+			(at 230.632 94.8803 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57566,10 +57629,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "79393782-655a-4a6a-b79d-41da362c6fdb")
 		(property "Reference" "U1"
-			(at 135.382 121.9778 0)
+			(at 122.428 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57578,7 +57640,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 135.382 124.4021 0)
+			(at 116.332 94.8803 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63944,10 +64006,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7efbc468-ea1c-4835-8755-935ab9bfea3d")
 		(property "Reference" "U1"
-			(at 76.962 52.1278 0)
+			(at 64.008 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63956,7 +64017,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 76.962 54.5521 0)
+			(at 57.912 25.0303 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70322,10 +70383,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "94c694c2-31eb-4128-81bb-96349a5446db")
 		(property "Reference" "U1"
-			(at 135.382 52.1278 0)
+			(at 122.428 22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70334,7 +70394,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 135.382 54.5521 0)
+			(at 116.332 25.0303 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76700,10 +76760,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e87ddd75-ff08-4e57-b07e-35994f954b08")
 		(property "Reference" "U1"
-			(at 76.962 121.9778 0)
+			(at 64.008 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76712,7 +76771,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 76.962 124.4021 0)
+			(at 57.912 94.8803 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83078,10 +83137,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e970008f-d7c6-435a-a5a2-5d2bd08579c0")
 		(property "Reference" "U1"
-			(at 192.532 121.9778 0)
+			(at 179.578 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83090,7 +83148,7 @@
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 192.532 124.4021 0)
+			(at 173.482 94.8803 0)
 			(effects
 				(font
 					(size 1.27 1.27)
