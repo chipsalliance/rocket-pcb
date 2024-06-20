@@ -1,0 +1,97 @@
+# The FMC specification includes a method where the FMC mezzanine module must
+# provide hardware-defined information that can be read by an external
+# controller on the FMC carrier platform.
+# This hardware definition is defined by the FRU Information Store Recorder as
+# defined in the Intel Platform Management FRU Information Store Definition V1.1
+#
+# Generate the FRU eeprom data using the following command:
+# pip install frugy
+# frugy fmc_fru_eeprom.yml -o fmc_fru_eeprom.bin -e 2048
+
+BoardInfo:
+  manufacturer: CHIPS Alliance
+  product_name: FMC_SDRAM
+  serial_number: ebb63f7d9f0a
+  part_number: FMC_SDRAM
+  mfg_date_time: 2024-05-26 16:25:00
+  fru_file_id: '2024-05-26 16:25:00.000000'
+
+MultirecordArea:
+- type: DCLoad
+  output_number: P1_VADJ
+  nominal_voltage: 1800
+  min_voltage: 1710
+  max_voltage: 1890
+  max_noise_pk2pk: 0
+  min_current_load: 0
+  max_current_load: 1000
+
+- type: DCLoad
+  output_number: P1_12P0V
+  nominal_voltage: 12000
+  min_voltage: 11400
+  max_voltage: 12600
+  max_noise_pk2pk: 0
+  min_current_load: 0
+  max_current_load: 10
+
+- type: DCLoad
+  output_number: P1_3P3V
+  nominal_voltage: 3300
+  min_voltage: 3130
+  max_voltage: 3460
+  max_noise_pk2pk: 0
+  min_current_load: 0
+  max_current_load: 2000
+
+- type: DCLoad
+  output_number: P1_VADJ
+  nominal_voltage: 1800
+  min_voltage: 1760
+  max_voltage: 1830
+  max_noise_pk2pk: 0
+  min_current_load: 0
+  max_current_load: 2000
+
+- type: DCOutput
+  standby_enable: 0
+  output_number: P1_VREF_B_M2C
+  nominal_voltage: 0
+  max_neg_voltage: 0
+  max_pos_voltage: 0
+  max_noise_pk2pk: 0
+  min_current_draw: 0
+  max_current_draw: 0
+
+- type: DCOutput
+  standby_enable: 0
+  output_number: P1_VREF_A_M2C
+  nominal_voltage: 0
+  max_neg_voltage: 0
+  max_pos_voltage: 0
+  max_noise_pk2pk: 0
+  min_current_draw: 0
+  max_current_draw: 0
+
+- type: DCOutput
+  standby_enable: 0
+  output_number: P1_VIO_B_M2C
+  nominal_voltage: 0
+  max_neg_voltage: 0
+  max_pos_voltage: 0
+  max_noise_pk2pk: 0
+  min_current_draw: 0
+  max_current_draw: 0
+
+- type: FmcMainDefinition
+  module_size: single_width
+  p1_connector_size: lpc
+  p2_connector_size: not_fitted
+  clock_direction: c2m
+  p1_a_num_signals: 66
+  p1_b_num_signals: 0
+  p2_a_num_signals: 0
+  p2_b_num_signals: 0
+  p1_gbt_num_trcv: 0
+  p2_gbt_num_trcv: 0
+  tck_max_clock: 0

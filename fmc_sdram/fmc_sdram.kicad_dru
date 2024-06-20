@@ -1,0 +1,84 @@
+(version 1)
+(rule "BGA neckdown U25"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U25')"))
+(rule "BGA neckdown J1"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('J1')"))
+(rule "SDRAM neckdown U7"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsFrontCourtyard('U7')"))
+(rule "SDRAM neckdown U8"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsFrontCourtyard('U8')"))
+(rule "SOIC neckdown U9"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U9')"))
+(rule "SOIC neckdown U10"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U10')"))
+(rule "SOIC neckdown U11"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsFrontCourtyard('U11')"))
+(rule "SOIC neckdown U12"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsFrontCourtyard('U12')"))
+(rule "SOIC neckdown U13"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U13')"))
+(rule "SOIC neckdown U14"
+    (constraint track_width (min 5mil) (opt 6mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U14')"))
+(rule "USB neckdown J3"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.intersectsBackCourtyard('J3')"))
+(rule "USB neckdown J4"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.intersectsBackCourtyard('J4')"))
+(rule "USB neckdown Diff"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (constraint annular_width (min 0.1mm) (opt 0.15mm))
+    (condition "A.NetClass == 'Diff"))
+(rule "QFN neckdown U2"
+    (constraint track_width (min 5mil) (opt 10mil))
+    (constraint clearance (min 5mil) (opt 6mil))
+    (condition "A.intersectsBackCourtyard('U2')"))
+(rule "Mounting holes H1"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H1')"))
+(rule "Mounting holes H2"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H2')"))
+(rule "Mounting holes H3"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H3')"))
+(rule "Mounting holes H4"
+	(constraint edge_clearance (min 0mil))
+    (condition "A.intersectsCourtyard('H4')"))
+(rule "Filled zone VADJ"
+	(constraint edge_clearance (min 50mil))
+    (condition "A.Name == 'VADJ_L2' "))
+(rule "Filled zone 3P3V"
+	(constraint edge_clearance (min 50mil))
+    (condition "A.Name == '3P3V_L2' "))
+(rule "Filled zone GND"
+	(constraint edge_clearance (min 30mil))
+    (condition "A.Name == 'GND_*' "))
+(rule "Allow via on Mounting Holes"
+    (constraint hole_clearance (min 0mil))
+	(condition "A.intersectsCourtyard('H1') || A.intersectsCourtyard('H2')"))

@@ -1,13 +1,18 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(pmod_microsd
+project(fmc_sdram
     VERSION 1.0.0
-    DESCRIPTION "Pmod MicroSD provides a microSD card slot to VCU118 board"
+    DESCRIPTION "FPGA mezzanine board with SDRAM and basic peripherals"
 )
+
+find_program(FRUGY_PROGRAM "frugy")
+if(NOT FRUGY_PROGRAM)
+    message(FATAL_ERROR "frugy not found, please run `pip install frugy`")
+endif()
 
 find_program(KICADCLI_PROGRAM "kicad-cli")
 if(NOT KICADCLI_PROGRAM)
-    message(FATAL_ERROR "kicad-cli not found, please install kicad 8")
+    message(FATAL_ERROR "kicad-cli not found, please install kicad8")
 endif()
 
 file(GLOB_RECURSE PROJECT_SCH_FILES ${CMAKE_CURRENT_LIST_DIR} "*.kicad_sch")
@@ -30,6 +35,26 @@ set (PROJECT_PRODUCTION_FILES
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-PTH.drl"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-job.gbrjob"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_bom.xml"
+)
+
+add_custom_target(eeprom
+    ALL
+    DEPENDS
+        "${CMAKE_CURRENT_BINARY_DIR}/fmc_fru_eeprom.bin"
+)
+
+add_custom_command(
+    OUTPUT
+        "${CMAKE_CURRENT_BINARY_DIR}/fmc_fru_eeprom.bin"
+    COMMENT
+        "Generate the FRU eeprom data using frugy"
+    COMMAND
+        ${FRUGY_PROGRAM}
+            "${CMAKE_CURRENT_SOURCE_DIR}/data/fmc_fru_eeprom.yml"
+            -o "${CMAKE_CURRENT_BINARY_DIR}/fmc_fru_eeprom.bin"
+            -e 2048
+    DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/data/fmc_fru_eeprom.yml"
 )
 
 add_custom_target(production
