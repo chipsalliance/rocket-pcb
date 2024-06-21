@@ -9,7 +9,7 @@ projects.
 |                 PROJECT                  |          INTRODUCTION          |
 | ---------------------------------------- | ------------------------------ |
 | [FMC_BASIC_PERI](./fmc_basic_peripheral) | JTAG, UART, GPIO, USB, I3C FMC |
-| [FMC_SDRAM](./fmc_sdraml)                | FMC of SDRAM and JTAG          |
+| [FMC_SDRAM](./fmc_sdram)                 | FMC of SDRAM and JTAG          |
 
 ## PMOD
 
