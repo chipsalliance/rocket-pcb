@@ -91,8 +91,8 @@
         "solder_mask_bridge|101043703|63689968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
         "solder_mask_bridge|101443703|62889968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
         "solder_mask_bridge|101443703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|101643703|62878512|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|101643703|63989968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
+        "solder_mask_bridge|94343703|62878512|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
+        "solder_mask_bridge|94343703|62878512|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
         "solder_mask_bridge|95036747|62564587|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
         "solder_mask_bridge|98336372|62564587|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
         "solder_mask_bridge|98843703|62889968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
@@ -102,7 +102,8 @@
         "solder_mask_bridge|99243703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
         "solder_mask_bridge|99643703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
         "starved_thermal|51265123|108127468|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|d923ea72-aa7c-4b8c-a59c-40f3064750db|B.Cu",
-        "starved_thermal|59743672|67489970|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|7402175a-bf2a-4e29-b030-2822014e5194|B.Cu"
+        "starved_thermal|59743672|67489970|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|7402175a-bf2a-4e29-b030-2822014e5194|B.Cu",
+        "starved_thermal|86543703|82889968|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|c61882dc-c8b4-418c-bc6a-05e934ae9708|F.Cu"
       ],
       "meta": {
         "version": 2
@@ -124,6 +125,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -789,6 +791,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
