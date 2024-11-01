@@ -3770,10 +3770,6 @@
 		(uuid "586699f5-23b1-4c0c-bfd3-c46b7e79674e")
 	)
 	(no_connect
-		(at 59.69 119.38)
-		(uuid "9b99f911-0555-47c4-beb9-3da727a06fc1")
-	)
-	(no_connect
 		(at 59.69 149.86)
 		(uuid "f2f4dc25-1f7d-40ca-b40d-ff23f6befc45")
 	)
@@ -4106,6 +4102,16 @@
 			(type default)
 		)
 		(uuid "37fcffab-8317-48ac-a822-e25a5db26637")
+	)
+	(wire
+		(pts
+			(xy 59.69 119.38) (xy 74.93 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f67e49-7e7d-4c90-b4a9-25bcefe7abff")
 	)
 	(wire
 		(pts
@@ -5347,7 +5353,7 @@
 		)
 		(uuid "ffe4621b-e336-4029-87d6-5e00963641ca")
 	)
-	(text_box "MGMT I2C Bus:\n - (3.3V) 0b1100111 TPS53667 PMBus\n - (3.3V) 0b0101111 FMC VADJ DigiPot\n - (3.3V) 0b1010100 CDCM6208 PLL\n - (2.5V) 0b1010000 DDR4 SPD R/W\n - (2.5V) 0b0110000 DDR4 SPD Utility"
+	(text_box "MGMT I2C Bus:\n - (3.3V) 0b1100111 TPS53667 PMBus\n - (3.3V) 0b1100000 FMC VADJ DAC\n - (3.3V) 0b1010100 CDCM6208 PLL\n - (2.5V) 0b1010000 DDR4 SPD R/W\n - (2.5V) 0b0110000 DDR4 SPD Utility"
 		(exclude_from_sim no)
 		(at 219.71 27.94 0)
 		(size 59.69 13.97)
@@ -5572,6 +5578,17 @@
 			(justify left bottom)
 		)
 		(uuid "4a644979-efe2-41c8-8d5b-4ddc189c5af0")
+	)
+	(label "USB_VBUS_NC"
+		(at 59.69 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59e035d3-dc58-4b74-8bb6-e8b88d42ac61")
 	)
 	(label "MGMT_I2C_SDA"
 		(at 177.8 58.42 0)
@@ -5910,6 +5927,18 @@
 		)
 		(uuid "22f30b1e-e65c-4297-bfa4-8d27013275a7")
 	)
+	(hierarchical_label "FMC_3P3V_EN"
+		(shape output)
+		(at 200.66 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "328c7ce6-023d-4c52-b517-05ef1112056a")
+	)
 	(hierarchical_label "MGTAVTT_PG"
 		(shape input)
 		(at 182.88 87.63 0)
@@ -5970,7 +5999,7 @@
 		)
 		(uuid "7adb5fd5-76d6-4fee-a8b7-4724e0a7b503")
 	)
-	(hierarchical_label "FMC_EN"
+	(hierarchical_label "FMC_VADJ_EN"
 		(shape output)
 		(at 182.88 110.49 0)
 		(fields_autoplaced yes)

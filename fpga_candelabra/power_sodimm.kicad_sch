@@ -3898,7 +3898,7 @@
 		)
 		(uuid "a31f625f-61e5-475d-a730-2439013df599")
 	)
-	(text "12V -> 1.2V 10A VDDQ + VTT + VTTREF\nControlled by SYSMON (EN shared with VPP)"
+	(text "12V G2 -> 1.2V 10A VDDQ + VTT + VTTREF\nControlled by SYSMON (EN shared with VPP)"
 		(exclude_from_sim no)
 		(at 209.296 101.346 0)
 		(effects
@@ -5886,7 +5886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G2"
 			(at 163.83 35.2369 0)
 			(effects
 				(font
@@ -8168,72 +8168,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 129.54 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a50f8e8f-2dd3-4d37-98ae-a0e2ad79f99f")
-		(property "Reference" "#PWR0222"
-			(at 129.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 129.54 44.1269 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 129.54 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7846d10-157c-4ffd-85c0-1fb35a862a37")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
-					(reference "#PWR0222")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 114.3 156.21 0)
 		(unit 1)
@@ -9738,6 +9672,72 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
 					(reference "C196")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 129.54 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "febf8341-bbb5-4e3d-9471-96a22f66bcaa")
+		(property "Reference" "#PWR0222"
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_G2"
+			(at 129.54 44.1269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e80792d9-bf9b-4509-9a0d-2593f734c7a1")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
+					(reference "#PWR0222")
 					(unit 1)
 				)
 			)

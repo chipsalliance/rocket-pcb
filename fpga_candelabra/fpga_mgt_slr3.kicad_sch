@@ -38820,8 +38820,27 @@
 		)
 		(uuid "f9442517-70a4-4247-9284-9f722b204175")
 	)
+	(text_box "Pin swapping rules:\n- GT Lane 0-3 CAN swap\n- Lane 0 swapped => NO Autoneg\n\n- Pair P/N CANNOT swap"
+		(exclude_from_sim no)
+		(at 31.75 92.71 0)
+		(size 39.37 15.24)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "2f4adf83-7398-4443-8070-9b5569a3c0cb")
+	)
 	(label "QSFP1.RX2+"
-		(at 33.02 57.15 0)
+		(at 33.02 54.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38832,7 +38851,7 @@
 		(uuid "0d4f2548-e058-488b-bd16-7365ce243e2a")
 	)
 	(label "QSFP0.RX2+"
-		(at 107.95 57.15 0)
+		(at 107.95 54.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38843,7 +38862,7 @@
 		(uuid "14db1f44-4b4d-458d-ad2a-90bd11841f5a")
 	)
 	(label "QSFP0.TX1-"
-		(at 107.95 64.77 0)
+		(at 107.95 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38854,7 +38873,7 @@
 		(uuid "255325ad-ce06-49ad-8e01-4b87082e42df")
 	)
 	(label "QSFP0.TX2+"
-		(at 107.95 77.47 0)
+		(at 107.95 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38865,7 +38884,7 @@
 		(uuid "2d0c3294-c60b-4d1b-a813-85749aad9eef")
 	)
 	(label "QSFP0.RX4-"
-		(at 107.95 52.07 0)
+		(at 107.95 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38887,7 +38906,7 @@
 		(uuid "32123943-ec6f-4107-a6a1-64d3a64e43fa")
 	)
 	(label "QSFP0.TX2-"
-		(at 107.95 67.31 0)
+		(at 107.95 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38898,7 +38917,7 @@
 		(uuid "395a521f-6c16-41bb-8b56-91e467f46cc9")
 	)
 	(label "QSFP1.RX1+"
-		(at 33.02 54.61 0)
+		(at 33.02 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38909,7 +38928,7 @@
 		(uuid "3bf5f635-8ca6-4ec6-840f-eefd390ea043")
 	)
 	(label "QSFP0.TX4+"
-		(at 107.95 82.55 0)
+		(at 107.95 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38931,7 +38950,7 @@
 		(uuid "544a9ca0-01ea-4582-aa8a-0e9be28f57ac")
 	)
 	(label "QSFP1.RX2-"
-		(at 33.02 46.99 0)
+		(at 33.02 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38942,7 +38961,7 @@
 		(uuid "54879f79-2b9c-4926-b0f8-0c6b400b9428")
 	)
 	(label "QSFP0.RX1+"
-		(at 107.95 54.61 0)
+		(at 107.95 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38953,7 +38972,7 @@
 		(uuid "61728740-5dd2-4319-9aff-7b094b8aa88a")
 	)
 	(label "QSFP0.TX4-"
-		(at 107.95 72.39 0)
+		(at 107.95 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38964,7 +38983,7 @@
 		(uuid "6185187c-b6d8-4be5-bbef-6667b99bb056")
 	)
 	(label "QSFP1.TX1+"
-		(at 33.02 74.93 0)
+		(at 33.02 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38975,7 +38994,7 @@
 		(uuid "63a75ba5-5276-4c6f-bd22-b51f187ada61")
 	)
 	(label "QSFP0.TX1+"
-		(at 107.95 74.93 0)
+		(at 107.95 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38986,7 +39005,7 @@
 		(uuid "6847bfc2-e5e6-42e5-b1d6-059fb1cac4c3")
 	)
 	(label "QSFP0.TX3+"
-		(at 107.95 80.01 0)
+		(at 107.95 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -38997,7 +39016,7 @@
 		(uuid "7849b953-6da2-4aee-97b7-5bf7d7d7e05d")
 	)
 	(label "QSFP0.RX3+"
-		(at 107.95 59.69 0)
+		(at 107.95 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39019,7 +39038,7 @@
 		(uuid "7e21ceda-d6b0-49fa-a82f-bb9a65a5f7e8")
 	)
 	(label "QSFP1.TX1-"
-		(at 33.02 64.77 0)
+		(at 33.02 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39052,7 +39071,7 @@
 		(uuid "884279b5-4e0d-4880-9638-541f349cdcdc")
 	)
 	(label "QSFP1.TX2+"
-		(at 33.02 77.47 0)
+		(at 33.02 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39074,7 +39093,7 @@
 		(uuid "8e5e58e3-688d-4db2-b628-6b0fcb3564b9")
 	)
 	(label "QSFP0.TX3-"
-		(at 107.95 69.85 0)
+		(at 107.95 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39096,7 +39115,7 @@
 		(uuid "9c8a41b7-b0ae-4711-9a75-309fe7a2c949")
 	)
 	(label "QSFP1.RX1-"
-		(at 33.02 44.45 0)
+		(at 33.02 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39118,7 +39137,7 @@
 		(uuid "ada87b9e-5feb-45ad-915a-44f0a49d1ec3")
 	)
 	(label "QSFP0.RX4+"
-		(at 107.95 62.23 0)
+		(at 107.95 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39129,7 +39148,7 @@
 		(uuid "b460bb69-1782-43fa-ae3d-7b3e91291554")
 	)
 	(label "QSFP1.TX2-"
-		(at 33.02 67.31 0)
+		(at 33.02 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39162,7 +39181,7 @@
 		(uuid "c2db9c0c-6c65-4a50-a182-ed1cec682612")
 	)
 	(label "QSFP0.RX2-"
-		(at 107.95 46.99 0)
+		(at 107.95 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39173,7 +39192,7 @@
 		(uuid "c45e5786-91b2-40b1-b207-60f9eb49f7da")
 	)
 	(label "QSFP0.RX3-"
-		(at 107.95 49.53 0)
+		(at 107.95 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39228,7 +39247,7 @@
 		(uuid "f18ec7de-8e70-494e-a5ab-ad646a5f9bc9")
 	)
 	(label "QSFP0.RX1-"
-		(at 107.95 44.45 0)
+		(at 107.95 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

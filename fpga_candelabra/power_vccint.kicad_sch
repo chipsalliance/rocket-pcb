@@ -6486,7 +6486,7 @@
 		)
 		(uuid "ba146384-7fa8-4b1e-8215-750c56ab4c5e")
 	)
-	(label "VSP"
+	(label "VS+"
 		(at 270.51 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6805,7 +6805,7 @@
 		)
 		(uuid "6821cc2b-8ae1-49df-80c7-2f69483868de")
 	)
-	(label "VSN"
+	(label "VS-"
 		(at 46.99 30.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6959,7 +6959,7 @@
 		)
 		(uuid "95df6290-651f-4b1d-adfa-752624ce83a3")
 	)
-	(label "VSN"
+	(label "VS-"
 		(at 270.51 101.6 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6992,7 +6992,7 @@
 		)
 		(uuid "a34ffce5-4c1c-4fa9-8d47-82a891a24e5e")
 	)
-	(label "VSP"
+	(label "VS+"
 		(at 46.99 27.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9112,7 +9112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G1"
 			(at 84.455 20.32 90)
 			(effects
 				(font
@@ -10467,7 +10467,7 @@
 				)
 			)
 		)
-		(property "Value" "SMIS130804-R15MT"
+		(property "Value" "VLBU1007090T-R15L"
 			(at 185.42 78.9474 90)
 			(effects
 				(font
@@ -10475,7 +10475,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_SXN_SMIS130804"
+		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_TDK_VLBU1007090"
 			(at 185.42 74.93 0)
 			(effects
 				(font
@@ -10484,7 +10484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210810/C89E6F775779B79874D7B6E709D70FFB.pdf"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vlbu1007090_en.pdf"
 			(at 185.42 74.93 0)
 			(effects
 				(font
@@ -10493,7 +10493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150nH 45A / 85A"
+		(property "Description" "150nH 70A / 90A"
 			(at 185.42 74.93 0)
 			(effects
 				(font
@@ -10502,7 +10502,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C389943"
+		(property "LCSC Part" "C2045227"
 			(at 185.42 74.93 90)
 			(effects
 				(font
@@ -10511,7 +10511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "SXN(顺翔诺)"
+		(property "Manufacturer" "TDK"
 			(at 185.42 74.93 90)
 			(effects
 				(font
@@ -11092,6 +11092,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "42593c1d-2e6b-473b-9d0a-8909dcc51fd3")
 		(property "Reference" "#PWR031"
 			(at 161.29 58.42 0)
@@ -11102,12 +11103,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 156.718 53.848 0)
+		(property "Value" "+12V_G1"
+			(at 159.8931 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -12900,7 +12902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G1"
 			(at 203.2 54.2869 0)
 			(effects
 				(font
@@ -13614,7 +13616,7 @@
 				)
 			)
 		)
-		(property "Value" "SMIS130804-R15MT"
+		(property "Value" "VLBU1007090T-R15L"
 			(at 185.42 42.1174 90)
 			(effects
 				(font
@@ -13622,7 +13624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_SXN_SMIS130804"
+		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_TDK_VLBU1007090"
 			(at 185.42 38.1 0)
 			(effects
 				(font
@@ -13631,7 +13633,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210810/C89E6F775779B79874D7B6E709D70FFB.pdf"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vlbu1007090_en.pdf"
 			(at 185.42 38.1 0)
 			(effects
 				(font
@@ -13640,7 +13642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150nH 45A / 85A"
+		(property "Description" "150nH 70A / 90A"
 			(at 185.42 38.1 0)
 			(effects
 				(font
@@ -13649,7 +13651,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C389943"
+		(property "LCSC Part" "C2045227"
 			(at 185.42 38.1 90)
 			(effects
 				(font
@@ -13658,7 +13660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "SXN(顺翔诺)"
+		(property "Manufacturer" "TDK"
 			(at 185.42 38.1 90)
 			(effects
 				(font
@@ -14424,7 +14426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G1"
 			(at 203.2 91.186 0)
 			(effects
 				(font
@@ -14694,7 +14696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G1"
 			(at 203.2 17.4569 0)
 			(effects
 				(font
@@ -15233,7 +15235,7 @@
 				)
 			)
 		)
-		(property "Value" "SMIS130804-R15MT"
+		(property "Value" "VLBU1007090T-R15L"
 			(at 185.42 115.7774 90)
 			(effects
 				(font
@@ -15241,7 +15243,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_SXN_SMIS130804"
+		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_TDK_VLBU1007090"
 			(at 185.42 111.76 0)
 			(effects
 				(font
@@ -15250,7 +15252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210810/C89E6F775779B79874D7B6E709D70FFB.pdf"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vlbu1007090_en.pdf"
 			(at 185.42 111.76 0)
 			(effects
 				(font
@@ -15259,7 +15261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150nH 45A / 85A"
+		(property "Description" "150nH 70A / 90A"
 			(at 185.42 111.76 0)
 			(effects
 				(font
@@ -15268,7 +15270,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C389943"
+		(property "LCSC Part" "C2045227"
 			(at 185.42 111.76 90)
 			(effects
 				(font
@@ -15277,7 +15279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "SXN(顺翔诺)"
+		(property "Manufacturer" "TDK"
 			(at 185.42 111.76 90)
 			(effects
 				(font
@@ -15721,8 +15723,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 155.956 16.002 0)
+		(property "Value" "+12V_G1"
+			(at 155.448 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16187,6 +16189,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a335e15f-2ad1-4cd9-ad1a-a75d3112d050")
 		(property "Reference" "#PWR045"
 			(at 161.29 95.25 0)
@@ -16197,12 +16200,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 156.718 90.17 0)
+		(property "Value" "+12V_G1"
+			(at 159.8931 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -17630,7 +17634,7 @@
 				)
 			)
 		)
-		(property "Value" "SMIS130804-R15MT"
+		(property "Value" "VLBU1007090T-R15L"
 			(at 185.42 153.8774 90)
 			(effects
 				(font
@@ -17638,7 +17642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_SXN_SMIS130804"
+		(property "Footprint" "CHIPSAlliance_Inductor_SMD:L_TDK_VLBU1007090"
 			(at 185.42 149.86 0)
 			(effects
 				(font
@@ -17647,7 +17651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210810/C89E6F775779B79874D7B6E709D70FFB.pdf"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vlbu1007090_en.pdf"
 			(at 185.42 149.86 0)
 			(effects
 				(font
@@ -17656,7 +17660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150nH 45A / 85A"
+		(property "Description" "150nH 70A / 90A"
 			(at 185.42 149.86 0)
 			(effects
 				(font
@@ -17665,7 +17669,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C389943"
+		(property "LCSC Part" "C2045227"
 			(at 185.42 149.86 90)
 			(effects
 				(font
@@ -17674,7 +17678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "SXN(顺翔诺)"
+		(property "Manufacturer" "TDK"
 			(at 185.42 149.86 90)
 			(effects
 				(font
@@ -18455,6 +18459,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d039e49b-8080-4652-b6f2-617520da9de9")
 		(property "Reference" "#PWR059"
 			(at 161.29 133.35 0)
@@ -18465,12 +18470,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 156.718 128.27 0)
+		(property "Value" "+12V_G1"
+			(at 159.8931 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -19064,7 +19070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+12V_G1"
 			(at 203.2 129.2169 0)
 			(effects
 				(font
