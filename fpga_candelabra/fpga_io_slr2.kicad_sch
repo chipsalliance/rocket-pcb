@@ -38423,6 +38423,126 @@
 				)
 			)
 		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+1V8"
 			(power)
 			(pin_numbers hide)
@@ -38543,6 +38663,134 @@
 				)
 			)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 31.75 86.36)
+		(uuid "6c3b53c4-3190-4cc6-859c-df1f04a22436")
+	)
+	(no_connect
+		(at 31.75 83.82)
+		(uuid "992f20e5-8343-4655-b976-bbaa605f6441")
 	)
 	(wire
 		(pts
@@ -38574,6 +38822,65 @@
 		)
 		(uuid "88011cef-0691-4bce-a28d-94734130f7cb")
 	)
+	(bus
+		(pts
+			(xy 154.94 185.42) (xy 172.72 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f6c135f-d080-4161-adaa-b7553729f424")
+	)
+	(text_box "VCCO_71 connect to VCCAUX for easier layout"
+		(exclude_from_sim no)
+		(at 217.17 161.29 0)
+		(size 49.53 3.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "17eb374c-c532-4a27-857a-9dd522206a45")
+	)
+	(text_box "SLR2\n  - Bank 68 (VADJ) FMC LA+HA\n  - Bank 69 (IPEX02_VADJ) IPEX 0 RESERVED\n  - Bank 70 (IPEX02_VADJ) IPEX 2 RESERVED\n  - Bank 71"
+		(exclude_from_sim no)
+		(at 22.86 107.95 0)
+		(size 50.8 11.43)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b09aa02a-82a8-4771-87fc-e73569eb9990")
+	)
+	(label "FMC.LA07-"
+		(at 31.75 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0242fe3a-a6e9-47e6-b00e-6437ff92b15b")
+	)
 	(label "QSFP0.TXDIS"
 		(at 20.32 181.61 0)
 		(fields_autoplaced yes)
@@ -38584,6 +38891,83 @@
 			(justify left bottom)
 		)
 		(uuid "0d446a48-c7f1-4224-8255-8867c4a3ef04")
+	)
+	(label "FMC.LA09+"
+		(at 31.75 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0fb7c2a1-4f80-4987-9a30-f8adf70f191e")
+	)
+	(label "FMC.LA10-"
+		(at 31.75 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1aab5ca1-e44d-4f7d-a459-e7a44d0025ba")
+	)
+	(label "FMC.LA08-"
+		(at 31.75 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "34d5b750-5827-4f77-8531-de574ab9a9c5")
+	)
+	(label "FMC.LA06+"
+		(at 31.75 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "354d43f7-a65b-464c-9747-3ffd875705bd")
+	)
+	(label "FMC.LA03+"
+		(at 31.75 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c070490-2092-4324-a8ed-cf65deb36b5f")
+	)
+	(label "FMC.LA04-"
+		(at 31.75 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "431324a0-cfbb-4dae-bc31-4a384dadc0ed")
+	)
+	(label "FMC.LA08+"
+		(at 31.75 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f8eb6f4-cbca-4b20-bd4b-0dcd333f71a1")
 	)
 	(label "QSFP1.~{MODPRS}"
 		(at 20.32 186.69 0)
@@ -38607,6 +38991,39 @@
 		)
 		(uuid "61dfc25e-32cf-424d-bbf9-692014ca889d")
 	)
+	(label "FMC.LA11+"
+		(at 31.75 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c354ccc-e939-45e9-a473-693ed383a669")
+	)
+	(label "FMC.LA03-"
+		(at 31.75 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "895d571c-8c31-4301-a2ac-301a96d34c4f")
+	)
+	(label "FMC.LA01_CC+"
+		(at 31.75 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "93573ec7-a5df-4685-866d-9b03ef86f5ae")
+	)
 	(label "QSFP1.~{RXLOS}"
 		(at 20.32 189.23 0)
 		(fields_autoplaced yes)
@@ -38618,6 +39035,17 @@
 		)
 		(uuid "95ce6b58-5342-4d82-b57e-43c36e955476")
 	)
+	(label "FMC.LA01_CC-"
+		(at 31.75 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "979dadc0-6536-4dff-933c-ac192552671e")
+	)
 	(label "QSFP0.~{RESET}"
 		(at 20.32 173.99 0)
 		(fields_autoplaced yes)
@@ -38628,6 +39056,17 @@
 			(justify left bottom)
 		)
 		(uuid "9b6a3a7f-9c69-44e9-a070-5f48b5fdb18e")
+	)
+	(label "FMC.LA00_CC-"
+		(at 31.75 22.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9bfd7dd4-8ad3-4303-b605-10652b2d65e4")
 	)
 	(label "QSFP0{QSFP}"
 		(at 156.21 189.23 0)
@@ -38651,6 +39090,28 @@
 		)
 		(uuid "a73ab584-b4a8-40fc-aea0-1c33876928db")
 	)
+	(label "FMC.LA11-"
+		(at 31.75 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4ce18fb-1499-488d-a263-0c956a21efd8")
+	)
+	(label "FMC.LA00_CC+"
+		(at 31.75 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b70d0e1e-90ff-4eec-83ce-bc041b38f367")
+	)
 	(label "QSFP1.~{RESET}"
 		(at 20.32 184.15 0)
 		(fields_autoplaced yes)
@@ -38661,6 +39122,72 @@
 			(justify left bottom)
 		)
 		(uuid "b86fb315-adc5-4432-9551-bc3a0fe3e256")
+	)
+	(label "FMC.LA02-"
+		(at 31.75 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b998fdc4-6d8f-4a40-af27-78490f9df429")
+	)
+	(label "FMC{FMC_LPC}"
+		(at 156.21 185.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c082ee50-0e11-4df7-8c78-fe316db497cb")
+	)
+	(label "FMC.LA07+"
+		(at 31.75 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c35d8f32-5d25-4eca-af87-c173eac5b663")
+	)
+	(label "FMC.LA02+"
+		(at 31.75 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da675fce-2bb1-44b7-b476-14ac092be9df")
+	)
+	(label "FMC.LA06-"
+		(at 31.75 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dacbdffb-fc73-4c95-81dd-863d40d06e8c")
+	)
+	(label "FMC.LA05+"
+		(at 31.75 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0b8ccc3-2465-4df6-9b73-30b9c1d3cc5d")
 	)
 	(label "QSFP1{QSFP}"
 		(at 156.21 193.04 0)
@@ -38673,6 +39200,17 @@
 		)
 		(uuid "e77709e7-8c71-4256-b775-0bbed1af5176")
 	)
+	(label "FMC.LA10+"
+		(at 31.75 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7ee3560-2343-4763-99c7-9f1abed9e4ac")
+	)
 	(label "QSFP0.~{RXLOS}"
 		(at 20.32 179.07 0)
 		(fields_autoplaced yes)
@@ -38683,6 +39221,39 @@
 			(justify left bottom)
 		)
 		(uuid "ec1f0cd4-1b29-41f9-bb52-fb4f5df7fded")
+	)
+	(label "FMC.LA05-"
+		(at 31.75 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "efc4ec57-311c-4fe4-b3d4-1b042901f790")
+	)
+	(label "FMC.LA04+"
+		(at 31.75 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f0a76fe4-ee7e-4825-9362-449586a8b831")
+	)
+	(label "FMC.LA09-"
+		(at 31.75 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7b6c306-2850-4b2c-9315-fbb24ebed9e8")
 	)
 	(hierarchical_label "QSFP0{QSFP}"
 		(shape bidirectional)
@@ -38696,6 +39267,18 @@
 		)
 		(uuid "107d6b93-3db3-4da6-b3d9-4c897865d19a")
 	)
+	(hierarchical_label "FMC{FMC_LPC}"
+		(shape bidirectional)
+		(at 154.94 185.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "714ebc57-781d-4c8d-86b4-fd60e07b5e9b")
+	)
 	(hierarchical_label "QSFP1{QSFP}"
 		(shape bidirectional)
 		(at 154.94 193.04 180)
@@ -38707,6 +39290,140 @@
 			(justify right)
 		)
 		(uuid "9d60ceed-ed0e-4087-90a6-b471671902f8")
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 88.9 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fb843f0-cd0e-4ce9-8350-db84ecfacc1c")
+		(property "Reference" "#PWR0502"
+			(at 92.71 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCCO_69_70"
+			(at 85.7251 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 88.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3dd7767-c9df-4f24-9a31-f7248ad59fb2")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 31.75 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "476572e3-54b4-4f04-8f30-b9909e0bb7aa")
+		(property "Reference" "#PWR0574"
+			(at 35.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC0_VREF_A"
+			(at 28.5751 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63e94d05-cb21-43ea-afa3-2af4350dd0ba")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0574")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_FPGA_Xilinx_Virtex_UltraScale_Plus:XCVU13P-B2104")
@@ -51532,8 +52249,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 31.75 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8b4f02a-6fd8-426d-9b90-f00e8e48bfe8")
+		(property "Reference" "#PWR0573"
+			(at 35.56 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "FMC0_VADJ"
+			(at 28.5751 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 31.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13d3f4f1-367b-4421-8ba7-7aefb411313c")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0573")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CHIPSAlliance_FPGA_Xilinx_Virtex_UltraScale_Plus:XCVU13P-B2104")
-		(at 25.4 22.86 0)
+		(at 31.75 22.86 0)
 		(unit 9)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -51542,25 +52326,23 @@
 		(fields_autoplaced yes)
 		(uuid "dbe0b8bf-10c7-4219-8257-15d4f05bf027")
 		(property "Reference" "U1"
-			(at 66.802 55.9378 0)
+			(at 54.61 16.1755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "XCVU13P-B2104"
-			(at 66.802 58.3621 0)
+			(at 54.61 18.5998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "CHIPSAlliance_Package_BGA:Xilinx_FHGB2104_VU13P_PkgLength"
-			(at 24.13 21.59 0)
+			(at 30.48 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51570,7 +52352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 59.69 0)
+			(at 30.48 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51580,7 +52362,7 @@
 			)
 		)
 		(property "Description" "Virtex UltraScale+ 13P XCVU13P-B2104"
-			(at 25.4 22.86 0)
+			(at 31.75 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57905,6 +58687,140 @@
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
 					(reference "U1")
 					(unit 9)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 156.21 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e02024cd-756f-43da-a3ed-c10a9e4cbb1b")
+		(property "Reference" "#PWR0157"
+			(at 160.02 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCCO_69_70"
+			(at 153.0351 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 156.21 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ab96ed7-bc22-4b33-acaa-1f620d8e41ab")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0157")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 218.44 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f208fe60-6d74-499d-a64a-2cb7d788bc16")
+		(property "Reference" "#PWR0160"
+			(at 222.25 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCCAUX"
+			(at 215.265 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with \"VCCAUX\""
+			(at 218.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35161a85-d4d3-4c4a-b1a5-a698cb963b9d")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/048d3720-1b47-40c5-b543-cd301b5cf3fd"
+					(reference "#PWR0160")
+					(unit 1)
 				)
 			)
 		)

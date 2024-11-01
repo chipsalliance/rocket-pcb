@@ -1,0 +1,23 @@
+(version 1)
+(rule "DDR4 width outer"
+	(layer outer)
+    (condition "A.NetClass == 'DDR4_DQ' || A.NetClass == 'DDR4_CCA'")
+    (constraint track_width (min 3mil) (opt 6mil) (max 6mil)))
+
+(rule "DDR4 width inner"
+	(layer inner)
+    (condition "A.NetClass == 'DDR4_DQ' || A.NetClass == 'DDR4_CCA'")
+    (constraint track_width (min 3mil) (opt 5mil) (max 6mil)))
+
+#(rule "U1 BGA neckdown"
+#   (constraint track_width (min 3mil))
+#   (constraint clearance (min 3mil) (opt 3mil))
+#   (condition "A.intersectsCourtyard('U1')"))
+#
+(rule "DDR4 DQS diff skew"
+   (condition "A.NetClass == 'DDR4_DQS' && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQG0 skew"
+   (condition "A.NetClass == 'DDR4_DQ'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
