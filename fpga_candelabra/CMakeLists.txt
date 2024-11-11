@@ -26,6 +26,14 @@ set (PROJECT_PRODUCTION_FILES
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-F_Silkscreen.gto"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In1_Cu.g2"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In2_Cu.g3"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In3_Cu.g4"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In4_Cu.g5"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In5_Cu.g6"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In6_Cu.g7"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In7_Cu.g8"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In8_Cu.g9"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In9_Cu.g10"
+    "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-In10_Cu.g11"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-NPTH.drl"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-PTH.drl"
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}-job.gbrjob"
@@ -53,7 +61,7 @@ add_custom_command(
         --disable-aperture-macros
         --no-x2
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/"
-        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In1.Cu,In2.Cu,User.Drawings"
+        -l "B.Cu,B.Mask,B.Paste,B.SilkS,Edge.Cuts,F.Cu,F.Mask,F.Paste,F.SilkS,In0.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,In5.Cu,In6.Cu,In7.Cu,In8.Cu,In9.Cu,In10.Cu,User.Drawings"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
     COMMAND
         ${KICADCLI_PROGRAM} pcb export drill
@@ -134,7 +142,7 @@ add_custom_command(
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
     COMMAND
         ${KICADCLI_PROGRAM} pcb drc
-        --severity-error
+        --severity-error0
         --exit-code-violations
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
