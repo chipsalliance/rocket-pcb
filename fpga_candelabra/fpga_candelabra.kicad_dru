@@ -9,15 +9,70 @@
     (condition "A.NetClass == 'DDR4_DQ' || A.NetClass == 'DDR4_CCA'")
     (constraint track_width (min 3mil) (opt 5mil) (max 6mil)))
 
-#(rule "U1 BGA neckdown"
-#   (constraint track_width (min 3mil))
-#   (constraint clearance (min 3mil) (opt 3mil))
-#   (condition "A.intersectsCourtyard('U1')"))
-#
-(rule "DDR4 DQS diff skew"
-   (condition "A.NetClass == 'DDR4_DQS' && AB.isCoupledDiffPair()")
+(rule "No courtyard clearance"
+    (condition "A.Exempt_From_Courtyard_Requirement || B.Exempt_From_Courtyard_Requirement")
+    (constraint courtyard_clearance (min 0mil)))
+
+(rule "DDR4 DQS0 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS0') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS1 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS1') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS2 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS2') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS3 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS3') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS4 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS4') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS5 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS5') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS6 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS6') && AB.isCoupledDiffPair()")
+   (constraint skew (max 5mil) (opt 0mil)))
+
+(rule "DDR4 DQS7 diff skew"
+   (condition "A.inDiffPair('DDR4_DQS7') && AB.isCoupledDiffPair()")
    (constraint skew (max 5mil) (opt 0mil)))
 
 (rule "DDR4 DQG0 skew"
-   (condition "A.NetClass == 'DDR4_DQ'")
+   (condition "A.NetName == 'DDR4_DQ0' || A.NetName == 'DDR4_DQ1' || A.NetName == 'DDR4_DQ2' || A.NetName == 'DDR4_DQ3' || A.NetName == 'DDR4_DQ4' || A.NetName == 'DDR4_DQ5' || A.NetName == 'DDR4_DQ6' || A.NetName == 'DDR4_DQ7' || A.NetName == 'DDR4_DQS0+' || A.NetName == 'DDR4_DQS0-' || A.NetName == 'DDR4_DM0'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG1 skew"
+   (condition "A.NetName == 'DDR4_DQ8' || A.NetName == 'DDR4_DQ9' || A.NetName == 'DDR4_DQ10' || A.NetName == 'DDR4_DQ11' || A.NetName == 'DDR4_DQ12' || A.NetName == 'DDR4_DQ13' || A.NetName == 'DDR4_DQ14' || A.NetName == 'DDR4_DQ15' || A.NetName == 'DDR4_DQS1+' || A.NetName == 'DDR4_DQS1-' || A.NetName == 'DDR4_DM1'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG2 skew"
+   (condition "A.NetName == 'DDR4_DQ16' || A.NetName == 'DDR4_DQ17' || A.NetName == 'DDR4_DQ18' || A.NetName == 'DDR4_DQ19' || A.NetName == 'DDR4_DQ20' || A.NetName == 'DDR4_DQ21' || A.NetName == 'DDR4_DQ22' || A.NetName == 'DDR4_DQ23' || A.NetName == 'DDR4_DQS2+' || A.NetName == 'DDR4_DQS2-' || A.NetName == 'DDR4_DM2'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG3 skew"
+   (condition "A.NetName == 'DDR4_DQ24' || A.NetName == 'DDR4_DQ25' || A.NetName == 'DDR4_DQ26' || A.NetName == 'DDR4_DQ27' || A.NetName == 'DDR4_DQ28' || A.NetName == 'DDR4_DQ29' || A.NetName == 'DDR4_DQ30' || A.NetName == 'DDR4_DQ31' || A.NetName == 'DDR4_DQS3+' || A.NetName == 'DDR4_DQS3-' || A.NetName == 'DDR4_DM3'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG4 skew"
+   (condition "A.NetName == 'DDR4_DQ32' || A.NetName == 'DDR4_DQ33' || A.NetName == 'DDR4_DQ34' || A.NetName == 'DDR4_DQ35' || A.NetName == 'DDR4_DQ36' || A.NetName == 'DDR4_DQ37' || A.NetName == 'DDR4_DQ38' || A.NetName == 'DDR4_DQ39' || A.NetName == 'DDR4_DQS4+' || A.NetName == 'DDR4_DQS4-' || A.NetName == 'DDR4_DM4'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG5 skew"
+   (condition "A.NetName == 'DDR4_DQ40' || A.NetName == 'DDR4_DQ41' || A.NetName == 'DDR4_DQ42' || A.NetName == 'DDR4_DQ43' || A.NetName == 'DDR4_DQ44' || A.NetName == 'DDR4_DQ45' || A.NetName == 'DDR4_DQ46' || A.NetName == 'DDR4_DQ47' || A.NetName == 'DDR4_DQS5+' || A.NetName == 'DDR4_DQS5-' || A.NetName == 'DDR4_DM5'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG6 skew"
+   (condition "A.NetName == 'DDR4_DQ48' || A.NetName == 'DDR4_DQ49' || A.NetName == 'DDR4_DQ50' || A.NetName == 'DDR4_DQ51' || A.NetName == 'DDR4_DQ52' || A.NetName == 'DDR4_DQ53' || A.NetName == 'DDR4_DQ54' || A.NetName == 'DDR4_DQ55' || A.NetName == 'DDR4_DQS6+' || A.NetName == 'DDR4_DQS6-' || A.NetName == 'DDR4_DM6'")
+   (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "DDR4 DQG7 skew"
+   (condition "A.NetName == 'DDR4_DQ56' || A.NetName == 'DDR4_DQ57' || A.NetName == 'DDR4_DQ58' || A.NetName == 'DDR4_DQ59' || A.NetName == 'DDR4_DQ60' || A.NetName == 'DDR4_DQ61' || A.NetName == 'DDR4_DQ62' || A.NetName == 'DDR4_DQ63' || A.NetName == 'DDR4_DQS7+' || A.NetName == 'DDR4_DQS7-' || A.NetName == 'DDR4_DM7'")
    (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
