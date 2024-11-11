@@ -519,6 +519,7 @@
 			"LA24-" "LA25+" "LA25-" "LA26+" "LA26-" "LA27+" "LA27-" "LA28+" "LA28-"
 			"LA29+" "LA29-" "LA30+" "LA30-" "LA31+" "LA31-" "LA32+" "LA32-" "LA33+"
 			"LA33-" "PG_C2M" "~{PRSNT_M2C}" "SCL" "SDA" "TCK" "TDI" "TDO" "TMS" "~{TRST}"
+			"CLK0_C2M+" "CLK0_C2M-"
 		)
 	)
 	(bus_alias "IPEX_XCVR"
@@ -566,6 +567,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 147.32) (xy 220.98 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "018fab62-656a-4d63-90ce-9e32bf28015b")
+	)
+	(wire
+		(pts
+			(xy 92.71 167.64) (xy 109.22 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "023d30e3-fe0b-44c8-8d04-6fba14926c5a")
+	)
+	(wire
+		(pts
 			(xy 38.1 137.16) (xy 55.88 137.16)
 		)
 		(stroke
@@ -573,6 +594,16 @@
 			(type default)
 		)
 		(uuid "03dcce92-3404-46bd-bd86-e65eabbfb4e4")
+	)
+	(wire
+		(pts
+			(xy 38.1 180.34) (xy 55.88 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "099f5a3f-4d2e-41b5-a630-b4dc42d0ce8e")
 	)
 	(wire
 		(pts
@@ -586,7 +617,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 128.27 62.23)
+			(xy 114.3 69.85) (xy 128.27 69.85)
 		)
 		(stroke
 			(width 0)
@@ -604,9 +635,19 @@
 		)
 		(uuid "117b103c-74f3-46bd-8112-56bb2ea4d9b9")
 	)
+	(wire
+		(pts
+			(xy 218.44 39.37) (xy 231.14 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1804ffda-dae3-4c7b-aa3e-7d4f9335f920")
+	)
 	(bus
 		(pts
-			(xy 241.3 125.73) (xy 255.27 125.73)
+			(xy 241.3 125.73) (xy 257.81 125.73)
 		)
 		(stroke
 			(width 0)
@@ -624,9 +665,19 @@
 		)
 		(uuid "19e090a8-c879-4b05-a181-916c3b239a36")
 	)
+	(wire
+		(pts
+			(xy 243.84 118.11) (xy 257.81 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20bd72a1-641f-4b80-85e1-227ba582ac4e")
+	)
 	(bus
 		(pts
-			(xy 142.24 22.86) (xy 157.48 22.86)
+			(xy 177.8 67.31) (xy 193.04 67.31)
 		)
 		(stroke
 			(width 0)
@@ -636,13 +687,23 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 60.96) (xy 62.23 60.96)
+			(xy 41.91 67.31) (xy 62.23 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "29bb2769-360b-43a7-a2c6-b289ad262e31")
+	)
+	(wire
+		(pts
+			(xy 177.8 85.09) (xy 191.77 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aaec5f8-3d51-4c3b-b829-4f23e1828bf9")
 	)
 	(wire
 		(pts
@@ -656,7 +717,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 77.47) (xy 128.27 77.47)
+			(xy 114.3 85.09) (xy 128.27 85.09)
 		)
 		(stroke
 			(width 0)
@@ -673,16 +734,6 @@
 			(type default)
 		)
 		(uuid "2eff59a1-6d35-47f0-a9b7-125322218193")
-	)
-	(wire
-		(pts
-			(xy 236.22 148.59) (xy 255.27 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fb1080d-8b6f-4892-85b2-e513bc08b2e3")
 	)
 	(wire
 		(pts
@@ -736,13 +787,23 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 69.85) (xy 60.96 69.85)
+			(xy 41.91 91.44) (xy 60.96 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "420dbcca-ab80-4320-8971-435f53ffa41b")
+	)
+	(wire
+		(pts
+			(xy 243.84 120.65) (xy 257.81 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4582e5d1-3f93-4ed6-a9af-d0a32743f406")
 	)
 	(wire
 		(pts
@@ -753,16 +814,6 @@
 			(type default)
 		)
 		(uuid "479c7b5f-836c-4759-a2ea-0831fe0e1aa3")
-	)
-	(wire
-		(pts
-			(xy 38.1 168.91) (xy 55.88 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4864aee2-2525-4edb-95ed-77d5593961bf")
 	)
 	(wire
 		(pts
@@ -784,9 +835,39 @@
 		)
 		(uuid "4a603a34-171d-4cd2-a4a6-acb78d8ca402")
 	)
+	(wire
+		(pts
+			(xy 177.8 87.63) (xy 191.77 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c6cb339-27d7-4074-a7f1-ddd027ea5d08")
+	)
 	(bus
 		(pts
-			(xy 142.24 25.4) (xy 157.48 25.4)
+			(xy 177.8 78.74) (xy 198.12 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6329fe-3467-43a9-9879-776ae08dea65")
+	)
+	(wire
+		(pts
+			(xy 38.1 170.18) (xy 55.88 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c0b60c-da8b-4e82-95ea-419dbc476700")
+	)
+	(bus
+		(pts
+			(xy 177.8 69.85) (xy 193.04 69.85)
 		)
 		(stroke
 			(width 0)
@@ -796,13 +877,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 161.29) (xy 55.88 161.29)
+			(xy 41.91 69.85) (xy 55.88 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53deb524-9a87-49a6-941c-d167e844138d")
+		(uuid "54f6f77c-e96e-4af1-bc85-93b5540955b7")
 	)
 	(wire
 		(pts
@@ -823,6 +904,66 @@
 			(type default)
 		)
 		(uuid "5aa2392f-390e-4f91-8d43-bda0dad999b5")
+	)
+	(wire
+		(pts
+			(xy 38.1 172.72) (xy 55.88 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f853628-e11a-4874-854b-fcae34607a52")
+	)
+	(wire
+		(pts
+			(xy 218.44 36.83) (xy 231.14 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a1bea9-9aff-4e20-9a4a-9b9d26f3df62")
+	)
+	(wire
+		(pts
+			(xy 218.44 44.45) (xy 231.14 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "654864e0-be7b-4a1b-8557-d9e8ac113625")
+	)
+	(wire
+		(pts
+			(xy 41.91 31.75) (xy 55.88 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65b34e93-9b03-4cfc-8762-0e257e5bb1f3")
+	)
+	(wire
+		(pts
+			(xy 38.1 161.29) (xy 55.88 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682a8508-ecd6-4c31-a6d5-4685b8f08eb8")
+	)
+	(wire
+		(pts
+			(xy 41.91 29.21) (xy 55.88 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68a94089-b176-4885-9119-97b087750567")
 	)
 	(wire
 		(pts
@@ -856,7 +997,17 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 144.78) (xy 220.98 144.78)
+			(xy 177.8 95.25) (xy 195.58 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a2847d-d7c1-49e8-b2ba-d1636ac8358c")
+	)
+	(wire
+		(pts
+			(xy 207.01 137.16) (xy 220.98 137.16)
 		)
 		(stroke
 			(width 0)
@@ -866,7 +1017,7 @@
 	)
 	(bus
 		(pts
-			(xy 104.14 30.48) (xy 123.19 30.48)
+			(xy 102.87 30.48) (xy 121.92 30.48)
 		)
 		(stroke
 			(width 0)
@@ -886,13 +1037,23 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 74.93) (xy 128.27 74.93)
+			(xy 114.3 82.55) (xy 128.27 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7d4d7c73-a861-4c23-8839-4a5b31334c8a")
+	)
+	(wire
+		(pts
+			(xy 177.8 82.55) (xy 189.23 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8129f0f5-235c-49a5-bfe8-6e2174a6f40e")
 	)
 	(bus
 		(pts
@@ -906,6 +1067,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 163.83) (xy 55.88 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "873afb2c-a714-47c9-a6c7-724d6edb4944")
+	)
+	(wire
+		(pts
 			(xy 38.1 143.51) (xy 55.88 143.51)
 		)
 		(stroke
@@ -913,6 +1084,16 @@
 			(type default)
 		)
 		(uuid "884c388b-db8c-49b6-9247-b405df58c31d")
+	)
+	(wire
+		(pts
+			(xy 41.91 72.39) (xy 55.88 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89731177-3f4e-4283-b307-cbf4fd31d3ac")
 	)
 	(wire
 		(pts
@@ -932,11 +1113,11 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "94bd68a4-371c-42f7-82fa-fb7dcb0e0253")
+		(uuid "929f754f-b3b7-4737-8351-e1547de9fbce")
 	)
 	(wire
 		(pts
-			(xy 207.01 147.32) (xy 220.98 147.32)
+			(xy 207.01 139.7) (xy 220.98 139.7)
 		)
 		(stroke
 			(width 0)
@@ -976,7 +1157,7 @@
 	)
 	(bus
 		(pts
-			(xy 114.3 72.39) (xy 129.54 72.39)
+			(xy 114.3 80.01) (xy 129.54 80.01)
 		)
 		(stroke
 			(width 0)
@@ -996,7 +1177,7 @@
 	)
 	(bus
 		(pts
-			(xy 114.3 59.69) (xy 129.54 59.69)
+			(xy 114.3 67.31) (xy 129.54 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1036,6 +1217,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 76.2) (xy 62.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b59d1323-db16-4ac7-a1e0-3ee7e0bbf0e9")
+	)
+	(wire
+		(pts
 			(xy 198.12 36.83) (xy 200.66 36.83)
 		)
 		(stroke
@@ -1054,25 +1245,25 @@
 		)
 		(uuid "b8f47624-bce2-4b41-bc41-ee4db431e4fe")
 	)
+	(wire
+		(pts
+			(xy 207.01 144.78) (xy 220.98 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9385ce-7031-4231-80ee-8641f9fdec04")
+	)
 	(bus
 		(pts
-			(xy 142.24 30.48) (xy 161.29 30.48)
+			(xy 177.8 74.93) (xy 196.85 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bc273f23-208c-4bd3-bf4d-f72b5f11722a")
-	)
-	(wire
-		(pts
-			(xy 236.22 151.13) (xy 255.27 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdbf2886-91d2-4be0-8b8c-e6165dd13a39")
 	)
 	(wire
 		(pts
@@ -1106,13 +1297,23 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 64.77) (xy 128.27 64.77)
+			(xy 114.3 72.39) (xy 128.27 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cc8ce2f4-4554-494f-a09c-23206215467d")
+	)
+	(wire
+		(pts
+			(xy 41.91 24.13) (xy 52.07 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02e1cb0-ef53-4fce-aac8-907065e44dee")
 	)
 	(wire
 		(pts
@@ -1146,16 +1347,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 166.37) (xy 55.88 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6d489f4-4884-4023-97fa-9f15d7f2eb6b")
-	)
-	(wire
-		(pts
 			(xy 38.1 134.62) (xy 55.88 134.62)
 		)
 		(stroke
@@ -1163,6 +1354,26 @@
 			(type default)
 		)
 		(uuid "da8a2156-7ff1-4fee-90fc-868a6bb443d3")
+	)
+	(wire
+		(pts
+			(xy 177.8 92.71) (xy 195.58 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd00105c-3e8d-41af-8053-bc5b4d751028")
+	)
+	(wire
+		(pts
+			(xy 38.1 182.88) (xy 55.88 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de6951fe-808f-4d02-a3a2-63a6bfebc1d1")
 	)
 	(wire
 		(pts
@@ -1225,7 +1436,7 @@
 	)
 	(text_box "FMC0  GA=0b00"
 		(exclude_from_sim no)
-		(at 200.66 46.99 0)
+		(at 200.66 50.8 0)
 		(size 17.78 3.81)
 		(stroke
 			(width 0)
@@ -1261,8 +1472,52 @@
 		)
 		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
 	)
+	(label "SYSMON_SDA"
+		(at 43.18 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00b4144f-d3ce-4de6-9165-1bfc7e1821c4")
+	)
+	(label "MCU_U0TXD"
+		(at 179.07 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "028061e6-30fa-4712-8307-48227de06dd0")
+	)
+	(label "MGMT_SCL"
+		(at 245.11 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "045ffb6e-8c22-46d5-8c82-eb941482acc3")
+	)
+	(label "~{SYS_RST}"
+		(at 39.37 158.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "064aac93-57ad-47b7-b422-45b572ccd417")
+	)
 	(label "FMC0{FMC_LPC}"
-		(at 44.45 69.85 0)
+		(at 44.45 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1272,8 +1527,8 @@
 		)
 		(uuid "0ea2f487-769e-4383-90ee-c719a0e07baa")
 	)
-	(label "IPEX4.CLKT+"
-		(at 208.28 144.78 0)
+	(label "SYS_CLK+"
+		(at 208.28 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1294,8 +1549,19 @@
 		)
 		(uuid "198479ed-a935-4e68-bec1-7f326ba4489e")
 	)
+	(label "FMC_PRSNT"
+		(at 219.71 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1af330fa-aa08-43e4-84ed-0da584bb884a")
+	)
 	(label "QSFP0{QSFP}"
-		(at 143.51 22.86 0)
+		(at 179.07 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1316,8 +1582,8 @@
 		)
 		(uuid "21b4a038-cdb6-4e46-ab1b-93fd752fd011")
 	)
-	(label "SPD_I2C_SDA"
-		(at 39.37 161.29 0)
+	(label "SYSMON_SCL"
+		(at 43.18 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1325,10 +1591,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2f50a0e8-86e8-468e-a5af-c06585320000")
+		(uuid "22562658-742b-480a-85c1-2d45a9c5c919")
 	)
 	(label "PCIE{PCIE_X16}"
-		(at 44.45 60.96 0)
+		(at 44.45 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1337,6 +1603,28 @@
 			(justify left bottom)
 		)
 		(uuid "3676f389-b81b-498d-848f-cc2a47bdec3d")
+	)
+	(label "MGMT_SCL"
+		(at 219.71 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3863698c-cd80-479c-8e64-6055e204d0d1")
+	)
+	(label "SYS_CLK-"
+		(at 179.07 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3917a0e3-b600-42e9-9917-e01d852a2a26")
 	)
 	(label "QSFP0_CLK-"
 		(at 208.28 127 0)
@@ -1349,8 +1637,8 @@
 		)
 		(uuid "3c799170-6a53-492e-a30b-77d2b069a9dd")
 	)
-	(label "IPMI_SCL"
-		(at 39.37 166.37 0)
+	(label "MGMT_SDA"
+		(at 245.11 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1358,10 +1646,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "3e36e767-f05c-454f-9e62-80f4c3ad777c")
+		(uuid "3e6d5ceb-c7dc-46a8-a3ea-9d2b65a2c7a7")
 	)
-	(label "SPD_I2C_SCL"
-		(at 39.37 158.75 0)
+	(label "PCIE_CLK-"
+		(at 208.28 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1369,18 +1657,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "44281e41-ee1a-4f6a-b987-3dde1acbff34")
-	)
-	(label "SPD_I2C_SDA"
-		(at 237.49 151.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fb63463-fe4e-4f9e-b936-0544c61deed1")
+		(uuid "452a2715-b98f-49f6-a789-9ef7f893cf2a")
 	)
 	(label "QSFP1_CLK+"
 		(at 208.28 129.54 0)
@@ -1394,7 +1671,7 @@
 		(uuid "53307cbe-ad2e-42ca-b010-41ebdfb75b30")
 	)
 	(label "QSFP1{QSFP}"
-		(at 115.57 72.39 0)
+		(at 115.57 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1403,6 +1680,17 @@
 			(justify left bottom)
 		)
 		(uuid "5467e24f-28bb-4211-99d8-ef06b4eb4333")
+	)
+	(label "MCU_U0TXD"
+		(at 39.37 172.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55295b79-ac80-4934-836a-2a8c6bab764f")
 	)
 	(label "QSFP0_CLK+"
 		(at 208.28 124.46 0)
@@ -1427,7 +1715,7 @@
 		(uuid "58361334-46f2-44be-99ff-6c2ccae2f108")
 	)
 	(label "QSFP0{QSFP}"
-		(at 115.57 59.69 0)
+		(at 115.57 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1436,6 +1724,17 @@
 			(justify left bottom)
 		)
 		(uuid "59b0e352-5c41-4cb4-8dee-d2dbc6a4ed26")
+	)
+	(label "MBUS{MIKROBUS}"
+		(at 179.07 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5afb65ed-b477-4a4e-aea2-02c76d0f06f3")
 	)
 	(label "MGMT_SDA"
 		(at 170.18 116.84 0)
@@ -1447,6 +1746,28 @@
 			(justify left bottom)
 		)
 		(uuid "5b1a9a3a-e516-4959-aed5-72eecba20929")
+	)
+	(label "MCU_U0RXD"
+		(at 39.37 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66e8278d-4d18-4a17-8a6e-c52d4a65d226")
+	)
+	(label "SYSMON_SDA"
+		(at 39.37 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67b0201c-7d32-4212-96dd-477e17bd26be")
 	)
 	(label "QSFP1_CLK-"
 		(at 208.28 132.08 0)
@@ -1470,19 +1791,8 @@
 		)
 		(uuid "69fbcd3c-b4b7-4350-a652-b9065fab23fd")
 	)
-	(label "IPMI_SDA"
-		(at 39.37 168.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6d219917-b298-4e2f-91a5-01ee63bf5141")
-	)
-	(label "IPEX4.CLKT-"
-		(at 208.28 147.32 0)
+	(label "SYS_CLK-"
+		(at 208.28 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1493,7 +1803,7 @@
 		(uuid "740e67a7-77ec-4a65-9b3b-aef3011c6c0d")
 	)
 	(label "QSFP1_CLK-"
-		(at 115.57 77.47 0)
+		(at 115.57 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1504,7 +1814,7 @@
 		(uuid "748b8590-25de-49fc-b9c2-f8d7b3155412")
 	)
 	(label "QSFP1{QSFP}"
-		(at 143.51 25.4 0)
+		(at 179.07 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1515,7 +1825,7 @@
 		(uuid "757a6232-548f-4111-b760-0a67bf6f183b")
 	)
 	(label "QSFP0_CLK+"
-		(at 115.57 62.23 0)
+		(at 115.57 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1525,8 +1835,8 @@
 		)
 		(uuid "79761a89-3fb0-4600-8cab-137601ea2358")
 	)
-	(label "SPD_I2C_SCL"
-		(at 237.49 148.59 0)
+	(label "MGMT_SDA"
+		(at 219.71 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1534,7 +1844,40 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7c98107a-5401-4fb5-8253-f27ae7eeca38")
+		(uuid "79ee7cf1-c494-4eb6-9cdf-9dd95f6b01e7")
+	)
+	(label "PCIE_CLK+"
+		(at 43.18 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8680929f-6f93-4671-b320-a6a7a870f060")
+	)
+	(label "SYSMON_SCL"
+		(at 39.37 163.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "876d5f49-f474-4190-be63-6c368d197caf")
+	)
+	(label "PERSTN"
+		(at 53.34 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89dcd0f5-ffd6-4daa-97f0-0ea41c6c981c")
 	)
 	(label "MGMT_SCL"
 		(at 95.25 129.54 0)
@@ -1558,8 +1901,19 @@
 		)
 		(uuid "9b65d90a-5759-46e6-9038-49d6c61574ae")
 	)
+	(label "FMC_PRSNT"
+		(at 95.25 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac7d27b6-4ac2-418f-a0bb-975892af8e7c")
+	)
 	(label "DDR4{DDR4}"
-		(at 242.57 125.73 0)
+		(at 243.84 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1581,7 +1935,7 @@
 		(uuid "bab52174-1c8d-4d20-8cbb-022b94b222b0")
 	)
 	(label "QSFP1_CLK+"
-		(at 115.57 74.93 0)
+		(at 115.57 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1590,6 +1944,17 @@
 			(justify left bottom)
 		)
 		(uuid "bc35e7c3-857d-4fa5-b28c-4f64f5cc28a1")
+	)
+	(label "SYS_CLK+"
+		(at 179.07 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1b1b8e2-e6ab-4842-af1a-05cb8b5dc03b")
 	)
 	(label "MGMT_SDA"
 		(at 95.25 156.21 0)
@@ -1613,8 +1978,19 @@
 		)
 		(uuid "c70369b0-8e20-4ab5-9e26-a38a4f1b3958")
 	)
+	(label "PCIE_CLK-"
+		(at 43.18 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf658f95-498f-4bf4-a65e-3ff9e2c5fb66")
+	)
 	(label "FMC0{FMC_LPC}"
-		(at 144.78 30.48 0)
+		(at 179.07 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1636,7 +2012,7 @@
 		(uuid "de70d38b-73bb-4109-8162-4e69dd5d9578")
 	)
 	(label "FMC0{FMC_LPC}"
-		(at 106.68 30.48 0)
+		(at 105.41 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1646,8 +2022,41 @@
 		)
 		(uuid "e039be63-4d0c-4083-9d51-6c8a48e89922")
 	)
+	(label "~{SYS_RST}"
+		(at 179.07 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea486903-f6b0-4758-81cc-ed1b35256422")
+	)
+	(label "MCU_U0RXD"
+		(at 179.07 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb6eb176-06eb-47b5-a3c4-a81369180c54")
+	)
+	(label "PERSTN"
+		(at 43.18 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1af107c-5217-4336-b73d-6ff692191dc0")
+	)
 	(label "QSFP0_CLK-"
-		(at 115.57 64.77 0)
+		(at 115.57 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1656,6 +2065,17 @@
 			(justify left bottom)
 		)
 		(uuid "f9e7eb29-da21-4c87-8310-0d3ee1d5afd2")
+	)
+	(label "PCIE_CLK+"
+		(at 208.28 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ffb4e5e3-eb42-4b5a-8c8a-769190e44f4d")
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole")
@@ -2385,8 +2805,8 @@
 		)
 	)
 	(sheet
-		(at 125.73 20.32)
-		(size 16.51 25.4)
+		(at 158.75 64.77)
+		(size 19.05 33.02)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2398,7 +2818,7 @@
 		)
 		(uuid "048d3720-1b47-40c5-b543-cd301b5cf3fd")
 		(property "Sheetname" "FPGA IO SLR2"
-			(at 125.73 19.6084 0)
+			(at 158.75 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2827,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr2.kicad_sch"
-			(at 125.73 46.3046 0)
+			(at 158.75 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,7 +2836,7 @@
 			)
 		)
 		(pin "QSFP0{QSFP}" bidirectional
-			(at 142.24 22.86 0)
+			(at 177.8 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2426,7 +2846,7 @@
 			(uuid "b2cd51e7-9196-46c5-bd0e-8c47d85bad9e")
 		)
 		(pin "QSFP1{QSFP}" bidirectional
-			(at 142.24 25.4 0)
+			(at 177.8 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2436,7 +2856,7 @@
 			(uuid "a2d408c4-52cf-4301-a37c-8aa3856ca3a5")
 		)
 		(pin "FMC{FMC_LPC}" bidirectional
-			(at 142.24 30.48 0)
+			(at 177.8 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,6 +2864,66 @@
 				(justify right)
 			)
 			(uuid "258eaeeb-5f7c-468a-a955-bd21c6b7b7ae")
+		)
+		(pin "~{SYS_RST}" input
+			(at 177.8 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "90014df6-092e-4e6d-966b-d610d5e5fc18")
+		)
+		(pin "MCU_U0RXD" output
+			(at 177.8 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "43acea77-0415-44aa-8c66-95f232c94027")
+		)
+		(pin "MCU_U0TXD" input
+			(at 177.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "493e8217-f845-4abd-92fa-0b3e41100612")
+		)
+		(pin "SYS_CLK-" input
+			(at 177.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ddcb0dde-70cf-4cea-8c9c-eaa82ef78f53")
+		)
+		(pin "SYS_CLK+" input
+			(at 177.8 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9b6b8370-1722-405e-a150-41da59c263fd")
+		)
+		(pin "MBUS{MIKROBUS}" bidirectional
+			(at 177.8 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bec89b4c-8a41-4ceb-8f48-98e7b28ff485")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -2524,7 +3004,7 @@
 	)
 	(sheet
 		(at 22.86 20.32)
-		(size 12.7 25.4)
+		(size 19.05 25.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2552,6 +3032,36 @@
 				)
 				(justify left top)
 			)
+		)
+		(pin "PERSTN" input
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ec7b595f-3520-49cb-8091-d7cff504c75d")
+		)
+		(pin "SYSMON_SCL" input
+			(at 41.91 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a26f60e3-a405-4c9e-8896-9e7dcea39f59")
+		)
+		(pin "SYSMON_SDA" bidirectional
+			(at 41.91 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f49542a1-cace-422c-a2be-2db83e7f38b2")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -2611,7 +3121,7 @@
 		)
 	)
 	(sheet
-		(at 93.98 57.15)
+		(at 93.98 64.77)
 		(size 20.32 33.02)
 		(fields_autoplaced yes)
 		(stroke
@@ -2624,7 +3134,7 @@
 		)
 		(uuid "1d07e2f1-4b18-4d01-8623-639a08041484")
 		(property "Sheetname" "FPGA MGT SLR3"
-			(at 93.98 56.4384 0)
+			(at 93.98 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2633,7 +3143,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr3.kicad_sch"
-			(at 93.98 90.7546 0)
+			(at 93.98 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,7 +3152,7 @@
 			)
 		)
 		(pin "REFCLK0-" input
-			(at 114.3 64.77 0)
+			(at 114.3 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2652,7 +3162,7 @@
 			(uuid "3ef99786-c859-48c8-90fe-0e0b9eabdba1")
 		)
 		(pin "REFCLK0+" input
-			(at 114.3 62.23 0)
+			(at 114.3 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2662,7 +3172,7 @@
 			(uuid "94e60e1d-a788-4126-b450-66d2af6ddbf5")
 		)
 		(pin "REFCLK1+" input
-			(at 114.3 74.93 0)
+			(at 114.3 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2672,7 +3182,7 @@
 			(uuid "afc69bdf-ee37-4cbe-ad6a-39c53eb25b71")
 		)
 		(pin "REFCLK1-" input
-			(at 114.3 77.47 0)
+			(at 114.3 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +3192,7 @@
 			(uuid "d27fa466-b4b1-4899-9a9a-af1c66b48c8b")
 		)
 		(pin "QSFP1{QSFP}" bidirectional
-			(at 114.3 72.39 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +3202,7 @@
 			(uuid "2a7ee6d4-d5ac-4077-9968-ca7e86b27b38")
 		)
 		(pin "QSFP0{QSFP}" bidirectional
-			(at 114.3 59.69 0)
+			(at 114.3 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2710,8 +3220,8 @@
 		)
 	)
 	(sheet
-		(at 22.86 57.15)
-		(size 19.05 16.51)
+		(at 22.86 64.77)
+		(size 19.05 17.78)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2723,7 +3233,7 @@
 		)
 		(uuid "310973a6-bc21-45fe-bd00-1791bfe6ed49")
 		(property "Sheetname" "FPGA MGT SLR1"
-			(at 22.86 56.4384 0)
+			(at 22.86 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2732,7 +3242,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr1.kicad_sch"
-			(at 22.86 74.2446 0)
+			(at 22.86 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +3251,7 @@
 			)
 		)
 		(pin "PCIE{PCIE_X16}" bidirectional
-			(at 41.91 60.96 0)
+			(at 41.91 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2750,7 +3260,17 @@
 			)
 			(uuid "d81443d1-280b-4ed5-b35e-74fa12249780")
 		)
-		(pin "FMC0{FMC_LPC}" bidirectional
+		(pin "PCIE_CLK-" input
+			(at 41.91 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fc234a6f-8e24-4784-bad1-60bbaa009fdb")
+		)
+		(pin "PCIE_CLK+" input
 			(at 41.91 69.85 0)
 			(effects
 				(font
@@ -2758,7 +3278,7 @@
 				)
 				(justify right)
 			)
-			(uuid "e42dd798-0198-42c7-9af6-e2093bae180f")
+			(uuid "b389c573-9a11-41b6-99e1-2ed50c849fcd")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -2769,8 +3289,8 @@
 		)
 	)
 	(sheet
-		(at 143.51 139.7)
-		(size 12.7 12.7)
+		(at 198.12 76.2)
+		(size 12.7 5.08)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2782,7 +3302,7 @@
 		)
 		(uuid "4a6f2e76-d40d-4b0b-994b-17cbcb86cc6a")
 		(property "Sheetname" "mikroBUS"
-			(at 143.51 138.9884 0)
+			(at 198.12 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2791,13 +3311,23 @@
 			)
 		)
 		(property "Sheetfile" "mikrobus.kicad_sch"
-			(at 143.51 152.9846 0)
+			(at 198.12 81.8646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "MBUS{MIKROBUS}" bidirectional
+			(at 198.12 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d2dbaae4-574f-4991-87dc-bfdc951dc28c")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -2847,7 +3377,7 @@
 		)
 	)
 	(sheet
-		(at 87.63 20.32)
+		(at 86.36 20.32)
 		(size 16.51 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -2860,7 +3390,7 @@
 		)
 		(uuid "5db380f9-cfea-4726-897e-a7a0af44c8e1")
 		(property "Sheetname" "FPGA IO SLR1"
-			(at 87.63 19.6084 0)
+			(at 86.36 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2869,7 +3399,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr1.kicad_sch"
-			(at 87.63 46.3046 0)
+			(at 86.36 46.3046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2878,7 +3408,7 @@
 			)
 		)
 		(pin "FMC{FMC_LPC}" bidirectional
-			(at 104.14 30.48 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2896,8 +3426,67 @@
 		)
 	)
 	(sheet
+		(at 20.32 177.8)
+		(size 17.78 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 132 1)
+		)
+		(fill
+			(color 255 255 255 0.0000)
+		)
+		(uuid "5dc37b92-8b79-4447-bbff-3e1051343fd5")
+		(property "Sheetname" "Power Monitor"
+			(at 20.32 177.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_monitor.kicad_sch"
+			(at 20.32 186.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{RESET}" output
+			(at 38.1 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b4716f05-605e-4d21-9ba3-392c9e62137e")
+		)
+		(pin "WDI" input
+			(at 38.1 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "23802743-0794-412c-ba36-c9eed1f1467b")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(page "25")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 224.79 114.3)
-		(size 16.51 15.24)
+		(size 16.51 36.83)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2918,7 +3507,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr3.kicad_sch"
-			(at 224.79 130.1246 0)
+			(at 224.79 151.7146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,16 +3724,6 @@
 			)
 			(uuid "d445c754-04aa-4800-b004-75b8ea009cf2")
 		)
-		(pin "IPMI_SDA" bidirectional
-			(at 55.88 168.91 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b27554c1-2bb8-4b0e-bdab-9962c0717fb0")
-		)
 		(pin "MGMT_I2C_SCL" output
 			(at 92.71 129.54 0)
 			(effects
@@ -3155,26 +3734,6 @@
 			)
 			(uuid "45471e91-eb2d-4184-ac60-4b653bcebc42")
 		)
-		(pin "SPD_I2C_SCL" output
-			(at 55.88 158.75 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "caeca2fa-8d7e-4b6e-9dfa-43a0e90c586b")
-		)
-		(pin "IPMI_SCL" output
-			(at 55.88 166.37 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "919658ac-d674-413b-9b05-244f3bfbb367")
-		)
 		(pin "MGMT_I2C_SDA" bidirectional
 			(at 92.71 132.08 0)
 			(effects
@@ -3184,16 +3743,6 @@
 				(justify right)
 			)
 			(uuid "a1579ffe-de0d-4271-8fd5-d2f7d9855f0f")
-		)
-		(pin "SPD_I2C_SDA" bidirectional
-			(at 55.88 161.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "61894b6c-1b62-4ea2-901a-e5e7d32d5178")
 		)
 		(pin "VCCINT_EN" output
 			(at 92.71 142.24 0)
@@ -3206,7 +3755,7 @@
 			(uuid "f149190e-8ff3-41ea-8b97-fe4d210eb40a")
 		)
 		(pin "~{SYS_RST}" output
-			(at 55.88 175.26 180)
+			(at 55.88 158.75 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,6 +3824,66 @@
 			)
 			(uuid "86f82a48-760e-47ab-b416-c3b33e5f0230")
 		)
+		(pin "WDT" output
+			(at 55.88 180.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ecea630d-4411-4502-b617-15f31789120d")
+		)
+		(pin "SYSMON_SDA" bidirectional
+			(at 55.88 161.29 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e1e1fc51-0f59-4e0e-a2e8-44ca7cf9356b")
+		)
+		(pin "SYSMON_SCL" output
+			(at 55.88 163.83 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c6a5244f-9ed9-49e8-ade5-910e50909791")
+		)
+		(pin "MCU_U0RXD" input
+			(at 55.88 170.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "91bb60dc-1d3d-4a87-9db9-15c9be4f0188")
+		)
+		(pin "MCU_U0TXD" output
+			(at 55.88 172.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0734a331-f322-433f-af26-08fd22548ea0")
+		)
+		(pin "FMC_PRSNT" input
+			(at 92.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "593024aa-f304-46f9-944d-e2bbb59a8e64")
+		)
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
@@ -3284,7 +3893,7 @@
 		)
 	)
 	(sheet
-		(at 50.8 20.32)
+		(at 58.42 20.32)
 		(size 12.7 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -3297,7 +3906,7 @@
 		)
 		(uuid "7068e078-a22b-4ea0-8b1f-88b1ba691cbb")
 		(property "Sheetname" "FPGA IO SLR0"
-			(at 50.8 19.6084 0)
+			(at 58.42 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +3915,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_io_slr0.kicad_sch"
-			(at 50.8 46.3046 0)
+			(at 58.42 46.3046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3443,7 +4052,7 @@
 	)
 	(sheet
 		(at 200.66 20.32)
-		(size 17.78 21.59)
+		(size 17.78 26.67)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3464,7 +4073,7 @@
 			)
 		)
 		(property "Sheetfile" "fmc_lpc.kicad_sch"
-			(at 200.66 42.4946 0)
+			(at 200.66 47.5746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3552,6 +4161,36 @@
 			)
 			(uuid "88d2973f-6ede-4cc0-aa16-793c999ca9f5")
 		)
+		(pin "IPMI_SCL" input
+			(at 218.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "598cd18b-a901-4aea-ae11-918d9bbb1cd3")
+		)
+		(pin "IPMI_SDA" bidirectional
+			(at 218.44 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fb63c9e8-53b0-4fbd-8a3c-fc20e3cbd478")
+		)
+		(pin "~{PRSNT_M2C}" output
+			(at 218.44 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "62e854e7-da0f-45f9-bd44-fb769d28b1e5")
+		)
 		(instances
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
@@ -3561,7 +4200,7 @@
 		)
 	)
 	(sheet
-		(at 129.54 55.88)
+		(at 129.54 63.5)
 		(size 19.05 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -3574,7 +4213,7 @@
 		)
 		(uuid "7976b4f9-26f9-45d7-80fc-040eb04e3de9")
 		(property "Sheetname" "QSFP Conn 0"
-			(at 129.54 55.1684 0)
+			(at 129.54 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3583,7 +4222,7 @@
 			)
 		)
 		(property "Sheetfile" "qsfp_conn.kicad_sch"
-			(at 129.54 64.0846 0)
+			(at 129.54 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +4231,7 @@
 			)
 		)
 		(pin "QSFP{QSFP}" bidirectional
-			(at 129.54 59.69 180)
+			(at 129.54 67.31 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,8 +4377,8 @@
 		)
 	)
 	(sheet
-		(at 255.27 114.3)
-		(size 16.51 40.64)
+		(at 257.81 114.3)
+		(size 16.51 15.24)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3751,7 +4390,7 @@
 		)
 		(uuid "da9ca5a6-681c-4f68-b894-107ae37cfb74")
 		(property "Sheetname" "DDR4 SODIMM"
-			(at 255.27 113.5884 0)
+			(at 257.81 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +4399,7 @@
 			)
 		)
 		(property "Sheetfile" "ddr4_sodimm.kicad_sch"
-			(at 255.27 155.5246 0)
+			(at 257.81 130.1246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +4408,7 @@
 			)
 		)
 		(pin "SPD_SCL" input
-			(at 255.27 148.59 180)
+			(at 257.81 118.11 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,7 +4418,7 @@
 			(uuid "f2fc95ef-b304-405a-98e3-f74c56f18204")
 		)
 		(pin "SPD_SDA" bidirectional
-			(at 255.27 151.13 180)
+			(at 257.81 120.65 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3789,7 +4428,7 @@
 			(uuid "e0980717-0057-4e1d-b6a6-497093a27014")
 		)
 		(pin "DDR4{DDR4}" bidirectional
-			(at 255.27 125.73 180)
+			(at 257.81 125.73 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +4446,7 @@
 		)
 	)
 	(sheet
-		(at 129.54 68.58)
+		(at 129.54 76.2)
 		(size 19.05 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -3820,7 +4459,7 @@
 		)
 		(uuid "dfbb9dfd-4cfe-4758-8a78-7d8336c5821d")
 		(property "Sheetname" "QSFP Conn 1"
-			(at 129.54 67.8684 0)
+			(at 129.54 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3829,7 +4468,7 @@
 			)
 		)
 		(property "Sheetfile" "qsfp_conn.kicad_sch"
-			(at 129.54 76.7846 0)
+			(at 129.54 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3838,7 +4477,7 @@
 			)
 		)
 		(pin "QSFP{QSFP}" bidirectional
-			(at 129.54 72.39 180)
+			(at 129.54 80.01 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +4625,7 @@
 			)
 			(uuid "db0d7467-3c0f-4acb-bc7a-0cf4c24128d6")
 		)
-		(pin "IPEX4_CLK+" output
+		(pin "PCIE_CLK+" output
 			(at 207.01 144.78 0)
 			(effects
 				(font
@@ -3994,9 +4633,9 @@
 				)
 				(justify right)
 			)
-			(uuid "709c614f-d1c1-47d5-b4e8-cfd7c896021f")
+			(uuid "3acc8813-c85a-44bd-a530-8b98ac70b788")
 		)
-		(pin "IPEX4_CLK-" output
+		(pin "PCIE_CLK-" output
 			(at 207.01 147.32 0)
 			(effects
 				(font
@@ -4004,7 +4643,7 @@
 				)
 				(justify right)
 			)
-			(uuid "f5bb9028-ca82-44af-82bd-f9ec1505e3b7")
+			(uuid "c7f680d9-0d61-4635-862b-9d81ff9a3fea")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4015,8 +4654,8 @@
 		)
 	)
 	(sheet
-		(at 62.23 57.15)
-		(size 19.05 7.62)
+		(at 62.23 64.77)
+		(size 19.05 17.78)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4028,7 +4667,7 @@
 		)
 		(uuid "ebaa4c3d-2a51-4589-83c9-6df564f83c95")
 		(property "Sheetname" "PCIE Edge Conn"
-			(at 62.23 56.4384 0)
+			(at 62.23 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4037,7 +4676,7 @@
 			)
 		)
 		(property "Sheetfile" "pcie_edge_conn.kicad_sch"
-			(at 62.23 65.3546 0)
+			(at 62.23 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4046,7 +4685,7 @@
 			)
 		)
 		(pin "PCIE{PCIE_X16}" bidirectional
-			(at 62.23 60.96 180)
+			(at 62.23 67.31 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,6 +4693,16 @@
 				(justify left)
 			)
 			(uuid "8447023e-53a3-4166-aeff-65c319b5699f")
+		)
+		(pin "PERSTN_1V8" output
+			(at 62.23 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "42c6a398-2854-49c8-985b-97a66a376cc4")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4163,7 +4812,7 @@
 		)
 	)
 	(sheet
-		(at 22.86 82.55)
+		(at 22.86 88.9)
 		(size 19.05 11.43)
 		(fields_autoplaced yes)
 		(stroke
@@ -4176,7 +4825,7 @@
 		)
 		(uuid "fa9c3262-83d7-482a-91ab-582631ac4fc5")
 		(property "Sheetname" "FPGA MGT SLR2"
-			(at 22.86 81.8384 0)
+			(at 22.86 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4185,13 +4834,23 @@
 			)
 		)
 		(property "Sheetfile" "fpga_mgt_slr2.kicad_sch"
-			(at 22.86 94.5646 0)
+			(at 22.86 100.9146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "FMC0{FMC_LPC}" bidirectional
+			(at 41.91 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c9227743-ec14-432c-9069-ff73d927d780")
 		)
 		(instances
 			(project "fpga_candelabra"

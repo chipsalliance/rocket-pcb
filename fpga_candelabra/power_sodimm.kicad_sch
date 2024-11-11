@@ -2169,12 +2169,6 @@
 		(uuid "52ce2827-5111-4a17-93d0-c05f8f851560")
 	)
 	(junction
-		(at 120.65 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59a6432d-af68-41b8-a326-f7f3bea21414")
-	)
-	(junction
 		(at 82.55 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2227,12 +2221,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a588e6c-f32a-4a19-81af-30e65002a8e3")
-	)
-	(junction
-		(at 110.49 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cea427b-c8ce-4419-ae10-3580768b3223")
 	)
 	(junction
 		(at 121.92 146.05)
@@ -2480,7 +2468,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 78.74) (xy 114.3 78.74)
+			(xy 114.3 78.74) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3237,16 +3225,6 @@
 			(type default)
 		)
 		(uuid "a1805257-e051-4e02-9a83-113d88eb667a")
-	)
-	(wire
-		(pts
-			(xy 129.54 78.74) (xy 120.65 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a497c461-a1df-484e-ba22-410e52678c30")
 	)
 	(wire
 		(pts
@@ -6625,73 +6603,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
-		(at 110.49 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fc4cd67-b2a2-4488-8f21-981db31a4c75")
-		(property "Reference" "#FLG014"
-			(at 110.49 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 110.49 82.2269 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 110.49 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f93ce9c0-0aed-4b13-a669-65feb0196e76")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
-					(reference "#FLG014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Iron")
 		(at 104.14 146.05 90)
 		(unit 1)
@@ -7893,73 +7804,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
 					(reference "#PWR0273")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
-		(at 120.65 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d3ab55c-5677-4c5c-b0dc-ad8c67bc103b")
-		(property "Reference" "#FLG013"
-			(at 120.65 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 120.65 74.6069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 120.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa0e8dc2-d5d8-4384-8e67-ed5f4a989d47")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
-					(reference "#FLG013")
 					(unit 1)
 				)
 			)

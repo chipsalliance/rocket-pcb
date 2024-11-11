@@ -203,24 +203,6 @@
 					)
 				)
 				(pin output line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "VOS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
 					(at 12.7 -5.08 180)
 					(length 2.54)
 					(name "SW"
@@ -274,7 +256,27 @@
 						)
 					)
 				)
-				(pin passive line
+			)
+			(symbol "CSD95491Q5MC_1_0"
+				(pin input line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "VOS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 12.7 5.08 180)
 					(length 2.54)
 					(name "BOOT"
@@ -8759,7 +8761,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0f020d41-24e6-4654-99b5-223290288035")
@@ -9916,7 +9918,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "26410020-abab-4160-9f77-b9fc1ea38d7d")
@@ -10884,7 +10886,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3bcb3079-5090-4c4f-b0c0-2aeb8b79f827")
@@ -11765,7 +11767,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "51b96044-1a8c-49e0-821c-dcb838632d81")
@@ -15643,7 +15645,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "95b1a128-7545-47c4-9fe5-0b1646ea1430")
@@ -15776,7 +15778,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "97ed1f65-f82d-4ea2-a90f-3554230ef705")
@@ -17349,7 +17351,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ba0cec9b-5c94-4a21-8a44-f4951dad9f14")
@@ -18313,73 +18315,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/beaa4e74-1d18-44b4-b7c5-122d2a26ede8"
 					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
-		(at 91.44 33.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce1b673c-5097-4f83-871e-b792069336a5")
-		(property "Reference" "#FLG04"
-			(at 93.345 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 95.5731 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 91.44 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32394ea7-6b55-46d3-b5e2-a8f47b9c4f8f")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/beaa4e74-1d18-44b4-b7c5-122d2a26ede8"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -20076,7 +20011,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f2acf1e4-2229-4d51-9003-7b74382423c3")

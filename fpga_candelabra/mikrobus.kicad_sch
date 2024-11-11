@@ -1275,6 +1275,102 @@
 				)
 			)
 		)
+		(symbol "CHIPSAlliance_Power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2272,6 +2368,11 @@
 			)
 		)
 	)
+	(bus_alias "MIKROBUS"
+		(members "MOSI" "MISO" "SCK" "CS" "RST" "AN" "PWM" "INT" "RX" "TX" "SCL"
+			"SDA"
+		)
+	)
 	(junction
 		(at 104.14 38.1)
 		(diameter 0)
@@ -2631,6 +2732,14 @@
 	(no_connect
 		(at 124.46 49.53)
 		(uuid "28082aed-9ead-4578-a1d3-bfb30caa4f4b")
+	)
+	(no_connect
+		(at 124.46 138.43)
+		(uuid "40f0a20c-9955-4119-9ee2-7ec031bf895b")
+	)
+	(no_connect
+		(at 121.92 138.43)
+		(uuid "4df8c5ae-1130-43f8-81dd-cc7152a851e2")
 	)
 	(no_connect
 		(at 121.92 49.53)
@@ -3129,6 +3238,16 @@
 			(type default)
 		)
 		(uuid "3b96692a-777c-4228-86b0-a545af527c1e")
+	)
+	(bus
+		(pts
+			(xy 247.65 160.02) (xy 267.97 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be47e3a-8b10-4a03-a8f8-8fa614a2b872")
 	)
 	(wire
 		(pts
@@ -4672,7 +4791,7 @@
 		)
 		(uuid "104bf4c0-07a3-45a9-9547-b3cdd70d4516")
 	)
-	(label "MBUS_LV_MISO"
+	(label "MBUS.MISO"
 		(at 29.21 57.15 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4683,7 +4802,7 @@
 		)
 		(uuid "1b68c021-f6bf-48d3-aa9f-48c24252abb6")
 	)
-	(label "MBUS_LV_CS"
+	(label "MBUS.CS"
 		(at 29.21 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4738,7 +4857,7 @@
 		)
 		(uuid "289c6422-383e-4e76-b1a7-038a401df74f")
 	)
-	(label "MBUS_LV_SCK"
+	(label "MBUS.SCK"
 		(at 29.21 62.23 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4782,7 +4901,7 @@
 		)
 		(uuid "5b5cb612-6c02-49b4-af16-f84428cec01d")
 	)
-	(label "MBUS_LV_SDA"
+	(label "MBUS.SDA"
 		(at 29.21 166.37 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4815,7 +4934,7 @@
 		)
 		(uuid "66339d0c-965d-47ca-85dc-b5a0382a9d13")
 	)
-	(label "MBUS_LV_SCL"
+	(label "MBUS.SCL"
 		(at 29.21 161.29 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4881,7 +5000,7 @@
 		)
 		(uuid "9e097162-e774-4f8c-a227-4d5a4636daa3")
 	)
-	(label "MBUS_LV_RST"
+	(label "MBUS.RST"
 		(at 29.21 72.39 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4892,7 +5011,7 @@
 		)
 		(uuid "a00f7224-9d04-437b-a113-88f14b675056")
 	)
-	(label "MBUS_LV_MOSI"
+	(label "MBUS.MOSI"
 		(at 29.21 52.07 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4947,7 +5066,7 @@
 		)
 		(uuid "b1bc34e9-2b9d-4d43-b7d7-cf98eb179d50")
 	)
-	(label "MBUS_LV_PWM"
+	(label "MBUS.PWM"
 		(at 29.21 140.97 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4958,7 +5077,7 @@
 		)
 		(uuid "b67e2f7d-2c57-4df1-8370-b20ba9431215")
 	)
-	(label "MBUS_LV_RX"
+	(label "MBUS.RX"
 		(at 29.21 151.13 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4968,6 +5087,17 @@
 			(justify left bottom)
 		)
 		(uuid "bfe22da1-9bd9-4a8a-8794-7d8cd661f804")
+	)
+	(label "MBUS{MIKROBUS}"
+		(at 248.92 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0647ab1-afb3-4248-8cd2-f10d37183662")
 	)
 	(label "MBUS_HV_MOSI"
 		(at 184.15 55.88 0)
@@ -4980,7 +5110,7 @@
 		)
 		(uuid "d6bae737-b695-4a42-a98d-49364bfa1f82")
 	)
-	(label "MBUS_LV_TX"
+	(label "MBUS.TX"
 		(at 29.21 156.21 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4991,7 +5121,7 @@
 		)
 		(uuid "de2c4a8b-c72f-4c62-8255-77a5e40c1a57")
 	)
-	(label "MBUS_LV_AN"
+	(label "MBUS.AN"
 		(at 29.21 77.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5013,7 +5143,7 @@
 		)
 		(uuid "e40bd934-b62c-4925-9778-768fcc42cf93")
 	)
-	(label "MBUS_LV_INT"
+	(label "MBUS.INT"
 		(at 29.21 146.05 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5034,6 +5164,18 @@
 			(justify left bottom)
 		)
 		(uuid "fbc77d6d-153a-4d15-9a0e-1d44b2976f1e")
+	)
+	(hierarchical_label "MBUS{MIKROBUS}"
+		(shape bidirectional)
+		(at 247.65 160.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc813890-2800-4ac6-bf6b-6d5b301ea756")
 	)
 	(symbol
 		(lib_id "power:Earth")
@@ -6159,6 +6301,73 @@
 		)
 	)
 	(symbol
+		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
+		(at 96.52 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52f2cfe4-395d-4eed-a3a3-4112dec03653")
+		(property "Reference" "#FLG029"
+			(at 96.52 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 96.52 117.7869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5c7bf0a-cc8c-47df-86c1-521783793894")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/4a6f2e76-d40d-4b0b-994b-17cbcb86cc6a"
+					(reference "#FLG029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+1V8")
 		(at 60.96 125.73 0)
 		(unit 1)
@@ -7163,6 +7372,73 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/4a6f2e76-d40d-4b0b-994b-17cbcb86cc6a"
 					(reference "#PWR0540")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
+		(at 96.52 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afc0cb71-ef54-4b67-b806-3d8ff4264591")
+		(property "Reference" "#FLG04"
+			(at 96.52 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 96.52 28.8869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 96.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51d33ca3-b25f-4e12-9496-64c8dfa59e2a")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/4a6f2e76-d40d-4b0b-994b-17cbcb86cc6a"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
