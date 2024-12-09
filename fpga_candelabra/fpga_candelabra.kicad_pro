@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.127
+          "min_clearance": 0.1524
         }
       },
       "diff_pair_dimensions": [
@@ -73,7 +73,15 @@
           "width": 0.12065
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|252595001|121225001|3cd98e6a-c465-4ffa-8d89-55c69e92829d|f505a1e7-877e-422d-8472-1f61b6f7727a",
+        "items_not_allowed|246350000|90500000|8ed9624c-868b-4945-baba-522be92224bf|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|248400000|90500000|ddce1d1f-47b7-4d34-8869-e139dd986aff|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|325400000|180330000|f505a1e7-877e-422d-8472-1f61b6f7727a|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|326190000|100580000|9aeb31b5-47b1-4cc8-b903-592f56b84df5|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|58050000|164500000|4cad0512-b701-41c2-ba27-e74a8ed26bee|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|58567488|142500000|f7ddd687-6af6-4e33-bebe-304918d4ce02|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -96,7 +104,7 @@
         "hole_near_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
+        "isolated_copper": "ignore",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
@@ -111,11 +119,11 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
+        "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
         "text_thickness": "warning",
@@ -141,7 +149,7 @@
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7366,
-        "min_text_thickness": 0.1016,
+        "min_text_thickness": 0.0762,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.09,

@@ -142,7 +142,7 @@ add_custom_command(
     "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
     COMMAND
         ${KICADCLI_PROGRAM} pcb drc
-        --severity-error0
+        --severity-error
         --exit-code-violations
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_drc.rpt"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"

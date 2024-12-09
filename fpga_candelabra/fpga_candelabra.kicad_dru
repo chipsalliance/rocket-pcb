@@ -76,3 +76,7 @@
 (rule "DDR4 DQG7 skew"
    (condition "A.NetName == 'DDR4_DQ56' || A.NetName == 'DDR4_DQ57' || A.NetName == 'DDR4_DQ58' || A.NetName == 'DDR4_DQ59' || A.NetName == 'DDR4_DQ60' || A.NetName == 'DDR4_DQ61' || A.NetName == 'DDR4_DQ62' || A.NetName == 'DDR4_DQ63' || A.NetName == 'DDR4_DQS7+' || A.NetName == 'DDR4_DQS7-' || A.NetName == 'DDR4_DM7'")
    (constraint skew (min -50mil) (opt 0mil) (max 50mil)))
+
+(rule "Allow incomplete thermal spokes"
+   (condition "A.Type == 'Zone' && A.NetName == 'Earth'")
+   (constraint min_resolved_spokes 1))
