@@ -26,6 +26,8 @@ void power_up_sequence_init(void) {
 
     init_rail_enable_pin(VCCINT);
     init_rail_pgood_pin(VCCINT);
+    gpio_init(PMBUS_ALERT_PIN);
+    gpio_set_dir(PMBUS_ALERT_PIN, GPIO_IN);
 
     init_rail_enable_pin(MGTAVCC);
     init_rail_enable_pin(MGTVCCAUX);

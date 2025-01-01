@@ -36,7 +36,7 @@
 
 // VCCINT
 #define VCCINT_EN_PIN 2
-#define VCCINT_PG_PIN 9
+#define VCCINT_PG_PIN 7
 
 // VCCAUX
 #define VCCAUX_EN_PIN 6
