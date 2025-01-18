@@ -50,6 +50,10 @@ int main()
         hang();
     }
 
+    lmk03328_dump_regs();
+    lmk03328_write_config();
+    lmk03328_dump_regs();
+
     // Release SYSRST_N_PIN
     release_system_reset();
 

@@ -34,11 +34,13 @@ project(firmware C CXX ASM)
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
+add_executable(firmware)
 
-add_executable(firmware
+# Add target sources
+target_sources(firmware PRIVATE
     main.c
     board/board.c
-    board/cdcm6208.c
+    board/lmk03328.c
     board/power_sequence.c
     board/vadj.c
 )
