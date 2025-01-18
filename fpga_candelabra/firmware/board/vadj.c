@@ -23,7 +23,7 @@ int mcp4725_dac_write(uint16_t value) {
 
     LOG("Writing DAC value: %d\n", value);
 
-    int ret = i2c_write_blocking(MGMT_I2C_PORT, MGMT_I2C_ADDR_FMC_VADJ_DAC, data, 3, false);
+    int ret = mgmt_i2c_write_blocking(MGMT_I2C_ADDR_FMC_VADJ_DAC, data, 3, false);
     if (ret < 0) {
         LOG("Failed to write DAC value, return code: %d\n", ret);
         return ret;

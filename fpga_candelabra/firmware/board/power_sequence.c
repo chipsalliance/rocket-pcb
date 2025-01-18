@@ -162,8 +162,5 @@ int power_up_sequence(void) {
     }
     sleep_ms(POWERUP_SEQUENCE_DELAY);
 
-    // Step 10: Release SYSRST_N_PIN
-    release_system_reset();
-
     return 0;
 }

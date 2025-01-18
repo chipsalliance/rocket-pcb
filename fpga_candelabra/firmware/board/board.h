@@ -1,6 +1,8 @@
 #ifndef _BOARD_BOARD_H
 #define _BOARD_BOARD_H
 
+#include "pico/stdlib.h"
+
 #define DEBUG 1
 
 /* BEGIN Board definitions */
@@ -96,15 +98,17 @@
 #define system_reset_pin_init() \
     do { \
         gpio_init(SYSRST_N_PIN); \
-        gpio_put(SYSRST_N_PIN, 0); \
+        gpio_put(SYSRST_N_PIN, false); \
         gpio_set_dir(SYSRST_N_PIN, GPIO_OUT); \
     } while(0)
 
-#define hold_system_reset() gpio_put(SYSRST_N_PIN, 0)
-#define release_system_reset() gpio_put(SYSRST_N_PIN, 1)
+#define hold_system_reset() gpio_put(SYSRST_N_PIN, false)
+#define release_system_reset() gpio_put(SYSRST_N_PIN, true)
 
 /* BEGIN function prototypes */
 void external_wdt_feed(void);
 void board_init(void);
+int mgmt_i2c_write_blocking(uint8_t addr, const uint8_t *src, size_t len, bool nostop);
+int mgmt_i2c_read_blocking(uint8_t addr, uint8_t *dst, size_t len, bool nostop);
 
 #endif // _BOARD_BOARD_H

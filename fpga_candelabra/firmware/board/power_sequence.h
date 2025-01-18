@@ -24,7 +24,7 @@
 // Utility macros
 #define POWERUP_TIMEOUT 200
 #define POWERUP_CHECK_DELAY 5
-#define POWERUP_SEQUENCE_DELAY 50
+#define POWERUP_SEQUENCE_DELAY 5
 
 #define power_rail_enable(RAIL) \
     do { \

@@ -56,6 +56,21 @@ void mgmt_i2c_init(void) {
 }
 
 /*
+ * Management I2C write
+*/
+int mgmt_i2c_write_blocking(uint8_t addr, const uint8_t *src, size_t len, bool nostop) {
+    // return i2c_write_blocking(MGMT_I2C_PORT, addr, src, len, nostop);
+    return i2c_write_timeout_per_char_us(MGMT_I2C_PORT, addr, src, len, nostop, 200);
+}
+
+/*
+ * Management I2C read
+*/
+int mgmt_i2c_read_blocking(uint8_t addr, uint8_t *dst, size_t len, bool nostop) {
+    return i2c_read_timeout_per_char_us(MGMT_I2C_PORT, addr, dst, len, nostop, 200);
+}
+
+/*
  * Board overall initialization
 */
 void board_init(void) {
