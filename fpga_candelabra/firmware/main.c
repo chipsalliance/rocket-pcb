@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "board/board.h"
+#include "board/lmk03328.h"
 #include "board/power_sequence.h"
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
@@ -23,27 +24,39 @@ void hang(void) {
 
 int main()
 {
+    int ret;
+
     stdio_init_all();
+
+    system_reset_pin_init();
 
 #ifdef DEBUG
     // Wait for usb cdc connection
     while (!tud_cdc_connected()) {
+        external_wdt_feed();
         sleep_ms(100);
     }
 #endif
+
+    sleep_ms(1000);
 
     // Initialise board
     board_init();
 
     // Power up sequence
-    int ret = power_up_sequence();
+    ret = power_up_sequence();
     if (ret != 0) {
         LOG("Power up sequence failed, return code: %d\n", ret);
         hang();
     }
 
+    // Release SYSRST_N_PIN
+    release_system_reset();
+
+    LOG("System reset done\n");
+
     while (true) {
-        LOG("Hello, world!\n");
-        sleep_ms(1000);
+        external_wdt_feed();
+        sleep_ms(100);
     }
 }
