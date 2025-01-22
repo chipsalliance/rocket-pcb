@@ -795,359 +795,6 @@
 				)
 			)
 		)
-		(symbol "CHIPSAlliance_Regulator_Switching:TPS54821"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TPS54821"
-				(at 5.715 16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -2.54 -17.78 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54821.pdf"
-				(at 0.635 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "4.5-V to 17-V, 8-A synchronous buck converter with hiccup current limit"
-				(at 0.635 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C57461"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Texas_VQFN-RHL-14*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPS54821_0_0"
-				(pin passive line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "RT/CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "PH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 12.7 180)
-					(length 2.54)
-					(name "BOOT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "PWRGD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -17.78 90)
-					(length 2.54)
-					(name "EPAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 12.7 0)
-					(length 2.54)
-					(name "PVIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "VSENSE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name "COMP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "SS/TR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TPS54821_1_0"
-				(pin passive line
-					(at 12.7 5.08 180)
-					(length 2.54) hide
-					(name "PH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 12.7 0)
-					(length 2.54) hide
-					(name "PVIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TPS54821_1_1"
-				(rectangle
-					(start -7.62 15.24)
-					(end 10.16 -15.24)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2124,34 +1771,10 @@
 		(uuid "12fc82d5-6823-49e2-94f8-d7bd3e3adb1d")
 	)
 	(junction
-		(at 77.47 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1bc29097-2393-4077-8e48-f71b10b81b75")
-	)
-	(junction
-		(at 113.03 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1ced9814-c6db-40dd-9b1f-3aa6cea5d607")
-	)
-	(junction
-		(at 38.1 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d07240a-771e-4652-a934-00c3304b5f5e")
-	)
-	(junction
 		(at 106.68 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2acca21b-67b1-457d-b5d6-0206ad09521b")
-	)
-	(junction
-		(at 48.26 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3365cfc8-e486-4dec-92e3-1fd1455f2b8e")
 	)
 	(junction
 		(at 88.9 52.07)
@@ -2166,28 +1789,10 @@
 		(uuid "41f106fb-054a-4f0e-886a-b8603e94f6d9")
 	)
 	(junction
-		(at 93.98 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4582095b-5aa7-4838-87c5-da4b3419132b")
-	)
-	(junction
-		(at 67.31 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "484dc982-521b-45a7-8992-8ec6469c5b66")
-	)
-	(junction
 		(at 57.15 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a01c20c-5328-4f6c-888a-a0412674effd")
-	)
-	(junction
-		(at 134.62 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "720a88de-b61e-4792-8636-d025cfff7057")
 	)
 	(junction
 		(at 83.82 52.07)
@@ -2220,34 +1825,10 @@
 		(uuid "953cfc44-c9bd-4a7f-9bd0-1e973a2bba2b")
 	)
 	(junction
-		(at 134.62 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99964f64-8aac-4a6a-a203-4c9892430e68")
-	)
-	(junction
 		(at 139.7 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ada14ba-2a4b-45c7-986f-cac18c3b1363")
-	)
-	(junction
-		(at 55.88 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b27d184-9b25-46c1-9e74-f3c4b217d9b7")
-	)
-	(junction
-		(at 38.1 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e514fb7-2c5f-455f-bfa4-f110a4734da9")
-	)
-	(junction
-		(at 123.19 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ac46e7ed-bf56-48bf-8301-6905f236c5ea")
 	)
 	(junction
 		(at 34.29 33.02)
@@ -2260,50 +1841,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3a8fb7d-f4cd-43de-b0b6-54726441aa2f")
-	)
-	(junction
-		(at 113.03 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c99f94f0-3262-4a15-af81-9fe64071c39b")
-	)
-	(junction
-		(at 41.91 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d33c3c2b-1524-4ad5-95b0-4493ec2826f1")
-	)
-	(junction
-		(at 64.77 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed46b351-a470-42bc-a033-f7cf4b586e12")
-	)
-	(junction
-		(at 48.26 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc3804d7-c0b1-4960-b26b-e2a043247083")
-	)
-	(wire
-		(pts
-			(xy 77.47 152.4) (xy 77.47 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007bdda2-017c-4d8d-a21d-a7df3cf21e27")
-	)
-	(wire
-		(pts
-			(xy 54.61 151.13) (xy 54.61 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01f373e4-6444-4562-a945-9698357880b9")
 	)
 	(wire
 		(pts
@@ -2324,26 +1861,6 @@
 			(type default)
 		)
 		(uuid "0342a23f-4d19-4d01-bbce-7bd10b521a91")
-	)
-	(wire
-		(pts
-			(xy 54.61 157.48) (xy 54.61 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05dd82ef-58d7-4381-a505-5d2b3544c3e8")
-	)
-	(wire
-		(pts
-			(xy 48.26 180.34) (xy 38.1 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06348ee9-5674-44a9-82c1-946731419f1c")
 	)
 	(wire
 		(pts
@@ -2377,16 +1894,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 120.65) (xy 67.31 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c4ce933-1642-414f-b6c4-8e0fa9f6e22c")
-	)
-	(wire
-		(pts
 			(xy 233.68 50.8) (xy 236.22 50.8)
 		)
 		(stroke
@@ -2407,26 +1914,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 135.89) (xy 134.62 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cea2831-7571-42de-a535-135241765c83")
-	)
-	(wire
-		(pts
-			(xy 55.88 129.54) (xy 55.88 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "103b4a3c-0ae1-4373-83d6-9aab4f8f4abf")
-	)
-	(wire
-		(pts
 			(xy 149.86 80.01) (xy 152.4 80.01)
 		)
 		(stroke
@@ -2434,16 +1921,6 @@
 			(type default)
 		)
 		(uuid "106dc52a-83b0-4bb1-ac1f-8581eaf238a9")
-	)
-	(wire
-		(pts
-			(xy 134.62 129.54) (xy 151.13 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11c6163c-8608-49ef-b0b4-8bc6595f0ff7")
 	)
 	(wire
 		(pts
@@ -2487,16 +1964,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 139.7) (xy 67.31 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "199e2745-de5f-4f71-988a-6f209be88f92")
-	)
-	(wire
-		(pts
 			(xy 193.04 62.23) (xy 186.69 62.23)
 		)
 		(stroke
@@ -2537,16 +2004,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 153.67) (xy 77.47 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "214bcee2-a2f4-4946-ad91-9a142d786f4c")
-	)
-	(wire
-		(pts
 			(xy 41.91 52.07) (xy 41.91 50.8)
 		)
 		(stroke
@@ -2557,16 +2014,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 121.92) (xy 55.88 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27a86bbf-0775-41a9-a69d-f21cae88281b")
-	)
-	(wire
-		(pts
 			(xy 34.29 40.64) (xy 48.26 40.64)
 		)
 		(stroke
@@ -2574,16 +2021,6 @@
 			(type default)
 		)
 		(uuid "27e6e68a-04df-4891-b160-6cdfdd9368c9")
-	)
-	(wire
-		(pts
-			(xy 134.62 137.16) (xy 151.13 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2897893e-0943-4649-9a63-7c2ca7a103df")
 	)
 	(wire
 		(pts
@@ -2614,16 +2051,6 @@
 			(type default)
 		)
 		(uuid "306a11a6-1045-4c23-98d5-70c2fea66ae2")
-	)
-	(wire
-		(pts
-			(xy 48.26 179.07) (xy 48.26 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30d88202-55ef-4334-ac08-18c9a5e630da")
 	)
 	(wire
 		(pts
@@ -2687,26 +2114,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 172.72) (xy 48.26 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "402d450f-2474-41b9-a3c1-c0b102dec5af")
-	)
-	(wire
-		(pts
-			(xy 64.77 157.48) (xy 64.77 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "413655d6-74b1-4fc4-8cf2-7f1f9ac8fd5c")
-	)
-	(wire
-		(pts
 			(xy 186.69 48.26) (xy 186.69 50.8)
 		)
 		(stroke
@@ -2714,26 +2121,6 @@
 			(type default)
 		)
 		(uuid "415bb953-7ae6-4ff5-a475-655780b89235")
-	)
-	(wire
-		(pts
-			(xy 38.1 152.4) (xy 38.1 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42b215ab-6d7d-4e93-886f-1984c2bcf481")
-	)
-	(wire
-		(pts
-			(xy 38.1 179.07) (xy 38.1 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43420c2c-8245-4881-ba34-8ae52f2e560a")
 	)
 	(wire
 		(pts
@@ -2747,16 +2134,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 142.24) (xy 46.99 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46127f83-fb05-40e3-bfed-0c01688bd8a6")
-	)
-	(wire
-		(pts
 			(xy 41.91 73.66) (xy 41.91 69.85)
 		)
 		(stroke
@@ -2767,16 +2144,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 173.99) (xy 58.42 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "464e2a22-ca0b-4a85-b5a1-f6e01000b299")
-	)
-	(wire
-		(pts
 			(xy 97.79 52.07) (xy 97.79 57.15)
 		)
 		(stroke
@@ -2784,16 +2151,6 @@
 			(type default)
 		)
 		(uuid "4734dc7a-65a4-452e-8da7-f737d94aa15c")
-	)
-	(wire
-		(pts
-			(xy 55.88 129.54) (xy 67.31 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b33e3b7-ae24-4386-8a57-a6b7fc6d1d16")
 	)
 	(wire
 		(pts
@@ -2847,16 +2204,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 180.34) (xy 38.1 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5252040c-97d2-4e1a-a1bc-29ed3a8e44c4")
-	)
-	(wire
-		(pts
 			(xy 149.86 74.93) (xy 152.4 74.93)
 		)
 		(stroke
@@ -2864,46 +2211,6 @@
 			(type default)
 		)
 		(uuid "5324e749-4cea-43cf-a4b6-924a40911699")
-	)
-	(wire
-		(pts
-			(xy 90.17 121.92) (xy 93.98 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53b3fdaf-c4ef-4db1-a1d0-c065a7cdabc6")
-	)
-	(wire
-		(pts
-			(xy 134.62 137.16) (xy 134.62 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5477a9b1-3351-4486-a542-ae238ab6e7db")
-	)
-	(wire
-		(pts
-			(xy 90.17 137.16) (xy 113.03 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54f8ab28-1447-4c0e-8216-916ea8f78b9a")
-	)
-	(wire
-		(pts
-			(xy 48.26 172.72) (xy 38.1 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58c92e55-cd2e-4d7e-99f6-76808fe1f569")
 	)
 	(wire
 		(pts
@@ -2947,26 +2254,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 142.24) (xy 67.31 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ac8bfb4-1ba3-4e63-b1a6-d78c8619eab7")
-	)
-	(wire
-		(pts
-			(xy 67.31 124.46) (xy 67.31 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b93286f-3213-4eef-8207-5726659279ea")
-	)
-	(wire
-		(pts
 			(xy 69.85 57.15) (xy 83.82 57.15)
 		)
 		(stroke
@@ -2987,46 +2274,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 135.89) (xy 151.13 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "734b21f5-43b4-4a1d-81bc-0f6aaffc37d4")
-	)
-	(wire
-		(pts
-			(xy 93.98 121.92) (xy 93.98 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "738f8aee-1167-4140-b408-bae23b48d57c")
-	)
-	(wire
-		(pts
-			(xy 113.03 143.51) (xy 113.03 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "746eab5c-1a61-4538-8557-0f0157d01f71")
-	)
-	(wire
-		(pts
-			(xy 41.91 132.08) (xy 41.91 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "764e8c1b-55c0-4604-857b-d0a7391d13ce")
-	)
-	(wire
-		(pts
 			(xy 233.68 116.84) (xy 236.22 116.84)
 		)
 		(stroke
@@ -3037,26 +2284,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 129.54) (xy 113.03 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c27c5eb-4097-4832-b63d-29bb2f01a5b3")
-	)
-	(wire
-		(pts
-			(xy 41.91 125.73) (xy 41.91 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c338475-3d09-4e2b-b521-59353c7f476c")
-	)
-	(wire
-		(pts
 			(xy 33.02 64.77) (xy 44.45 64.77)
 		)
 		(stroke
@@ -3064,16 +2291,6 @@
 			(type default)
 		)
 		(uuid "7c71d92e-614c-4f31-9eff-7f2b87492b1a")
-	)
-	(wire
-		(pts
-			(xy 113.03 129.54) (xy 123.19 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e363c5f-1423-4850-96a0-9d2062ee3764")
 	)
 	(wire
 		(pts
@@ -3107,16 +2324,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 152.4) (xy 80.01 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "862d4cb4-eca2-42bc-93a8-ba1240480a48")
-	)
-	(wire
-		(pts
 			(xy 83.82 52.07) (xy 82.55 52.07)
 		)
 		(stroke
@@ -3137,36 +2344,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 179.07) (xy 58.42 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "877c55e2-c6bc-49cc-8cd1-1606401bf976")
-	)
-	(wire
-		(pts
-			(xy 58.42 172.72) (xy 48.26 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88d56fb3-db44-42f9-a401-cdd1b78b2dd6")
-	)
-	(wire
-		(pts
-			(xy 113.03 129.54) (xy 113.03 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88e90d96-aafd-4d93-ac36-e9fb48751153")
-	)
-	(wire
-		(pts
 			(xy 54.61 74.93) (xy 54.61 76.2)
 		)
 		(stroke
@@ -3174,16 +2351,6 @@
 			(type default)
 		)
 		(uuid "89fb95b9-b28d-4fd5-b25e-b7661fe019c5")
-	)
-	(wire
-		(pts
-			(xy 151.13 130.81) (xy 151.13 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d33cf3b-d536-49e3-a875-d223c8389188")
 	)
 	(wire
 		(pts
@@ -3207,26 +2374,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 129.54) (xy 123.19 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97dcb25f-613e-4709-aa10-8f90607f5008")
-	)
-	(wire
-		(pts
-			(xy 54.61 146.05) (xy 54.61 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98f3f90f-a128-49b4-8d7b-7bd83b37b733")
-	)
-	(wire
-		(pts
 			(xy 62.23 76.2) (xy 57.15 76.2)
 		)
 		(stroke
@@ -3247,16 +2394,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 128.27) (xy 93.98 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a19fbd3f-3ae9-4f64-93d9-abe8c0d0b380")
-	)
-	(wire
-		(pts
 			(xy 200.66 116.84) (xy 203.2 116.84)
 		)
 		(stroke
@@ -3267,36 +2404,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 128.27) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a315b0d5-85fb-48a6-a529-21a8e506dfda")
-	)
-	(wire
-		(pts
-			(xy 90.17 129.54) (xy 93.98 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a42595fa-aec1-470d-9f91-08b3fece65b0")
-	)
-	(wire
-		(pts
-			(xy 123.19 135.89) (xy 123.19 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7957afb-a666-42d7-8c0b-61bedca99461")
-	)
-	(wire
-		(pts
 			(xy 123.19 77.47) (xy 113.03 77.47)
 		)
 		(stroke
@@ -3304,36 +2411,6 @@
 			(type default)
 		)
 		(uuid "aa58882f-792e-4c24-84e5-3b379510c699")
-	)
-	(wire
-		(pts
-			(xy 58.42 180.34) (xy 48.26 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa710120-9e26-4bdb-bd65-999b56057cf9")
-	)
-	(wire
-		(pts
-			(xy 54.61 129.54) (xy 55.88 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acf7712c-231b-4d88-b391-bb09f7f482d0")
-	)
-	(wire
-		(pts
-			(xy 123.19 137.16) (xy 113.03 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad6f013c-a190-44af-aadc-090082fd03e7")
 	)
 	(wire
 		(pts
@@ -3377,16 +2454,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 134.62) (xy 67.31 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd811a5a-d673-45c8-86d6-2bd004a773d8")
-	)
-	(wire
-		(pts
 			(xy 149.86 77.47) (xy 152.4 77.47)
 		)
 		(stroke
@@ -3404,46 +2471,6 @@
 			(type default)
 		)
 		(uuid "c2758244-6945-4eb6-908e-0fbb08c58f8e")
-	)
-	(wire
-		(pts
-			(xy 113.03 137.16) (xy 113.03 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e07d5d-3ad9-4d47-af94-dd4ca11a5bac")
-	)
-	(wire
-		(pts
-			(xy 54.61 144.78) (xy 64.77 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c64c3ddb-a0e8-4f10-a8d1-b5792f3939ce")
-	)
-	(wire
-		(pts
-			(xy 40.64 134.62) (xy 41.91 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c786e28b-b4c4-4730-9c2c-7a6069b52bd0")
-	)
-	(wire
-		(pts
-			(xy 46.99 158.75) (xy 46.99 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc6faca4-09e8-499d-bb93-1d005dae203c")
 	)
 	(wire
 		(pts
@@ -3467,26 +2494,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 158.75) (xy 38.1 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1d8e660-ced7-4b49-b5c0-52529debc8c2")
-	)
-	(wire
-		(pts
-			(xy 64.77 144.78) (xy 67.31 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d39b5788-d6d6-4828-85c5-50217c4797a1")
-	)
-	(wire
-		(pts
 			(xy 139.7 67.31) (xy 134.62 67.31)
 		)
 		(stroke
@@ -3494,26 +2501,6 @@
 			(type default)
 		)
 		(uuid "d3c9ac7e-3327-4fd8-94f5-12a9d94f69b3")
-	)
-	(wire
-		(pts
-			(xy 134.62 130.81) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7332228-6b0b-45d7-be82-5e9b1f088db2")
-	)
-	(wire
-		(pts
-			(xy 64.77 152.4) (xy 64.77 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d881ba14-ee08-4201-b0f0-5369f3fbaccb")
 	)
 	(wire
 		(pts
@@ -3557,16 +2544,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 153.67) (xy 77.47 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e78f2df9-1078-45f5-90c9-d98fba4ceb96")
-	)
-	(wire
-		(pts
 			(xy 186.69 73.66) (xy 186.69 62.23)
 		)
 		(stroke
@@ -3577,26 +2554,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 129.54) (xy 134.62 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed8285d7-47dc-4b77-a63f-8bf95e68df35")
-	)
-	(wire
-		(pts
-			(xy 113.03 137.16) (xy 113.03 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edc74b2c-aa95-4b81-ae8a-1dcf48a14337")
-	)
-	(wire
-		(pts
 			(xy 233.68 95.25) (xy 236.22 95.25)
 		)
 		(stroke
@@ -3604,16 +2561,6 @@
 			(type default)
 		)
 		(uuid "efe1454c-80f6-4c9a-87ad-7deb56c9c134")
-	)
-	(wire
-		(pts
-			(xy 38.1 173.99) (xy 38.1 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1677379-d96c-4341-9548-2fc854c9722b")
 	)
 	(wire
 		(pts
@@ -3667,16 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 129.54) (xy 101.6 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd94e484-1637-4d42-ad40-c543e094938b")
-	)
-	(wire
-		(pts
 			(xy 83.82 57.15) (xy 83.82 52.07)
 		)
 		(stroke
@@ -3684,18 +2621,6 @@
 			(type default)
 		)
 		(uuid "ffac118d-b40c-4598-a217-2cd8c428ab97")
-	)
-	(rectangle
-		(start 24.13 110.49)
-		(end 167.64 189.23)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 206b9a5d-38ad-44ff-a372-b87b2b925e35)
 	)
 	(rectangle
 		(start 24.13 24.13)
@@ -3760,18 +2685,6 @@
 		)
 		(uuid "935d6eac-9cc3-476a-8ccc-5e05a459fe92")
 	)
-	(text "12V G3 -> 3.3 6A 3P3V\nControlled by SYSMON"
-		(exclude_from_sim no)
-		(at 149.098 184.404 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "9c38e2e9-616c-419d-baa0-402c783754ed")
-	)
 	(label "VADJ_FB"
 		(at 121.92 77.47 180)
 		(fields_autoplaced yes)
@@ -3793,18 +2706,6 @@
 			(justify left bottom)
 		)
 		(uuid "b48a2884-7a72-460e-b856-0ef1e2f79169")
-	)
-	(hierarchical_label "3P3V_EN"
-		(shape input)
-		(at 54.61 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1e539eec-ba0f-4aa6-a5f5-dd472f7bf939")
 	)
 	(hierarchical_label "DAC_SCL"
 		(shape input)
@@ -3841,18 +2742,6 @@
 			(justify left)
 		)
 		(uuid "5a57c5d8-d03a-48d8-a609-1dd5c756cb95")
-	)
-	(hierarchical_label "FMC_3P3V_PG"
-		(shape output)
-		(at 40.64 134.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "64808381-6177-42d6-a94b-ca1172d250fa")
 	)
 	(hierarchical_label "FMC_VADJ_PG"
 		(shape output)
@@ -3928,76 +2817,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0527")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 46.99 154.94 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "060ee3d9-5621-445a-8ffb-ff8a6a2cb3da")
-		(property "Reference" "R63"
-			(at 48.4886 153.7278 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "51k"
-			(at 48.4886 156.1521 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 46.99 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ac85b6b9-70be-472f-9c4c-fc5b86b5f2a6")
-		)
-		(pin "1"
-			(uuid "cfdf6e74-65b3-4772-aac6-4c6db81c9557")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -4083,75 +2902,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 48.26 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ac3976f-7d35-4089-a4a3-a560fd141235")
-		(property "Reference" "C273"
-			(at 50.5841 175.3241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF 25V"
-			(at 50.5841 177.7484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 48.26 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 48.26 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80662c27-13f2-4d7e-903f-24844cf3f6d2")
-		)
-		(pin "2"
-			(uuid "8c3910ba-15d7-4139-a21e-8b00ffd3460b")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C273")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 114.3 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4215,72 +2965,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "C297")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 134.62 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e1c0492-6262-4792-9cee-3fc0cb8a6876")
-		(property "Reference" "#PWR0152"
-			(at 134.62 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "FMC_3P3V"
-			(at 134.62 124.1369 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"FMC_VADJ\""
-			(at 134.62 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d8fbf4f-1a2a-4cc6-9c47-b7b0044a2bbd")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -4620,143 +3304,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 55.88 125.73 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20967bb6-b11e-49dd-8eef-7f27e422f8da")
-		(property "Reference" "R65"
-			(at 57.3786 124.5178 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 57.3786 126.9421 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 55.88 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 55.88 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "95b1a4a5-28fc-4045-a8b2-23b7fd944315")
-		)
-		(pin "1"
-			(uuid "8ea5b29a-8a59-4e67-9dbb-f803f30105fb")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 54.61 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22288d92-027a-42fa-8921-cc5087968dec")
-		(property "Reference" "#PWR0147"
-			(at 54.61 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 54.61 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 54.61 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45bc165f-1735-429a-94ea-bce15578a8c4")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0147")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CHIPSAlliance_Power:Earth")
 		(at 128.27 67.31 0)
 		(unit 1)
@@ -4818,76 +3365,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0653")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 64.77 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25b0a897-be1d-4db1-8c56-82f92f082f68")
-		(property "Reference" "C276"
-			(at 67.0941 153.7341 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47pF"
-			(at 67.0941 156.1584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 64.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 64.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 64.77 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d7cd7d5-4e85-411e-923a-f9b26db35304")
-		)
-		(pin "2"
-			(uuid "f3fc516c-ba0e-4d0e-bd33-0e05e50e9aca")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C276")
 					(unit 1)
 				)
 			)
@@ -5108,220 +3585,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Iron")
-		(at 105.41 129.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "30a94480-72c5-4389-bcb1-721ec90c8538")
-		(property "Reference" "L11"
-			(at 105.41 126.492 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MWSA1004S-2R2MT"
-			(at 101.6 131.572 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA1004S"
-			(at 105.41 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20231024/D9DB0CBBB5804BFBC9233D4A02F4216A.pdf"
-			(at 105.41 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor with iron core"
-			(at 105.41 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C408482"
-			(at 105.41 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c61d4d02-7251-4839-8b65-a117bbef400c")
-		)
-		(pin "2"
-			(uuid "c0cd42e4-d7f0-487d-9ca9-099d260854c0")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "L11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 134.62 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "334f17d9-551c-461b-976b-c9dfd4023bb0")
-		(property "Reference" "C278"
-			(at 136.9441 132.1441 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF 6.3V"
-			(at 136.9441 134.5684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 134.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 134.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b5cc5a8-6b9b-41d4-8d21-cf0d5fd8e537")
-		)
-		(pin "2"
-			(uuid "923ec9b7-6312-4d6f-886a-c2c622453062")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C278")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 38.1 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3552afbc-5175-4de6-83c8-30712765be4a")
-		(property "Reference" "C272"
-			(at 40.4241 175.3241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF 25V"
-			(at 40.4241 177.7484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c0cc848-72e5-4eaf-ac44-6673aedef559")
-		)
-		(pin "2"
-			(uuid "b56bd94b-0b6f-4075-a64a-8278ebb436b7")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C272")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 54.61 76.2 0)
 		(unit 1)
@@ -5382,72 +3645,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 38.1 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d88c892-02ae-4949-ba45-39758ad8445f")
-		(property "Reference" "#PWR0143"
-			(at 38.1 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_G3"
-			(at 38.1 168.5869 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3b37442f-cb27-45af-986d-f985bda962e4")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
@@ -5657,76 +3854,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 54.61 148.59 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46887553-8856-43c4-a014-b5a92ee240ef")
-		(property "Reference" "R64"
-			(at 56.1086 147.3778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 56.1086 149.8021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 54.61 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 54.61 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a8feafe3-7e6a-44ae-a1d1-e548377168ff")
-		)
-		(pin "1"
-			(uuid "b2db8736-a580-4e46-8cf0-38a6a0d23679")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R64")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 203.2 73.66 270)
 		(mirror x)
@@ -5863,76 +3990,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 54.61 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49ea06a7-9145-4488-8f42-bf48d443c26e")
-		(property "Reference" "C274"
-			(at 56.9341 153.7341 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22nF"
-			(at 56.9341 156.1584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 54.61 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 54.61 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90a566ed-7db2-4071-a5b4-3400c74c5d0a")
-		)
-		(pin "2"
-			(uuid "f4363352-700d-4a82-8317-7b0ec019f97b")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C274")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 196.85 62.23 90)
 		(unit 1)
@@ -6011,73 +4068,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 113.03 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5764a2f3-69ef-4067-9966-31285097e1c0")
-		(property "Reference" "#PWR0154"
-			(at 113.03 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 113.03 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 113.03 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "706c40ac-c3b4-4f06-82e5-8915f4236873")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0154")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
 		(at 233.68 73.66 0)
 		(unit 1)
@@ -6138,143 +4128,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#FLG019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 113.03 133.35 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b081756-143d-488a-b05a-602081c65306")
-		(property "Reference" "R115"
-			(at 114.5286 132.1378 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 114.5286 134.5621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 113.03 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 113.03 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "69f320cc-a8ba-4e09-8c21-7cd02aa8c70a")
-		)
-		(pin "1"
-			(uuid "5d09c99a-3cb1-400d-a52f-31bf9d90c198")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R115")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 64.77 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5babffaf-27df-45a3-aabd-8a290420aab6")
-		(property "Reference" "#PWR0149"
-			(at 64.77 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 64.77 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e781dd16-0e3d-4075-aad9-26e3ebcd9a3e")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -6498,7 +4351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "FMC_3P3V"
+		(property "Value" "+3.3V"
 			(at 186.69 44.1269 0)
 			(effects
 				(font
@@ -6524,7 +4377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"FMC_VADJ\""
+		(property "Description" ""
 			(at 186.69 48.26 0)
 			(effects
 				(font
@@ -6540,76 +4393,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0155")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 58.42 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72261a8a-ecba-4a89-979d-2cd2c8f9b881")
-		(property "Reference" "C275"
-			(at 60.7441 175.3241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 60.7441 177.7484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 58.42 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8914bc0-68ed-46d7-908d-55315d6a2ced")
-		)
-		(pin "2"
-			(uuid "5e754db9-8d65-4b89-b5f7-79ba73a05710")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C275")
 					(unit 1)
 				)
 			)
@@ -6957,73 +4740,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 55.88 121.92 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f0a8242-5561-4ab4-aa5d-c1d87411b46f")
-		(property "Reference" "#PWR0148"
-			(at 55.88 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 55.88 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 55.88 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7c092b1a-afc7-4df2-877d-f28affea9518")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0148")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 236.22 50.8 270)
 		(unit 1)
@@ -7151,75 +4867,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0323")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 41.91 129.54 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9c265acd-6e54-4be7-83b8-bc2c6812a6ce")
-		(property "Reference" "R62"
-			(at 35.306 128.1317 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 36.576 130.302 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 41.91 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 41.91 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 41.91 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5a1518c4-4e85-4054-9094-55c1caf9d5e3")
-		)
-		(pin "1"
-			(uuid "e635d1ac-ee6d-4064-83dc-0c695e72bb3b")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -7428,142 +5075,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 67.31 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1999d9d-cd17-4fa7-b627-167078c310a5")
-		(property "Reference" "#PWR0150"
-			(at 67.31 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_G3"
-			(at 67.31 116.5169 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 67.31 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7d3f7adf-96ce-46e5-9940-4c1e06682a10")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0150")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 93.98 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1c04537-75df-45ce-9ee6-53fa598395c3")
-		(property "Reference" "C277"
-			(at 96.3041 124.5241 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 96.3041 126.9484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 93.98 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38717486-6427-41f3-8422-3b9580590527")
-		)
-		(pin "2"
-			(uuid "2c7a0e2e-f1bc-4d64-83b7-7cac737a0d79")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C277")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 106.68 66.04 0)
 		(unit 1)
@@ -7624,73 +5135,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 77.47 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac309b24-69ed-45fc-a1a8-ec56ac8ed030")
-		(property "Reference" "#PWR0151"
-			(at 77.47 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 77.47 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 77.47 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3e7d6143-06e1-45f3-9dc1-9a06c6875022")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
@@ -7976,76 +5420,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 151.13 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc54751e-7c71-4492-b783-61878f653c17")
-		(property "Reference" "C281"
-			(at 153.4541 132.1441 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 153.4541 134.5684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 151.13 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 151.13 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 151.13 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "206db284-3fb0-4980-8e41-41d3a7788c75")
-		)
-		(pin "2"
-			(uuid "10ba9e29-e7bb-4cf1-98c9-b444d95fb834")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C281")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
 		(at 233.68 95.25 0)
 		(unit 1)
@@ -8112,76 +5486,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 113.03 140.97 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2927e42-36bf-496b-a3ec-2b21c5af2682")
-		(property "Reference" "R116"
-			(at 114.5286 139.7578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "22k"
-			(at 114.5286 142.1821 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 113.03 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 113.03 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "789504f7-39d4-474a-9c19-375ab62159bf")
-		)
-		(pin "1"
-			(uuid "83025ac3-fb97-433b-b360-243ae469867a")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "R116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 186.69 114.3 0)
 		(unit 1)
@@ -8242,72 +5546,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0525")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 41.91 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5d932fe-532a-4244-a963-82f3841b8378")
-		(property "Reference" "#PWR0145"
-			(at 41.91 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3VAUX"
-			(at 41.91 121.5969 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VAUX\""
-			(at 41.91 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15ecb3a4-d921-4b4a-93c5-c9b188368245")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -8673,73 +5911,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CHIPSAlliance_Power:PWR_FLAG")
-		(at 113.03 129.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d35bcc8e-a67e-4f41-b3a2-248612254dd5")
-		(property "Reference" "#FLG010"
-			(at 113.03 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 113.03 125.4069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 113.03 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9a9f596c-fc97-4118-9b51-be014e979f1e")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#FLG010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 41.91 50.8 0)
 		(unit 1)
@@ -8800,73 +5971,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR099")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 38.1 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da56006e-eaed-4f88-956f-d0b9c0558f2d")
-		(property "Reference" "#PWR0142"
-			(at 38.1 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 38.1 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 38.1 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "510412eb-6f19-44c3-9a83-d6dbbdba2a60")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -9049,76 +6153,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "R60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 38.1 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dee663b7-0ff3-4bb7-9fcf-9a73fd9f7d7e")
-		(property "Reference" "C111"
-			(at 40.4241 153.7341 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2nF"
-			(at 40.4241 156.1584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 38.1 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 38.1 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17fd00c4-09b4-447a-8da0-c0cf672f051a")
-		)
-		(pin "2"
-			(uuid "2ce16bcc-885d-4371-952d-7565a8ab8e61")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C111")
 					(unit 1)
 				)
 			)
@@ -9404,73 +6438,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 134.62 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecfe45b6-47bd-4309-ac1f-9f06dbf91d59")
-		(property "Reference" "#PWR0153"
-			(at 134.62 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 134.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 134.62 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b91d43b1-9e33-49f4-a4ea-08c318335d25")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0153")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+12V")
 		(at 203.2 50.8 270)
 		(unit 1)
@@ -9606,140 +6573,6 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 38.1 181.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "efedbf68-5ab2-498e-900d-dde4ed55a308")
-		(property "Reference" "#PWR0144"
-			(at 38.1 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 38.1 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 38.1 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b265c3c-6db2-40c3-8ecc-cd3619011688")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0144")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
-		(at 46.99 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f29d6e35-dabb-4b58-ac90-fe965498a9fb")
-		(property "Reference" "#PWR0146"
-			(at 46.99 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 46.99 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 46.99 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24ad501c-d720-4678-92b0-94dec71d11fc")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "#PWR0146")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Power:Earth")
 		(at 114.3 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9800,121 +6633,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0324")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CHIPSAlliance_Regulator_Switching:TPS54821")
-		(at 77.47 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f5256a26-d641-4d08-be45-2886c325b7c1")
-		(property "Reference" "U16"
-			(at 77.978 115.824 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS54821"
-			(at 78.486 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_VQFN-RHL-14"
-			(at 74.93 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54821.pdf"
-			(at 78.105 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4.5-V to 17-V, 8-A synchronous buck converter with hiccup current limit"
-			(at 78.105 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C57461"
-			(at 78.74 117.7869 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "caf64bbb-aa9b-4582-957d-3b75a7839071")
-		)
-		(pin "12"
-			(uuid "e2dddbd8-2ae1-4280-bcb5-e1b43007ddca")
-		)
-		(pin "2"
-			(uuid "973f1c7c-23d6-44c9-a837-c33b1ad27b7d")
-		)
-		(pin "10"
-			(uuid "73a8fdeb-35ed-419a-bbc6-5c578afe25d1")
-		)
-		(pin "4"
-			(uuid "0b7593c3-bde8-45a7-806a-25c41805f214")
-		)
-		(pin "3"
-			(uuid "8df16230-71a4-4265-9bfb-5249d1d559c2")
-		)
-		(pin "1"
-			(uuid "071ee73c-d8b8-47da-887e-350fd4803b7d")
-		)
-		(pin "7"
-			(uuid "67197f7b-5159-416e-9be5-07ea405975bf")
-		)
-		(pin "13"
-			(uuid "8311d08b-0104-46b7-9a50-1258e71b39eb")
-		)
-		(pin "6"
-			(uuid "a5c229de-9b13-4da4-81e6-ec3e33e04101")
-		)
-		(pin "11"
-			(uuid "fb9570ff-8076-4ed4-abaf-7674d3fab7b8")
-		)
-		(pin "8"
-			(uuid "08640ec2-b968-47f5-97fe-918d3d846944")
-		)
-		(pin "15"
-			(uuid "d4e11276-6505-4782-b50a-0469f920353a")
-		)
-		(pin "9"
-			(uuid "f158e7a7-7850-46f6-933a-8e3f4245e175")
-		)
-		(pin "5"
-			(uuid "c6cf4cd6-eb5e-4a5f-b64a-fb6ab8e51056")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -9983,76 +6701,6 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
 					(reference "#PWR0531")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 123.19 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9397ea6-e3e0-457b-a8b7-663519c9d116")
-		(property "Reference" "C280"
-			(at 125.5141 132.1441 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220pF"
-			(at 125.5141 134.5684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 123.19 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3d87598-77ed-4da9-8fa1-be68c5dff003")
-		)
-		(pin "2"
-			(uuid "0a31f41e-8ed8-4ff0-8e56-297fca7bf08a")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/ef6f4311-052d-4a14-a485-64d16c370478"
-					(reference "C280")
 					(unit 1)
 				)
 			)
