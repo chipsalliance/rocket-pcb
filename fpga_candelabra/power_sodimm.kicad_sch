@@ -2223,6 +2223,12 @@
 		(uuid "8a588e6c-f32a-4a19-81af-30e65002a8e3")
 	)
 	(junction
+		(at 52.07 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99f8d9dd-865b-4de4-aa60-99f07b043ada")
+	)
+	(junction
 		(at 121.92 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2645,6 +2651,16 @@
 			(type default)
 		)
 		(uuid "3ed1393c-4bc7-413f-a66e-954552fca61c")
+	)
+	(wire
+		(pts
+			(xy 41.91 72.39) (xy 41.91 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "408928e7-98b4-4eeb-98fd-55d85b43b95f")
 	)
 	(wire
 		(pts
@@ -3168,6 +3184,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 77.47) (xy 41.91 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c046c5-2a71-4ed8-9964-7750be942d3b")
+	)
+	(wire
+		(pts
 			(xy 73.66 133.35) (xy 83.82 133.35)
 		)
 		(stroke
@@ -3335,6 +3361,16 @@
 			(type default)
 		)
 		(uuid "b78f0dfa-159d-487f-870b-a5df5893c31b")
+	)
+	(wire
+		(pts
+			(xy 41.91 71.12) (xy 52.07 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ca6e7e-8b6b-42e7-b21b-e8677664bb1d")
 	)
 	(wire
 		(pts
@@ -7157,6 +7193,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 41.91 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "727cb9a5-7746-4ce8-ae25-7b09834dfc77")
+		(property "Reference" "#PWR0486"
+			(at 41.91 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 41.91 82.8731 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 41.91 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd0ffacc-3953-44c4-afcc-6bb99a54cb4f")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
+					(reference "#PWR0486")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 195.58 67.31 0)
 		(unit 1)
@@ -8006,6 +8109,76 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
 					(reference "#PWR0239")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 41.91 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1ecde4a-1e1b-4983-a4be-d1fe837f49c3")
+		(property "Reference" "C356"
+			(at 44.2341 73.7114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220nF"
+			(at 44.2341 76.1357 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 41.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 41.91 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c38d5ecc-9b54-497b-abaf-5c71a29f345f")
+		)
+		(pin "2"
+			(uuid "f2e7fe81-31a6-46be-b5c4-317ca7946e67")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
+					(reference "C356")
 					(unit 1)
 				)
 			)

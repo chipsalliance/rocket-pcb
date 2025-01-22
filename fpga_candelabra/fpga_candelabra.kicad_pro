@@ -43,9 +43,9 @@
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.1,
+        "silk_text_size_h": 0.762,
+        "silk_text_size_v": 0.762,
+        "silk_text_thickness": 0.127,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.1524
@@ -73,15 +73,7 @@
           "width": 0.12065
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|252595001|121225001|3cd98e6a-c465-4ffa-8d89-55c69e92829d|f505a1e7-877e-422d-8472-1f61b6f7727a",
-        "items_not_allowed|246350000|90500000|8ed9624c-868b-4945-baba-522be92224bf|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|248400000|90500000|ddce1d1f-47b7-4d34-8869-e139dd986aff|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|325400000|180330000|f505a1e7-877e-422d-8472-1f61b6f7727a|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|326190000|100580000|9aeb31b5-47b1-4cc8-b903-592f56b84df5|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|58050000|164500000|4cad0512-b701-41c2-ba27-e74a8ed26bee|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|58567488|142500000|f7ddd687-6af6-4e33-bebe-304918d4ce02|00000000-0000-0000-0000-000000000000"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -930,7 +922,7 @@
       "plot": "_gerber/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "fpga_candelabra.step",
       "svg": "",
       "vrml": ""
     },
@@ -1047,7 +1039,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
+    "net_format_name": "OrcadPCB2",
     "page_layout_descr_file": "template/chipsalliance.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,

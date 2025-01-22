@@ -11,7 +11,7 @@
 
 (rule "No courtyard clearance"
     (condition "A.Exempt_From_Courtyard_Requirement || B.Exempt_From_Courtyard_Requirement")
-    (constraint courtyard_clearance (min 0mil)))
+    (constraint courtyard_clearance (min -10000mil)))
 
 (rule "DDR4 DQS0 diff skew"
    (condition "A.inDiffPair('DDR4_DQS0') && AB.isCoupledDiffPair()")

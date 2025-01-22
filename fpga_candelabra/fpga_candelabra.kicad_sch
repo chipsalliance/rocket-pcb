@@ -5,6 +5,131 @@
 	(uuid "01ed9e92-4e50-4b41-90dc-10444aaec5f7")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CHIPSAlliance_Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+				(at -0.254 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.016)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
 		(symbol "CHIPSAlliance_Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -587,7 +712,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 137.16) (xy 55.88 137.16)
+			(xy 38.1 143.51) (xy 55.88 143.51)
 		)
 		(stroke
 			(width 0)
@@ -624,6 +749,16 @@
 			(type default)
 		)
 		(uuid "0ec71b2e-05ba-4892-910c-9f98f7771c57")
+	)
+	(wire
+		(pts
+			(xy 41.91 29.21) (xy 53.34 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103d3d69-bbc4-4e9c-8f10-b08aed7947de")
 	)
 	(wire
 		(pts
@@ -684,6 +819,16 @@
 			(type default)
 		)
 		(uuid "261cd03d-f4fb-4fb7-a232-3edd349cedd6")
+	)
+	(wire
+		(pts
+			(xy 41.91 31.75) (xy 53.34 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2677ed86-c084-4e69-bfe2-88a09900f8e3")
 	)
 	(bus
 		(pts
@@ -747,23 +892,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 128.27) (xy 55.88 128.27)
+			(xy 38.1 134.62) (xy 55.88 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "34114882-75c7-4d8d-92a7-f6fd5b0bb8ea")
-	)
-	(wire
-		(pts
-			(xy 92.71 116.84) (xy 106.68 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "378cdc6e-c5ec-4001-8c32-b3a16ac30848")
 	)
 	(wire
 		(pts
@@ -817,6 +952,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 119.38) (xy 55.88 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47f0bdd2-ae09-47eb-9382-71f33f281ab5")
+	)
+	(wire
+		(pts
 			(xy 168.91 116.84) (xy 181.61 116.84)
 		)
 		(stroke
@@ -827,7 +972,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 140.97) (xy 55.88 140.97)
+			(xy 38.1 147.32) (xy 55.88 147.32)
 		)
 		(stroke
 			(width 0)
@@ -897,7 +1042,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 121.92) (xy 106.68 121.92)
+			(xy 92.71 119.38) (xy 106.68 119.38)
 		)
 		(stroke
 			(width 0)
@@ -937,37 +1082,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 31.75) (xy 55.88 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65b34e93-9b03-4cfc-8762-0e257e5bb1f3")
-	)
-	(wire
-		(pts
-			(xy 38.1 161.29) (xy 55.88 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "682a8508-ecd6-4c31-a6d5-4685b8f08eb8")
-	)
-	(wire
-		(pts
-			(xy 41.91 29.21) (xy 55.88 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68a94089-b176-4885-9119-97b087750567")
-	)
-	(wire
-		(pts
-			(xy 92.71 119.38) (xy 106.68 119.38)
+			(xy 92.71 116.84) (xy 106.68 116.84)
 		)
 		(stroke
 			(width 0)
@@ -977,7 +1092,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 129.54) (xy 106.68 129.54)
+			(xy 92.71 125.73) (xy 106.68 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1067,17 +1182,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 163.83) (xy 55.88 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "873afb2c-a714-47c9-a6c7-724d6edb4944")
-	)
-	(wire
-		(pts
-			(xy 38.1 143.51) (xy 55.88 143.51)
+			(xy 38.1 149.86) (xy 55.88 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1097,7 +1202,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 130.81) (xy 55.88 130.81)
+			(xy 38.1 137.16) (xy 55.88 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1107,7 +1212,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 158.75) (xy 55.88 158.75)
+			(xy 38.1 165.1) (xy 55.88 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1197,7 +1302,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 132.08) (xy 106.68 132.08)
+			(xy 92.71 128.27) (xy 106.68 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1277,7 +1382,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 149.86) (xy 55.88 149.86)
+			(xy 38.1 156.21) (xy 55.88 156.21)
 		)
 		(stroke
 			(width 0)
@@ -1307,7 +1412,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 24.13) (xy 52.07 24.13)
+			(xy 41.91 24.13) (xy 53.34 24.13)
 		)
 		(stroke
 			(width 0)
@@ -1317,23 +1422,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 147.32) (xy 55.88 147.32)
+			(xy 38.1 153.67) (xy 55.88 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d11a2080-a17e-4b59-b6d3-2af7c75795bd")
-	)
-	(wire
-		(pts
-			(xy 92.71 124.46) (xy 106.68 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4aa8251-187e-4667-a213-c7a7b213da4c")
 	)
 	(wire
 		(pts
@@ -1347,7 +1442,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 134.62) (xy 55.88 134.62)
+			(xy 38.1 140.97) (xy 55.88 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1472,17 +1567,6 @@
 		)
 		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
 	)
-	(label "SYSMON_SDA"
-		(at 43.18 29.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "00b4144f-d3ce-4de6-9165-1bfc7e1821c4")
-	)
 	(label "MCU_U0TXD"
 		(at 179.07 95.25 0)
 		(fields_autoplaced yes)
@@ -1506,7 +1590,7 @@
 		(uuid "045ffb6e-8c22-46d5-8c82-eb941482acc3")
 	)
 	(label "~{SYS_RST}"
-		(at 39.37 158.75 0)
+		(at 39.37 165.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1581,17 +1665,6 @@
 			(justify left bottom)
 		)
 		(uuid "21b4a038-cdb6-4e46-ab1b-93fd752fd011")
-	)
-	(label "SYSMON_SCL"
-		(at 43.18 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "22562658-742b-480a-85c1-2d45a9c5c919")
 	)
 	(label "PCIE{PCIE_X16}"
 		(at 44.45 67.31 0)
@@ -1758,17 +1831,6 @@
 		)
 		(uuid "66e8278d-4d18-4a17-8a6e-c52d4a65d226")
 	)
-	(label "SYSMON_SDA"
-		(at 39.37 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "67b0201c-7d32-4212-96dd-477e17bd26be")
-	)
 	(label "QSFP1_CLK-"
 		(at 208.28 132.08 0)
 		(fields_autoplaced yes)
@@ -1790,6 +1852,17 @@
 			(justify left bottom)
 		)
 		(uuid "69fbcd3c-b4b7-4350-a652-b9065fab23fd")
+	)
+	(label "MGMT_SCL"
+		(at 43.18 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c1141d0-c683-4677-8d37-4cea4c6d09f2")
 	)
 	(label "SYS_CLK-"
 		(at 208.28 139.7 0)
@@ -1857,17 +1930,6 @@
 		)
 		(uuid "8680929f-6f93-4671-b320-a6a7a870f060")
 	)
-	(label "SYSMON_SCL"
-		(at 39.37 163.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "876d5f49-f474-4190-be63-6c368d197caf")
-	)
 	(label "PERSTN"
 		(at 53.34 76.2 0)
 		(fields_autoplaced yes)
@@ -1880,7 +1942,7 @@
 		(uuid "89dcd0f5-ffd6-4daa-97f0-0ea41c6c981c")
 	)
 	(label "MGMT_SCL"
-		(at 95.25 129.54 0)
+		(at 95.25 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1911,6 +1973,17 @@
 			(justify left bottom)
 		)
 		(uuid "ac7d27b6-4ac2-418f-a0bb-975892af8e7c")
+	)
+	(label "MGMT_SDA"
+		(at 43.18 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5cb162f-5de0-4f32-8bec-771a928a62af")
 	)
 	(label "DDR4{DDR4}"
 		(at 243.84 125.73 0)
@@ -1968,7 +2041,7 @@
 		(uuid "c569bac7-b543-4980-82e4-dd26ed9758f7")
 	)
 	(label "MGMT_SDA"
-		(at 95.25 132.08 0)
+		(at 95.25 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2274,6 +2347,331 @@
 		)
 	)
 	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 69.85 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "208cc526-dff4-4266-84b2-822b3e5261eb")
+		(property "Reference" "FID8"
+			(at 72.009 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 72.009 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 69.596 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 69.85 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 105.41 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d7b0940-d050-442e-96cd-a6e7cfa25def")
+		(property "Reference" "FID12"
+			(at 107.569 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 107.569 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 105.156 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 105.41 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 69.85 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33daf212-01b4-43cb-83da-30f25ea3156a")
+		(property "Reference" "FID2"
+			(at 72.009 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 72.009 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 69.596 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 69.85 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 60.96 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47181049-38d0-4feb-a0ef-9d5a58bb5e9c")
+		(property "Reference" "FID1"
+			(at 63.119 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 63.119 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 60.706 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 60.96 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 78.74 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cadd0fc-4351-4aad-b41b-5f99f068f9e8")
+		(property "Reference" "FID9"
+			(at 80.899 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 80.899 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 78.486 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 78.74 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 219.71 29.21 270)
 		(unit 1)
@@ -2335,6 +2733,71 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 96.52 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56bec6db-32dd-44aa-9f79-ebc6bbb87656")
+		(property "Reference" "FID5"
+			(at 98.679 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 98.679 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 96.266 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 96.52 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID5")
 					(unit 1)
 				)
 			)
@@ -2607,6 +3070,136 @@
 		)
 	)
 	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 96.52 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a269f1a-ea04-4eec-a9d1-ac0123e5f359")
+		(property "Reference" "FID11"
+			(at 98.679 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 98.679 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 96.266 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 96.52 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 60.96 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ee627e1-567a-4569-bd2e-e51dc45413da")
+		(property "Reference" "FID7"
+			(at 63.119 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 63.119 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 60.706 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 60.96 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 199.39 31.75 90)
 		(unit 1)
@@ -2738,6 +3331,71 @@
 		)
 	)
 	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 87.63 195.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c53b88c6-d701-420f-9c63-7974066d6136")
+		(property "Reference" "FID10"
+			(at 89.789 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 89.789 196.7921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 87.376 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 87.63 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 219.71 31.75 270)
 		(unit 1)
@@ -2799,6 +3457,201 @@
 			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(reference "#PWR0550")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 105.41 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0a42cf9-d2e0-4ac4-8f27-061ccb4f141a")
+		(property "Reference" "FID6"
+			(at 107.569 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 107.569 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 105.156 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 105.41 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 87.63 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edd23db0-ffe5-455b-89ae-7b3082445351")
+		(property "Reference" "FID4"
+			(at 89.789 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 89.789 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 87.376 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 87.63 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
+		(at 78.74 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fed05557-d894-43ae-8007-6afc6aad64d8")
+		(property "Reference" "FID3"
+			(at 80.899 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 80.899 192.9821 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 78.486 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 78.74 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
+					(reference "FID3")
 					(unit 1)
 				)
 			)
@@ -3073,7 +3926,7 @@
 	)
 	(sheet
 		(at 20.32 114.3)
-		(size 17.78 5.08)
+		(size 17.78 8.89)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3094,7 +3947,7 @@
 			)
 		)
 		(property "Sheetfile" "power_supply_main.kicad_sch"
-			(at 20.32 119.9646 0)
+			(at 20.32 123.7746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,6 +3964,16 @@
 				(justify right)
 			)
 			(uuid "a67c5c54-02e7-47ba-8b9a-10d662203626")
+		)
+		(pin "3V3_MAIN_PG" output
+			(at 38.1 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "03cd206f-aafe-40bc-a12d-d539e728b63d")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -3290,7 +4153,7 @@
 	)
 	(sheet
 		(at 198.12 76.2)
-		(size 12.7 5.08)
+		(size 20.32 5.08)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3595,7 +4458,7 @@
 			(uuid "f9c29297-e04c-40dd-a15e-060c1f609af1")
 		)
 		(pin "VCCAUX_EN" output
-			(at 55.88 128.27 180)
+			(at 55.88 134.62 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3605,7 +4468,7 @@
 			(uuid "0da55a4c-e4e5-48e9-884a-09262f90d97b")
 		)
 		(pin "VCCAUX_PG" input
-			(at 55.88 130.81 180)
+			(at 55.88 137.16 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,7 +4478,7 @@
 			(uuid "b251b247-05fe-440d-8400-0967e5219b95")
 		)
 		(pin "MGTAVTT_EN" output
-			(at 55.88 140.97 180)
+			(at 55.88 147.32 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +4488,7 @@
 			(uuid "8d12e966-8b27-4fa3-8e26-ebfeb9187ae6")
 		)
 		(pin "MGTAVCC_PG" input
-			(at 55.88 137.16 180)
+			(at 55.88 143.51 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,7 +4498,7 @@
 			(uuid "a01d3301-d41e-4f2a-a17e-300330770d3c")
 		)
 		(pin "MGTAVTT_PG" input
-			(at 55.88 143.51 180)
+			(at 55.88 149.86 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3645,7 +4508,7 @@
 			(uuid "edbe79ec-a00c-49d2-aa57-fb9c8a6248c3")
 		)
 		(pin "MGTAVCC_EN" output
-			(at 55.88 134.62 180)
+			(at 55.88 140.97 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,7 +4518,7 @@
 			(uuid "e3e1d7fb-01ad-4ceb-82a0-01c6a32784b6")
 		)
 		(pin "MGTVCCAUX_PG" input
-			(at 55.88 149.86 180)
+			(at 55.88 156.21 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,7 +4528,7 @@
 			(uuid "7c7db9ab-0bf4-4b2d-b18b-3d06aba74d3a")
 		)
 		(pin "MGTVCCAUX_EN" output
-			(at 55.88 147.32 180)
+			(at 55.88 153.67 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3725,7 +4588,7 @@
 			(uuid "d445c754-04aa-4800-b004-75b8ea009cf2")
 		)
 		(pin "MGMT_I2C_SCL" output
-			(at 92.71 129.54 0)
+			(at 92.71 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +4598,7 @@
 			(uuid "45471e91-eb2d-4184-ac60-4b653bcebc42")
 		)
 		(pin "MGMT_I2C_SDA" bidirectional
-			(at 92.71 132.08 0)
+			(at 92.71 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,7 +4618,7 @@
 			(uuid "f149190e-8ff3-41ea-8b97-fe4d210eb40a")
 		)
 		(pin "~{SYS_RST}" output
-			(at 55.88 158.75 180)
+			(at 55.88 165.1 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,18 +4637,8 @@
 			)
 			(uuid "6abadf4e-4326-480a-9319-95714adb677a")
 		)
-		(pin "FMC_3P3V_PG" input
-			(at 92.71 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "3507b955-fea8-4899-944a-6a4330544750")
-		)
 		(pin "FMC_VADJ_PG" input
-			(at 92.71 121.92 0)
+			(at 92.71 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,16 +4658,6 @@
 			(uuid "67164d08-c895-44d8-abad-7bc61e623d67")
 		)
 		(pin "FMC_VADJ_EN" output
-			(at 92.71 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "451cb570-c693-414d-afe4-0b9399fe6010")
-		)
-		(pin "FMC_3P3V_EN" output
 			(at 92.71 116.84 0)
 			(effects
 				(font
@@ -3822,7 +4665,7 @@
 				)
 				(justify right)
 			)
-			(uuid "86f82a48-760e-47ab-b416-c3b33e5f0230")
+			(uuid "451cb570-c693-414d-afe4-0b9399fe6010")
 		)
 		(pin "WDT" output
 			(at 55.88 180.34 180)
@@ -3833,26 +4676,6 @@
 				(justify left)
 			)
 			(uuid "ecea630d-4411-4502-b617-15f31789120d")
-		)
-		(pin "SYSMON_SDA" bidirectional
-			(at 55.88 161.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e1e1fc51-0f59-4e0e-a2e8-44ca7cf9356b")
-		)
-		(pin "SYSMON_SCL" output
-			(at 55.88 163.83 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c6a5244f-9ed9-49e8-ade5-910e50909791")
 		)
 		(pin "MCU_U0RXD" input
 			(at 55.88 170.18 180)
@@ -3883,6 +4706,16 @@
 				(justify right)
 			)
 			(uuid "593024aa-f304-46f9-944d-e2bbb59a8e64")
+		)
+		(pin "3V3_MAIN_PG" input
+			(at 55.88 119.38 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "78b9bf52-5866-4a5b-90b7-4dcf092bed6c")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -3932,7 +4765,7 @@
 		)
 	)
 	(sheet
-		(at 20.32 125.73)
+		(at 20.32 132.08)
 		(size 17.78 26.67)
 		(fields_autoplaced yes)
 		(stroke
@@ -3945,7 +4778,7 @@
 		)
 		(uuid "71464998-e6a3-44ea-8374-02c0d3dd3014")
 		(property "Sheetname" "Power FPGA"
-			(at 20.32 125.0184 0)
+			(at 20.32 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3954,7 +4787,7 @@
 			)
 		)
 		(property "Sheetfile" "power_fpga.kicad_sch"
-			(at 20.32 152.9846 0)
+			(at 20.32 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +4796,7 @@
 			)
 		)
 		(pin "MGTVCCAUX_EN" input
-			(at 38.1 147.32 0)
+			(at 38.1 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +4806,7 @@
 			(uuid "baf53d9b-2ed7-4df7-98f1-caf9f8a9636b")
 		)
 		(pin "MGTAVCC_PG" output
-			(at 38.1 137.16 0)
+			(at 38.1 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4816,7 @@
 			(uuid "8ff48771-60e1-451e-8b45-6f7cc01a5510")
 		)
 		(pin "MGTAVCC_EN" input
-			(at 38.1 134.62 0)
+			(at 38.1 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3993,7 +4826,7 @@
 			(uuid "f4b8b6c8-c7a8-4552-bfa3-9c26c096e227")
 		)
 		(pin "MGTVCCAUX_PG" output
-			(at 38.1 149.86 0)
+			(at 38.1 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4836,7 @@
 			(uuid "7d042dd3-13d6-438f-a3d5-68e2138c4974")
 		)
 		(pin "MGTAVTT_EN" input
-			(at 38.1 140.97 0)
+			(at 38.1 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4013,7 +4846,7 @@
 			(uuid "ac7e539b-e289-4529-9b60-b1fdba1c5e29")
 		)
 		(pin "VCCAUX_EN" input
-			(at 38.1 128.27 0)
+			(at 38.1 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +4856,7 @@
 			(uuid "708d1d02-ce62-40eb-a6cf-4e505a458c55")
 		)
 		(pin "MGTAVTT_PG" output
-			(at 38.1 143.51 0)
+			(at 38.1 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4033,7 +4866,7 @@
 			(uuid "1fb716e7-b663-4945-8699-2d36237e53dc")
 		)
 		(pin "VCCAUX_PG" output
-			(at 38.1 130.81 0)
+			(at 38.1 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +5547,7 @@
 	)
 	(sheet
 		(at 106.68 114.3)
-		(size 17.78 20.32)
+		(size 17.78 16.51)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4735,7 +5568,7 @@
 			)
 		)
 		(property "Sheetfile" "power_fmc.kicad_sch"
-			(at 106.68 135.2046 0)
+			(at 106.68 131.3946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4744,7 +5577,7 @@
 			)
 		)
 		(pin "FMC_VADJ_PG" output
-			(at 106.68 121.92 180)
+			(at 106.68 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4753,28 +5586,8 @@
 			)
 			(uuid "c78badc1-ee78-4e40-a189-6530b1eb63c6")
 		)
-		(pin "FMC_3P3V_PG" output
-			(at 106.68 124.46 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b49b8ece-90a3-4781-a79a-837ca91d9330")
-		)
-		(pin "3P3V_EN" input
-			(at 106.68 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "cd51051c-1f79-4eb2-a342-a4e2c0d19bb1")
-		)
 		(pin "FMC_VADJ_EN" input
-			(at 106.68 119.38 180)
+			(at 106.68 116.84 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4784,7 +5597,7 @@
 			(uuid "85cae47d-e229-4f55-90db-e74aec88a7e5")
 		)
 		(pin "DAC_SDA" bidirectional
-			(at 106.68 132.08 180)
+			(at 106.68 128.27 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4794,7 +5607,7 @@
 			(uuid "e2d5fe31-e4f9-4a83-adfe-fe8499d69ca0")
 		)
 		(pin "DAC_SCL" input
-			(at 106.68 129.54 180)
+			(at 106.68 125.73 180)
 			(effects
 				(font
 					(size 1.27 1.27)
