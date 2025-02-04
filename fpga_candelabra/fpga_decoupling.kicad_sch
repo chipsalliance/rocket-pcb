@@ -5,6 +5,165 @@
 	(uuid "7ace94d2-1403-4380-8c21-df023caa0580")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Polarized_Small_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -0.762)
+					(mid 0 -0.3734)
+					(end -1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2322,7 +2481,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 90.17 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2348,7 +2507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 90.17 80.01 0)
 			(effects
 				(font
@@ -2366,7 +2525,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 90.17 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 90.17 80.01 0)
 			(effects
 				(font
@@ -2831,7 +2999,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 52.07 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2857,7 +3025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 52.07 80.01 0)
 			(effects
 				(font
@@ -2875,7 +3043,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 52.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 52.07 80.01 0)
 			(effects
 				(font
@@ -3274,7 +3451,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 58.42 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3284,7 +3461,7 @@
 		(fields_autoplaced yes)
 		(uuid "487859c2-f51a-481a-ab2f-b289b7392210")
 		(property "Reference" "C169"
-			(at 60.7441 95.3141 0)
+			(at 60.7314 94.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3470,7 @@
 			)
 		)
 		(property "Value" "330uF 2.5V"
-			(at 60.7441 97.7384 0)
+			(at 60.7314 97.3003 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3301,7 +3478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 58.42 96.52 0)
 			(effects
 				(font
@@ -3319,7 +3496,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 58.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C696807"
 			(at 58.42 96.52 0)
 			(effects
 				(font
@@ -3493,7 +3679,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 77.47 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3519,7 +3705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 77.47 80.01 0)
 			(effects
 				(font
@@ -3537,7 +3723,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 77.47 80.01 0)
 			(effects
 				(font
@@ -3790,7 +3985,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 83.82 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3816,7 +4011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 83.82 80.01 0)
 			(effects
 				(font
@@ -3834,7 +4029,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 83.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 83.82 80.01 0)
 			(effects
 				(font
@@ -4163,7 +4367,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 33.02 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4173,7 +4377,7 @@
 		(fields_autoplaced yes)
 		(uuid "6eabfe6c-8517-407e-a8d5-7f57f25cf59d")
 		(property "Reference" "C148"
-			(at 30.696 78.8041 0)
+			(at 30.7087 78.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +4386,7 @@
 			)
 		)
 		(property "Value" "100uF 6.3V"
-			(at 30.696 81.2284 0)
+			(at 30.7087 80.7903 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4190,7 +4394,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 33.02 80.01 0)
 			(effects
 				(font
@@ -4208,7 +4412,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 33.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 33.02 80.01 0)
 			(effects
 				(font
@@ -4633,7 +4846,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 33.02 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4643,7 +4856,7 @@
 		(fields_autoplaced yes)
 		(uuid "80af95a6-2f67-4e23-96e1-090cce873ae4")
 		(property "Reference" "C159"
-			(at 30.696 95.3141 0)
+			(at 30.7087 94.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4652,7 +4865,7 @@
 			)
 		)
 		(property "Value" "330uF 2.5V"
-			(at 30.696 97.7384 0)
+			(at 30.7087 97.3003 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4660,7 +4873,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 33.02 96.52 0)
 			(effects
 				(font
@@ -4678,7 +4891,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 33.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C696807"
 			(at 33.02 96.52 0)
 			(effects
 				(font
@@ -5010,7 +5232,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 58.42 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5036,7 +5258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 58.42 80.01 0)
 			(effects
 				(font
@@ -5054,7 +5276,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 58.42 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 58.42 80.01 0)
 			(effects
 				(font
@@ -5079,7 +5310,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 45.72 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5089,7 +5320,7 @@
 		(fields_autoplaced yes)
 		(uuid "923f8e91-3a6c-4c9b-a210-7718a7079e50")
 		(property "Reference" "C167"
-			(at 48.0441 95.3141 0)
+			(at 48.0314 94.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5098,7 +5329,7 @@
 			)
 		)
 		(property "Value" "330uF 2.5V"
-			(at 48.0441 97.7384 0)
+			(at 48.0314 97.3003 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 45.72 96.52 0)
 			(effects
 				(font
@@ -5124,7 +5355,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 45.72 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C696807"
 			(at 45.72 96.52 0)
 			(effects
 				(font
@@ -5364,7 +5604,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 39.37 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5390,7 +5630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 39.37 80.01 0)
 			(effects
 				(font
@@ -5408,7 +5648,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 39.37 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 39.37 80.01 0)
 			(effects
 				(font
@@ -5725,7 +5974,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 52.07 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5735,7 +5984,7 @@
 		(fields_autoplaced yes)
 		(uuid "b42c2dfc-5a45-4d45-9cf6-0ba904f1e7e0")
 		(property "Reference" "C168"
-			(at 54.3941 95.3141 0)
+			(at 54.3814 94.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5744,7 +5993,7 @@
 			)
 		)
 		(property "Value" "330uF 2.5V"
-			(at 54.3941 97.7384 0)
+			(at 54.3814 97.3003 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5752,7 +6001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 52.07 96.52 0)
 			(effects
 				(font
@@ -5770,7 +6019,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 52.07 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C696807"
 			(at 52.07 96.52 0)
 			(effects
 				(font
@@ -6740,7 +6998,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 39.37 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6750,7 +7008,7 @@
 		(fields_autoplaced yes)
 		(uuid "dab0ecd3-428f-4567-a6ea-4c6d0e9d0bd9")
 		(property "Reference" "C166"
-			(at 41.6941 95.3141 0)
+			(at 41.6814 94.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6759,7 +7017,7 @@
 			)
 		)
 		(property "Value" "330uF 2.5V"
-			(at 41.6941 97.7384 0)
+			(at 41.6814 97.3003 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6767,7 +7025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 39.37 96.52 0)
 			(effects
 				(font
@@ -6785,7 +7043,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 39.37 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C696807"
 			(at 39.37 96.52 0)
 			(effects
 				(font
@@ -6889,7 +7156,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 64.77 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6915,7 +7182,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -6933,7 +7200,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 64.77 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -7170,7 +7446,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 96.52 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7196,7 +7472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 96.52 80.01 0)
 			(effects
 				(font
@@ -7214,7 +7490,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 96.52 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 96.52 80.01 0)
 			(effects
 				(font
@@ -7318,7 +7603,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 71.12 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7344,7 +7629,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -7362,7 +7647,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 71.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -7457,7 +7751,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 45.72 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7483,7 +7777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 45.72 80.01 0)
 			(effects
 				(font
@@ -7501,7 +7795,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 45.72 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C171850"
 			(at 45.72 80.01 0)
 			(effects
 				(font
