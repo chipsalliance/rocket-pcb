@@ -38481,10 +38481,6 @@
 		(uuid "862e6579-5edf-46a1-8dce-a5164c8cdbea")
 	)
 	(no_connect
-		(at 120.65 34.29)
-		(uuid "871ab9ad-5b74-4956-b895-0b90f7f07f07")
-	)
-	(no_connect
 		(at 120.65 113.03)
 		(uuid "87d6106b-041d-4a5d-9da9-bc6810c7c7e1")
 	)
@@ -38509,16 +38505,22 @@
 		(uuid "c5d39409-d940-4b43-a490-959c8cd9be13")
 	)
 	(no_connect
-		(at 120.65 36.83)
-		(uuid "e45928e1-9ce9-4d97-aa06-c490ee32388d")
-	)
-	(no_connect
 		(at 120.65 153.67)
 		(uuid "ee879b9a-84c7-449a-8632-8ae13cb55d69")
 	)
 	(no_connect
 		(at 120.65 135.89)
 		(uuid "ffe79317-22e5-4db4-a11a-08cd70f3d265")
+	)
+	(wire
+		(pts
+			(xy 107.95 36.83) (xy 120.65 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e1f7f9-78f7-4143-bf43-f02f9e991167")
 	)
 	(wire
 		(pts
@@ -38629,6 +38631,16 @@
 			(type default)
 		)
 		(uuid "46c398d6-b7a9-4630-941c-10e64b7354d3")
+	)
+	(wire
+		(pts
+			(xy 107.95 34.29) (xy 120.65 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517de184-32e3-4342-af35-056d936777a2")
 	)
 	(wire
 		(pts
@@ -38921,7 +38933,6 @@
 	)
 	(label "QSFP1.RX2+"
 		(at 33.02 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38932,7 +38943,6 @@
 	)
 	(label "QSFP0.RX2+"
 		(at 107.95 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38943,7 +38953,6 @@
 	)
 	(label "QSFP0.TX1-"
 		(at 107.95 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38954,7 +38963,6 @@
 	)
 	(label "QSFP0.TX2+"
 		(at 107.95 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38965,7 +38973,6 @@
 	)
 	(label "QSFP0.RX4-"
 		(at 107.95 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38976,7 +38983,6 @@
 	)
 	(label "QSFP1.RX3+"
 		(at 33.02 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38987,7 +38993,6 @@
 	)
 	(label "QSFP0.TX2-"
 		(at 107.95 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38998,7 +39003,6 @@
 	)
 	(label "QSFP1.RX1+"
 		(at 33.02 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39009,7 +39013,6 @@
 	)
 	(label "QSFP0.TX4+"
 		(at 107.95 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39020,7 +39023,6 @@
 	)
 	(label "QSFP1.TX3-"
 		(at 33.02 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39031,7 +39033,6 @@
 	)
 	(label "QSFP1.RX2-"
 		(at 33.02 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39042,7 +39043,6 @@
 	)
 	(label "QSFP0.RX1+"
 		(at 107.95 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39053,7 +39053,6 @@
 	)
 	(label "QSFP0.TX4-"
 		(at 107.95 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39064,7 +39063,6 @@
 	)
 	(label "QSFP1.TX1+"
 		(at 33.02 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39075,7 +39073,6 @@
 	)
 	(label "QSFP0.TX1+"
 		(at 107.95 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39086,7 +39083,6 @@
 	)
 	(label "QSFP0.TX3+"
 		(at 107.95 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39097,7 +39093,6 @@
 	)
 	(label "QSFP0.RX3+"
 		(at 107.95 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39108,7 +39103,6 @@
 	)
 	(label "REFCLK0-"
 		(at 109.22 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39119,7 +39113,6 @@
 	)
 	(label "QSFP1.TX1-"
 		(at 33.02 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39130,7 +39123,6 @@
 	)
 	(label "REFCLK1+"
 		(at 34.29 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39141,7 +39133,6 @@
 	)
 	(label "QSFP1.RX4+"
 		(at 33.02 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39152,7 +39143,6 @@
 	)
 	(label "QSFP1.TX2+"
 		(at 33.02 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39163,7 +39153,6 @@
 	)
 	(label "QSFP1.TX4+"
 		(at 33.02 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39174,7 +39163,6 @@
 	)
 	(label "QSFP0.TX3-"
 		(at 107.95 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39185,7 +39173,6 @@
 	)
 	(label "REFCLK1-"
 		(at 34.29 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39196,7 +39183,6 @@
 	)
 	(label "QSFP1.RX1-"
 		(at 33.02 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39207,7 +39193,6 @@
 	)
 	(label "QSFP0{QSFP}"
 		(at 265.43 157.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39218,7 +39203,6 @@
 	)
 	(label "QSFP0.RX4+"
 		(at 107.95 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39229,7 +39213,6 @@
 	)
 	(label "QSFP1.TX2-"
 		(at 33.02 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39240,7 +39223,6 @@
 	)
 	(label "REFCLK0+"
 		(at 109.22 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39251,7 +39233,6 @@
 	)
 	(label "QSFP1.TX4-"
 		(at 33.02 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39262,7 +39243,6 @@
 	)
 	(label "QSFP0.RX2-"
 		(at 107.95 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39273,7 +39253,6 @@
 	)
 	(label "QSFP0.RX3-"
 		(at 107.95 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39284,7 +39263,6 @@
 	)
 	(label "QSFP1{QSFP}"
 		(at 265.43 161.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39295,7 +39273,6 @@
 	)
 	(label "QSFP1.RX4-"
 		(at 33.02 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39306,7 +39283,6 @@
 	)
 	(label "QSFP1.RX3-"
 		(at 33.02 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39317,7 +39293,6 @@
 	)
 	(label "QSFP1.TX3+"
 		(at 33.02 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39328,7 +39303,6 @@
 	)
 	(label "QSFP0.RX1-"
 		(at 107.95 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39340,7 +39314,6 @@
 	(hierarchical_label "REFCLK0+"
 		(shape input)
 		(at 107.95 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39352,7 +39325,6 @@
 	(hierarchical_label "REFCLK1-"
 		(shape input)
 		(at 33.02 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39364,7 +39336,6 @@
 	(hierarchical_label "REFCLK1+"
 		(shape input)
 		(at 33.02 41.91 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39373,10 +39344,20 @@
 		)
 		(uuid "8dcc25e8-0c32-4a48-ab6b-e27f0efc5d22")
 	)
+	(hierarchical_label "OSC_REFCLK+"
+		(shape input)
+		(at 107.95 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "affa7406-fcb1-4ff6-abae-dc579015531d")
+	)
 	(hierarchical_label "QSFP1{QSFP}"
 		(shape bidirectional)
 		(at 264.16 161.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39388,7 +39369,6 @@
 	(hierarchical_label "QSFP0{QSFP}"
 		(shape bidirectional)
 		(at 264.16 157.48 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -39397,10 +39377,20 @@
 		)
 		(uuid "dabdda22-e698-4d08-8d8d-ca24682e1410")
 	)
+	(hierarchical_label "OSC_REFCLK-"
+		(shape input)
+		(at 107.95 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e0b1883a-259f-4bcb-94bc-d78b34c6f7d6")
+	)
 	(hierarchical_label "REFCLK0-"
 		(shape input)
 		(at 107.95 39.37 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -2368,11 +2368,6 @@
 			)
 		)
 	)
-	(bus_alias "MIKROBUS"
-		(members "MOSI" "MISO" "SCK" "CS" "RST" "AN" "PWM" "INT" "RX" "TX" "SCL"
-			"SDA"
-		)
-	)
 	(junction
 		(at 104.14 38.1)
 		(diameter 0)
@@ -4760,7 +4755,6 @@
 	)
 	(label "MBUS_HV_MISO"
 		(at 184.15 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4771,7 +4765,6 @@
 	)
 	(label "MBUS_HV_INT"
 		(at 125.73 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4782,7 +4775,6 @@
 	)
 	(label "MBUS_HV_INT"
 		(at 220.98 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4793,7 +4785,6 @@
 	)
 	(label "MBUS.MISO"
 		(at 29.21 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4804,7 +4795,6 @@
 	)
 	(label "MBUS.CS"
 		(at 29.21 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4815,7 +4805,6 @@
 	)
 	(label "MBUS_HV_RX"
 		(at 125.73 151.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4826,7 +4815,6 @@
 	)
 	(label "MBUS_HV_CS"
 		(at 125.73 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4837,7 +4825,6 @@
 	)
 	(label "MBUS_HV_MISO"
 		(at 125.73 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4848,7 +4835,6 @@
 	)
 	(label "MBUS_HV_SCK"
 		(at 125.73 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4859,7 +4845,6 @@
 	)
 	(label "MBUS.SCK"
 		(at 29.21 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4870,7 +4855,6 @@
 	)
 	(label "MBUS_HV_SDA"
 		(at 220.98 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4881,7 +4865,6 @@
 	)
 	(label "MBUS_HV_AN"
 		(at 125.73 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4892,7 +4875,6 @@
 	)
 	(label "MBUS_HV_CS"
 		(at 184.15 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4903,7 +4885,6 @@
 	)
 	(label "MBUS.SDA"
 		(at 29.21 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4914,7 +4895,6 @@
 	)
 	(label "MBUS_HV_SCK"
 		(at 184.15 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4925,7 +4905,6 @@
 	)
 	(label "MBUS_HV_MOSI"
 		(at 125.73 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4936,7 +4915,6 @@
 	)
 	(label "MBUS.SCL"
 		(at 29.21 161.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4947,7 +4925,6 @@
 	)
 	(label "MBUS_HV_TX"
 		(at 125.73 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4958,7 +4935,6 @@
 	)
 	(label "MBUS_HV_RST"
 		(at 184.15 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4969,7 +4945,6 @@
 	)
 	(label "MBUS_HV_PWM"
 		(at 220.98 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4980,7 +4955,6 @@
 	)
 	(label "MBUS_HV_TX"
 		(at 220.98 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4991,7 +4965,6 @@
 	)
 	(label "MBUS_HV_RST"
 		(at 125.73 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5002,7 +4975,6 @@
 	)
 	(label "MBUS.RST"
 		(at 29.21 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5013,7 +4985,6 @@
 	)
 	(label "MBUS.MOSI"
 		(at 29.21 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5024,7 +4995,6 @@
 	)
 	(label "MBUS_HV_SDA"
 		(at 125.73 166.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5035,7 +5005,6 @@
 	)
 	(label "MBUS_HV_PWM"
 		(at 125.73 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5046,7 +5015,6 @@
 	)
 	(label "MBUS_HV_RX"
 		(at 220.98 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5057,7 +5025,6 @@
 	)
 	(label "MBUS_HV_SCL"
 		(at 220.98 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5068,7 +5035,6 @@
 	)
 	(label "MBUS.PWM"
 		(at 29.21 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5079,7 +5045,6 @@
 	)
 	(label "MBUS.RX"
 		(at 29.21 151.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5090,7 +5055,6 @@
 	)
 	(label "MBUS{MIKROBUS}"
 		(at 248.92 160.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5101,7 +5065,6 @@
 	)
 	(label "MBUS_HV_MOSI"
 		(at 184.15 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5112,7 +5075,6 @@
 	)
 	(label "MBUS.TX"
 		(at 29.21 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5123,7 +5085,6 @@
 	)
 	(label "MBUS.AN"
 		(at 29.21 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5134,7 +5095,6 @@
 	)
 	(label "MBUS_HV_SCL"
 		(at 125.73 161.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5145,7 +5105,6 @@
 	)
 	(label "MBUS.INT"
 		(at 29.21 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5156,7 +5115,6 @@
 	)
 	(label "MBUS_HV_AN"
 		(at 184.15 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5168,7 +5126,6 @@
 	(hierarchical_label "MBUS{MIKROBUS}"
 		(shape bidirectional)
 		(at 247.65 160.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5331,7 +5288,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 126.492 134.5621 0)
 			(effects
 				(font
@@ -6004,7 +5961,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 55.372 45.6621 0)
 			(effects
 				(font
@@ -6092,7 +6049,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 126.492 45.6621 0)
 			(effects
 				(font
@@ -6452,7 +6409,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "4x1k"
 			(at 111.252 45.6621 0)
 			(effects
 				(font
@@ -6883,7 +6840,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 70.612 134.5621 0)
 			(effects
 				(font
@@ -7039,7 +6996,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 55.372 134.5621 0)
 			(effects
 				(font
@@ -7658,7 +7615,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 70.612 45.6621 0)
 			(effects
 				(font
@@ -7746,7 +7703,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4x1k"
 			(at 111.252 134.5621 0)
 			(effects
 				(font

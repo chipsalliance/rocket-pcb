@@ -39402,10 +39402,6 @@
 		(uuid "aa34b02c-2d25-4988-b562-5ed5ea5e0004")
 	)
 	(no_connect
-		(at 218.44 38.1)
-		(uuid "ac84c6c5-c018-40d9-8510-9ab2a83b194a")
-	)
-	(no_connect
 		(at 88.9 139.7)
 		(uuid "acf42bcf-b682-4d1c-a701-f497d22ef724")
 	)
@@ -39542,10 +39538,6 @@
 		(uuid "e063437a-13ed-480b-b972-24bb1056fa01")
 	)
 	(no_connect
-		(at 218.44 55.88)
-		(uuid "e0da0eeb-0e2c-4353-a15d-3b58c33ff0a0")
-	)
-	(no_connect
 		(at 156.21 132.08)
 		(uuid "e14bbeee-27d6-48c6-819d-5c32fcdf25f2")
 	)
@@ -39562,16 +39554,8 @@
 		(uuid "e4003b3f-c977-4716-9d99-3232cac05521")
 	)
 	(no_connect
-		(at 218.44 43.18)
-		(uuid "e73aef35-7166-42f4-96b6-8236e041e56b")
-	)
-	(no_connect
 		(at 156.21 147.32)
 		(uuid "e9db885a-dc75-4ed2-867c-1ed83fab26f2")
-	)
-	(no_connect
-		(at 218.44 66.04)
-		(uuid "ea811240-fc36-4fd1-ae85-ae9790d6a4f9")
 	)
 	(no_connect
 		(at 218.44 40.64)
@@ -39614,6 +39598,16 @@
 			(type default)
 		)
 		(uuid "02e02227-b6da-4f3e-b1e0-297ec3ff7443")
+	)
+	(wire
+		(pts
+			(xy 204.47 66.04) (xy 218.44 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f07c78a-f952-4dd9-80e1-14d9d9ebf9e9")
 	)
 	(wire
 		(pts
@@ -39867,6 +39861,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 55.88) (xy 218.44 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d4c12d3-cf88-470c-85b9-9131f6c5d701")
+	)
+	(wire
+		(pts
 			(xy 17.78 58.42) (xy 31.75 58.42)
 		)
 		(stroke
@@ -39904,6 +39908,16 @@
 			(type default)
 		)
 		(uuid "7ff73afe-5714-432b-8cbf-b9bf3dc81997")
+	)
+	(wire
+		(pts
+			(xy 204.47 43.18) (xy 218.44 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "817cf999-257c-43a6-8f36-3de956c61a79")
 	)
 	(bus
 		(pts
@@ -40087,6 +40101,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 38.1) (xy 218.44 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9788628-312d-4db8-9b3d-0fa13f369d92")
+	)
+	(wire
+		(pts
 			(xy 17.78 83.82) (xy 31.75 83.82)
 		)
 		(stroke
@@ -40165,6 +40189,16 @@
 		)
 		(uuid "f0197fad-d67b-4a53-9716-fa2d77f712ee")
 	)
+	(bus
+		(pts
+			(xy 173.99 177.8) (xy 154.94 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f35a7d1d-30be-448d-8a78-04d31adcb144")
+	)
 	(wire
 		(pts
 			(xy 17.78 22.86) (xy 31.75 22.86)
@@ -40235,7 +40269,6 @@
 	)
 	(label "FMC.LA19+"
 		(at 17.78 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40246,7 +40279,6 @@
 	)
 	(label "MBUS.AN"
 		(at 204.47 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40257,7 +40289,6 @@
 	)
 	(label "MBUS.PWM"
 		(at 204.47 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40268,7 +40299,6 @@
 	)
 	(label "QSFP0.SCL"
 		(at 204.47 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40279,7 +40309,6 @@
 	)
 	(label "FMC.LA11-"
 		(at 17.78 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40290,7 +40319,6 @@
 	)
 	(label "FMC.LA12-"
 		(at 17.78 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40301,7 +40329,6 @@
 	)
 	(label "FMC.LA08-"
 		(at 17.78 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40312,7 +40339,6 @@
 	)
 	(label "QSFP0.~{MODPRS}"
 		(at 204.47 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40323,7 +40349,6 @@
 	)
 	(label "MBUS.SCK"
 		(at 204.47 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40334,7 +40359,6 @@
 	)
 	(label "FMC.LA04-"
 		(at 17.78 27.94 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40345,7 +40369,6 @@
 	)
 	(label "QSFP1.SCL"
 		(at 204.47 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40356,7 +40379,6 @@
 	)
 	(label "MBUS.SDA"
 		(at 204.47 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40367,7 +40389,6 @@
 	)
 	(label "MBUS.MOSI"
 		(at 204.47 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40378,7 +40399,6 @@
 	)
 	(label "FMC.LA15+"
 		(at 17.78 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40389,7 +40409,6 @@
 	)
 	(label "MBUS.MISO"
 		(at 204.47 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40400,7 +40419,6 @@
 	)
 	(label "FMC.LA03+"
 		(at 17.78 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40411,7 +40429,6 @@
 	)
 	(label "FMC.LA19-"
 		(at 17.78 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40420,9 +40437,18 @@
 		)
 		(uuid "2fc9f64b-7506-47b4-aa4e-9e67ab6a3fe1")
 	)
+	(label "SMT3_UART.RTS"
+		(at 204.47 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35ff4886-ec57-41b7-9d51-0f8a9eba203b")
+	)
 	(label "FMC.LA04+"
 		(at 17.78 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40433,7 +40459,6 @@
 	)
 	(label "MBUS.SCL"
 		(at 204.47 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40444,7 +40469,6 @@
 	)
 	(label "FMC.LA20-"
 		(at 17.78 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40455,7 +40479,6 @@
 	)
 	(label "FMC.LA20+"
 		(at 17.78 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40466,7 +40489,6 @@
 	)
 	(label "FMC.LA07-"
 		(at 17.78 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40477,7 +40499,6 @@
 	)
 	(label "FMC.LA00_CC+"
 		(at 17.78 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40488,7 +40509,6 @@
 	)
 	(label "MBUS.INT"
 		(at 204.47 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40499,7 +40519,6 @@
 	)
 	(label "QSFP1.~{MODPRS}"
 		(at 204.47 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40510,7 +40529,6 @@
 	)
 	(label "VRP_68"
 		(at 17.78 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40521,7 +40539,6 @@
 	)
 	(label "FMC.LA02+"
 		(at 17.78 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40532,7 +40549,6 @@
 	)
 	(label "VRP_68"
 		(at 20.32 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40543,7 +40559,6 @@
 	)
 	(label "FMC.LA12+"
 		(at 17.78 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40554,7 +40569,6 @@
 	)
 	(label "MBUS.TX"
 		(at 204.47 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40565,7 +40579,6 @@
 	)
 	(label "FMC.LA11+"
 		(at 17.78 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40576,7 +40589,6 @@
 	)
 	(label "QSFP0.SDA"
 		(at 204.47 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40587,7 +40599,6 @@
 	)
 	(label "FMC.LA03-"
 		(at 17.78 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40598,7 +40609,6 @@
 	)
 	(label "QSFP0{QSFP}"
 		(at 156.21 189.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40609,7 +40619,6 @@
 	)
 	(label "MBUS.RST"
 		(at 204.47 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40620,7 +40629,6 @@
 	)
 	(label "FMC.LA07+"
 		(at 17.78 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40631,7 +40639,6 @@
 	)
 	(label "FMC.LA16+"
 		(at 17.78 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40642,7 +40649,6 @@
 	)
 	(label "MBUS.CS"
 		(at 204.47 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40651,9 +40657,18 @@
 		)
 		(uuid "af9dd549-7aff-4118-b85c-f842155645cb")
 	)
+	(label "SMT3_UART.CTS"
+		(at 204.47 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1fdb113-21a0-4427-92da-3b2b7908c2bb")
+	)
 	(label "FMC.LA02-"
 		(at 17.78 22.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40664,7 +40679,6 @@
 	)
 	(label "FMC.LA08+"
 		(at 17.78 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40675,7 +40689,6 @@
 	)
 	(label "FMC{FMC_LPC}"
 		(at 156.21 185.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40686,7 +40699,6 @@
 	)
 	(label "MBUS{MIKROBUS}"
 		(at 156.21 181.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40695,9 +40707,18 @@
 		)
 		(uuid "c61625d4-48ba-4abf-ad96-62d776fdfd6a")
 	)
+	(label "SMT3_UART.TXD"
+		(at 204.47 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d24087cc-9b15-4b9a-bcb6-5cf88e2c7206")
+	)
 	(label "FMC.LA15-"
 		(at 17.78 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40706,9 +40727,18 @@
 		)
 		(uuid "d3d661b7-fdd5-4e95-b756-48dc63b5686d")
 	)
+	(label "SMT3_UART.RXD"
+		(at 204.47 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d64ebcdc-0177-480b-8f8b-fd9403b186a9")
+	)
 	(label "QSFP1.~{RXLOS}"
 		(at 204.47 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40719,7 +40749,6 @@
 	)
 	(label "FMC.LA16-"
 		(at 17.78 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40730,7 +40759,6 @@
 	)
 	(label "MBUS.RX"
 		(at 204.47 149.86 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40741,7 +40769,6 @@
 	)
 	(label "QSFP1{QSFP}"
 		(at 156.21 193.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40752,7 +40779,6 @@
 	)
 	(label "QSFP1.SDA"
 		(at 204.47 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40761,9 +40787,18 @@
 		)
 		(uuid "e92b1de3-6a84-471d-874e-9b187f8e818a")
 	)
+	(label "SMT3_UART{UART}"
+		(at 156.21 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec38e4c0-70f9-454c-a87e-b34f6bea4004")
+	)
 	(label "QSFP0.~{RXLOS}"
 		(at 204.47 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40774,7 +40809,6 @@
 	)
 	(label "FMC.LA00_CC-"
 		(at 17.78 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40786,7 +40820,6 @@
 	(hierarchical_label "QSFP0{QSFP}"
 		(shape bidirectional)
 		(at 154.94 189.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40798,7 +40831,6 @@
 	(hierarchical_label "MCU_U0TXD"
 		(shape input)
 		(at 215.9 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40810,7 +40842,6 @@
 	(hierarchical_label "~{SYS_RST}"
 		(shape input)
 		(at 215.9 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40822,7 +40853,6 @@
 	(hierarchical_label "FMC{FMC_LPC}"
 		(shape bidirectional)
 		(at 154.94 185.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40834,7 +40864,6 @@
 	(hierarchical_label "SYS_CLK+"
 		(shape input)
 		(at 215.9 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40846,7 +40875,6 @@
 	(hierarchical_label "QSFP1{QSFP}"
 		(shape bidirectional)
 		(at 154.94 193.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40855,10 +40883,20 @@
 		)
 		(uuid "9d60ceed-ed0e-4087-90a6-b471671902f8")
 	)
+	(hierarchical_label "SMT3_UART{UART}"
+		(shape bidirectional)
+		(at 154.94 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a40dbe22-2536-4e6d-827c-aed8c08aa2e8")
+	)
 	(hierarchical_label "MCU_U0RXD"
 		(shape output)
 		(at 215.9 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40870,7 +40908,6 @@
 	(hierarchical_label "MBUS{MIKROBUS}"
 		(shape bidirectional)
 		(at 154.94 181.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40882,7 +40919,6 @@
 	(hierarchical_label "SYS_CLK-"
 		(shape input)
 		(at 215.9 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

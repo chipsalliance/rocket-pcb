@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.5,
-          "width": 0.5
+          "height": 2.8,
+          "width": 2.3
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.127,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1524
+          "min_clearance": 0.127
         }
       },
       "diff_pair_dimensions": [
@@ -73,7 +73,14 @@
           "width": 0.12065
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "items_not_allowed|246350000|90500000|8ed9624c-868b-4945-baba-522be92224bf|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|248400000|90500000|ddce1d1f-47b7-4d34-8869-e139dd986aff|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|259445000|90510000|9aeb31b5-47b1-4cc8-b903-592f56b84df5|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|58050000|164500000|4cad0512-b701-41c2-ba27-e74a8ed26bee|00000000-0000-0000-0000-000000000000",
+        "items_not_allowed|58567488|142500000|f7ddd687-6af6-4e33-bebe-304918d4ce02|00000000-0000-0000-0000-000000000000",
+        "text_thickness|235000000|185100000|aacb69ef-81cd-4cb3-a163-a54c1ec69964|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -872,6 +879,8 @@
       "/QSFP0_CLK-": "PCIE_DIFF",
       "/QSFP1_CLK+": "PCIE_DIFF",
       "/QSFP1_CLK-": "PCIE_DIFF",
+      "/QSFP_OSC_CLK+": "PCIE_DIFF",
+      "/QSFP_OSC_CLK-": "PCIE_DIFF",
       "/SYS_CLK+": "PCIE_DIFF",
       "/SYS_CLK-": "PCIE_DIFF",
       "/System Clock/Y0+": "PCIE_DIFF",
@@ -1000,7 +1009,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Description",
           "name": "Description",
           "show": true
