@@ -23,9 +23,9 @@
 #define MGMT_I2C_ADDR_SPD_TEMP          0b0011001
 #define MGMT_I2C_ADDR_SPD_UTIL          0b0110001
 #define MGMT_I2C_ADDR_SPD_RW            0b1010001
+#define MGMT_I2C_ADDR_EMC2301_FANCTL    0b0101111
 #define MGMT_I2C_ADDR_FMC_EEPROM        0b1010000
-#define MGMT_I2C_ADDR_CDCM6208_PLL      0b1010101
-#define MGMT_I2C_ADDR_LMK03328_PLL      0b1010100   /* temporary use 0x0 LSB */
+#define MGMT_I2C_ADDR_LMK03328_PLL      0b1010111
 #define MGMT_I2C_ADDR_TPS53667_PMBUS    0b1100111
 #define MGMT_I2C_ADDR_FMC_VADJ_DAC      0b1100001
 
@@ -33,6 +33,12 @@
 #define SYSMON_I2C_PORT i2c1
 #define SYSMON_I2C_SDA 26
 #define SYSMON_I2C_SCL 27
+
+#define SYSMON_I2C_ADDR_SLR0    0b0110010
+// NOTE: UG580 (v1.10.1) p.9, only SYSMON in SLR0 can be accessed via I2C
+// #define SYSMON_I2C_ADDR_SLR1    0b0110000
+// #define SYSMON_I2C_ADDR_SLR2    0b1000011
+// #define SYSMON_I2C_ADDR_SLR3    0b1000001
 
 // PMBus external signals
 #define PMBUS_ALERT_PIN 3
@@ -48,18 +54,17 @@
 // 5V Main
 #define V5V_MAIN_PG_PIN 5
 
+// 3.3V Main
+#define V3V3_MAIN_PG_PIN 10
+
 // FMC VADJ
-#define FMC_VADJ_EN_PIN 8
-#define FMC_VADJ_PG_PIN 9
+#define FMC_VADJ_EN_PIN 9
+#define FMC_VADJ_PG_PIN 8
 
 #define FMC_VADJ_DCDC_VREF 0.8f
 #define FMC_VADJ_FB_R1 33000.0f
 #define FMC_VADJ_FB_R2 33000.0f
 #define FMC_VADJ_FB_R3 100000.0f
-
-// FMC 3P3V
-#define FMC_3P3V_EN_PIN 11
-#define FMC_3P3V_PG_PIN 10
 
 // MGTVCCAUX
 #define MGTVCCAUX_EN_PIN 13
@@ -89,11 +94,11 @@
 // SYSRST output
 #define SYSRST_N_PIN 19
 
-// Debug UART
-#define DEBUG_UART_PORT uart0
-#define DEBUG_UART_BAUDRATE 115200
-#define DEBUG_UART_TX_PIN 28
-#define DEBUG_UART_RX_PIN 29
+// To FPGA UART
+#define TO_FPGA_UART_PORT uart0
+#define TO_FPGA_UART_BAUDRATE 115200
+#define TO_FPGA_UART_TX_PIN 28
+#define TO_FPGA_UART_RX_PIN 29
 
 // system reset macros
 #define system_reset_pin_init() \

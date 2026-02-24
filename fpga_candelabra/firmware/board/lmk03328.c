@@ -70,3 +70,27 @@ int lmk03328_write_config(void) {
     }
     return 0;
 }
+
+int lmk03328_soft_reset(void) {
+    int ret = lmk03328_write_reg(12, 0x5F);
+    if (ret != 0) return ret;
+
+    sleep_ms(50);
+
+    ret = lmk03328_write_reg(12, 0xDF);
+    if (ret != 0) return ret;
+
+    return 0;
+}
+
+int lmk03328_init(void) {
+    LOG("Initialising LMK03328\n");
+    int ret = lmk03328_write_config();
+    if (ret != 0) return ret;
+
+    LOG("LMK03328 configuration written\n");
+    ret = lmk03328_soft_reset();
+    if (ret != 0) return ret;
+
+    return 0;
+}

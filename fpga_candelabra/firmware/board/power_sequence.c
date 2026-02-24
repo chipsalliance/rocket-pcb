@@ -23,6 +23,7 @@
 */
 void power_up_sequence_init(void) {
     init_rail_pgood_pin(V5V_MAIN);
+    init_rail_pgood_pin(V3V3_MAIN);
 
     init_rail_enable_pin(VCCINT);
     init_rail_pgood_pin(VCCINT);
@@ -45,9 +46,6 @@ void power_up_sequence_init(void) {
     init_rail_pgood_pin(DDR4_VDDQ);
     init_rail_pgood_pin(DDR4_VPP);
 
-    init_rail_enable_pin(FMC_3P3V);
-    init_rail_pgood_pin(FMC_3P3V);
-
     init_rail_enable_pin(FMC_VADJ);
     init_rail_pgood_pin(FMC_VADJ);
 }
@@ -59,11 +57,21 @@ void power_up_sequence_init(void) {
 int power_up_sequence(void) {
     int ret = 0;
 
-    // Step 1: Wait on V5V_MAIN power good
+    LOG("Starting power up sequence\n");
+    sleep_ms(POWERUP_SEQUENCE_DELAY);
+
+    // Step 1: Wait on V5V_MAIN and V3V3_MAIN power good
     wait_rail_pgood(V5V_MAIN, ret);
     if (ret != 0) {
         LOG("Power up sequence failed at step 1:\n");
         LOG("  Failed to wait on V5V_MAIN power good\n");
+        return -1;
+    }
+
+    wait_rail_pgood(V3V3_MAIN, ret);
+    if (ret != 0) {
+        LOG("Power up sequence failed at step 1:\n");
+        LOG("  Failed to wait on V3V3_MAIN power good\n");
         return -1;
     }
     sleep_ms(POWERUP_SEQUENCE_DELAY);
@@ -132,17 +140,7 @@ int power_up_sequence(void) {
     }
     sleep_ms(POWERUP_SEQUENCE_DELAY);
 
-    // Step 7: Power on and wait FMC_3P3V
-    power_rail_enable(FMC_3P3V);
-    wait_rail_pgood(FMC_3P3V, ret);
-    if (ret != 0) {
-        LOG("Power up sequence failed at step 7:\n");
-        LOG("  Failed to wait on FMC_3P3V power good\n");
-        return -1;
-    }
-    sleep_ms(POWERUP_SEQUENCE_DELAY);
-
-    // Step 8: Set DAC voltage of FMC_VADJ
+    // Step 7: Set DAC voltage of FMC_VADJ
     // TODO: read voltage from IPMI records
     ret = vadj_set_voltage(1.8);
     if (ret != 0) {
@@ -152,7 +150,7 @@ int power_up_sequence(void) {
     }
     sleep_ms(10);   // Wait for DAC to settle
 
-    // Step 9: Power on and wait FMC_VADJ
+    // Step 8: Power on and wait FMC_VADJ
     power_rail_enable(FMC_VADJ);
     wait_rail_pgood(FMC_VADJ, ret);
     if (ret != 0) {

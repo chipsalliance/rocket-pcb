@@ -43,6 +43,7 @@ target_sources(firmware PRIVATE
     board/lmk03328.c
     board/power_sequence.c
     board/vadj.c
+    board/sysmon.c
 )
 
 pico_set_program_name(firmware "firmware")

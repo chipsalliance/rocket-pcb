@@ -8,19 +8,19 @@
 #include "hardware/i2c.h"
 
 /*
- * Initialise debug UART
+ * Initialise UART to FPGA
 */
-void debug_uart_init(void) {
-    uart_init(DEBUG_UART_PORT, DEBUG_UART_BAUDRATE);
-    gpio_set_function(DEBUG_UART_TX_PIN, GPIO_FUNC_UART);
-    gpio_set_function(DEBUG_UART_RX_PIN, GPIO_FUNC_UART);
+void to_fpga_uart_init(void) {
+    uart_init(TO_FPGA_UART_PORT, TO_FPGA_UART_BAUDRATE);
+    gpio_set_function(TO_FPGA_UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(TO_FPGA_UART_RX_PIN, GPIO_FUNC_UART);
 }
 
 /*
  * Put string to debug UART
 */
-void debug_uart_puts(const char *str) {
-    uart_puts(DEBUG_UART_PORT, str);
+void to_fpga_uart_puts(const char *str) {
+    uart_puts(TO_FPGA_UART_PORT, str);
 }
 
 /*
@@ -74,7 +74,7 @@ int mgmt_i2c_read_blocking(uint8_t addr, uint8_t *dst, size_t len, bool nostop) 
  * Board overall initialization
 */
 void board_init(void) {
-    debug_uart_init();
+    to_fpga_uart_init();
     external_wdt_init();
     mgmt_i2c_init();
     power_up_sequence_init();

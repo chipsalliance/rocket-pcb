@@ -28,11 +28,13 @@
 
 #define power_rail_enable(RAIL) \
     do { \
+        LOG("Enabling " #RAIL "\n"); \
         gpio_put(RAIL_ENABLE_PIN(RAIL), 1); \
     } while(0)
 
 #define wait_rail_pgood(RAIL, result) \
     do { \
+        LOG("Waiting for " #RAIL " power good\n"); \
         result = -1; \
         for (int wait = 0; wait < POWERUP_TIMEOUT; wait += POWERUP_CHECK_DELAY) { \
             if (gpio_get(RAIL_PGOOD_PIN(RAIL))) { \

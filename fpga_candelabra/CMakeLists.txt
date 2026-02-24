@@ -76,9 +76,11 @@ add_custom_command(
         --format csv --units mm --use-drill-file-origin --bottom-negate-x
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_positions.csv"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
-        COMMAND
+    COMMAND
         ${KICADCLI_PROGRAM} sch export bom
-        --preset "Grouped By Value"
+        --fields "Reference,Value,Footprint,${QUANTITY},LCSC Part,${DNP}"
+        --labels "Reference,Value,Footprint,Qty,LCSC Part,DNP"
+        --group-by "Value,Footprint,LCSC Part,${DNP}"
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_bom.csv"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_sch"
     COMMAND
