@@ -1,16 +1,16 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "01ed9e92-4e50-4b41-90dc-10444aaec5f7")
 	(paper "A4")
 	(title_block
 		(title "FPGA CANDELABRA TOP")
 		(date "2025-02-05")
 		(rev "0.2.0")
-		(company "CHIPS Alliance")
-		(comment 1 "Yichuan Gao")
-		(comment 2 "Yichuan Gao")
+		(company "Sipeed")
+		(comment 1 "Sipeed")
+		(comment 2 "Sipeed")
 	)
 	(lib_symbols
 		(symbol "CHIPSAlliance_Connector:PinHeader_2x05P_USB_2.0_Motherboard_9Pin"
@@ -91,24 +91,6 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 -5.08 180)
-					(length 3.81)
-					(name "P2_VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -13.97 2.54 0)
 					(length 3.81)
 					(name "P1_GND"
@@ -119,24 +101,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 13.97 2.54 180)
-					(length 3.81)
-					(name "P2_GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -163,24 +127,6 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 0 180)
-					(length 3.81)
-					(name "P2_D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -13.97 -2.54 0)
 					(length 3.81)
 					(name "P1_D-"
@@ -191,6 +137,60 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -5.08 0)
+					(length 3.81)
+					(name "P1_VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 2.54 180)
+					(length 3.81)
+					(name "P2_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 0 180)
+					(length 3.81)
+					(name "P2_D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -217,16 +217,16 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 -5.08 0)
+					(at 13.97 -5.08 180)
 					(length 3.81)
-					(name "P1_VBUS"
+					(name "P2_VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -235,6 +235,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CHIPSAlliance_Mechanical:Fiducial"
 			(exclude_from_sim no)
@@ -360,6 +361,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CHIPSAlliance_Mechanical:MountingHole"
 			(pin_names
@@ -442,11 +444,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -564,12 +571,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -641,7 +653,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -653,7 +665,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -684,12 +696,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:Earth"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -816,6 +833,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(bus_alias "DDR4"
@@ -912,6 +930,66 @@
 	)
 	(bus_alias "UART"
 		(members "TXD" "RXD" "CTS" "RTS")
+	)
+	(text_box "Bank allocation:\nSLR0\n  - Bank 61 (IPEX13_VADJ) IPEX 1\n  - Bank 62 (IPEX13_VADJ) IPEX 3\n  - Bank 63\nSLR1\n  - Bank 64 (VIO_B) FMC HB\n  - Bank 65\n  - Bank 66 (VADJ) FMC LA+HA\n  - Bank 67 (VADJ) FMC LA+HA\nSLR2\n  - Bank 68 (VADJ) FMC LA+HA\n  - Bank 69 (IPEX02_VADJ) IPEX 0\n  - Bank 70 (IPEX02_VADJ) IPEX 2\n  - Bank 71\nSLR3\n  - Bank 72 (1.2V): DDR DQ[31..0]\n  - Bank 73 (1.2V): DDR CCA + CB[7..0]\n  - Bank 74 (1.2V): DDR DQ[63..32]"
+		(exclude_from_sim no)
+		(at 237.49 19.05 0)
+		(size 43.18 41.91)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a115bdcc-7774-4f07-9653-10316015c636")
+	)
+	(text_box "FMC0  GA=0b00"
+		(exclude_from_sim no)
+		(at 200.66 50.8 0)
+		(size 17.78 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d02b2786-556b-485c-ac2b-bf46005bb049")
+	)
+	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127 X0Y16-X0Y31\n    - [10 lanes] FMC0 DP\n  - Quad 224-227 X1Y16-X1Y31\n    - [16 lanes] PCIE\n\nSLR2\n  - Quad 128-131 X0Y32-X0Y47\n    - [8 lanes] IPEX 4 XCVR\n  - Quad 228-231 X1Y32-X1Y47\n    - [10 lanes] FMC1 DP\n\nSLR3\n  - Quad 133     X0Y52-X0Y55\n  - Quad 232-233 X1Y48-X1Y55\n    - [8 lanes] QSFP 0-1"
+		(exclude_from_sim no)
+		(at 237.49 68.58 0)
+		(size 43.18 36.83)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
 	)
 	(junction
 		(at 115.57 34.29)
@@ -1938,63 +2016,6 @@
 			(type default)
 		)
 		(uuid "f84ac0a1-10a9-4aaf-8986-a90109866e06")
-	)
-	(text_box "Bank allocation:\nSLR0\n  - Bank 61 (IPEX13_VADJ) IPEX 1\n  - Bank 62 (IPEX13_VADJ) IPEX 3\n  - Bank 63\nSLR1\n  - Bank 64 (VIO_B) FMC HB\n  - Bank 65\n  - Bank 66 (VADJ) FMC LA+HA\n  - Bank 67 (VADJ) FMC LA+HA\nSLR2\n  - Bank 68 (VADJ) FMC LA+HA\n  - Bank 69 (IPEX02_VADJ) IPEX 0\n  - Bank 70 (IPEX02_VADJ) IPEX 2\n  - Bank 71\nSLR3\n  - Bank 72 (1.2V): DDR DQ[31..0]\n  - Bank 73 (1.2V): DDR CCA + CB[7..0]\n  - Bank 74 (1.2V): DDR DQ[63..32]"
-		(exclude_from_sim no)
-		(at 237.49 19.05 0)
-		(size 43.18 41.91)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "a115bdcc-7774-4f07-9653-10316015c636")
-	)
-	(text_box "FMC0  GA=0b00"
-		(exclude_from_sim no)
-		(at 200.66 50.8 0)
-		(size 17.78 3.81)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d02b2786-556b-485c-ac2b-bf46005bb049")
-	)
-	(text_box "GTY Quad allocation:\nSLR1\n  - Quad 124-127 X0Y16-X0Y31\n    - [10 lanes] FMC0 DP\n  - Quad 224-227 X1Y16-X1Y31\n    - [16 lanes] PCIE\n\nSLR2\n  - Quad 128-131 X0Y32-X0Y47\n    - [8 lanes] IPEX 4 XCVR\n  - Quad 228-231 X1Y32-X1Y47\n    - [10 lanes] FMC1 DP\n\nSLR3\n  - Quad 133     X0Y52-X0Y55\n  - Quad 232-233 X1Y48-X1Y55\n    - [8 lanes] QSFP 0-1"
-		(exclude_from_sim no)
-		(at 237.49 68.58 0)
-		(size 43.18 36.83)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "de92a06c-cd9b-45bf-9e47-384089698593")
 	)
 	(label "MCU_U0TXD"
 		(at 179.07 99.06 0)
@@ -4410,6 +4431,10 @@
 	(sheet
 		(at 158.75 64.77)
 		(size 19.05 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4440,103 +4465,103 @@
 		)
 		(pin "QSFP0{QSFP}" bidirectional
 			(at 177.8 67.31 0)
+			(uuid "b2cd51e7-9196-46c5-bd0e-8c47d85bad9e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b2cd51e7-9196-46c5-bd0e-8c47d85bad9e")
 		)
 		(pin "QSFP1{QSFP}" bidirectional
 			(at 177.8 69.85 0)
+			(uuid "a2d408c4-52cf-4301-a37c-8aa3856ca3a5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a2d408c4-52cf-4301-a37c-8aa3856ca3a5")
 		)
 		(pin "FMC{FMC_LPC}" bidirectional
 			(at 177.8 74.93 0)
+			(uuid "258eaeeb-5f7c-468a-a955-bd21c6b7b7ae")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "258eaeeb-5f7c-468a-a955-bd21c6b7b7ae")
 		)
 		(pin "~{SYS_RST}" input
 			(at 177.8 86.36 0)
+			(uuid "90014df6-092e-4e6d-966b-d610d5e5fc18")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "90014df6-092e-4e6d-966b-d610d5e5fc18")
 		)
 		(pin "MCU_U0RXD" output
 			(at 177.8 96.52 0)
+			(uuid "43acea77-0415-44aa-8c66-95f232c94027")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "43acea77-0415-44aa-8c66-95f232c94027")
 		)
 		(pin "MCU_U0TXD" input
 			(at 177.8 99.06 0)
+			(uuid "493e8217-f845-4abd-92fa-0b3e41100612")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "493e8217-f845-4abd-92fa-0b3e41100612")
 		)
 		(pin "SYS_CLK-" input
 			(at 177.8 91.44 0)
+			(uuid "ddcb0dde-70cf-4cea-8c9c-eaa82ef78f53")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ddcb0dde-70cf-4cea-8c9c-eaa82ef78f53")
 		)
 		(pin "SYS_CLK+" input
 			(at 177.8 88.9 0)
+			(uuid "9b6b8370-1722-405e-a150-41da59c263fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9b6b8370-1722-405e-a150-41da59c263fd")
 		)
 		(pin "MBUS{MIKROBUS}" bidirectional
 			(at 177.8 78.74 0)
+			(uuid "bec89b4c-8a41-4ceb-8f48-98e7b28ff485")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bec89b4c-8a41-4ceb-8f48-98e7b28ff485")
 		)
 		(pin "SMT3_UART{UART}" bidirectional
 			(at 177.8 82.55 0)
+			(uuid "5e75e9fc-c5ef-4f5c-be31-2c3ec0d6cb4e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5e75e9fc-c5ef-4f5c-be31-2c3ec0d6cb4e")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4549,6 +4574,10 @@
 	(sheet
 		(at 106.68 175.26)
 		(size 17.78 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4579,33 +4608,33 @@
 		)
 		(pin "DDR4_EN" input
 			(at 106.68 177.8 180)
+			(uuid "378c6c25-3a39-4d63-ae42-c45b8f871e60")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "378c6c25-3a39-4d63-ae42-c45b8f871e60")
 		)
 		(pin "DDR4_VDDQ_PG" output
 			(at 106.68 180.34 180)
+			(uuid "756d7f35-606e-47c3-8628-47ae4c85e1cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "756d7f35-606e-47c3-8628-47ae4c85e1cf")
 		)
 		(pin "DDR4_VPP_PG" output
 			(at 106.68 182.88 180)
+			(uuid "ecaf3617-516b-4658-9750-135fe3193052")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ecaf3617-516b-4658-9750-135fe3193052")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4618,6 +4647,10 @@
 	(sheet
 		(at 62.23 20.32)
 		(size 19.05 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4648,73 +4681,73 @@
 		)
 		(pin "PERSTN" input
 			(at 81.28 24.13 0)
+			(uuid "ec7b595f-3520-49cb-8091-d7cff504c75d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ec7b595f-3520-49cb-8091-d7cff504c75d")
 		)
 		(pin "SYSMON_SCL" input
 			(at 81.28 31.75 0)
+			(uuid "a26f60e3-a405-4c9e-8896-9e7dcea39f59")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a26f60e3-a405-4c9e-8896-9e7dcea39f59")
 		)
 		(pin "SYSMON_SDA" bidirectional
 			(at 81.28 29.21 0)
+			(uuid "f49542a1-cace-422c-a2be-2db83e7f38b2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f49542a1-cace-422c-a2be-2db83e7f38b2")
 		)
 		(pin "SMT3_USB_D+" bidirectional
 			(at 81.28 36.83 0)
+			(uuid "1b6bf1ed-79e9-4344-8096-d02d5c99a33f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1b6bf1ed-79e9-4344-8096-d02d5c99a33f")
 		)
 		(pin "SMT3_USB_D-" bidirectional
 			(at 81.28 39.37 0)
+			(uuid "c20fe284-6e65-411d-928f-74df38f5db9c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c20fe284-6e65-411d-928f-74df38f5db9c")
 		)
 		(pin "SMT3_VBUS" input
 			(at 81.28 41.91 0)
+			(uuid "48d25ec2-143f-4800-a601-e26670a6dca8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "48d25ec2-143f-4800-a601-e26670a6dca8")
 		)
 		(pin "SMT3_UART{UART}" bidirectional
 			(at 81.28 45.72 0)
+			(uuid "b9850560-1d0e-4357-b90e-23cbca91684e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b9850560-1d0e-4357-b90e-23cbca91684e")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4727,6 +4760,10 @@
 	(sheet
 		(at 20.32 114.3)
 		(size 17.78 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4757,23 +4794,23 @@
 		)
 		(pin "5V_MAIN_PG" output
 			(at 38.1 116.84 0)
+			(uuid "a67c5c54-02e7-47ba-8b9a-10d662203626")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a67c5c54-02e7-47ba-8b9a-10d662203626")
 		)
 		(pin "3V3_MAIN_PG" output
 			(at 38.1 119.38 0)
+			(uuid "03cd206f-aafe-40bc-a12d-d539e728b63d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "03cd206f-aafe-40bc-a12d-d539e728b63d")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4786,6 +4823,10 @@
 	(sheet
 		(at 93.98 64.77)
 		(size 20.32 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4816,83 +4857,83 @@
 		)
 		(pin "REFCLK0-" input
 			(at 114.3 72.39 0)
+			(uuid "3ef99786-c859-48c8-90fe-0e0b9eabdba1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3ef99786-c859-48c8-90fe-0e0b9eabdba1")
 		)
 		(pin "REFCLK0+" input
 			(at 114.3 69.85 0)
+			(uuid "94e60e1d-a788-4126-b450-66d2af6ddbf5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "94e60e1d-a788-4126-b450-66d2af6ddbf5")
 		)
 		(pin "REFCLK1+" input
 			(at 114.3 82.55 0)
+			(uuid "afc69bdf-ee37-4cbe-ad6a-39c53eb25b71")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "afc69bdf-ee37-4cbe-ad6a-39c53eb25b71")
 		)
 		(pin "REFCLK1-" input
 			(at 114.3 85.09 0)
+			(uuid "d27fa466-b4b1-4899-9a9a-af1c66b48c8b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d27fa466-b4b1-4899-9a9a-af1c66b48c8b")
 		)
 		(pin "QSFP1{QSFP}" bidirectional
 			(at 114.3 80.01 0)
+			(uuid "2a7ee6d4-d5ac-4077-9968-ca7e86b27b38")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2a7ee6d4-d5ac-4077-9968-ca7e86b27b38")
 		)
 		(pin "QSFP0{QSFP}" bidirectional
 			(at 114.3 67.31 0)
+			(uuid "bf89ad61-ad69-4b85-80ee-7868c2db1624")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bf89ad61-ad69-4b85-80ee-7868c2db1624")
 		)
 		(pin "OSC_REFCLK+" input
 			(at 114.3 91.44 0)
+			(uuid "2a73ee36-f100-4f29-a127-430bed0fde31")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2a73ee36-f100-4f29-a127-430bed0fde31")
 		)
 		(pin "OSC_REFCLK-" input
 			(at 114.3 93.98 0)
+			(uuid "28b2f3a8-1651-4fbb-8213-501ddfc159fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "28b2f3a8-1651-4fbb-8213-501ddfc159fe")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4905,6 +4946,10 @@
 	(sheet
 		(at 22.86 64.77)
 		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4935,33 +4980,33 @@
 		)
 		(pin "PCIE{PCIE_X16}" bidirectional
 			(at 41.91 67.31 0)
+			(uuid "d81443d1-280b-4ed5-b35e-74fa12249780")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d81443d1-280b-4ed5-b35e-74fa12249780")
 		)
 		(pin "PCIE_CLK-" input
 			(at 41.91 72.39 0)
+			(uuid "fc234a6f-8e24-4784-bad1-60bbaa009fdb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fc234a6f-8e24-4784-bad1-60bbaa009fdb")
 		)
 		(pin "PCIE_CLK+" input
 			(at 41.91 69.85 0)
+			(uuid "b389c573-9a11-41b6-99e1-2ed50c849fcd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b389c573-9a11-41b6-99e1-2ed50c849fcd")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -4974,6 +5019,10 @@
 	(sheet
 		(at 198.12 76.2)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5004,13 +5053,13 @@
 		)
 		(pin "MBUS{MIKROBUS}" bidirectional
 			(at 198.12 78.74 180)
+			(uuid "d2dbaae4-574f-4991-87dc-bfdc951dc28c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d2dbaae4-574f-4991-87dc-bfdc951dc28c")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5023,6 +5072,10 @@
 	(sheet
 		(at 143.51 175.26)
 		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5062,6 +5115,10 @@
 	(sheet
 		(at 162.56 20.32)
 		(size 16.51 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5092,13 +5149,13 @@
 		)
 		(pin "FMC{FMC_LPC}" bidirectional
 			(at 179.07 22.86 0)
+			(uuid "c75922ba-c423-4cdc-b2b9-18f63e2bf59b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c75922ba-c423-4cdc-b2b9-18f63e2bf59b")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5111,6 +5168,10 @@
 	(sheet
 		(at 20.32 177.8)
 		(size 17.78 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5141,23 +5202,23 @@
 		)
 		(pin "~{RESET}" output
 			(at 38.1 182.88 0)
+			(uuid "b4716f05-605e-4d21-9ba3-392c9e62137e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b4716f05-605e-4d21-9ba3-392c9e62137e")
 		)
 		(pin "WDI" input
 			(at 38.1 180.34 0)
+			(uuid "23802743-0794-412c-ba36-c9eed1f1467b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "23802743-0794-412c-ba36-c9eed1f1467b")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5170,6 +5231,10 @@
 	(sheet
 		(at 224.79 114.3)
 		(size 16.51 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5200,33 +5265,33 @@
 		)
 		(pin "DDR_CLK-" input
 			(at 224.79 119.38 180)
+			(uuid "be74c396-4d24-4660-a1f8-9e2041997a70")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "be74c396-4d24-4660-a1f8-9e2041997a70")
 		)
 		(pin "DDR_CLK+" input
 			(at 224.79 116.84 180)
+			(uuid "055593ba-ea7f-4502-9bd5-5deaa70a89ee")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "055593ba-ea7f-4502-9bd5-5deaa70a89ee")
 		)
 		(pin "DDR4{DDR4}" bidirectional
 			(at 241.3 125.73 0)
+			(uuid "c4bb6474-e62a-4c04-8970-91cdde863d14")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c4bb6474-e62a-4c04-8970-91cdde863d14")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5239,6 +5304,10 @@
 	(sheet
 		(at 55.88 114.3)
 		(size 36.83 71.12)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5269,293 +5338,293 @@
 		)
 		(pin "~{RST_IN}" input
 			(at 55.88 182.88 180)
+			(uuid "f9c29297-e04c-40dd-a15e-060c1f609af1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f9c29297-e04c-40dd-a15e-060c1f609af1")
 		)
 		(pin "VCCAUX_EN" output
 			(at 55.88 134.62 180)
+			(uuid "0da55a4c-e4e5-48e9-884a-09262f90d97b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0da55a4c-e4e5-48e9-884a-09262f90d97b")
 		)
 		(pin "VCCAUX_PG" input
 			(at 55.88 137.16 180)
+			(uuid "b251b247-05fe-440d-8400-0967e5219b95")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b251b247-05fe-440d-8400-0967e5219b95")
 		)
 		(pin "MGTAVTT_EN" output
 			(at 55.88 147.32 180)
+			(uuid "8d12e966-8b27-4fa3-8e26-ebfeb9187ae6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8d12e966-8b27-4fa3-8e26-ebfeb9187ae6")
 		)
 		(pin "MGTAVCC_PG" input
 			(at 55.88 143.51 180)
+			(uuid "a01d3301-d41e-4f2a-a17e-300330770d3c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a01d3301-d41e-4f2a-a17e-300330770d3c")
 		)
 		(pin "MGTAVTT_PG" input
 			(at 55.88 149.86 180)
+			(uuid "edbe79ec-a00c-49d2-aa57-fb9c8a6248c3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "edbe79ec-a00c-49d2-aa57-fb9c8a6248c3")
 		)
 		(pin "MGTAVCC_EN" output
 			(at 55.88 140.97 180)
+			(uuid "e3e1d7fb-01ad-4ceb-82a0-01c6a32784b6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e3e1d7fb-01ad-4ceb-82a0-01c6a32784b6")
 		)
 		(pin "MGTVCCAUX_PG" input
 			(at 55.88 156.21 180)
+			(uuid "7c7db9ab-0bf4-4b2d-b18b-3d06aba74d3a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7c7db9ab-0bf4-4b2d-b18b-3d06aba74d3a")
 		)
 		(pin "MGTVCCAUX_EN" output
 			(at 55.88 153.67 180)
+			(uuid "5a655d37-d5a6-411d-8c73-50ee1242df0c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5a655d37-d5a6-411d-8c73-50ee1242df0c")
 		)
 		(pin "DDR4_EN" output
 			(at 92.71 177.8 0)
+			(uuid "ddd9eb8e-e071-429f-8f3c-612598146954")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ddd9eb8e-e071-429f-8f3c-612598146954")
 		)
 		(pin "DDR4_VPP_PG" input
 			(at 92.71 182.88 0)
+			(uuid "6a4206a2-ccb8-46bb-a8af-316c21884d51")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6a4206a2-ccb8-46bb-a8af-316c21884d51")
 		)
 		(pin "DDR4_VDDQ_PG" input
 			(at 92.71 180.34 0)
+			(uuid "93884c11-66d2-45a5-91fe-f2d331d692bd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "93884c11-66d2-45a5-91fe-f2d331d692bd")
 		)
 		(pin "~{PMB_ALERT}" input
 			(at 92.71 151.13 0)
+			(uuid "d8c9cefe-7f23-45e2-a5a7-fd0ddd0f08fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d8c9cefe-7f23-45e2-a5a7-fd0ddd0f08fd")
 		)
 		(pin "5V_MAIN_PG" input
 			(at 55.88 116.84 180)
+			(uuid "d445c754-04aa-4800-b004-75b8ea009cf2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d445c754-04aa-4800-b004-75b8ea009cf2")
 		)
 		(pin "MGMT_I2C_SCL" output
 			(at 92.71 125.73 0)
+			(uuid "45471e91-eb2d-4184-ac60-4b653bcebc42")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "45471e91-eb2d-4184-ac60-4b653bcebc42")
 		)
 		(pin "MGMT_I2C_SDA" bidirectional
 			(at 92.71 128.27 0)
+			(uuid "a1579ffe-de0d-4271-8fd5-d2f7d9855f0f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a1579ffe-de0d-4271-8fd5-d2f7d9855f0f")
 		)
 		(pin "VCCINT_EN" output
 			(at 92.71 142.24 0)
+			(uuid "f149190e-8ff3-41ea-8b97-fe4d210eb40a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f149190e-8ff3-41ea-8b97-fe4d210eb40a")
 		)
 		(pin "~{SYS_RST}" output
 			(at 55.88 165.1 180)
+			(uuid "32ece8d3-8e4d-4289-b56f-77a2fc92d067")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "32ece8d3-8e4d-4289-b56f-77a2fc92d067")
 		)
 		(pin "VCCINT_RDY" input
 			(at 92.71 144.78 0)
+			(uuid "6abadf4e-4326-480a-9319-95714adb677a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6abadf4e-4326-480a-9319-95714adb677a")
 		)
 		(pin "FMC_VADJ_PG" input
 			(at 92.71 119.38 0)
+			(uuid "2ecf845a-1f84-4ab8-b6a0-1eec529742a7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2ecf845a-1f84-4ab8-b6a0-1eec529742a7")
 		)
 		(pin "FMC_PG_C2M" output
 			(at 92.71 165.1 0)
+			(uuid "67164d08-c895-44d8-abad-7bc61e623d67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "67164d08-c895-44d8-abad-7bc61e623d67")
 		)
 		(pin "FMC_VADJ_EN" output
 			(at 92.71 116.84 0)
+			(uuid "451cb570-c693-414d-afe4-0b9399fe6010")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "451cb570-c693-414d-afe4-0b9399fe6010")
 		)
 		(pin "WDT" output
 			(at 55.88 180.34 180)
+			(uuid "ecea630d-4411-4502-b617-15f31789120d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ecea630d-4411-4502-b617-15f31789120d")
 		)
 		(pin "MCU_U0RXD" input
 			(at 55.88 170.18 180)
+			(uuid "91bb60dc-1d3d-4a87-9db9-15c9be4f0188")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "91bb60dc-1d3d-4a87-9db9-15c9be4f0188")
 		)
 		(pin "MCU_U0TXD" output
 			(at 55.88 172.72 180)
+			(uuid "0734a331-f322-433f-af26-08fd22548ea0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0734a331-f322-433f-af26-08fd22548ea0")
 		)
 		(pin "FMC_PRSNT" input
 			(at 92.71 167.64 0)
+			(uuid "593024aa-f304-46f9-944d-e2bbb59a8e64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "593024aa-f304-46f9-944d-e2bbb59a8e64")
 		)
 		(pin "3V3_MAIN_PG" input
 			(at 55.88 119.38 180)
+			(uuid "78b9bf52-5866-4a5b-90b7-4dcf092bed6c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "78b9bf52-5866-4a5b-90b7-4dcf092bed6c")
 		)
 		(pin "SMON_USB_D+" bidirectional
 			(at 55.88 128.27 180)
+			(uuid "adeda94b-7060-4e52-9ed1-afb4e6d26206")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "adeda94b-7060-4e52-9ed1-afb4e6d26206")
 		)
 		(pin "SMON_USB_D-" bidirectional
 			(at 55.88 130.81 180)
+			(uuid "947a5205-06da-4285-aacf-59c707c00572")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "947a5205-06da-4285-aacf-59c707c00572")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5568,6 +5637,10 @@
 	(sheet
 		(at 22.86 20.32)
 		(size 12.7 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5607,6 +5680,10 @@
 	(sheet
 		(at 20.32 132.08)
 		(size 17.78 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5637,83 +5714,83 @@
 		)
 		(pin "MGTVCCAUX_EN" input
 			(at 38.1 153.67 0)
+			(uuid "baf53d9b-2ed7-4df7-98f1-caf9f8a9636b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "baf53d9b-2ed7-4df7-98f1-caf9f8a9636b")
 		)
 		(pin "MGTAVCC_PG" output
 			(at 38.1 143.51 0)
+			(uuid "8ff48771-60e1-451e-8b45-6f7cc01a5510")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8ff48771-60e1-451e-8b45-6f7cc01a5510")
 		)
 		(pin "MGTAVCC_EN" input
 			(at 38.1 140.97 0)
+			(uuid "f4b8b6c8-c7a8-4552-bfa3-9c26c096e227")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f4b8b6c8-c7a8-4552-bfa3-9c26c096e227")
 		)
 		(pin "MGTVCCAUX_PG" output
 			(at 38.1 156.21 0)
+			(uuid "7d042dd3-13d6-438f-a3d5-68e2138c4974")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7d042dd3-13d6-438f-a3d5-68e2138c4974")
 		)
 		(pin "MGTAVTT_EN" input
 			(at 38.1 147.32 0)
+			(uuid "ac7e539b-e289-4529-9b60-b1fdba1c5e29")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ac7e539b-e289-4529-9b60-b1fdba1c5e29")
 		)
 		(pin "VCCAUX_EN" input
 			(at 38.1 134.62 0)
+			(uuid "708d1d02-ce62-40eb-a6cf-4e505a458c55")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "708d1d02-ce62-40eb-a6cf-4e505a458c55")
 		)
 		(pin "MGTAVTT_PG" output
 			(at 38.1 149.86 0)
+			(uuid "1fb716e7-b663-4945-8699-2d36237e53dc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1fb716e7-b663-4945-8699-2d36237e53dc")
 		)
 		(pin "VCCAUX_PG" output
 			(at 38.1 137.16 0)
+			(uuid "d448aeb5-5724-40ac-ad02-77db7b072c23")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d448aeb5-5724-40ac-ad02-77db7b072c23")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5726,6 +5803,10 @@
 	(sheet
 		(at 200.66 20.32)
 		(size 17.78 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5756,113 +5837,113 @@
 		)
 		(pin "GA0" input
 			(at 200.66 36.83 180)
+			(uuid "7cd9c2da-a3c2-413c-83e7-8ea49a3a0a7a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7cd9c2da-a3c2-413c-83e7-8ea49a3a0a7a")
 		)
 		(pin "GA1" input
 			(at 200.66 39.37 180)
+			(uuid "1989b2ba-e39b-4df7-99fa-682cb4f9dbad")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1989b2ba-e39b-4df7-99fa-682cb4f9dbad")
 		)
 		(pin "12P0V" input
 			(at 200.66 29.21 180)
+			(uuid "f3fb2056-c865-4071-8ed3-cfc0bb75cfa3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f3fb2056-c865-4071-8ed3-cfc0bb75cfa3")
 		)
 		(pin "3P3V" input
 			(at 200.66 31.75 180)
+			(uuid "ea446a45-4b3a-462d-a50a-510e01c90cd2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea446a45-4b3a-462d-a50a-510e01c90cd2")
 		)
 		(pin "VADJ" input
 			(at 218.44 29.21 0)
+			(uuid "7191a45f-b946-4f8d-af78-65bdb22e2347")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7191a45f-b946-4f8d-af78-65bdb22e2347")
 		)
 		(pin "VREF_A" output
 			(at 218.44 31.75 0)
+			(uuid "efd63f07-2904-4f90-a63b-94ebe6613325")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "efd63f07-2904-4f90-a63b-94ebe6613325")
 		)
 		(pin "PG_C2M" input
 			(at 200.66 26.67 180)
+			(uuid "dbac37f1-4d34-4f4c-b076-4b9042b83aed")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dbac37f1-4d34-4f4c-b076-4b9042b83aed")
 		)
 		(pin "FMC{FMC_LPC}" bidirectional
 			(at 200.66 22.86 180)
+			(uuid "88d2973f-6ede-4cc0-aa16-793c999ca9f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "88d2973f-6ede-4cc0-aa16-793c999ca9f5")
 		)
 		(pin "IPMI_SCL" input
 			(at 218.44 36.83 0)
+			(uuid "598cd18b-a901-4aea-ae11-918d9bbb1cd3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "598cd18b-a901-4aea-ae11-918d9bbb1cd3")
 		)
 		(pin "IPMI_SDA" bidirectional
 			(at 218.44 39.37 0)
+			(uuid "fb63c9e8-53b0-4fbd-8a3c-fc20e3cbd478")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fb63c9e8-53b0-4fbd-8a3c-fc20e3cbd478")
 		)
 		(pin "~{PRSNT_M2C}" output
 			(at 218.44 44.45 0)
+			(uuid "62e854e7-da0f-45f9-bd44-fb769d28b1e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "62e854e7-da0f-45f9-bd44-fb769d28b1e5")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5875,6 +5956,10 @@
 	(sheet
 		(at 129.54 63.5)
 		(size 19.05 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5905,13 +5990,13 @@
 		)
 		(pin "QSFP{QSFP}" bidirectional
 			(at 129.54 67.31 180)
+			(uuid "56842967-6d33-4ec5-802f-06d60807a9d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "56842967-6d33-4ec5-802f-06d60807a9d0")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -5924,6 +6009,10 @@
 	(sheet
 		(at 143.51 158.75)
 		(size 12.7 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5963,6 +6052,10 @@
 	(sheet
 		(at 106.68 139.7)
 		(size 17.78 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5993,53 +6086,53 @@
 		)
 		(pin "VR_RDY" output
 			(at 106.68 144.78 180)
+			(uuid "de003579-ecd3-456b-9479-a72ac512fa12")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "de003579-ecd3-456b-9479-a72ac512fa12")
 		)
 		(pin "ENABLE" input
 			(at 106.68 142.24 180)
+			(uuid "46dbb575-1049-45ae-abc9-5ad52e941120")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "46dbb575-1049-45ae-abc9-5ad52e941120")
 		)
 		(pin "~{PMB_ALERT}" output
 			(at 106.68 151.13 180)
+			(uuid "dd289955-8206-4512-b72c-3047f02b7a3f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dd289955-8206-4512-b72c-3047f02b7a3f")
 		)
 		(pin "PMB_CLK" input
 			(at 106.68 153.67 180)
+			(uuid "9ca9e99f-30de-492a-a34b-b46f89d31b8f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9ca9e99f-30de-492a-a34b-b46f89d31b8f")
 		)
 		(pin "PMB_DIO" bidirectional
 			(at 106.68 156.21 180)
+			(uuid "077dced9-b7b6-48ee-8c14-616cf6a5ecef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "077dced9-b7b6-48ee-8c14-616cf6a5ecef")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6052,6 +6145,10 @@
 	(sheet
 		(at 257.81 114.3)
 		(size 16.51 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6082,33 +6179,33 @@
 		)
 		(pin "SPD_SCL" input
 			(at 257.81 118.11 180)
+			(uuid "f2fc95ef-b304-405a-98e3-f74c56f18204")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f2fc95ef-b304-405a-98e3-f74c56f18204")
 		)
 		(pin "SPD_SDA" bidirectional
 			(at 257.81 120.65 180)
+			(uuid "e0980717-0057-4e1d-b6a6-497093a27014")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0980717-0057-4e1d-b6a6-497093a27014")
 		)
 		(pin "DDR4{DDR4}" bidirectional
 			(at 257.81 125.73 180)
+			(uuid "4b712582-d839-4d3a-9c4a-5b7f8f5c0887")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4b712582-d839-4d3a-9c4a-5b7f8f5c0887")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6121,6 +6218,10 @@
 	(sheet
 		(at 129.54 76.2)
 		(size 19.05 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6151,13 +6252,13 @@
 		)
 		(pin "QSFP{QSFP}" bidirectional
 			(at 129.54 80.01 180)
+			(uuid "37ded9a9-4c2c-4ac6-9c65-bfd10e2e286e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "37ded9a9-4c2c-4ac6-9c65-bfd10e2e286e")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6170,6 +6271,10 @@
 	(sheet
 		(at 179.07 114.3)
 		(size 25.4 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6200,143 +6305,143 @@
 		)
 		(pin "DDR_CLK+" output
 			(at 204.47 116.84 0)
+			(uuid "f9f0534b-ef02-4e68-9138-7e8b3d889c11")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f9f0534b-ef02-4e68-9138-7e8b3d889c11")
 		)
 		(pin "DDR_CLK-" output
 			(at 204.47 119.38 0)
+			(uuid "8cda06a5-bd7f-4f09-b46e-6efeb15e937f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8cda06a5-bd7f-4f09-b46e-6efeb15e937f")
 		)
 		(pin "SYS_CLK+" output
 			(at 204.47 137.16 0)
+			(uuid "71fe2616-fc25-490d-a139-d036f85a5a84")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "71fe2616-fc25-490d-a139-d036f85a5a84")
 		)
 		(pin "SYS_CLK-" output
 			(at 204.47 139.7 0)
+			(uuid "b3e48068-0608-4269-89bd-30f116a9d569")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b3e48068-0608-4269-89bd-30f116a9d569")
 		)
 		(pin "QSFP0_CLK-" output
 			(at 204.47 127 0)
+			(uuid "b767110a-b763-4821-85ce-2b0fd5abc570")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b767110a-b763-4821-85ce-2b0fd5abc570")
 		)
 		(pin "QSFP0_CLK+" output
 			(at 204.47 124.46 0)
+			(uuid "7ccb8011-edcb-4d88-8ed6-7d439d6490d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7ccb8011-edcb-4d88-8ed6-7d439d6490d0")
 		)
 		(pin "QSFP1_CLK+" output
 			(at 204.47 129.54 0)
+			(uuid "62d3eefa-a3f7-4567-98d2-25df245a03b6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "62d3eefa-a3f7-4567-98d2-25df245a03b6")
 		)
 		(pin "QSFP1_CLK-" output
 			(at 204.47 132.08 0)
+			(uuid "db0d7467-3c0f-4acb-bc7a-0cf4c24128d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "db0d7467-3c0f-4acb-bc7a-0cf4c24128d6")
 		)
 		(pin "PCIE_CLK+" output
 			(at 204.47 144.78 0)
+			(uuid "3acc8813-c85a-44bd-a530-8b98ac70b788")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3acc8813-c85a-44bd-a530-8b98ac70b788")
 		)
 		(pin "PCIE_CLK-" output
 			(at 204.47 147.32 0)
+			(uuid "c7f680d9-0d61-4635-862b-9d81ff9a3fea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c7f680d9-0d61-4635-862b-9d81ff9a3fea")
 		)
 		(pin "PLL_SDA" bidirectional
 			(at 179.07 116.84 180)
+			(uuid "6f507545-c72d-437a-84e5-2c07aa5fc7fb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6f507545-c72d-437a-84e5-2c07aa5fc7fb")
 		)
 		(pin "PLL_SCL" input
 			(at 179.07 119.38 180)
+			(uuid "aa618773-bbdc-490b-bf18-853117f926d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "aa618773-bbdc-490b-bf18-853117f926d9")
 		)
 		(pin "QSFP_OSC_CLK-" output
 			(at 204.47 153.67 0)
+			(uuid "fac44eee-7626-44a2-91ac-8c3c41cfd018")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fac44eee-7626-44a2-91ac-8c3c41cfd018")
 		)
 		(pin "QSFP_OSC_CLK+" output
 			(at 204.47 151.13 0)
+			(uuid "ffe08029-3d18-47db-9bae-55a662709077")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ffe08029-3d18-47db-9bae-55a662709077")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6349,6 +6454,10 @@
 	(sheet
 		(at 62.23 64.77)
 		(size 19.05 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6379,23 +6488,23 @@
 		)
 		(pin "PCIE{PCIE_X16}" bidirectional
 			(at 62.23 67.31 180)
+			(uuid "8447023e-53a3-4166-aeff-65c319b5699f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8447023e-53a3-4166-aeff-65c319b5699f")
 		)
 		(pin "PERSTN_1V8" output
 			(at 62.23 76.2 180)
+			(uuid "42c6a398-2854-49c8-985b-97a66a376cc4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "42c6a398-2854-49c8-985b-97a66a376cc4")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6408,6 +6517,10 @@
 	(sheet
 		(at 106.68 114.3)
 		(size 17.78 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6438,43 +6551,43 @@
 		)
 		(pin "FMC_VADJ_PG" output
 			(at 106.68 119.38 180)
+			(uuid "c78badc1-ee78-4e40-a189-6530b1eb63c6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c78badc1-ee78-4e40-a189-6530b1eb63c6")
 		)
 		(pin "FMC_VADJ_EN" input
 			(at 106.68 116.84 180)
+			(uuid "85cae47d-e229-4f55-90db-e74aec88a7e5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "85cae47d-e229-4f55-90db-e74aec88a7e5")
 		)
 		(pin "DAC_SDA" bidirectional
 			(at 106.68 128.27 180)
+			(uuid "e2d5fe31-e4f9-4a83-adfe-fe8499d69ca0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e2d5fe31-e4f9-4a83-adfe-fe8499d69ca0")
 		)
 		(pin "DAC_SCL" input
 			(at 106.68 125.73 180)
+			(uuid "7fb5201d-7e3f-42c9-afe3-ea4296fb0bdf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7fb5201d-7e3f-42c9-afe3-ea4296fb0bdf")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6487,6 +6600,10 @@
 	(sheet
 		(at 22.86 88.9)
 		(size 19.05 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6517,13 +6634,13 @@
 		)
 		(pin "FMC0{FMC_LPC}" bidirectional
 			(at 41.91 91.44 0)
+			(uuid "c9227743-ec14-432c-9069-ff73d927d780")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c9227743-ec14-432c-9069-ff73d927d780")
 		)
 		(instances
 			(project "fpga_candelabra"
@@ -6538,4 +6655,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
