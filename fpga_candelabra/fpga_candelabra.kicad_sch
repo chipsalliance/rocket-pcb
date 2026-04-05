@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "01ed9e92-4e50-4b41-90dc-10444aaec5f7")
 	(paper "A4")
 	(title_block
@@ -17,8 +17,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -27,6 +31,8 @@
 			)
 			(property "Value" "PinHeader_2x05P_USB_2.0_Motherboard_9Pin"
 				(at 0 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -35,29 +41,35 @@
 			)
 			(property "Footprint" "CHIPSAlliance_Connector:USB_9P_P2.54mm_Horizontal"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at -8.89 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "ATX Motherboard Internal 9Pin USB2.0 Header"
 				(at -8.89 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "PinHeader_2x05P_USB_2.0_Motherboard_9Pin_1_1"
@@ -109,60 +121,6 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 0 0)
-					(length 3.81)
-					(name "P1_D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -13.97 -2.54 0)
-					(length 3.81)
-					(name "P1_D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -13.97 -5.08 0)
-					(length 3.81)
-					(name "P1_VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 13.97 2.54 180)
 					(length 3.81)
 					(name "P2_GND"
@@ -173,6 +131,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 0 0)
+					(length 3.81)
+					(name "P1_D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -199,6 +175,24 @@
 					)
 				)
 				(pin passive line
+					(at -13.97 -2.54 0)
+					(length 3.81)
+					(name "P1_D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 13.97 -2.54 180)
 					(length 3.81)
 					(name "P2_D-"
@@ -209,6 +203,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -5.08 0)
+					(length 3.81)
+					(name "P1_VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -241,8 +253,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "FID"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -251,6 +267,8 @@
 			)
 			(property "Value" "Fiducial"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -259,47 +277,57 @@
 			)
 			(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 				(at -0.254 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Fiducial Marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "fiducial marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Fiducial*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Fiducial_0_1"
@@ -370,8 +398,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -380,6 +412,8 @@
 			)
 			(property "Value" "MountingHole"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -388,47 +422,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "mounting hole"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "MountingHole*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MountingHole_0_1"
@@ -457,8 +501,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -468,6 +516,8 @@
 			)
 			(property "Value" "R_Small"
 				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -477,47 +527,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Small_0_1"
@@ -537,7 +597,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -555,7 +615,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -574,7 +634,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -585,17 +645,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+12V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -604,38 +670,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+12V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+12V_0_1"
@@ -680,7 +754,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -699,7 +773,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:Earth"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -710,17 +784,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "Earth"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -729,38 +809,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"Earth\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global ground gnd"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Earth_0_1"
@@ -817,7 +905,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -835,101 +923,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(bus_alias "DDR4"
-		(members "A0" "A1" "A2" "A3" "A4" "A5" "A6" "A7" "A8" "A9" "A10" "A11"
-			"A12" "A13" "A14" "A15" "A16" "BA0" "BA1" "BG0" "BG1" "CK0+" "CK0-" "CKE0"
-			"CK1+" "CK1-" "CKE1" "CS0" "CS1" "CS2" "CS3" "ODT0" "ODT1" "ACT_n" "PARITY"
-			"RESET_n" "DQS0+" "DQS1+" "DQS2+" "DQS3+" "DQS4+" "DQS5+" "DQS6+" "DQS7+"
-			"DQS0-" "DQS1-" "DQS2-" "DQS3-" "DQS4-" "DQS5-" "DQS6-" "DQS7-" "DM0"
-			"DM1" "DM2" "DM3" "DM4" "DM5" "DM6" "DM7" "DQ0" "DQ1" "DQ2" "DQ3" "DQ4"
-			"DQ5" "DQ6" "DQ7" "DQ8" "DQ9" "DQ10" "DQ11" "DQ12" "DQ13" "DQ14" "DQ15"
-			"DQ16" "DQ17" "DQ18" "DQ19" "DQ20" "DQ21" "DQ22" "DQ23" "DQ24" "DQ25"
-			"DQ26" "DQ27" "DQ28" "DQ29" "DQ30" "DQ31" "DQ32" "DQ33" "DQ34" "DQ35"
-			"DQ36" "DQ37" "DQ38" "DQ39" "DQ40" "DQ41" "DQ42" "DQ43" "DQ44" "DQ45"
-			"DQ46" "DQ47" "DQ48" "DQ49" "DQ50" "DQ51" "DQ52" "DQ53" "DQ54" "DQ55"
-			"DQ56" "DQ57" "DQ58" "DQ59" "DQ60" "DQ61" "DQ62" "DQ63"
-		)
-	)
-	(bus_alias "FMC_HPC"
-		(members "CLK0_M2C+" "CLK0_M2C-" "CLK1_M2C+" "CLK1_M2C-" "CLK2_BID+" "CLK2_BID-"
-			"CLK3_BID+" "CLK3_BID-" "CLK_DIR" "DP0_C2M+" "DP0_C2M-" "DP0_M2C+" "DP0_M2C-"
-			"DP1_C2M+" "DP1_C2M-" "DP1_M2C+" "DP1_M2C-" "DP2_C2M+" "DP2_C2M-" "DP2_M2C+"
-			"DP2_M2C-" "DP3_C2M+" "DP3_C2M-" "DP3_M2C+" "DP3_M2C-" "DP4_C2M+" "DP4_C2M-"
-			"DP4_M2C+" "DP4_M2C-" "DP5_C2M+" "DP5_C2M-" "DP5_M2C+" "DP5_M2C-" "DP6_C2M+"
-			"DP6_C2M-" "DP6_M2C+" "DP6_M2C-" "DP7_C2M+" "DP7_C2M-" "DP7_M2C+" "DP7_M2C-"
-			"DP8_C2M+" "DP8_C2M-" "DP8_M2C+" "DP8_M2C-" "DP9_C2M+" "DP9_C2M-" "DP9_M2C+"
-			"DP9_M2C-" "GBTCLK0+" "GBTCLK0-" "GBTCLK1+" "GBTCLK1-" "HA00_CC+" "HA00_CC-"
-			"HA01_CC+" "HA01_CC-" "HA02+" "HA02-" "HA03+" "HA03-" "HA04+" "HA04-"
-			"HA05+" "HA05-" "HA06+" "HA06-" "HA07+" "HA07-" "HA08+" "HA08-" "HA09+"
-			"HA09-" "HA10+" "HA10-" "HA11+" "HA11-" "HA12+" "HA12-" "HA13+" "HA13-"
-			"HA14+" "HA14-" "HA15+" "HA15-" "HA16+" "HA16-" "HA17_CC+" "HA17_CC-"
-			"HA18+" "HA18-" "HA19+" "HA19-" "HA20+" "HA20-" "HA21+" "HA21-" "HA22+"
-			"HA22-" "HA23+" "HA23-" "HB00_CC+" "HB00_CC-" "HB01+" "HB01-" "HB02+"
-			"HB02-" "HB03+" "HB03-" "HB04+" "HB04-" "HB05+" "HB05-" "HB06_CC+" "HB06_CC-"
-			"HB07+" "HB07-" "HB08+" "HB08-" "HB09+" "HB09-" "HB10+" "HB10-" "HB11+"
-			"HB11-" "HB12+" "HB12-" "HB13+" "HB13-" "HB14+" "HB14-" "HB15+" "HB15-"
-			"HB16+" "HB16-" "HB17_CC+" "HB17_CC-" "HB18+" "HB18-" "HB19+" "HB19-"
-			"HB20+" "HB20-" "HB21+" "HB21-" "LA00_CC+" "LA00_CC-" "LA01_CC+" "LA01_CC-"
-			"LA02+" "LA02-" "LA03+" "LA03-" "LA04+" "LA04-" "LA05+" "LA05-" "LA06+"
-			"LA06-" "LA07+" "LA07-" "LA08+" "LA08-" "LA09+" "LA09-" "LA10+" "LA10-"
-			"LA11+" "LA11-" "LA12+" "LA12-" "LA13+" "LA13-" "LA14+" "LA14-" "LA15+"
-			"LA15-" "LA16+" "LA16-" "LA17_CC+" "LA17_CC-" "LA18_CC+" "LA18_CC-" "LA19+"
-			"LA19-" "LA20+" "LA20-" "LA21+" "LA21-" "LA22+" "LA22-" "LA23+" "LA23-"
-			"LA24+" "LA24-" "LA25+" "LA25-" "LA26+" "LA26-" "LA27+" "LA27-" "LA28+"
-			"LA28-" "LA29+" "LA29-" "LA30+" "LA30-" "LA31+" "LA31-" "LA32+" "LA32-"
-			"LA33+" "LA33-" "PG_C2M" "PG_M2C" "~{PRSNT_M2C}" "SCL" "SDA" "TCK" "TDI"
-			"TDO" "TMS" "~{TRST}"
-		)
-	)
-	(bus_alias "FMC_LPC"
-		(members "CLK0_M2C+" "CLK0_M2C-" "DP0_C2M+" "DP0_C2M-" "DP0_M2C+" "DP0_M2C-"
-			"GBTCLK0+" "GBTCLK0-" "LA00_CC+" "LA00_CC-" "LA01_CC+" "LA01_CC-" "LA02+"
-			"LA02-" "LA03+" "LA03-" "LA04+" "LA04-" "LA05+" "LA05-" "LA06+" "LA06-"
-			"LA07+" "LA07-" "LA08+" "LA08-" "LA09+" "LA09-" "LA10+" "LA10-" "LA11+"
-			"LA11-" "LA12+" "LA12-" "LA13+" "LA13-" "LA14+" "LA14-" "LA15+" "LA15-"
-			"LA16+" "LA16-" "LA17_CC+" "LA17_CC-" "LA18_CC+" "LA18_CC-" "LA19+" "LA19-"
-			"LA20+" "LA20-" "LA21+" "LA21-" "LA22+" "LA22-" "LA23+" "LA23-" "LA24+"
-			"LA24-" "LA25+" "LA25-" "LA26+" "LA26-" "LA27+" "LA27-" "LA28+" "LA28-"
-			"LA29+" "LA29-" "LA30+" "LA30-" "LA31+" "LA31-" "LA32+" "LA32-" "LA33+"
-			"LA33-" "PG_C2M" "~{PRSNT_M2C}" "SCL" "SDA" "TCK" "TDI" "TDO" "TMS" "~{TRST}"
-			"CLK0_C2M+" "CLK0_C2M-"
-		)
-	)
-	(bus_alias "IPEX_XCVR"
-		(members "TX0+" "TX0-" "RX0+" "RX0-" "TX1+" "TX1-" "RX1+" "RX1-" "TX2+"
-			"TX2-" "RX2+" "RX2-" "TX3+" "TX3-" "RX3+" "RX3-" "TX4+" "TX4-" "RX4+"
-			"RX4-" "TX5+" "TX5-" "RX5+" "RX5-" "TX6+" "TX6-" "RX6+" "RX6-" "TX7+"
-			"TX7-" "RX7+" "RX7-" "CLKT+" "CLKT-" "CLKR+" "CLKR-"
-		)
-	)
-	(bus_alias "MIKROBUS"
-		(members "MOSI" "MISO" "SCK" "CS" "RST" "AN" "PWM" "INT" "RX" "TX" "SCL"
-			"SDA"
-		)
-	)
-	(bus_alias "PCIE_X16"
-		(members "PET0+" "PET1+" "PET2+" "PET3+" "PET4+" "PET5+" "PET6+" "PET7+"
-			"PET8+" "PET9+" "PET10+" "PET11+" "PET12+" "PET13+" "PET14+" "PET15+"
-			"PER0+" "PER1+" "PER2+" "PER3+" "PER4+" "PER5+" "PER6+" "PER7+" "PER8+"
-			"PER9+" "PER10+" "PER11+" "PER12+" "PER13+" "PER14+" "PER15+" "PET0-"
-			"PET1-" "PET2-" "PET3-" "PET4-" "PET5-" "PET6-" "PET7-" "PET8-" "PET9-"
-			"PET10-" "PET11-" "PET12-" "PET13-" "PET14-" "PET15-" "PER0-" "PER1-"
-			"PER2-" "PER3-" "PER4-" "PER5-" "PER6-" "PER7-" "PER8-" "PER9-" "PER10-"
-			"PER11-" "PER12-" "PER13-" "PER14-" "PER15-" "REFCLK+" "REFCLK-"
-		)
-	)
-	(bus_alias "QSFP"
-		(members "TX1+" "TX2+" "TX3+" "TX4+" "TX1-" "TX2-" "TX3-" "TX4-" "RX1+"
-			"RX2+" "RX3+" "RX4+" "RX1-" "RX2-" "RX3-" "RX4-" "TXDIS" "~{MODPRS}" "~{RXLOS}"
-			"~{RESET}" "SCL" "SDA"
-		)
-	)
-	(bus_alias "QSPI_CFG"
-		(members "DQ0" "DQ1" "DQ2" "DQ3" "~{CS}")
-	)
-	(bus_alias "UART"
-		(members "TXD" "RXD" "CTS" "RTS")
 	)
 	(text_box "Bank allocation:\nSLR0\n  - Bank 61 (IPEX13_VADJ) IPEX 1\n  - Bank 62 (IPEX13_VADJ) IPEX 3\n  - Bank 63\nSLR1\n  - Bank 64 (VIO_B) FMC HB\n  - Bank 65\n  - Bank 66 (VADJ) FMC LA+HA\n  - Bank 67 (VADJ) FMC LA+HA\nSLR2\n  - Bank 68 (VADJ) FMC LA+HA\n  - Bank 69 (IPEX02_VADJ) IPEX 0\n  - Bank 70 (IPEX02_VADJ) IPEX 2\n  - Bank 71\nSLR3\n  - Bank 72 (1.2V): DDR DQ[31..0]\n  - Bank 73 (1.2V): DDR CCA + CB[7..0]\n  - Bank 74 (1.2V): DDR DQ[63..32]"
 		(exclude_from_sim no)
@@ -2701,14 +2694,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole")
 		(at 19.05 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "020773fc-c3c9-42ca-8ae7-f0996f41573e")
 		(property "Reference" "H1"
 			(at 21.59 190.5578 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,6 +2715,8 @@
 		)
 		(property "Value" "M3.0"
 			(at 21.59 192.9821 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,29 +2726,35 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 19.05 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 19.05 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 19.05 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -2766,54 +2771,66 @@
 		(at 115.57 35.56 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "05b2895f-07c6-483d-83c6-e150b717370f")
 		(property "Reference" "#PWR0533"
 			(at 115.57 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Earth"
 			(at 115.57 39.6931 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 115.57 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 115.57 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 115.57 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2832,14 +2849,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole")
 		(at 29.21 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05e45eaf-4c0e-4803-84d7-2202bd7f4a2b")
 		(property "Reference" "H2"
 			(at 31.75 190.5578 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2849,6 +2870,8 @@
 		)
 		(property "Value" "M3.0"
 			(at 31.75 192.9821 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2858,29 +2881,35 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 29.21 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 29.21 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 29.21 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -2897,13 +2926,17 @@
 		(at 195.58 39.37 270)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ad3008b-b5fa-4f6a-b2da-8babed7d367b")
 		(property "Reference" "R112"
 			(at 191.008 38.354 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2912,6 +2945,8 @@
 		)
 		(property "Value" "0R"
 			(at 198.882 38.354 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2920,29 +2955,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 195.58 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2964,14 +3005,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 69.85 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "208cc526-dff4-4266-84b2-822b3e5261eb")
 		(property "Reference" "FID8"
 			(at 72.009 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,39 +3026,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 72.009 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 69.596 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 69.85 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 69.85 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3029,14 +3082,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 105.41 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d7b0940-d050-442e-96cd-a6e7cfa25def")
 		(property "Reference" "FID12"
 			(at 107.569 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3046,39 +3103,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 107.569 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 105.156 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 105.41 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 105.41 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3094,14 +3159,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 69.85 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33daf212-01b4-43cb-83da-30f25ea3156a")
 		(property "Reference" "FID2"
 			(at 72.009 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3111,39 +3180,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 72.009 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 69.596 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 69.85 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 69.85 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3159,14 +3236,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 60.96 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47181049-38d0-4feb-a0ef-9d5a58bb5e9c")
 		(property "Reference" "FID1"
 			(at 63.119 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3176,43 +3257,51 @@
 		)
 		(property "Value" "Fiducial"
 			(at 63.119 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 60.706 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 60.96 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 60.96 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
-			(project ""
+			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(reference "FID1")
 					(unit 1)
@@ -3224,14 +3313,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 78.74 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cadd0fc-4351-4aad-b41b-5f99f068f9e8")
 		(property "Reference" "FID9"
 			(at 80.899 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,39 +3334,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 80.899 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 78.486 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 78.74 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 78.74 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3289,23 +3390,29 @@
 		(lib_id "power:+12V")
 		(at 219.71 29.21 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e0ca4c7-fab4-4913-984a-c9d16ec64c23")
 		(property "Reference" "#PWR0165"
 			(at 215.9 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "FMC0_VADJ"
 			(at 222.885 29.21 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,29 +3422,35 @@
 		)
 		(property "Footprint" ""
 			(at 219.71 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 219.71 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3356,14 +3469,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 96.52 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56bec6db-32dd-44aa-9f79-ebc6bbb87656")
 		(property "Reference" "FID5"
 			(at 98.679 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3373,39 +3490,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 98.679 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 96.266 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 96.52 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 96.52 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3422,54 +3547,66 @@
 		(at 187.96 40.64 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5af21022-e25f-4ef8-8011-bba0d9be0ba9")
 		(property "Reference" "#PWR0490"
 			(at 187.96 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Earth"
 			(at 187.96 44.7731 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 187.96 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 187.96 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 187.96 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3488,23 +3625,29 @@
 		(lib_id "power:+12V")
 		(at 199.39 29.21 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d9fe467-094f-42bb-b5f5-8c89884424f0")
 		(property "Reference" "#PWR0161"
 			(at 203.2 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "FMC0_12P0V"
 			(at 196.215 29.21 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3514,29 +3657,35 @@
 		)
 		(property "Footprint" ""
 			(at 199.39 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 199.39 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 199.39 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3555,14 +3704,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole")
 		(at 49.53 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d138947-0033-4bf0-b824-9df959106753")
 		(property "Reference" "H4"
 			(at 52.07 190.5578 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,6 +3725,8 @@
 		)
 		(property "Value" "M3.0"
 			(at 52.07 192.9821 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3581,29 +3736,35 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 49.53 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 49.53 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 49.53 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3620,13 +3781,17 @@
 		(at 195.58 36.83 270)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ac08e8e-741d-4dbc-875c-973036722472")
 		(property "Reference" "R111"
 			(at 191.008 35.814 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,6 +3800,8 @@
 		)
 		(property "Value" "0R"
 			(at 198.882 35.814 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,29 +3810,35 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 195.58 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 195.58 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 195.58 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3688,54 +3861,66 @@
 		(at 143.51 35.56 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c8a2a6b-6cc3-49e7-b61d-016442be1e84")
 		(property "Reference" "#PWR0534"
 			(at 143.51 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "Earth"
 			(at 143.51 39.6931 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 143.51 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 143.51 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
 			(at 143.51 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3754,14 +3939,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 96.52 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a269f1a-ea04-4eec-a9d1-ac0123e5f359")
 		(property "Reference" "FID11"
 			(at 98.679 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3771,39 +3960,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 98.679 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 96.266 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 96.52 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 96.52 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3819,14 +4016,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 60.96 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ee627e1-567a-4569-bd2e-e51dc45413da")
 		(property "Reference" "FID7"
 			(at 63.119 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,39 +4037,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 63.119 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 60.706 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 60.96 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 60.96 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -3884,23 +4093,29 @@
 		(lib_id "power:+12V")
 		(at 199.39 31.75 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2a3b3d1-24bf-427a-8b98-0c7bf4ae1d17")
 		(property "Reference" "#PWR0163"
 			(at 203.2 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "FMC0_3P3V"
 			(at 196.2151 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,29 +4125,35 @@
 		)
 		(property "Footprint" ""
 			(at 199.39 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 199.39 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 199.39 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3951,14 +4172,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole")
 		(at 39.37 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfa3f9ae-2ae9-4b14-aca9-bed74826a22d")
 		(property "Reference" "H3"
 			(at 41.91 190.5578 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,6 +4193,8 @@
 		)
 		(property "Value" "M3.0"
 			(at 41.91 192.9821 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,29 +4204,35 @@
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965"
 			(at 39.37 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 39.37 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
 			(at 39.37 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4015,14 +4248,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 87.63 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c53b88c6-d701-420f-9c63-7974066d6136")
 		(property "Reference" "FID10"
 			(at 89.789 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4032,39 +4269,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 89.789 196.7921 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 87.376 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 87.63 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 87.63 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4081,14 +4326,18 @@
 		(at 129.54 29.21 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c560411c-8624-4e22-a652-0f086a57fa3a")
 		(property "Reference" "J1"
 			(at 129.54 17.4455 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,6 +4346,8 @@
 		)
 		(property "Value" "PinHeader_2x05P_USB_2.0_Motherboard_9Pin"
 			(at 129.54 19.8698 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4105,29 +4356,35 @@
 		)
 		(property "Footprint" "CHIPSAlliance_Connector:USB_9P_P2.54mm_Horizontal"
 			(at 129.54 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 120.65 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "ATX Motherboard Internal 9Pin USB2.0 Header"
 			(at 120.65 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -4158,7 +4415,7 @@
 			(uuid "e5be6148-b721-4229-b716-c43f74d5e262")
 		)
 		(instances
-			(project ""
+			(project "fpga_candelabra"
 				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7"
 					(reference "J1")
 					(unit 1)
@@ -4170,23 +4427,29 @@
 		(lib_id "power:+12V")
 		(at 219.71 31.75 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cecc97a7-873f-4cd8-9d4e-20912095354b")
 		(property "Reference" "#PWR0550"
 			(at 215.9 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "FMC0_VREF_A"
 			(at 222.885 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,29 +4459,35 @@
 		)
 		(property "Footprint" ""
 			(at 219.71 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 219.71 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
 			(at 219.71 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4237,14 +4506,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 105.41 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0a42cf9-d2e0-4ac4-8f27-061ccb4f141a")
 		(property "Reference" "FID6"
 			(at 107.569 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4254,39 +4527,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 107.569 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 105.156 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 105.41 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 105.41 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4302,14 +4583,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 87.63 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edd23db0-ffe5-455b-89ae-7b3082445351")
 		(property "Reference" "FID4"
 			(at 89.789 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,39 +4604,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 89.789 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 87.376 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 87.63 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 87.63 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4367,14 +4660,18 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 78.74 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fed05557-d894-43ae-8007-6afc6aad64d8")
 		(property "Reference" "FID3"
 			(at 80.899 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,39 +4681,47 @@
 		)
 		(property "Value" "Fiducial"
 			(at 80.899 192.9821 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 78.486 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 78.74 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fiducial Marker"
 			(at 78.74 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -4442,11 +4747,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "048d3720-1b47-40c5-b543-cd301b5cf3fd")
 		(property "Sheetname" "FPGA IO SLR2"
 			(at 158.75 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,6 +4763,8 @@
 		)
 		(property "Sheetfile" "fpga_io_slr2.kicad_sch"
 			(at 158.75 102.1846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,11 +4894,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "095efde8-9348-4a17-b275-a6dd2c6e4f2b")
 		(property "Sheetname" "Power SODIMM"
 			(at 106.68 174.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4599,6 +4910,8 @@
 		)
 		(property "Sheetfile" "power_sodimm.kicad_sch"
 			(at 106.68 186.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4658,11 +4971,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "0df37852-5abd-4cfe-b75c-3e9a6ffc61f9")
 		(property "Sheetname" "FPGA Config"
 			(at 62.23 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4672,6 +4987,8 @@
 		)
 		(property "Sheetfile" "fpga_config.kicad_sch"
 			(at 62.23 48.8446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,11 +5088,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "17daca4d-9880-4389-ac02-d851102b3566")
 		(property "Sheetname" "Power Supply Main"
 			(at 20.32 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4785,6 +5104,8 @@
 		)
 		(property "Sheetfile" "power_supply_main.kicad_sch"
 			(at 20.32 123.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4834,11 +5155,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "1d07e2f1-4b18-4d01-8623-639a08041484")
 		(property "Sheetname" "FPGA MGT SLR3"
 			(at 93.98 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,6 +5171,8 @@
 		)
 		(property "Sheetfile" "fpga_mgt_slr3.kicad_sch"
 			(at 93.98 98.3746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,11 +5282,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "310973a6-bc21-45fe-bd00-1791bfe6ed49")
 		(property "Sheetname" "FPGA MGT SLR1"
 			(at 22.86 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4971,6 +5298,8 @@
 		)
 		(property "Sheetfile" "fpga_mgt_slr1.kicad_sch"
 			(at 22.86 83.1346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5030,11 +5359,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "4a6f2e76-d40d-4b0b-994b-17cbcb86cc6a")
 		(property "Sheetname" "mikroBUS"
 			(at 198.12 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,6 +5375,8 @@
 		)
 		(property "Sheetfile" "mikrobus.kicad_sch"
 			(at 198.12 81.8646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5083,11 +5416,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "4ce9bd16-15e9-4d50-ae03-1ab90ec38449")
 		(property "Sheetname" "FPGA Decoupling"
 			(at 143.51 174.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,6 +5432,8 @@
 		)
 		(property "Sheetfile" "fpga_decoupling.kicad_sch"
 			(at 143.51 186.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5126,11 +5463,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "5db380f9-cfea-4726-897e-a7a0af44c8e1")
 		(property "Sheetname" "FPGA IO SLR1"
 			(at 162.56 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,6 +5479,8 @@
 		)
 		(property "Sheetfile" "fpga_io_slr1.kicad_sch"
 			(at 162.56 46.3046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,11 +5520,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "5dc37b92-8b79-4447-bbff-3e1051343fd5")
 		(property "Sheetname" "Power Monitor"
 			(at 20.32 177.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5193,6 +5536,8 @@
 		)
 		(property "Sheetfile" "power_monitor.kicad_sch"
 			(at 20.32 186.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5242,11 +5587,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "68a04483-887a-4f96-a7ac-ff48e9ea8a41")
 		(property "Sheetname" "FPGA IO SLR3"
 			(at 224.79 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5256,6 +5603,8 @@
 		)
 		(property "Sheetfile" "fpga_io_slr3.kicad_sch"
 			(at 224.79 151.7146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5315,11 +5664,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "6e49f76b-3285-4cad-85ef-772e1e7f43fe")
 		(property "Sheetname" "SYSMON MCU"
 			(at 55.88 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5329,6 +5680,8 @@
 		)
 		(property "Sheetfile" "sysmon_mcu.kicad_sch"
 			(at 55.88 186.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,11 +6001,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "7068e078-a22b-4ea0-8b1f-88b1ba691cbb")
 		(property "Sheetname" "FPGA IO SLR0"
 			(at 22.86 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5662,6 +6017,8 @@
 		)
 		(property "Sheetfile" "fpga_io_slr0.kicad_sch"
 			(at 22.86 46.3046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5691,11 +6048,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "71464998-e6a3-44ea-8374-02c0d3dd3014")
 		(property "Sheetname" "Power FPGA"
 			(at 20.32 131.3684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,6 +6064,8 @@
 		)
 		(property "Sheetfile" "power_fpga.kicad_sch"
 			(at 20.32 159.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5814,11 +6175,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "73c34a20-6094-4678-a785-5f319bc772f0")
 		(property "Sheetname" "FMC LPC"
 			(at 200.66 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5828,6 +6191,8 @@
 		)
 		(property "Sheetfile" "fmc_lpc.kicad_sch"
 			(at 200.66 47.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,11 +6332,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "7976b4f9-26f9-45d7-80fc-040eb04e3de9")
 		(property "Sheetname" "QSFP Conn 0"
 			(at 129.54 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5981,6 +6348,8 @@
 		)
 		(property "Sheetfile" "qsfp_conn.kicad_sch"
 			(at 129.54 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6020,11 +6389,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "8691c66c-5a64-4c17-8ed2-cfe2f553eb70")
 		(property "Sheetname" "FPGA Power"
 			(at 143.51 158.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6034,6 +6405,8 @@
 		)
 		(property "Sheetfile" "fpga_power.kicad_sch"
 			(at 143.51 169.4946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6063,11 +6436,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "beaa4e74-1d18-44b4-b7c5-122d2a26ede8")
 		(property "Sheetname" "Power VCCINT"
 			(at 106.68 138.9884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6077,6 +6452,8 @@
 		)
 		(property "Sheetfile" "power_vccint.kicad_sch"
 			(at 106.68 159.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6156,11 +6533,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "da9ca5a6-681c-4f68-b894-107ae37cfb74")
 		(property "Sheetname" "DDR4 SODIMM"
 			(at 257.81 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6170,6 +6549,8 @@
 		)
 		(property "Sheetfile" "ddr4_sodimm.kicad_sch"
 			(at 257.81 130.1246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6229,11 +6610,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "dfbb9dfd-4cfe-4758-8a78-7d8336c5821d")
 		(property "Sheetname" "QSFP Conn 1"
 			(at 129.54 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6243,6 +6626,8 @@
 		)
 		(property "Sheetfile" "qsfp_conn.kicad_sch"
 			(at 129.54 84.4046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6282,11 +6667,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "eab1a82a-282e-4db4-9209-0d8dbaed4ca3")
 		(property "Sheetname" "System Clock"
 			(at 179.07 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6296,6 +6683,8 @@
 		)
 		(property "Sheetfile" "system_clock.kicad_sch"
 			(at 179.07 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6465,11 +6854,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "ebaa4c3d-2a51-4589-83c9-6df564f83c95")
 		(property "Sheetname" "PCIE Edge Conn"
 			(at 62.23 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6479,6 +6870,8 @@
 		)
 		(property "Sheetfile" "pcie_edge_conn.kicad_sch"
 			(at 62.23 83.1346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6528,11 +6921,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "ef6f4311-052d-4a14-a485-64d16c370478")
 		(property "Sheetname" "Power FMC"
 			(at 106.68 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6542,6 +6937,8 @@
 		)
 		(property "Sheetfile" "power_fmc.kicad_sch"
 			(at 106.68 131.3946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6611,11 +7008,13 @@
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "fa9c3262-83d7-482a-91ab-582631ac4fc5")
 		(property "Sheetname" "FPGA MGT SLR2"
 			(at 22.86 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6625,6 +7024,8 @@
 		)
 		(property "Sheetfile" "fpga_mgt_slr2.kicad_sch"
 			(at 22.86 100.9146 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
