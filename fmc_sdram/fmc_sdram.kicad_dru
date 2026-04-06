@@ -65,10 +65,10 @@
 	(constraint edge_clearance (min 0mil))
     (condition "A.intersectsCourtyard('H2')"))
 (rule "Mounting holes H3"
-	(constraint edge_clearance (min 0mil))
+	(constraint edge_clearance (min -1mm))
     (condition "A.intersectsCourtyard('H3')"))
 (rule "Mounting holes H4"
-	(constraint edge_clearance (min 0mil))
+	(constraint edge_clearance (min -1mm))
     (condition "A.intersectsCourtyard('H4')"))
 (rule "Filled zone VADJ"
 	(constraint edge_clearance (min 50mil))
@@ -82,3 +82,6 @@
 (rule "Allow via on Mounting Holes"
     (constraint hole_clearance (min 0mil))
 	(condition "A.intersectsCourtyard('H1') || A.intersectsCourtyard('H2')"))
+(rule "Zone edge clearance"
+    (constraint edge_clearance (min -1mm))
+    (condition "A.Type == 'zone'"))

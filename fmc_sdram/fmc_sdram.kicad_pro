@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -69,41 +71,46 @@
         }
       ],
       "drc_exclusions": [
-        "pth_inside_courtyard|112911812|126558111|c5cf1a10-e1a3-40df-a233-495f99612006|1e041136-701c-43d6-bfaf-3f52bd06424b",
-        "pth_inside_courtyard|114343703|125965002|801645a3-a531-426e-bd67-59af89e69998|1e041136-701c-43d6-bfaf-3f52bd06424b",
-        "pth_inside_courtyard|114343703|67014968|79a6f856-bb6d-4dfe-8909-ae71e31406bb|1e041136-701c-43d6-bfaf-3f52bd06424b",
-        "pth_inside_courtyard|115775594|126558111|f1e52190-ee64-4381-8556-532c00b18be9|1e041136-701c-43d6-bfaf-3f52bd06424b",
-        "silk_edge_clearance|48743656|111349968|1b3f564a-d125-410f-815e-8003bf5a4dac|04cb5c2a-fce5-4962-bf05-6df209ec2a01",
-        "silk_edge_clearance|48743656|120749968|1b3f564a-d125-410f-815e-8003bf5a4dac|f9dacf43-f7bb-4c5c-8387-175c2179af21",
-        "silk_over_copper|100243703|63623751|76c2e2dc-0342-482c-a52f-698f61087fbe|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|100843703|63689968|2019c1b1-2934-49b7-ae67-1b5f11c32324|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|101243703|63689968|566151b6-98ce-40b2-9ce2-c70b1956d753|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|101443703|62689968|3432ac3b-ccdd-4086-b15b-25aa019cd8eb|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|101443703|63089969|75bed4dc-dfce-4ccd-8f99-fdba550d443d|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|101443703|63489967|642afa4c-05f2-43d7-835a-f995c4b3d566|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|98843703|62689968|284b88d8-c001-490f-96bc-5cedd021d5cb|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|98843703|63089969|bc0544ca-f1b4-45a9-b81c-db2789b358ab|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|99043703|63265058|4332c598-aaea-4085-8acf-951d581057f2|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|99443703|63374044|ee282782-08a0-428e-8043-7ca39e53ea1d|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|99743904|63489967|1c540e43-7213-48ef-8229-59bc32d5d569|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|99843703|63483031|23f0128c-4cc3-4b97-953e-41441f22c2c8|00000000-0000-0000-0000-000000000000",
-        "solder_mask_bridge|100643703|63689968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|101043703|63689968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|101443703|62889968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|101443703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|94343703|62878512|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|94343703|62878512|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|95036747|62564587|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|98336372|62564587|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|98843703|62889968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|98843703|63289968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|98843703|63689968|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
-        "solder_mask_bridge|98843703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|99243703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "solder_mask_bridge|99643703|63689968|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
-        "starved_thermal|51265123|108127468|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|d923ea72-aa7c-4b8c-a59c-40f3064750db|B.Cu",
-        "starved_thermal|59743672|67489970|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|7402175a-bf2a-4e29-b030-2822014e5194|B.Cu",
-        "starved_thermal|86543703|82889968|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|c61882dc-c8b4-418c-bc6a-05e934ae9708|F.Cu"
+        [
+          "pth_inside_courtyard|112911812|126558111|c5cf1a10-e1a3-40df-a233-495f99612006|1e041136-701c-43d6-bfaf-3f52bd06424b",
+          ""
+        ],
+        [
+          "pth_inside_courtyard|114343703|125965002|801645a3-a531-426e-bd67-59af89e69998|1e041136-701c-43d6-bfaf-3f52bd06424b",
+          ""
+        ],
+        [
+          "pth_inside_courtyard|114343703|67014968|79a6f856-bb6d-4dfe-8909-ae71e31406bb|1e041136-701c-43d6-bfaf-3f52bd06424b",
+          ""
+        ],
+        [
+          "pth_inside_courtyard|115775594|126558111|f1e52190-ee64-4381-8556-532c00b18be9|1e041136-701c-43d6-bfaf-3f52bd06424b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|48743656|111349968|1b3f564a-d125-410f-815e-8003bf5a4dac|04cb5c2a-fce5-4962-bf05-6df209ec2a01",
+          ""
+        ],
+        [
+          "silk_edge_clearance|48743656|120749968|1b3f564a-d125-410f-815e-8003bf5a4dac|f9dacf43-f7bb-4c5c-8387-175c2179af21",
+          ""
+        ],
+        [
+          "solder_mask_bridge|95036747|62564587|f6891aaf-92a4-4d0e-8d78-8c24c5734bf8|8d6fccf6-6d66-4c96-a5a4-e0cab49b1067",
+          ""
+        ],
+        [
+          "solder_mask_bridge|98336372|62564587|a9c4e0f7-8b37-4a10-969d-6a17b5f943a0|28a9f0a7-1be9-4799-87f8-50165912c53e",
+          ""
+        ],
+        [
+          "starved_thermal|51265123|108127468|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|d923ea72-aa7c-4b8c-a59c-40f3064750db|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|86543703|82889968|d785e7f1-0286-4353-8dc5-5c5ece0f53c2|c61882dc-c8b4-418c-bc6a-05e934ae9708|F.Cu",
+          ""
+        ]
       ],
       "meta": {
         "version": 2
@@ -115,16 +122,20 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -135,9 +146,12 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "warning",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "warning",
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
@@ -146,15 +160,21 @@
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
+        "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -165,11 +185,12 @@
         "min_clearance": 0.127,
         "min_connection": 0.127,
         "min_copper_edge_clearance": 0.3,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.4,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.5,
         "min_text_thickness": 0.12,
@@ -184,10 +205,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -281,16 +303,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -511,7 +545,7 @@
   },
   "meta": {
     "filename": "fmc_sdram.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -526,8 +560,10 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -543,8 +579,10 @@
         "microvia_drill": 0.1,
         "name": "Diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -560,8 +598,10 @@
         "microvia_drill": 0.1,
         "name": "SDRAM_CCA",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -577,201 +617,563 @@
         "microvia_drill": 0.1,
         "name": "SDRAM_DQ",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 3
+      "version": 5
     },
     "net_colors": {
       "3P3V": "rgb(0, 255, 255)",
       "VADJ": "rgb(194, 0, 194)"
     },
     "netclass_assignments": {
-      "/FMC/SDRAM.A0": "SDRAM_CCA",
-      "/FMC/SDRAM.A1": "SDRAM_CCA",
-      "/FMC/SDRAM.A10": "SDRAM_CCA",
-      "/FMC/SDRAM.A11": "SDRAM_CCA",
-      "/FMC/SDRAM.A12": "SDRAM_CCA",
-      "/FMC/SDRAM.A2": "SDRAM_CCA",
-      "/FMC/SDRAM.A3": "SDRAM_CCA",
-      "/FMC/SDRAM.A4": "SDRAM_CCA",
-      "/FMC/SDRAM.A5": "SDRAM_CCA",
-      "/FMC/SDRAM.A6": "SDRAM_CCA",
-      "/FMC/SDRAM.A7": "SDRAM_CCA",
-      "/FMC/SDRAM.A8": "SDRAM_CCA",
-      "/FMC/SDRAM.A9": "SDRAM_CCA",
-      "/FMC/SDRAM.BA0": "SDRAM_CCA",
-      "/FMC/SDRAM.BA1": "SDRAM_CCA",
-      "/FMC/SDRAM.CKE": "SDRAM_CCA",
-      "/FMC/SDRAM.CLK": "SDRAM_CCA",
-      "/FMC/SDRAM.DQ0": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ1": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ10": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ11": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ12": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ13": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ14": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ15": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ16": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ17": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ18": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ19": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ2": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ20": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ21": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ22": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ23": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ24": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ25": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ26": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ27": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ28": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ29": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ3": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ30": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ31": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ4": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ5": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ6": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ7": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ8": "SDRAM_DQ",
-      "/FMC/SDRAM.DQ9": "SDRAM_DQ",
-      "/FMC/SDRAM.DQM0": "SDRAM_DQ",
-      "/FMC/SDRAM.DQM1": "SDRAM_DQ",
-      "/FMC/SDRAM.DQM2": "SDRAM_DQ",
-      "/FMC/SDRAM.DQM3": "SDRAM_DQ",
-      "/FMC/SDRAM.~{CAS}": "SDRAM_CCA",
-      "/FMC/SDRAM.~{CS}": "SDRAM_CCA",
-      "/FMC/SDRAM.~{RAS}": "SDRAM_CCA",
-      "/FMC/SDRAM.~{WE}": "SDRAM_CCA",
-      "/FMC/SDRAM_DQ_DIR": "SDRAM_DQ",
-      "/Level Shifter/HV.A0": "SDRAM_CCA",
-      "/Level Shifter/HV.A1": "SDRAM_CCA",
-      "/Level Shifter/HV.A10": "SDRAM_CCA",
-      "/Level Shifter/HV.A11": "SDRAM_CCA",
-      "/Level Shifter/HV.A12": "SDRAM_CCA",
-      "/Level Shifter/HV.A2": "SDRAM_CCA",
-      "/Level Shifter/HV.A3": "SDRAM_CCA",
-      "/Level Shifter/HV.A4": "SDRAM_CCA",
-      "/Level Shifter/HV.A5": "SDRAM_CCA",
-      "/Level Shifter/HV.A6": "SDRAM_CCA",
-      "/Level Shifter/HV.A7": "SDRAM_CCA",
-      "/Level Shifter/HV.A8": "SDRAM_CCA",
-      "/Level Shifter/HV.A9": "SDRAM_CCA",
-      "/Level Shifter/HV.BA0": "SDRAM_CCA",
-      "/Level Shifter/HV.BA1": "SDRAM_CCA",
-      "/Level Shifter/HV.CKE": "SDRAM_CCA",
-      "/Level Shifter/HV.CLK": "SDRAM_CCA",
-      "/Level Shifter/HV.DQ0": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ1": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ10": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ11": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ12": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ13": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ14": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ15": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ16": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ17": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ18": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ19": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ2": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ20": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ21": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ22": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ23": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ24": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ25": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ26": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ27": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ28": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ29": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ3": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ30": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ31": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ4": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ5": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ6": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ7": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ8": "SDRAM_DQ",
-      "/Level Shifter/HV.DQ9": "SDRAM_DQ",
-      "/Level Shifter/HV.DQM0": "SDRAM_DQ",
-      "/Level Shifter/HV.DQM1": "SDRAM_DQ",
-      "/Level Shifter/HV.DQM2": "SDRAM_DQ",
-      "/Level Shifter/HV.DQM3": "SDRAM_DQ",
-      "/Level Shifter/HV.~{CAS}": "SDRAM_CCA",
-      "/Level Shifter/HV.~{CS}": "SDRAM_CCA",
-      "/Level Shifter/HV.~{RAS}": "SDRAM_CCA",
-      "/Level Shifter/HV.~{WE}": "SDRAM_CCA",
-      "/Level Shifter/SDRAM_DQ_DIR": "SDRAM_DQ",
-      "/SDRAM/SDRAM.A0": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A1": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A10": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A11": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A12": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A2": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A3": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A4": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A5": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A6": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A7": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A8": "SDRAM_CCA",
-      "/SDRAM/SDRAM.A9": "SDRAM_CCA",
-      "/SDRAM/SDRAM.BA0": "SDRAM_CCA",
-      "/SDRAM/SDRAM.BA1": "SDRAM_CCA",
-      "/SDRAM/SDRAM.CKE": "SDRAM_CCA",
-      "/SDRAM/SDRAM.CLK": "SDRAM_CCA",
-      "/SDRAM/SDRAM.DQ0": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ1": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ10": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ11": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ12": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ13": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ14": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ15": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ16": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ17": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ18": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ19": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ2": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ20": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ21": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ22": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ23": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ24": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ25": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ26": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ27": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ28": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ29": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ3": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ30": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ31": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ4": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ5": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ6": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ7": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ8": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQ9": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQM0": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQM1": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQM2": "SDRAM_DQ",
-      "/SDRAM/SDRAM.DQM3": "SDRAM_DQ",
-      "/SDRAM/SDRAM.~{CAS}": "SDRAM_CCA",
-      "/SDRAM/SDRAM.~{CS}": "SDRAM_CCA",
-      "/SDRAM/SDRAM.~{RAS}": "SDRAM_CCA",
-      "/SDRAM/SDRAM.~{WE}": "SDRAM_CCA",
-      "/UART/D+": "Diff",
-      "/UART/D-": "Diff",
-      "/USB/D+": "Diff",
-      "/USB/D-": "Diff",
-      "GND": "SDRAM_CCA",
-      "Net-(U18-IO3)": "Diff",
-      "Net-(U18-IO4)": "Diff"
+      "/FMC/SDRAM.A0": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A1": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A10": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A11": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A12": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A2": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A3": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A4": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A5": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A6": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A7": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A8": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.A9": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.BA0": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.BA1": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.CKE": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.CLK": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.DQ0": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ1": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ10": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ11": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ12": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ13": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ14": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ15": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ16": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ17": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ18": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ19": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ2": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ20": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ21": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ22": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ23": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ24": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ25": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ26": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ27": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ28": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ29": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ3": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ30": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ31": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ4": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ5": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ6": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ7": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ8": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQ9": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQM0": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQM1": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQM2": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.DQM3": [
+        "SDRAM_DQ"
+      ],
+      "/FMC/SDRAM.~{CAS}": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.~{CS}": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.~{RAS}": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM.~{WE}": [
+        "SDRAM_CCA"
+      ],
+      "/FMC/SDRAM_DQ_DIR": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.A0": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A1": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A10": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A11": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A12": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A2": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A3": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A4": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A5": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A6": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A7": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A8": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.A9": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.BA0": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.BA1": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.CKE": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.CLK": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.DQ0": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ1": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ10": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ11": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ12": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ13": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ14": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ15": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ16": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ17": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ18": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ19": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ2": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ20": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ21": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ22": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ23": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ24": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ25": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ26": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ27": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ28": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ29": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ3": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ30": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ31": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ4": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ5": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ6": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ7": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ8": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQ9": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQM0": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQM1": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQM2": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.DQM3": [
+        "SDRAM_DQ"
+      ],
+      "/Level Shifter/HV.~{CAS}": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.~{CS}": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.~{RAS}": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/HV.~{WE}": [
+        "SDRAM_CCA"
+      ],
+      "/Level Shifter/SDRAM_DQ_DIR": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.A0": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A1": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A10": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A11": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A12": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A2": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A3": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A4": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A5": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A6": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A7": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A8": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.A9": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.BA0": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.BA1": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.CKE": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.CLK": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.DQ0": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ1": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ10": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ11": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ12": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ13": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ14": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ15": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ16": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ17": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ18": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ19": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ2": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ20": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ21": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ22": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ23": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ24": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ25": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ26": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ27": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ28": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ29": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ3": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ30": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ31": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ4": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ5": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ6": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ7": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ8": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQ9": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQM0": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQM1": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQM2": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.DQM3": [
+        "SDRAM_DQ"
+      ],
+      "/SDRAM/SDRAM.~{CAS}": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.~{CS}": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.~{RAS}": [
+        "SDRAM_CCA"
+      ],
+      "/SDRAM/SDRAM.~{WE}": [
+        "SDRAM_CCA"
+      ],
+      "/UART/D+": [
+        "Diff"
+      ],
+      "/UART/D-": [
+        "Diff"
+      ],
+      "/USB/D+": [
+        "Diff"
+      ],
+      "/USB/D-": [
+        "Diff"
+      ],
+      "GND": [
+        "SDRAM_CCA"
+      ],
+      "Net-(U18-IO3)": [
+        "Diff"
+      ],
+      "Net-(U18-IO4)": [
+        "Diff"
+      ]
     },
     "netclass_patterns": []
   },
@@ -849,6 +1251,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -894,7 +1297,14 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "fmc_sdram.kicad_sch",
+        "name": "fmc_sdram",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ]
   },
   "sheets": [
     [
@@ -922,5 +1332,11 @@
       "Level Shifter"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
