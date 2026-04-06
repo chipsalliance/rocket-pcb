@@ -8,25 +8,21 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     name: KiCad Project Build and Validation
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         submodules: recursive
-    - name: Add KiCad Repository
+    - name: Install KiCad and Dependencies
       run: |
-        sudo add-apt-repository ppa:kicad/kicad-8.0-releases
-        sudo apt update
-    - name: Cache Required Packages
-      uses: awalsh128/cache-apt-pkgs-action@latest
+        sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+        sudo apt-get update
+        sudo apt-get install -y cmake ninja-build kicad kicad-library-all
+    - uses: actions/setup-python@v6
       with:
-        packages: cmake ninja-build kicad kicad-library-all
-        version: 1.0
-    - uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+        python-version: '3.12'
     - run: pip install frugy
     - name: Build and Validate KiCad Project
       run: |
@@ -34,6 +30,10 @@ jobs:
         PROJECT_DIRS=$(ls -d */ | sed 's:/*$::')
         popd
         for DIR in $PROJECT_DIRS; do
+          if [ ! -f "${{github.workspace}}/$DIR/CMakeLists.txt" ]; then
+            echo "Skipping directory: $DIR (no CMakeLists.txt)"
+            continue
+          fi
           echo "Processing directory: $DIR"
           pushd ${{github.workspace}}/$DIR
           cmake -B ./build -G Ninja

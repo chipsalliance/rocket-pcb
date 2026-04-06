@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.16)
 
 project(pmod_microsd
     VERSION 1.0.0
@@ -7,7 +7,7 @@ project(pmod_microsd
 
 find_program(KICADCLI_PROGRAM "kicad-cli")
 if(NOT KICADCLI_PROGRAM)
-    message(FATAL_ERROR "kicad-cli not found, please install kicad 8")
+    message(FATAL_ERROR "kicad-cli not found, please install kicad 10")
 endif()
 
 file(GLOB_RECURSE PROJECT_SCH_FILES ${CMAKE_CURRENT_LIST_DIR} "*.kicad_sch")
@@ -70,7 +70,9 @@ add_custom_command(
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_pcb"
         COMMAND
         ${KICADCLI_PROGRAM} sch export bom
-        --preset "Grouped By Value"
+        --fields "Reference,Value,Footprint,${QUANTITY},${DNP}"
+        --labels "Reference,Value,Footprint,Qty,DNP"
+        --group-by "Value,Footprint,${DNP}"
         -o "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_PROJECT_NAME}_gerber/${CMAKE_PROJECT_NAME}_bom.csv"
         "${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_PROJECT_NAME}.kicad_sch"
     COMMAND
