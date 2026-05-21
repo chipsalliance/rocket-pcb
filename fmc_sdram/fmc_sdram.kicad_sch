@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "387bfcf1-ae49-4b85-be89-3bb02ce2e960")
 	(paper "A4")
 	(title_block
 		(title "FMC of SDRAM and JTAG")
 		(date "2024-05-26")
-		(rev "1.0.0")
+		(rev "1.1.1")
 		(company "CHIPS Alliance")
 		(comment 1 "Yichuan Gao (2024-05-21)")
 		(comment 2 "Yichuan Gao (2024-05-21)")
@@ -18,8 +18,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "FID"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -28,6 +32,8 @@
 			)
 			(property "Value" "Fiducial"
 				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -36,47 +42,57 @@
 			)
 			(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 				(at -0.254 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Fiducial Marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "fiducial marker"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Fiducial*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Fiducial_0_1"
@@ -138,16 +154,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CHIPSAlliance_Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -156,6 +181,8 @@
 			)
 			(property "Value" "MountingHole_Pad"
 				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -164,47 +191,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "mounting hole"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MountingHole_Pad_0_1"
@@ -240,26 +277,33 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CHIPSAlliance_Power:GND"
-			(power)
+			(power global)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -268,38 +312,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -319,7 +371,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -336,19 +389,127 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
-	(bus_alias "SDRAM"
-		(members "A0" "A1" "A2" "A3" "A4" "A5" "A6" "A7" "A8" "A9" "A10" "A11"
-			"A12" "BA0" "BA1" "DQ0" "DQ1" "DQ2" "DQ3" "DQ4" "DQ5" "DQ6" "DQ7" "DQ8"
-			"DQ9" "DQ10" "DQ11" "DQ12" "DQ13" "DQ14" "DQ15" "DQ16" "DQ17" "DQ18" "DQ19"
-			"DQ20" "DQ21" "DQ22" "DQ23" "DQ24" "DQ25" "DQ26" "DQ27" "DQ28" "DQ29"
-			"DQ30" "DQ31" "~{CS}" "~{RAS}" "~{CAS}" "~{WE}" "DQM0" "DQM1" "DQM2" "DQM3"
-			"CLK" "CKE"
+	(rectangle
+		(start 50.8 165.1)
+		(end 129.54 195.58)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(fill
+			(type none)
+		)
+		(uuid "66bc5c2a-4235-44d0-89a8-4fa2f3611648")
 	)
-	(bus_alias "USB_FS"
-		(members "DET" "CON" "~{OE}" "RCV" "VP" "VM" "SPD" "SUS")
+	(text "H1, H2: 9 mm Copper M2.5 Hex Column with 0.5 mm spacer"
+		(exclude_from_sim no)
+		(at 58.42 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25ae76e3-5268-433f-8d93-b63188afbc71")
+	)
+	(text "For optical positioning"
+		(exclude_from_sim no)
+		(at 92.71 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c17b119-27f0-4690-9710-27cc5a32bd98")
+	)
+	(text "Fiducials"
+		(exclude_from_sim no)
+		(at 92.71 168.91 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "3872d2ce-7996-4995-b408-1c6e87e31494")
+	)
+	(text "FMC"
+		(exclude_from_sim no)
+		(at 134.112 44.196 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "42a93e6e-ac42-4cc2-a239-bcbad0b13da5")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 131.318 107.696 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "54bbf660-3a0e-4115-bcf3-b76e2e4306ea")
+	)
+	(text "JTAG"
+		(exclude_from_sim no)
+		(at 106.426 107.696 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e0271a0-f3f0-403f-abbc-f903b3a6b530")
+	)
+	(text "H3, H4: 30mm Copper M2.5 Hex Column"
+		(exclude_from_sim no)
+		(at 58.42 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "80b130fd-eed8-4244-8a09-f26f31d805c9")
+	)
+	(text "Mounting holes"
+		(exclude_from_sim no)
+		(at 58.42 168.91 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "a29eafc1-6fd5-4d23-99e4-d3b4eeb3cbee")
+	)
+	(text "SDRAM"
+		(exclude_from_sim no)
+		(at 157.48 142.494 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 1)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e286ac32-730f-4d07-ab3e-d46d665d7693")
 	)
 	(polyline
 		(pts
@@ -580,125 +741,6 @@
 		)
 		(uuid "eb9ccd12-fccb-40bf-bdef-3d55c05ccbce")
 	)
-	(rectangle
-		(start 50.8 165.1)
-		(end 129.54 195.58)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 66bc5c2a-4235-44d0-89a8-4fa2f3611648)
-	)
-	(text "H1, H2: 9 mm Copper M2.5 Hex Column with 0.5 mm spacer"
-		(exclude_from_sim no)
-		(at 58.42 190.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "25ae76e3-5268-433f-8d93-b63188afbc71")
-	)
-	(text "For optical positioning"
-		(exclude_from_sim no)
-		(at 92.71 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2c17b119-27f0-4690-9710-27cc5a32bd98")
-	)
-	(text "Fiducials"
-		(exclude_from_sim no)
-		(at 92.71 168.91 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "3872d2ce-7996-4995-b408-1c6e87e31494")
-	)
-	(text "FMC"
-		(exclude_from_sim no)
-		(at 134.112 44.196 0)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 1)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "42a93e6e-ac42-4cc2-a239-bcbad0b13da5")
-	)
-	(text "UART"
-		(exclude_from_sim no)
-		(at 131.318 107.696 0)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 1)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "54bbf660-3a0e-4115-bcf3-b76e2e4306ea")
-	)
-	(text "JTAG"
-		(exclude_from_sim no)
-		(at 106.426 107.696 0)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 1)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "5e0271a0-f3f0-403f-abbc-f903b3a6b530")
-	)
-	(text "H3, H4: 30mm Copper M2.5 Hex Column"
-		(exclude_from_sim no)
-		(at 58.42 193.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "80b130fd-eed8-4244-8a09-f26f31d805c9")
-	)
-	(text "Mounting holes"
-		(exclude_from_sim no)
-		(at 58.42 168.91 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "a29eafc1-6fd5-4d23-99e4-d3b4eeb3cbee")
-	)
-	(text "SDRAM"
-		(exclude_from_sim no)
-		(at 157.48 142.494 0)
-		(effects
-			(font
-				(size 3 3)
-				(thickness 1)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "e286ac32-730f-4d07-ab3e-d46d665d7693")
-	)
 	(netclass_flag ""
 		(length 0.762)
 		(shape round)
@@ -711,15 +753,17 @@
 			(justify left bottom)
 		)
 		(uuid "e288d7e6-9a10-46fc-9952-469f774b62af")
-		(property "Netclass" "SDRAM_DQ"
+		(property "Net Class" "SDRAM_DQ"
 			(at 165.862 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 	)
@@ -727,13 +771,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole_Pad")
 		(at 74.93 175.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "09960134-3e56-4e28-9257-2f07d78c18f7")
 		(property "Reference" "H4"
 			(at 74.93 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -742,6 +790,8 @@
 		)
 		(property "Value" "M2.5"
 			(at 77.47 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,30 +800,36 @@
 		)
 		(property "Footprint" "CHIPSAlliance_MountingHole:MountingHole_2.7mm_M2.5_FMC_Pad"
 			(at 74.93 200.152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 74.93 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 74.93 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -792,13 +848,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 105.41 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2119e287-63cc-46f5-aba9-161b73a0bdbb")
 		(property "Reference" "FID3"
 			(at 102.87 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -808,6 +868,8 @@
 		)
 		(property "Value" "1mm"
 			(at 102.87 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -817,29 +879,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 105.156 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 105.41 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 105.41 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -855,13 +923,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 120.65 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "31a9e16d-964e-4043-93aa-3708fba9a1b9")
 		(property "Reference" "FID6"
 			(at 118.11 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -871,6 +943,8 @@
 		)
 		(property "Value" "1mm"
 			(at 118.11 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -880,29 +954,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 120.396 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 120.65 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 120.65 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -918,13 +998,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 115.57 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "40993ea9-d0d7-4917-9ccd-f54770fbba0b")
 		(property "Reference" "FID5"
 			(at 113.03 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -934,6 +1018,8 @@
 		)
 		(property "Value" "1mm"
 			(at 113.03 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -943,29 +1029,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 115.316 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 115.57 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 115.57 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -981,13 +1073,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole_Pad")
 		(at 64.77 175.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7565cdd7-b07a-4907-87f9-a0f5ef7a1bee")
 		(property "Reference" "H2"
 			(at 64.77 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -996,6 +1092,8 @@
 		)
 		(property "Value" "M2.5"
 			(at 67.31 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1004,30 +1102,36 @@
 		)
 		(property "Footprint" "CHIPSAlliance_MountingHole:MountingHole_2.7mm_M2.5_FMC_Pad_Via"
 			(at 64.77 200.152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 64.77 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 64.77 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1046,13 +1150,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 110.49 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "79549389-9d8a-4945-951f-8d822bccc57c")
 		(property "Reference" "FID4"
 			(at 107.95 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1062,6 +1170,8 @@
 		)
 		(property "Value" "1mm"
 			(at 107.95 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,29 +1181,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 110.236 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 110.49 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 110.49 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -1109,22 +1225,28 @@
 		(lib_id "CHIPSAlliance_Power:GND")
 		(at 69.85 177.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f78a2e9-c011-4c54-a743-022d0c37902b")
 		(property "Reference" "#PWR081"
 			(at 69.85 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 69.85 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,29 +1255,35 @@
 		)
 		(property "Footprint" ""
 			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 69.85 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1174,13 +1302,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 100.33 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "95653b92-34cb-405b-8927-1ec4ce2d9801")
 		(property "Reference" "FID2"
 			(at 97.79 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1190,6 +1322,8 @@
 		)
 		(property "Value" "1mm"
 			(at 97.79 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1199,29 +1333,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 100.076 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 100.33 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -1237,22 +1377,28 @@
 		(lib_id "CHIPSAlliance_Power:GND")
 		(at 64.77 177.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4945e55-ce99-4c28-bcb7-93a31cbaf5fe")
 		(property "Reference" "#PWR080"
 			(at 64.77 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 64.77 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1261,29 +1407,35 @@
 		)
 		(property "Footprint" ""
 			(at 64.77 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 64.77 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 64.77 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1302,13 +1454,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole_Pad")
 		(at 59.69 175.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d08f4763-ca6d-4698-8b24-a88ecfff074d")
 		(property "Reference" "H1"
 			(at 59.69 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,6 +1473,8 @@
 		)
 		(property "Value" "M2.5"
 			(at 62.23 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,30 +1483,36 @@
 		)
 		(property "Footprint" "CHIPSAlliance_MountingHole:MountingHole_2.7mm_M2.5_FMC_Pad_Via"
 			(at 59.69 200.152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 59.69 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1367,13 +1531,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:Fiducial")
 		(at 95.25 173.99 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d467d019-1c42-43e6-aed3-ca38a485b7d4")
 		(property "Reference" "FID1"
 			(at 92.71 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1383,6 +1551,8 @@
 		)
 		(property "Value" "1mm"
 			(at 92.71 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1392,29 +1562,35 @@
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 94.996 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 95.25 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 95.25 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(instances
@@ -1430,22 +1606,28 @@
 		(lib_id "CHIPSAlliance_Power:GND")
 		(at 74.93 177.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0809da9-033f-4437-994e-6f2f7c2d5bf9")
 		(property "Reference" "#PWR082"
 			(at 74.93 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 74.93 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1454,29 +1636,35 @@
 		)
 		(property "Footprint" ""
 			(at 74.93 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 74.93 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 74.93 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1495,13 +1683,17 @@
 		(lib_id "CHIPSAlliance_Mechanical:MountingHole_Pad")
 		(at 69.85 175.26 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5647945-2eea-4175-8db0-ad1c42bf3cd1")
 		(property "Reference" "H3"
 			(at 69.85 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,6 +1702,8 @@
 		)
 		(property "Value" "M2.5"
 			(at 72.39 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,30 +1712,36 @@
 		)
 		(property "Footprint" "CHIPSAlliance_MountingHole:MountingHole_2.7mm_M2.5_FMC_Pad"
 			(at 69.85 200.152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 69.85 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 69.85 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1560,22 +1760,28 @@
 		(lib_id "CHIPSAlliance_Power:GND")
 		(at 59.69 177.8 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "fdcf8f8d-e64f-4eb6-924f-8d642bcaa2b9")
 		(property "Reference" "#PWR079"
 			(at 59.69 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 59.69 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,29 +1790,35 @@
 		)
 		(property "Footprint" ""
 			(at 59.69 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 59.69 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1624,17 +1836,23 @@
 	(sheet
 		(at 154.94 115.57)
 		(size 20.32 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "03412e19-f3ba-4ea4-b7ea-5b2a46ed3275")
 		(property "Sheetname" "SDRAM"
 			(at 154.94 114.8584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1644,6 +1862,8 @@
 		)
 		(property "Sheetfile" "sdram.kicad_sch"
 			(at 176.022 143.51 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1653,13 +1873,13 @@
 		)
 		(pin "HV{SDRAM}" bidirectional
 			(at 163.83 115.57 90)
+			(uuid "df130d27-0479-4692-890f-6aefb44f9cdc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "df130d27-0479-4692-890f-6aefb44f9cdc")
 		)
 		(instances
 			(project "fmc_sdram"
@@ -1672,17 +1892,23 @@
 	(sheet
 		(at 128.27 83.82)
 		(size 17.78 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "050a965f-1566-4fd5-8eeb-6ab96a9baeba")
 		(property "Sheetname" "UART"
 			(at 127.5584 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,6 +1918,8 @@
 		)
 		(property "Sheetfile" "uart.kicad_sch"
 			(at 146.6346 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,13 +1929,13 @@
 		)
 		(pin "UART{UART}" tri_state
 			(at 137.16 83.82 90)
+			(uuid "19e60786-600d-48fe-9314-544272f5acce")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "19e60786-600d-48fe-9314-544272f5acce")
 		)
 		(instances
 			(project "fmc_sdram"
@@ -1720,17 +1948,23 @@
 	(sheet
 		(at 93.98 36.83)
 		(size 92.71 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4338fda8-0ea2-4bf2-b1c2-c685ef11d6a0")
 		(property "Sheetname" "FMC"
 			(at 93.2684 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,6 +1974,8 @@
 		)
 		(property "Sheetfile" "fmc.kicad_sch"
 			(at 187.2746 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1749,43 +1985,43 @@
 		)
 		(pin "UART{UART}" tri_state
 			(at 137.16 72.39 270)
+			(uuid "b5d972c9-0ed8-45db-a41c-c47748132c55")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b5d972c9-0ed8-45db-a41c-c47748132c55")
 		)
 		(pin "JTAG{JTAG}" bidirectional
 			(at 111.76 72.39 270)
+			(uuid "8fd31d01-36b7-4b10-8a42-1c3c99fbe473")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8fd31d01-36b7-4b10-8a42-1c3c99fbe473")
 		)
 		(pin "SDRAM{SDRAM}" bidirectional
 			(at 171.45 72.39 270)
+			(uuid "2ba5a56d-20ba-4172-a86b-a47040b7642d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2ba5a56d-20ba-4172-a86b-a47040b7642d")
 		)
 		(pin "SDRAM_DQ_DIR" output
 			(at 168.91 72.39 270)
+			(uuid "a18cbbfe-bed6-4cd1-a964-b66ecdf0530e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a18cbbfe-bed6-4cd1-a964-b66ecdf0530e")
 		)
 		(instances
 			(project "fmc_sdram"
@@ -1798,17 +2034,23 @@
 	(sheet
 		(at 102.87 83.82)
 		(size 17.78 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "82dd16e5-ea53-4288-95e9-d311496c7627")
 		(property "Sheetname" "JTAG"
 			(at 102.1584 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1818,6 +2060,8 @@
 		)
 		(property "Sheetfile" "jtag.kicad_sch"
 			(at 121.2346 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1827,13 +2071,13 @@
 		)
 		(pin "JTAG{JTAG}" bidirectional
 			(at 111.76 83.82 90)
+			(uuid "9df0827a-0551-4b08-ad7f-b62234393c0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9df0827a-0551-4b08-ad7f-b62234393c0a")
 		)
 		(instances
 			(project "fmc_sdram"
@@ -1846,17 +2090,23 @@
 	(sheet
 		(at 154.94 83.82)
 		(size 20.32 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
 			(color 132 0 132 1)
 		)
 		(fill
-			(color 255 255 255 0.0000)
+			(color 255 255 255 0)
 		)
 		(uuid "9efd9746-c346-49d8-a9dc-32927ca6bbf4")
 		(property "Sheetname" "Level Shifter"
 			(at 154.94 83.1084 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1866,6 +2116,8 @@
 		)
 		(property "Sheetfile" "level_shifter.kicad_sch"
 			(at 176.022 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1875,33 +2127,33 @@
 		)
 		(pin "HV{SDRAM}" bidirectional
 			(at 163.83 109.22 270)
+			(uuid "d593acbd-94c2-47c3-8b2e-44edc56581e2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d593acbd-94c2-47c3-8b2e-44edc56581e2")
 		)
 		(pin "SDRAM_DQ_DIR" input
 			(at 168.91 83.82 90)
+			(uuid "fe803f3f-01cf-4b7d-b3c0-15efe002e3a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fe803f3f-01cf-4b7d-b3c0-15efe002e3a9")
 		)
 		(pin "SDRAM{SDRAM}" bidirectional
 			(at 171.45 83.82 90)
+			(uuid "13b5ecb5-7748-45c2-a849-e68e27307d1b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "13b5ecb5-7748-45c2-a849-e68e27307d1b")
 		)
 		(instances
 			(project "fmc_sdram"
@@ -1916,4 +2168,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
