@@ -15,6 +15,7 @@ jobs:
       uses: actions/checkout@v6
       with:
         submodules: recursive
+        fetch-depth: 0
     - name: Add KiCad Repository
       run: |
         sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
@@ -28,16 +29,49 @@ jobs:
       with:
         python-version: '3.12'
     - run: pip install frugy
-    - name: Build and Validate KiCad Project
+    - name: Determine changed project directories
+      id: changes
       run: |
-        pushd ${{github.workspace}}
-        PROJECT_DIRS=$(ls -d */ | sed 's:/*$::')
-        popd
-        for DIR in $PROJECT_DIRS; do
-          if [ ! -f "${{github.workspace}}/$DIR/CMakeLists.txt" ]; then
-            echo "Skipping directory: $DIR (no CMakeLists.txt)"
-            continue
+        if [ "${{ github.event_name }}" = "pull_request" ]; then
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+        else
+          BASE_SHA="${{ github.event.before }}"
+        fi
+
+        ALL_DIRS=$(ls -d */ 2>/dev/null | sed 's:/*$::')
+
+        # Initial push or unknown base: build everything.
+        if [ -z "$BASE_SHA" ] || [[ "$BASE_SHA" =~ ^0+$ ]]; then
+          echo "No base SHA available; building all project directories."
+          CHANGED="$ALL_DIRS"
+        else
+          # If the workflow file or any submodule reference changed, rebuild everything.
+          if git diff --name-only "$BASE_SHA" HEAD | grep -qE '^(\.github/workflows/|\.gitmodules$)'; then
+            echo "Workflow or submodules changed; building all project directories."
+            CHANGED="$ALL_DIRS"
+          else
+            CHANGED=$(git diff --name-only "$BASE_SHA" HEAD | awk -F/ 'NF>1 {print $1}' | sort -u)
           fi
+        fi
+
+        SELECTED=""
+        for DIR in $CHANGED; do
+          if [ -f "$DIR/CMakeLists.txt" ]; then
+            SELECTED="$SELECTED $DIR"
+          fi
+        done
+        SELECTED=$(echo "$SELECTED" | xargs)
+
+        if [ -z "$SELECTED" ]; then
+          echo "No KiCad project directories touched by this change."
+        else
+          echo "Will build: $SELECTED"
+        fi
+        echo "dirs=$SELECTED" >> "$GITHUB_OUTPUT"
+    - name: Build and Validate KiCad Project
+      if: steps.changes.outputs.dirs != ''
+      run: |
+        for DIR in ${{ steps.changes.outputs.dirs }}; do
           echo "Processing directory: $DIR"
           pushd ${{github.workspace}}/$DIR
           cmake -B ./build -G Ninja
