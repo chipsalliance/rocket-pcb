@@ -54,3 +54,4 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "*.pdf,*.zip,*.bin"
+        allowUpdates: true
