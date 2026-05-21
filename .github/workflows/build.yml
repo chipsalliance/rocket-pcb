@@ -45,9 +45,9 @@ jobs:
           echo "No base SHA available; building all project directories."
           CHANGED="$ALL_DIRS"
         else
-          # If the workflow file or any submodule reference changed, rebuild everything.
-          if git diff --name-only "$BASE_SHA" HEAD | grep -qE '^(\.github/workflows/|\.gitmodules$)'; then
-            echo "Workflow or submodules changed; building all project directories."
+          # If this build workflow or any submodule reference changed, rebuild everything.
+          if git diff --name-only "$BASE_SHA" HEAD | grep -qE '^(\.github/workflows/build\.yml$|\.gitmodules$)'; then
+            echo "build.yml or submodules changed; building all project directories."
             CHANGED="$ALL_DIRS"
           else
             CHANGED=$(git diff --name-only "$BASE_SHA" HEAD | awk -F/ 'NF>1 {print $1}' | sort -u)
