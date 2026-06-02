@@ -9,7 +9,7 @@ Also includes USB to UART bridge, JTAG level shifter with ARM 20-pin JTAG header
 
 ## Preparation
 
-Install kicad 8, cmake, ninja, frugy.
+Install kicad 10, cmake, ninja, frugy.
 
 ## Precautions
 
@@ -49,9 +49,11 @@ Use a CH341A USB-to-I2C adapter (PID `1a86:5512`, EPP/MEM/I2C mode) with
 `VCC` (3.3V) and `GND` to the on-board M24C02, and pull `WP` to GND.
 
 ```bash
-ch341eeprom -v -s 24c02 -w build/fmc_fru_eeprom.bin
-ch341eeprom -v -s 24c02 -V build/fmc_fru_eeprom.bin
+ch341eeprom -s 24c02 -e
+ch341eeprom -s 24c02 -w build/fmc_fru_eeprom.bin
+ch341eeprom -s 24c02 -V build/fmc_fru_eeprom.bin
 ```
 
-The verifier reports a mismatch at offset 238 because the FRU image is 238
-bytes while the EEPROM is padded to 256 — the FRU data itself is correct.
+`ch341eeprom` truncates the 2 KiB bin to the 256-byte chip on write, and the
+verifier passes end-to-end. To inspect the FRU contents semantically,
+`ch341eeprom -s 24c02 -r /tmp/dump.bin && frugy -r -d /tmp/dump.bin`.
