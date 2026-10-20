@@ -20,7 +20,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at -12.7 24.765 0)
+				(at -12.7 27.305 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -30,7 +30,7 @@
 				)
 			)
 			(property "Value" "QSFP+"
-				(at 10.795 24.765 0)
+				(at 10.795 27.305 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40,7 +40,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -51,7 +51,7 @@
 				)
 			)
 			(property "Datasheet" "https://members.snia.org/document/dl/25969"
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -62,7 +62,7 @@
 				)
 			)
 			(property "Description" "QSFP+ 4X Connector SFF-8679"
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -96,7 +96,7 @@
 			)
 			(symbol "QSFP+_0_0"
 				(pin power_in line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -114,7 +114,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 7.62 0)
+					(at -17.78 10.16 0)
 					(length 2.54)
 					(name "TX2-"
 						(effects
@@ -132,7 +132,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 10.16 0)
+					(at -17.78 12.7 0)
 					(length 2.54)
 					(name "TX2+"
 						(effects
@@ -150,7 +150,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -169,7 +169,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -7.62 0)
+					(at -17.78 -5.08 0)
 					(length 2.54)
 					(name "TX4-"
 						(effects
@@ -187,7 +187,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -5.08 0)
+					(at -17.78 -2.54 0)
 					(length 2.54)
 					(name "TX4+"
 						(effects
@@ -205,7 +205,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -224,7 +224,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -12.7 0)
+					(at -17.78 -10.16 0)
 					(length 2.54)
 					(name "~{MODSEL}"
 						(effects
@@ -242,7 +242,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -15.24 0)
+					(at -17.78 -12.7 0)
 					(length 2.54)
 					(name "~{RESET}"
 						(effects
@@ -260,7 +260,7 @@
 					)
 				)
 				(pin power_in line
-					(at 0 25.4 270)
+					(at 0 27.94 270)
 					(length 2.54)
 					(name "VCC_RX"
 						(effects
@@ -278,7 +278,7 @@
 					)
 				)
 				(pin input line
-					(at 17.78 -12.7 180)
+					(at 17.78 -10.16 180)
 					(length 2.54)
 					(name "SCL"
 						(effects
@@ -296,7 +296,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 17.78 -15.24 180)
+					(at 17.78 -12.7 180)
 					(length 2.54)
 					(name "SDA"
 						(effects
@@ -314,7 +314,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -333,7 +333,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 2.54 180)
+					(at 17.78 5.08 180)
 					(length 2.54)
 					(name "RX3+"
 						(effects
@@ -351,7 +351,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 0 180)
+					(at 17.78 2.54 180)
 					(length 2.54)
 					(name "RX3-"
 						(effects
@@ -369,7 +369,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -388,7 +388,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 17.78 180)
+					(at 17.78 20.32 180)
 					(length 2.54)
 					(name "RX1+"
 						(effects
@@ -406,7 +406,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 15.24 180)
+					(at 17.78 17.78 180)
 					(length 2.54)
 					(name "RX1-"
 						(effects
@@ -424,7 +424,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -443,7 +443,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -462,7 +462,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 7.62 180)
+					(at 17.78 10.16 180)
 					(length 2.54)
 					(name "RX2-"
 						(effects
@@ -480,7 +480,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 10.16 180)
+					(at 17.78 12.7 180)
 					(length 2.54)
 					(name "RX2+"
 						(effects
@@ -498,7 +498,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -517,7 +517,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 -7.62 180)
+					(at 17.78 -5.08 180)
 					(length 2.54)
 					(name "RX4-"
 						(effects
@@ -535,7 +535,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 -5.08 180)
+					(at 17.78 -2.54 180)
 					(length 2.54)
 					(name "RX4+"
 						(effects
@@ -553,7 +553,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -572,7 +572,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 -20.32 180)
+					(at 17.78 -17.78 180)
 					(length 2.54)
 					(name "~{MODPRS}"
 						(effects
@@ -590,7 +590,7 @@
 					)
 				)
 				(pin output line
-					(at 17.78 -22.86 180)
+					(at 17.78 -20.32 180)
 					(length 2.54)
 					(name "~{INT}/~{RXLOS}"
 						(effects
@@ -608,7 +608,7 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 25.4 270)
+					(at -2.54 27.94 270)
 					(length 2.54)
 					(name "VCC_TX"
 						(effects
@@ -626,7 +626,7 @@
 					)
 				)
 				(pin power_in line
-					(at 2.54 25.4 270)
+					(at 2.54 27.94 270)
 					(length 2.54)
 					(name "VCC1"
 						(effects
@@ -644,7 +644,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 -17.78 0)
+					(at -17.78 -15.24 0)
 					(length 2.54)
 					(name "LPMODE/TXDIS"
 						(effects
@@ -662,7 +662,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -681,7 +681,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 2.54 0)
+					(at -17.78 5.08 0)
 					(length 2.54)
 					(name "TX3+"
 						(effects
@@ -699,7 +699,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 0 0)
+					(at -17.78 2.54 0)
 					(length 2.54)
 					(name "TX3-"
 						(effects
@@ -717,7 +717,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -736,7 +736,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 17.78 0)
+					(at -17.78 20.32 0)
 					(length 2.54)
 					(name "TX1+"
 						(effects
@@ -754,7 +754,7 @@
 					)
 				)
 				(pin input line
-					(at -17.78 15.24 0)
+					(at -17.78 17.78 0)
 					(length 2.54)
 					(name "TX1-"
 						(effects
@@ -772,7 +772,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -30.48 90)
+					(at 0 -27.94 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -793,8 +793,8 @@
 			)
 			(symbol "QSFP+_1_1"
 				(rectangle
-					(start -15.24 22.86)
-					(end 15.24 -27.94)
+					(start -15.24 25.4)
+					(end 15.24 -25.4)
 					(stroke
 						(width 0)
 						(type default)
@@ -804,7 +804,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -30.48 90)
+					(at -5.08 -27.94 90)
 					(length 2.54)
 					(name "CAGE"
 						(effects
@@ -8987,7 +8987,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Interface:QSFP+")
-		(at 88.9 59.69 0)
+		(at 88.9 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)

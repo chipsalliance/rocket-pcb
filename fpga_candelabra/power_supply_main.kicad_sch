@@ -483,7 +483,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "*Texas_VQFN-RHL-14*"
+			(property "ki_fp_filters" "*Texas_VQFN-RHL-14* Texas?RHL?VQFN?14?1EP?3.5x3.5mm?P0.5mm?EP2.05x2.05mm Texas?RHL?VQFN?14?1EP?3.5x3.5mm?P0.5mm?EP2.05x2.05mm?ThermalVias"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -818,7 +818,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -865,7 +865,8 @@
 			(symbol "AON7544_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
+						(xy 0.254 1.905)
+						(xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -877,7 +878,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0) (xy -2.54 0)
+						(xy 0.254 0)
+						(xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -889,7 +891,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.762 2.286)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -901,7 +904,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
+						(xy 0.762 0.508)
+						(xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
@@ -913,7 +917,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 0.762 -1.27)
+						(xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
@@ -925,7 +930,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+						(xy 0.762 -1.778)
+						(xy 3.302 -1.778)
+						(xy 3.302 1.778)
+						(xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -937,7 +945,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+						(xy 1.016 0)
+						(xy 2.032 0.381)
+						(xy 2.032 -0.381)
+						(xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -960,7 +971,8 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
+						(xy 2.54 2.54)
+						(xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -994,7 +1006,9 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+						(xy 2.54 -2.54)
+						(xy 2.54 0)
+						(xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -1006,7 +1020,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+						(xy 2.794 0.508)
+						(xy 2.921 0.381)
+						(xy 3.683 0.381)
+						(xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -1018,7 +1035,10 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+						(xy 3.302 0.381)
+						(xy 2.921 -0.254)
+						(xy 3.683 -0.254)
+						(xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -7518,7 +7538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 			(at 251.46 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -8007,7 +8027,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_VQFN-RHL-14"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_RHL_VQFN-14-1EP_3.5x3.5mm_P0.5mm_EP2.05x2.05mm"
 			(at 76.2 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -8215,7 +8235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_VQFN-RHL-14"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_RHL_VQFN-14-1EP_3.5x3.5mm_P0.5mm_EP2.05x2.05mm"
 			(at 69.85 63.5 90)
 			(hide yes)
 			(show_name no)
@@ -9969,7 +9989,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 			(at 195.58 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12167,7 +12187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 			(at 195.58 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -13776,7 +13796,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 			(at 195.58 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -16062,7 +16082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AO_DFN3x3A_8L_EP1_P_DFN-10-1EP_3x3mm_P0.65mm_EP1.98x2.45mm"
+		(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:AlphaOmega_AON7544_3x3mm_P0.65mm_EP1.98x2.45mm"
 			(at 251.46 123.19 0)
 			(hide yes)
 			(show_name no)

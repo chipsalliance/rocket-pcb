@@ -26,7 +26,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at -1.905 13.335 0)
+				(at -0.635 13.335 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -37,7 +37,7 @@
 				)
 			)
 			(property "Value" "Conn_mikroBUS_Host_2x8"
-				(at -8.89 -15.24 0)
+				(at -7.62 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -48,7 +48,7 @@
 				)
 			)
 			(property "Footprint" "Conn_mikroBUS_Host_2x8"
-				(at -10.795 -0.635 0)
+				(at -9.525 -0.635 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -60,7 +60,7 @@
 				)
 			)
 			(property "Datasheet" "https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf"
-				(at 0 0 0)
+				(at 1.27 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -71,7 +71,7 @@
 				)
 			)
 			(property "Description" "mikroBUS Host Connector"
-				(at 0 0 0)
+				(at 1.27 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -105,7 +105,7 @@
 			)
 			(symbol "Conn_mikroBUS_Host_2x8_0_0"
 				(pin bidirectional line
-					(at -11.43 10.16 0)
+					(at -10.16 10.16 0)
 					(length 2.54)
 					(name "AN"
 						(effects
@@ -123,7 +123,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 7.62 0)
+					(at -10.16 7.62 0)
 					(length 2.54)
 					(name "RST"
 						(effects
@@ -141,7 +141,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 5.08 0)
+					(at -10.16 5.08 0)
 					(length 2.54)
 					(name "CS"
 						(effects
@@ -159,7 +159,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 2.54 0)
+					(at -10.16 2.54 0)
 					(length 2.54)
 					(name "SCK"
 						(effects
@@ -177,7 +177,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 0 0)
+					(at -10.16 0 0)
 					(length 2.54)
 					(name "MISO"
 						(effects
@@ -195,7 +195,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -11.43 -2.54 0)
+					(at -10.16 -2.54 0)
 					(length 2.54)
 					(name "MOSI"
 						(effects
@@ -213,7 +213,7 @@
 					)
 				)
 				(pin power_in line
-					(at -11.43 -5.08 0)
+					(at -10.16 -5.08 0)
 					(length 2.54)
 					(name "3V3"
 						(effects
@@ -231,7 +231,7 @@
 					)
 				)
 				(pin power_in line
-					(at -11.43 -7.62 0)
+					(at -10.16 -7.62 0)
 					(length 2.54)
 					(name "GND1"
 						(effects
@@ -249,7 +249,7 @@
 					)
 				)
 				(pin power_in line
-					(at 11.43 -7.62 180)
+					(at 12.7 -7.62 180)
 					(length 2.54)
 					(name "GND2"
 						(effects
@@ -267,7 +267,7 @@
 					)
 				)
 				(pin power_in line
-					(at 11.43 -5.08 180)
+					(at 12.7 -5.08 180)
 					(length 2.54)
 					(name "5V"
 						(effects
@@ -285,7 +285,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 -2.54 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
 					(name "SDA"
 						(effects
@@ -303,7 +303,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 0 180)
+					(at 12.7 0 180)
 					(length 2.54)
 					(name "SCL"
 						(effects
@@ -321,7 +321,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 2.54 180)
+					(at 12.7 2.54 180)
 					(length 2.54)
 					(name "TX"
 						(effects
@@ -339,7 +339,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 5.08 180)
+					(at 12.7 5.08 180)
 					(length 2.54)
 					(name "RX"
 						(effects
@@ -357,7 +357,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 7.62 180)
+					(at 12.7 7.62 180)
 					(length 2.54)
 					(name "INT"
 						(effects
@@ -375,7 +375,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 11.43 10.16 180)
+					(at 12.7 10.16 180)
 					(length 2.54)
 					(name "PWM"
 						(effects
@@ -396,7 +396,12 @@
 			(symbol "Conn_mikroBUS_Host_2x8_1_1"
 				(polyline
 					(pts
-						(xy -8.89 12.7) (xy 8.89 12.7) (xy 8.89 -10.16) (xy 6.35 -12.7) (xy -8.89 -12.7) (xy -8.89 12.7)
+						(xy -7.62 12.7)
+						(xy 10.16 12.7)
+						(xy 10.16 -10.16)
+						(xy 7.62 -12.7)
+						(xy -7.62 -12.7)
+						(xy -7.62 12.7)
 					)
 					(stroke
 						(width 0)
@@ -6054,7 +6059,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Conn_mikroBUS_Host_2x8")
-		(at 209.55 53.34 0)
+		(at 208.28 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6084,7 +6089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Connector:Conn_mikroBUS_Host_2x8_P2.54mm"
+		(property "Footprint" "CHIPSAlliance_Connector:Conn_mikroBUS_Host_2x08_P2.54mm"
 			(at 198.755 53.975 0)
 			(hide yes)
 			(show_name no)

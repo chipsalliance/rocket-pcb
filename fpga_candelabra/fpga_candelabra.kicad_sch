@@ -20,7 +20,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 8.89 0)
+				(at 1.27 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -30,7 +30,7 @@
 				)
 			)
 			(property "Value" "PinHeader_2x05P_USB_2.0_Motherboard_9Pin"
-				(at 0 -9.525 0)
+				(at 1.27 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -39,8 +39,8 @@
 					)
 				)
 			)
-			(property "Footprint" "CHIPSAlliance_Connector:USB_9P_P2.54mm_Horizontal"
-				(at 0 0 0)
+			(property "Footprint" "CHIPSAlliance_Connector:PinHeader_2x05_P2.54mm_Horizontal_USB_NoPin2"
+				(at 1.27 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -51,7 +51,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at -8.89 0 0)
+				(at -7.62 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -62,7 +62,7 @@
 				)
 			)
 			(property "Description" "ATX Motherboard Internal 9Pin USB2.0 Header"
-				(at -8.89 0 0)
+				(at -7.62 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -74,8 +74,8 @@
 			)
 			(symbol "PinHeader_2x05P_USB_2.0_Motherboard_9Pin_1_1"
 				(rectangle
-					(start -10.16 7.62)
-					(end 10.16 -7.62)
+					(start -8.89 7.62)
+					(end 11.43 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -85,7 +85,7 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 5.08 0)
+					(at -12.7 5.08 0)
 					(length 3.81)
 					(name "SH"
 						(effects
@@ -103,7 +103,7 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 2.54 0)
+					(at -12.7 2.54 0)
 					(length 3.81)
 					(name "P1_GND"
 						(effects
@@ -121,7 +121,7 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 2.54 180)
+					(at 15.24 2.54 180)
 					(length 3.81)
 					(name "P2_GND"
 						(effects
@@ -139,7 +139,7 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 0 0)
+					(at -12.7 0 0)
 					(length 3.81)
 					(name "P1_D+"
 						(effects
@@ -157,7 +157,7 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 0 180)
+					(at 15.24 0 180)
 					(length 3.81)
 					(name "P2_D+"
 						(effects
@@ -175,7 +175,7 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 -2.54 0)
+					(at -12.7 -2.54 0)
 					(length 3.81)
 					(name "P1_D-"
 						(effects
@@ -193,7 +193,7 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 -2.54 180)
+					(at 15.24 -2.54 180)
 					(length 3.81)
 					(name "P2_D-"
 						(effects
@@ -211,7 +211,7 @@
 					)
 				)
 				(pin passive line
-					(at -13.97 -5.08 0)
+					(at -12.7 -5.08 0)
 					(length 3.81)
 					(name "P1_VBUS"
 						(effects
@@ -229,7 +229,7 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 -5.08 180)
+					(at 15.24 -5.08 180)
 					(length 3.81)
 					(name "P2_VBUS"
 						(effects
@@ -4323,7 +4323,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:PinHeader_2x05P_USB_2.0_Motherboard_9Pin")
-		(at 129.54 29.21 0)
+		(at 128.27 29.21 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4354,7 +4354,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Connector:USB_9P_P2.54mm_Horizontal"
+		(property "Footprint" "CHIPSAlliance_Connector:PinHeader_2x05_P2.54mm_Horizontal_USB_NoPin2"
 			(at 129.54 29.21 0)
 			(hide yes)
 			(show_name no)
