@@ -22,7 +22,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 0 0)
+				(at -5.08 5.08 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -31,7 +31,7 @@
 				)
 			)
 			(property "Value" "ACA-SPI-004-K02"
-				(at 0 -15.24 0)
+				(at -5.08 -10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -39,8 +39,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "CHIPSAlliance_Connector:ACA-SPI-004"
-				(at 0 -17.78 0)
+			(property "Footprint" "CHIPSAlliance_Connector:SOIC-Socket_LOTES_ACA-SPI-004_2x04_P1.27mm"
+				(at -5.08 -12.7 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -50,7 +50,7 @@
 				)
 			)
 			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20201125/C962129_3BCCA5D90998541809E80F476B537BA8.pdf"
-				(at 0 -20.32 0)
+				(at -5.08 -15.24 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -60,7 +60,7 @@
 				)
 			)
 			(property "Description" "SPI 8PIN SMT 1.27MM PITCH, BLACK, HF SPI Socket"
-				(at 0 0 0)
+				(at -5.08 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -69,7 +69,7 @@
 				)
 			)
 			(property "ki_keywords" "SPI Socket"
-				(at 0 0 0)
+				(at -5.08 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -80,7 +80,12 @@
 			(symbol "ACA-SPI-004-K02_0_1"
 				(polyline
 					(pts
-						(xy 5.08 0) (xy 5.08 -3.81) (xy 6.35 -5.08) (xy 6.35 -7.62) (xy 5.08 -8.89) (xy 5.08 -12.7)
+						(xy 0 5.08)
+						(xy 0 1.27)
+						(xy 1.27 0)
+						(xy 1.27 -2.54)
+						(xy 0 -3.81)
+						(xy 0 -7.62)
 					)
 					(stroke
 						(width 0.254)
@@ -91,8 +96,8 @@
 					)
 				)
 				(rectangle
-					(start 0 0)
-					(end 10.16 -12.7)
+					(start -5.08 5.08)
+					(end 5.08 -7.62)
 					(stroke
 						(width 0.254)
 						(type solid)
@@ -102,7 +107,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 -2.54 0)
+					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -120,7 +125,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 -5.08 0)
+					(at -7.62 0 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -138,7 +143,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 -7.62 0)
+					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "3"
 						(effects
@@ -156,7 +161,7 @@
 					)
 				)
 				(pin passive line
-					(at -2.54 -10.16 0)
+					(at -7.62 -5.08 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -174,7 +179,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -10.16 180)
+					(at 7.62 -5.08 180)
 					(length 2.54)
 					(name "5"
 						(effects
@@ -192,7 +197,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -7.62 180)
+					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "6"
 						(effects
@@ -210,7 +215,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -5.08 180)
+					(at 7.62 0 180)
 					(length 2.54)
 					(name "7"
 						(effects
@@ -228,7 +233,7 @@
 					)
 				)
 				(pin passive line
-					(at 12.7 -2.54 180)
+					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "8"
 						(effects
@@ -252,7 +257,6 @@
 			(pin_names
 				(offset 0)
 			)
-			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
@@ -260,8 +264,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Value" "GND"
@@ -277,8 +280,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Datasheet" ""
@@ -286,17 +288,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "ki_keywords" "global power"
@@ -304,14 +296,26 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
+				)
+			)
+			(property "ki_description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					) hide
 				)
 			)
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -348,7 +352,6 @@
 			(pin_names
 				(offset 0)
 			)
-			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
@@ -356,8 +359,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Value" "VADJ"
@@ -373,8 +375,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Datasheet" ""
@@ -382,17 +383,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VADJ\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "ki_keywords" "global power"
@@ -400,14 +391,22 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
+				)
+			)
+			(property "ki_description" "Power symbol creates a global label with name \"VADJ\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					) hide
 				)
 			)
 			(symbol "VADJ_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.762 1.27)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -419,7 +418,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -431,7 +431,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.54)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2377,7 +2378,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:ACA-SPI-004-K02")
-		(at 182.88 101.6 0)
+		(at 187.96 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2400,7 +2401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CHIPSAlliance_Connector:ACA-SPI-004"
+		(property "Footprint" "CHIPSAlliance_Connector:SOIC-Socket_LOTES_ACA-SPI-004_2x04_P1.27mm"
 			(at 182.88 119.38 0)
 			(effects
 				(font

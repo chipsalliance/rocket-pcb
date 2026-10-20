@@ -246,7 +246,6 @@
 			(pin_names
 				(offset 0)
 			)
-			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
@@ -254,8 +253,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Value" "GND"
@@ -271,8 +269,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "Datasheet" ""
@@ -280,17 +277,7 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
 				)
 			)
 			(property "ki_keywords" "global power"
@@ -298,14 +285,26 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-					(hide yes)
+					) hide
+				)
+			)
+			(property "ki_description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					) hide
 				)
 			)
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
