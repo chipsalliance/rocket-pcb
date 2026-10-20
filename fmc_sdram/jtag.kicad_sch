@@ -25,7 +25,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 1.27 0)
+				(at -12.7 19.05 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -36,7 +36,7 @@
 				)
 			)
 			(property "Value" "Conn_JTAG_20"
-				(at 0 -38.1 0)
+				(at -12.7 -20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -47,7 +47,7 @@
 				)
 			)
 			(property "Footprint" "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical"
-				(at 0 -39.37 0)
+				(at -12.7 -21.59 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -59,7 +59,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.segger.com/products/debug-probes/j-link/technology/interface-description"
-				(at 0 -43.18 0)
+				(at -12.7 -25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -71,7 +71,7 @@
 				)
 			)
 			(property "Description" "Standard IDC20 Pinheader Connector, ARM legacy JTAG and SWD interface"
-				(at 0 0 0)
+				(at -12.7 17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -105,8 +105,8 @@
 			)
 			(symbol "Conn_JTAG_20_0_1"
 				(rectangle
-					(start 0 0)
-					(end 25.4 -35.56)
+					(start -12.7 17.78)
+					(end 12.7 -17.78)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -116,8 +116,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 -13.97)
-					(end 10.16 -24.13)
+					(start -10.16 3.81)
+					(end -2.54 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -127,8 +127,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 -24.13)
-					(end 10.16 -26.67)
+					(start -10.16 -6.35)
+					(end -2.54 -8.89)
 					(stroke
 						(width 0)
 						(type default)
@@ -138,8 +138,8 @@
 					)
 				)
 				(rectangle
-					(start 9.906 0)
-					(end 10.414 -1.016)
+					(start -2.794 17.78)
+					(end -2.286 16.764)
 					(stroke
 						(width 0)
 						(type default)
@@ -149,8 +149,8 @@
 					)
 				)
 				(rectangle
-					(start 9.906 -34.544)
-					(end 10.414 -35.56)
+					(start -2.794 -16.764)
+					(end -2.286 -17.78)
 					(stroke
 						(width 0)
 						(type default)
@@ -160,8 +160,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 -13.97)
-					(end 17.78 -24.13)
+					(start -2.54 3.81)
+					(end 5.08 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -171,8 +171,8 @@
 					)
 				)
 				(rectangle
-					(start 10.16 -24.13)
-					(end 17.78 -26.67)
+					(start -2.54 -6.35)
+					(end 5.08 -8.89)
 					(stroke
 						(width 0)
 						(type default)
@@ -182,8 +182,8 @@
 					)
 				)
 				(rectangle
-					(start 12.446 0)
-					(end 12.954 -1.016)
+					(start -0.254 17.78)
+					(end 0.254 16.764)
 					(stroke
 						(width 0)
 						(type default)
@@ -193,8 +193,8 @@
 					)
 				)
 				(rectangle
-					(start 14.986 0)
-					(end 15.494 -1.016)
+					(start 2.286 17.78)
+					(end 2.794 16.764)
 					(stroke
 						(width 0)
 						(type default)
@@ -204,8 +204,8 @@
 					)
 				)
 				(rectangle
-					(start 17.78 -13.97)
-					(end 25.4 -24.13)
+					(start 5.08 3.81)
+					(end 12.7 -6.35)
 					(stroke
 						(width 0)
 						(type default)
@@ -215,8 +215,8 @@
 					)
 				)
 				(rectangle
-					(start 17.78 -24.13)
-					(end 25.4 -26.67)
+					(start 5.08 -6.35)
+					(end 12.7 -8.89)
 					(stroke
 						(width 0)
 						(type default)
@@ -226,8 +226,8 @@
 					)
 				)
 				(rectangle
-					(start 24.384 -15.494)
-					(end 25.4 -14.986)
+					(start 11.684 2.286)
+					(end 12.7 2.794)
 					(stroke
 						(width 0)
 						(type default)
@@ -237,8 +237,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -4.826)
-					(end 24.384 -5.334)
+					(start 12.7 12.954)
+					(end 11.684 12.446)
 					(stroke
 						(width 0)
 						(type default)
@@ -248,8 +248,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -7.366)
-					(end 24.384 -7.874)
+					(start 12.7 10.414)
+					(end 11.684 9.906)
 					(stroke
 						(width 0)
 						(type default)
@@ -259,8 +259,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -12.954)
-					(end 24.384 -12.446)
+					(start 12.7 4.826)
+					(end 11.684 5.334)
 					(stroke
 						(width 0)
 						(type default)
@@ -270,8 +270,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -18.034)
-					(end 24.384 -17.526)
+					(start 12.7 -0.254)
+					(end 11.684 0.254)
 					(stroke
 						(width 0)
 						(type default)
@@ -281,8 +281,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -20.574)
-					(end 24.384 -20.066)
+					(start 12.7 -2.794)
+					(end 11.684 -2.286)
 					(stroke
 						(width 0)
 						(type default)
@@ -292,8 +292,8 @@
 					)
 				)
 				(rectangle
-					(start 25.4 -30.226)
-					(end 24.384 -30.734)
+					(start 12.7 -12.446)
+					(end 11.684 -12.954)
 					(stroke
 						(width 0)
 						(type default)
@@ -303,7 +303,7 @@
 					)
 				)
 				(text "SWCLK"
-					(at 8.89 -15.24 0)
+					(at -3.81 2.54 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -312,7 +312,7 @@
 					)
 				)
 				(text "SWDIO\n"
-					(at 8.89 -17.78 0)
+					(at -3.81 0 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -321,7 +321,7 @@
 					)
 				)
 				(text "SWO\n"
-					(at 8.89 -20.32 0)
+					(at -3.81 -2.54 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -330,7 +330,7 @@
 					)
 				)
 				(text "SWD"
-					(at 8.89 -25.4 0)
+					(at -3.81 -7.62 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -339,7 +339,7 @@
 					)
 				)
 				(text "TCKC"
-					(at 16.51 -15.24 0)
+					(at 3.81 2.54 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -348,7 +348,7 @@
 					)
 				)
 				(text "TMSC\n"
-					(at 16.51 -17.78 0)
+					(at 3.81 0 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -357,7 +357,7 @@
 					)
 				)
 				(text "cJTAG\n"
-					(at 16.51 -25.4 0)
+					(at 3.81 -7.62 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -366,7 +366,7 @@
 					)
 				)
 				(text "JTAG\n"
-					(at 24.13 -25.4 0)
+					(at 11.43 -7.62 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -377,8 +377,8 @@
 			)
 			(symbol "Conn_JTAG_20_1_1"
 				(rectangle
-					(start 24.384 -23.114)
-					(end 25.4 -22.606)
+					(start 11.684 -5.334)
+					(end 12.7 -4.826)
 					(stroke
 						(width 0)
 						(type default)
@@ -388,7 +388,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 2.54 270)
+					(at -2.54 20.32 270)
 					(length 2.54)
 					(name "VTREF"
 						(effects
@@ -406,7 +406,7 @@
 					)
 				)
 				(pin power_in line
-					(at 12.7 2.54 270)
+					(at 0 20.32 270)
 					(length 2.54)
 					(name "VDD/NC"
 						(effects
@@ -426,7 +426,7 @@
 					(alternate "VDD" power_in line)
 				)
 				(pin output line
-					(at 27.94 -5.08 180)
+					(at 15.24 12.7 180)
 					(length 2.54)
 					(name "~{TRST}"
 						(effects
@@ -444,7 +444,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -462,7 +462,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -22.86 180)
+					(at 15.24 -5.08 180)
 					(length 2.54)
 					(name "TDI"
 						(effects
@@ -480,7 +480,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -499,7 +499,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -17.78 180)
+					(at 15.24 0 180)
 					(length 2.54)
 					(name "TMS"
 						(effects
@@ -519,7 +519,7 @@
 					(alternate "TMSC" bidirectional line)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -538,7 +538,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -15.24 180)
+					(at 15.24 2.54 180)
 					(length 2.54)
 					(name "TCK"
 						(effects
@@ -558,7 +558,7 @@
 					(alternate "TCKC" output line)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -577,7 +577,7 @@
 					)
 				)
 				(pin input line
-					(at 27.94 -12.7 180)
+					(at 15.24 5.08 180)
 					(length 2.54)
 					(name "RTCK"
 						(effects
@@ -595,7 +595,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -614,7 +614,7 @@
 					)
 				)
 				(pin input line
-					(at 27.94 -20.32 180)
+					(at 15.24 -2.54 180)
 					(length 2.54)
 					(name "TDO"
 						(effects
@@ -633,7 +633,7 @@
 					(alternate "SWO" input line)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -652,7 +652,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -7.62 180)
+					(at 15.24 10.16 180)
 					(length 2.54)
 					(name "~{SRST}"
 						(effects
@@ -670,7 +670,7 @@
 					)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -689,7 +689,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -30.48 180)
+					(at 15.24 -12.7 180)
 					(length 2.54)
 					(name "NC/DBGRQ"
 						(effects
@@ -709,7 +709,7 @@
 					(alternate "NC" no_connect line)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -728,7 +728,7 @@
 					)
 				)
 				(pin power_out line
-					(at 15.24 2.54 270)
+					(at 2.54 20.32 270)
 					(length 2.54)
 					(name "5V/DBGACK"
 						(effects
@@ -748,7 +748,7 @@
 					(alternate "DBGACK" input line)
 				)
 				(pin power_in line
-					(at 10.16 -38.1 90)
+					(at -2.54 -20.32 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -776,7 +776,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at 1.27 1.27 0)
+				(at -11.43 24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -786,7 +786,7 @@
 				)
 			)
 			(property "Value" "TXS02612RTWR"
-				(at 0 -48.26 0)
+				(at -12.7 -25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -797,7 +797,7 @@
 				)
 			)
 			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
-				(at 0 -50.8 0)
+				(at -12.7 -27.94 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -809,7 +809,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/txs02612.pdf"
-				(at 0 -53.34 0)
+				(at -12.7 -30.48 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -821,7 +821,7 @@
 				)
 			)
 			(property "Description" "SDIO Port Expander With Voltage-Level translation, 1.1-V to 3.6-V"
-				(at 0 0 0)
+				(at -12.7 22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -855,8 +855,8 @@
 			)
 			(symbol "TXS02612RTWR_0_1"
 				(rectangle
-					(start 0 0)
-					(end 25.4 -46.99)
+					(start -12.7 22.86)
+					(end 12.7 -22.86)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -867,7 +867,10 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 -8.89) (xy 6.35 -8.89) (xy 6.35 -21.59) (xy 3.81 -21.59)
+						(xy -8.89 13.97)
+						(xy -6.35 13.97)
+						(xy -6.35 1.27)
+						(xy -8.89 1.27)
 					)
 					(stroke
 						(width 0)
@@ -879,7 +882,8 @@
 				)
 				(polyline
 					(pts
-						(xy 4.826 -30.226) (xy 5.842 -30.226)
+						(xy -7.874 -7.366)
+						(xy -6.858 -7.366)
 					)
 					(stroke
 						(width 0)
@@ -891,7 +895,9 @@
 				)
 				(polyline
 					(pts
-						(xy 5.334 -29.972) (xy 5.842 -30.226) (xy 5.334 -30.48)
+						(xy -7.366 -7.112)
+						(xy -6.858 -7.366)
+						(xy -7.366 -7.62)
 					)
 					(stroke
 						(width 0)
@@ -903,7 +909,8 @@
 				)
 				(polyline
 					(pts
-						(xy 6.35 -22.86) (xy 12.7 -22.86)
+						(xy -6.35 0)
+						(xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -915,7 +922,11 @@
 				)
 				(polyline
 					(pts
-						(xy 8.382 -23.368) (xy 9.398 -23.368) (xy 9.398 -22.352) (xy 8.382 -22.352) (xy 8.382 -23.368)
+						(xy -4.318 -0.508)
+						(xy -3.302 -0.508)
+						(xy -3.302 0.508)
+						(xy -4.318 0.508)
+						(xy -4.318 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -927,7 +938,9 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -22.86) (xy 8.89 -40.64) (xy 12.7 -40.64)
+						(xy -3.81 0)
+						(xy -3.81 -17.78)
+						(xy 0 -17.78)
 					)
 					(stroke
 						(width 0)
@@ -939,7 +952,11 @@
 				)
 				(polyline
 					(pts
-						(xy 10.922 -17.018) (xy 11.938 -17.018) (xy 11.938 -16.002) (xy 10.922 -16.002) (xy 10.922 -17.018)
+						(xy -1.778 5.842)
+						(xy -0.762 5.842)
+						(xy -0.762 6.858)
+						(xy -1.778 6.858)
+						(xy -1.778 5.842)
 					)
 					(stroke
 						(width 0)
@@ -951,7 +968,8 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -16.51) (xy 5.842 -30.226)
+						(xy -1.27 6.35)
+						(xy -6.858 -7.366)
 					)
 					(stroke
 						(width 0)
@@ -963,7 +981,8 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -22.352) (xy 11.43 -16.51)
+						(xy -1.27 0.508)
+						(xy -1.27 6.35)
 					)
 					(stroke
 						(width 0)
@@ -975,7 +994,9 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -23.368) (xy 11.43 -34.29) (xy 12.7 -34.29)
+						(xy -1.27 -0.508)
+						(xy -1.27 -11.43)
+						(xy 0 -11.43)
 					)
 					(stroke
 						(width 0)
@@ -987,7 +1008,10 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -21.59) (xy 12.7 -24.384) (xy 16.51 -22.86) (xy 12.7 -21.59)
+						(xy 0 1.27)
+						(xy 0 -1.524)
+						(xy 3.81 0)
+						(xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -999,7 +1023,10 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -39.37) (xy 12.7 -42.164) (xy 16.51 -40.64) (xy 12.7 -39.37)
+						(xy 0 -16.51)
+						(xy 0 -19.304)
+						(xy 3.81 -17.78)
+						(xy 0 -16.51)
 					)
 					(stroke
 						(width 0)
@@ -1011,7 +1038,8 @@
 				)
 				(polyline
 					(pts
-						(xy 16.51 -22.86) (xy 17.78 -22.86)
+						(xy 3.81 0)
+						(xy 5.08 0)
 					)
 					(stroke
 						(width 0)
@@ -1023,7 +1051,8 @@
 				)
 				(polyline
 					(pts
-						(xy 16.51 -40.64) (xy 17.78 -40.64)
+						(xy 3.81 -17.78)
+						(xy 5.08 -17.78)
 					)
 					(stroke
 						(width 0)
@@ -1035,7 +1064,8 @@
 				)
 				(polyline
 					(pts
-						(xy 17.78 -21.59) (xy 17.78 -21.59)
+						(xy 5.08 1.27)
+						(xy 5.08 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1047,7 +1077,10 @@
 				)
 				(polyline
 					(pts
-						(xy 20.32 -8.89) (xy 17.78 -8.89) (xy 17.78 -21.59) (xy 20.32 -21.59)
+						(xy 7.62 13.97)
+						(xy 5.08 13.97)
+						(xy 5.08 1.27)
+						(xy 7.62 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1059,7 +1092,10 @@
 				)
 				(polyline
 					(pts
-						(xy 20.32 -26.67) (xy 17.78 -26.67) (xy 17.78 -39.37) (xy 20.32 -39.37)
+						(xy 7.62 -3.81)
+						(xy 5.08 -3.81)
+						(xy 5.08 -16.51)
+						(xy 7.62 -16.51)
 					)
 					(stroke
 						(width 0)
@@ -1072,7 +1108,7 @@
 			)
 			(symbol "TXS02612RTWR_1_0"
 				(pin power_in line
-					(at 12.7 -49.53 90)
+					(at 0 -25.4 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1090,7 +1126,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -2.54 -12.7 0)
+					(at -15.24 10.16 0)
 					(length 2.54)
 					(name "DAT1A"
 						(effects
@@ -1108,7 +1144,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -33.02 180)
+					(at 15.24 -10.16 180)
 					(length 2.54)
 					(name "DAT2B1"
 						(effects
@@ -1126,7 +1162,7 @@
 					)
 				)
 				(pin input line
-					(at -2.54 -22.86 0)
+					(at -15.24 0 0)
 					(length 2.54)
 					(name "CLKA"
 						(effects
@@ -1144,7 +1180,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -35.56 180)
+					(at 15.24 -12.7 180)
 					(length 2.54)
 					(name "DAT3B1"
 						(effects
@@ -1162,7 +1198,7 @@
 					)
 				)
 				(pin power_in line
-					(at 12.7 -49.53 90)
+					(at 0 -25.4 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -1181,7 +1217,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -38.1 180)
+					(at 15.24 -15.24 180)
 					(length 2.54)
 					(name "CMDB1"
 						(effects
@@ -1199,7 +1235,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -40.64 180)
+					(at 15.24 -17.78 180)
 					(length 2.54)
 					(name "CLKB1"
 						(effects
@@ -1217,7 +1253,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -27.94 180)
+					(at 15.24 -5.08 180)
 					(length 2.54)
 					(name "DAT0B1"
 						(effects
@@ -1235,7 +1271,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -30.48 180)
+					(at 15.24 -7.62 180)
 					(length 2.54)
 					(name "DAT1B1"
 						(effects
@@ -1253,7 +1289,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -12.7 180)
+					(at 15.24 10.16 180)
 					(length 2.54)
 					(name "DAT1B0"
 						(effects
@@ -1271,7 +1307,7 @@
 					)
 				)
 				(pin power_in line
-					(at 20.32 2.54 270)
+					(at 7.62 25.4 270)
 					(length 2.54)
 					(name "VCCB1"
 						(effects
@@ -1289,7 +1325,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -10.16 180)
+					(at 15.24 12.7 180)
 					(length 2.54)
 					(name "DAT0B0"
 						(effects
@@ -1307,7 +1343,7 @@
 					)
 				)
 				(pin output line
-					(at 27.94 -22.86 180)
+					(at 15.24 0 180)
 					(length 2.54)
 					(name "CLKB0"
 						(effects
@@ -1325,7 +1361,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -20.32 180)
+					(at 15.24 2.54 180)
 					(length 2.54)
 					(name "CMDB0"
 						(effects
@@ -1343,7 +1379,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 2.54 270)
+					(at 5.08 25.4 270)
 					(length 2.54)
 					(name "VCCB0"
 						(effects
@@ -1361,7 +1397,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -17.78 180)
+					(at 15.24 5.08 180)
 					(length 2.54)
 					(name "DAT3B0"
 						(effects
@@ -1379,7 +1415,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 27.94 -15.24 180)
+					(at 15.24 7.62 180)
 					(length 2.54)
 					(name "DAT2B0"
 						(effects
@@ -1397,7 +1433,7 @@
 					)
 				)
 				(pin input line
-					(at -2.54 -30.48 0)
+					(at -15.24 -7.62 0)
 					(length 2.54)
 					(name "SEL"
 						(effects
@@ -1418,7 +1454,8 @@
 			(symbol "TXS02612RTWR_1_1"
 				(polyline
 					(pts
-						(xy 6.35 -16.51) (xy 13.208 -16.51)
+						(xy -6.35 6.35)
+						(xy 0.508 6.35)
 					)
 					(stroke
 						(width 0)
@@ -1430,7 +1467,8 @@
 				)
 				(polyline
 					(pts
-						(xy 12.7 -34.29) (xy 13.208 -34.29)
+						(xy 0 -11.43)
+						(xy 0.508 -11.43)
 					)
 					(stroke
 						(width 0)
@@ -1442,7 +1480,8 @@
 				)
 				(polyline
 					(pts
-						(xy 12.954 -15.494) (xy 16.002 -15.494)
+						(xy 0.254 7.366)
+						(xy 3.302 7.366)
 					)
 					(stroke
 						(width 0)
@@ -1454,7 +1493,8 @@
 				)
 				(polyline
 					(pts
-						(xy 12.954 -33.274) (xy 16.002 -33.274)
+						(xy 0.254 -10.414)
+						(xy 3.302 -10.414)
 					)
 					(stroke
 						(width 0)
@@ -1466,7 +1506,8 @@
 				)
 				(polyline
 					(pts
-						(xy 13.208 -14.986) (xy 15.748 -14.986)
+						(xy 0.508 7.874)
+						(xy 3.048 7.874)
 					)
 					(stroke
 						(width 0)
@@ -1478,7 +1519,8 @@
 				)
 				(polyline
 					(pts
-						(xy 13.208 -16.51) (xy 13.208 -15.494)
+						(xy 0.508 6.35)
+						(xy 0.508 7.366)
 					)
 					(stroke
 						(width 0)
@@ -1490,7 +1532,8 @@
 				)
 				(polyline
 					(pts
-						(xy 13.208 -32.766) (xy 15.748 -32.766)
+						(xy 0.508 -9.906)
+						(xy 3.048 -9.906)
 					)
 					(stroke
 						(width 0)
@@ -1502,7 +1545,8 @@
 				)
 				(polyline
 					(pts
-						(xy 13.208 -34.29) (xy 13.208 -33.274)
+						(xy 0.508 -11.43)
+						(xy 0.508 -10.414)
 					)
 					(stroke
 						(width 0)
@@ -1514,7 +1558,8 @@
 				)
 				(polyline
 					(pts
-						(xy 14.478 -14.986) (xy 14.478 -14.224)
+						(xy 1.778 7.874)
+						(xy 1.778 8.636)
 					)
 					(stroke
 						(width 0)
@@ -1526,7 +1571,8 @@
 				)
 				(polyline
 					(pts
-						(xy 14.478 -32.766) (xy 14.478 -32.004)
+						(xy 1.778 -9.906)
+						(xy 1.778 -9.144)
 					)
 					(stroke
 						(width 0)
@@ -1538,7 +1584,8 @@
 				)
 				(polyline
 					(pts
-						(xy 15.748 -16.51) (xy 15.748 -15.494)
+						(xy 3.048 6.35)
+						(xy 3.048 7.366)
 					)
 					(stroke
 						(width 0)
@@ -1550,7 +1597,8 @@
 				)
 				(polyline
 					(pts
-						(xy 15.748 -34.29) (xy 15.748 -33.274)
+						(xy 3.048 -11.43)
+						(xy 3.048 -10.414)
 					)
 					(stroke
 						(width 0)
@@ -1562,7 +1610,8 @@
 				)
 				(polyline
 					(pts
-						(xy 17.78 -16.51) (xy 15.748 -16.51)
+						(xy 5.08 6.35)
+						(xy 3.048 6.35)
 					)
 					(stroke
 						(width 0)
@@ -1574,7 +1623,8 @@
 				)
 				(polyline
 					(pts
-						(xy 17.78 -34.29) (xy 15.748 -34.29)
+						(xy 5.08 -11.43)
+						(xy 3.048 -11.43)
 					)
 					(stroke
 						(width 0)
@@ -1585,7 +1635,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -2.54 -15.24 0)
+					(at -15.24 7.62 0)
 					(length 2.54)
 					(name "DAT2A"
 						(effects
@@ -1603,7 +1653,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -2.54 -17.78 0)
+					(at -15.24 5.08 0)
 					(length 2.54)
 					(name "DAT3A"
 						(effects
@@ -1621,7 +1671,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -2.54 -20.32 0)
+					(at -15.24 2.54 0)
 					(length 2.54)
 					(name "CMDA"
 						(effects
@@ -1639,7 +1689,7 @@
 					)
 				)
 				(pin power_in line
-					(at 5.08 2.54 270)
+					(at -7.62 25.4 270)
 					(length 2.54)
 					(name "VCCA"
 						(effects
@@ -1657,7 +1707,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -2.54 -10.16 0)
+					(at -15.24 12.7 0)
 					(length 2.54)
 					(name "DAT0A"
 						(effects
@@ -1675,7 +1725,7 @@
 					)
 				)
 				(pin input line
-					(at 12.7 -49.53 90)
+					(at 0 -25.4 90)
 					(length 2.54)
 					(hide yes)
 					(name "GND"
@@ -3833,7 +3883,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Connector:Conn_JTAG_20")
-		(at 93.98 80.01 0)
+		(at 106.68 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4828,7 +4878,7 @@
 	)
 	(symbol
 		(lib_id "CHIPSAlliance_Logic:TXS02612RTWR")
-		(at 157.48 78.74 0)
+		(at 170.18 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5059,4 +5109,6 @@
 			)
 		)
 	)
+
+	(wire (pts (xy 170.18 128.27) (xy 170.18 127)) (stroke (width 0) (type default)) (uuid "709c4b8e-f006-52ea-a07f-c149ee0a4e29"))
 )
