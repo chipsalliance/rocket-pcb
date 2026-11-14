@@ -1,0 +1,960 @@
+[
+  {
+    "signal": "CAM_D2",
+    "direction": "in",
+    "fmc": "LA21_N",
+    "contact": "H26",
+    "vcu118_j22_package": "L35",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U17",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_MCLK",
+    "direction": "out",
+    "fmc": "LA00_N_CC",
+    "contact": "G7",
+    "vcu118_j22_package": "AL36",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U19",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "CAM_D0",
+    "direction": "in",
+    "fmc": "LA15_N",
+    "contact": "H20",
+    "vcu118_j22_package": "AG33",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U18",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D1",
+    "direction": "in",
+    "fmc": "LA21_P",
+    "contact": "H25",
+    "vcu118_j22_package": "M35",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U17",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_PCLK",
+    "direction": "in",
+    "fmc": "LA02_P",
+    "contact": "H7",
+    "vcu118_j22_package": "AJ32",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "True",
+    "translator": {
+      "reference": "U18",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D3",
+    "direction": "in",
+    "fmc": "LA19_P",
+    "contact": "H22",
+    "vcu118_j22_package": "N33",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U18",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D4",
+    "direction": "in",
+    "fmc": "LA15_P",
+    "contact": "H19",
+    "vcu118_j22_package": "AG32",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U18",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D5",
+    "direction": "in",
+    "fmc": "LA12_P",
+    "contact": "G15",
+    "vcu118_j22_package": "AH33",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U19",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D6",
+    "direction": "in",
+    "fmc": "LA07_P",
+    "contact": "H13",
+    "vcu118_j22_package": "AP36",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U19",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_D7",
+    "direction": "in",
+    "fmc": "LA08_N",
+    "contact": "G13",
+    "vcu118_j22_package": "AK30",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U19",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_HREF",
+    "direction": "in",
+    "fmc": "LA08_P",
+    "contact": "G12",
+    "vcu118_j22_package": "AK29",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U20",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_VSYNC",
+    "direction": "in",
+    "fmc": "LA04_P",
+    "contact": "H10",
+    "vcu118_j22_package": "AR37",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U20",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CAM_RESET",
+    "direction": "out",
+    "fmc": "LA03_N",
+    "contact": "G10",
+    "vcu118_j22_package": "AT40",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U20",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "CAM_PWDN",
+    "direction": "out",
+    "fmc": "LA04_N",
+    "contact": "H11",
+    "vcu118_j22_package": "AT37",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U20",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "CAM_SCL",
+    "direction": "bidir-OD",
+    "fmc": "LA03_P",
+    "contact": "G9",
+    "vcu118_j22_package": "AT39",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U16",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "6",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "CAM_SDA",
+    "direction": "bidir-OD",
+    "fmc": "LA02_N",
+    "contact": "H8",
+    "vcu118_j22_package": "AK32",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U16",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "5",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "LCD_DB0",
+    "direction": "bidir",
+    "fmc": "LA16_N",
+    "contact": "G19",
+    "vcu118_j22_package": "AH35",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U2",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB1",
+    "direction": "bidir",
+    "fmc": "LA17_N_CC",
+    "contact": "D21",
+    "vcu118_j22_package": "P34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U2",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB2",
+    "direction": "bidir",
+    "fmc": "LA20_P",
+    "contact": "G21",
+    "vcu118_j22_package": "N32",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U2",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB3",
+    "direction": "bidir",
+    "fmc": "LA20_N",
+    "contact": "G22",
+    "vcu118_j22_package": "M32",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U2",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB4",
+    "direction": "bidir",
+    "fmc": "LA18_P_CC",
+    "contact": "C22",
+    "vcu118_j22_package": "R31",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U21",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB5",
+    "direction": "bidir",
+    "fmc": "LA19_N",
+    "contact": "H23",
+    "vcu118_j22_package": "M33",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U21",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB6",
+    "direction": "bidir",
+    "fmc": "LA23_P",
+    "contact": "D23",
+    "vcu118_j22_package": "Y32",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U21",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB7",
+    "direction": "bidir",
+    "fmc": "LA18_N_CC",
+    "contact": "C23",
+    "vcu118_j22_package": "P31",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U21",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB8",
+    "direction": "bidir",
+    "fmc": "LA22_P",
+    "contact": "G24",
+    "vcu118_j22_package": "N34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U22",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB9",
+    "direction": "bidir",
+    "fmc": "LA28_N",
+    "contact": "H32",
+    "vcu118_j22_package": "L36",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U22",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB10",
+    "direction": "bidir",
+    "fmc": "LA31_P",
+    "contact": "G33",
+    "vcu118_j22_package": "P37",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U22",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB11",
+    "direction": "bidir",
+    "fmc": "LA30_P",
+    "contact": "H34",
+    "vcu118_j22_package": "N38",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U22",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB12",
+    "direction": "bidir",
+    "fmc": "LA30_N",
+    "contact": "H35",
+    "vcu118_j22_package": "M38",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U23",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB13",
+    "direction": "bidir",
+    "fmc": "LA32_N",
+    "contact": "H38",
+    "vcu118_j22_package": "K33",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U23",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB14",
+    "direction": "bidir",
+    "fmc": "LA27_P",
+    "contact": "C26",
+    "vcu118_j22_package": "V33",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U23",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_DB15",
+    "direction": "bidir",
+    "fmc": "LA27_N",
+    "contact": "C27",
+    "vcu118_j22_package": "V34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U23",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "/LCD_DIR"
+    }
+  },
+  {
+    "signal": "LCD_CSX",
+    "direction": "out",
+    "fmc": "LA00_P_CC",
+    "contact": "G6",
+    "vcu118_j22_package": "AL35",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U12",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_DCX",
+    "direction": "out",
+    "fmc": "LA01_P_CC",
+    "contact": "D8",
+    "vcu118_j22_package": "AL30",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U12",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_WRX",
+    "direction": "out",
+    "fmc": "LA01_N_CC",
+    "contact": "D9",
+    "vcu118_j22_package": "AL31",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U12",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_RDX",
+    "direction": "out",
+    "fmc": "LA10_P",
+    "contact": "C14",
+    "vcu118_j22_package": "AP35",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U12",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_RESET",
+    "direction": "out",
+    "fmc": "LA14_P",
+    "contact": "C18",
+    "vcu118_j22_package": "AG31",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U13",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_TE",
+    "direction": "in",
+    "fmc": "LA12_N",
+    "contact": "G16",
+    "vcu118_j22_package": "AH34",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U13",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "CTP_SCL",
+    "direction": "bidir-OD",
+    "fmc": "LA07_N",
+    "contact": "H14",
+    "vcu118_j22_package": "AP37",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U3",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "5",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "CTP_SDA",
+    "direction": "bidir-OD",
+    "fmc": "LA10_N",
+    "contact": "C15",
+    "vcu118_j22_package": "AR35",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U3",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "6",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "CTP_INT",
+    "direction": "bidir",
+    "fmc": "LA14_N",
+    "contact": "C19",
+    "vcu118_j22_package": "AH31",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U15",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "6",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "CTP_RST",
+    "direction": "out",
+    "fmc": "LA16_P",
+    "contact": "G18",
+    "vcu118_j22_package": "AG34",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U15",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "5",
+      "DIR_pin": null,
+      "direction": null
+    }
+  },
+  {
+    "signal": "LCD_BL_PWM",
+    "direction": "out",
+    "fmc": "LA11_P",
+    "contact": "H16",
+    "vcu118_j22_package": "AJ30",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U13",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_IM0",
+    "direction": "out",
+    "fmc": "LA11_N",
+    "contact": "H17",
+    "vcu118_j22_package": "AJ31",
+    "bank": "43",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U13",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "LCD_DIR",
+    "direction": "out",
+    "fmc": "LA33_P",
+    "contact": "G36",
+    "vcu118_j22_package": "L34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": null
+  },
+  {
+    "signal": "LCD_OE_N",
+    "direction": "out",
+    "fmc": "LA33_N",
+    "contact": "G37",
+    "vcu118_j22_package": "K34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": null
+  },
+  {
+    "signal": "CAM_POWER_EN",
+    "direction": "out",
+    "fmc": "LA28_P",
+    "contact": "H31",
+    "vcu118_j22_package": "M36",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U25",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "AF_POWER_EN",
+    "direction": "out",
+    "fmc": "LA32_P",
+    "contact": "H37",
+    "vcu118_j22_package": "L33",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U25",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "DBG_JTAG_TCK",
+    "direction": "in",
+    "fmc": "LA17_P_CC",
+    "contact": "D20",
+    "vcu118_j22_package": "R34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "True",
+    "translator": {
+      "reference": "U24",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "DBG_JTAG_TMS",
+    "direction": "in",
+    "fmc": "LA25_N",
+    "contact": "G28",
+    "vcu118_j22_package": "W34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U24",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "DBG_JTAG_TDI",
+    "direction": "in",
+    "fmc": "LA24_P",
+    "contact": "H28",
+    "vcu118_j22_package": "T34",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U24",
+      "channel": 3,
+      "A_pin": "5",
+      "B_pin": "12",
+      "DIR_pin": "7",
+      "direction": "GND"
+    }
+  },
+  {
+    "signal": "DBG_JTAG_TDO",
+    "direction": "out",
+    "fmc": "LA24_N",
+    "contact": "H29",
+    "vcu118_j22_package": "T35",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U24",
+      "channel": 4,
+      "A_pin": "6",
+      "B_pin": "11",
+      "DIR_pin": "8",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "DBG_UART_TX",
+    "direction": "out",
+    "fmc": "LA29_P",
+    "contact": "G30",
+    "vcu118_j22_package": "U35",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U25",
+      "channel": 1,
+      "A_pin": "3",
+      "B_pin": "14",
+      "DIR_pin": "1",
+      "direction": "VDD_VADJ"
+    }
+  },
+  {
+    "signal": "DBG_UART_RX",
+    "direction": "in",
+    "fmc": "LA29_N",
+    "contact": "G31",
+    "vcu118_j22_package": "T36",
+    "bank": "45",
+    "host_io": "LVCMOS18",
+    "is_input_clock": "False",
+    "translator": {
+      "reference": "U25",
+      "channel": 2,
+      "A_pin": "4",
+      "B_pin": "13",
+      "DIR_pin": "2",
+      "direction": "GND"
+    }
+  }
+]
