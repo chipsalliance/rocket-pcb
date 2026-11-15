@@ -1149,10 +1149,7 @@
     "carrier_component_clearance_verified": false,
     "cable_part_verified": false,
     "routing_plan": "Three 0.60/0.30 mm data escape vias to F.Cu. Flow-through ESD and a short ground branch. One broad D- tuning bend. Ground reference and impedance remain unverified.",
-    "previous_hinge_model_clearance_mm": 1.6,
-    "mechanical_assessment_version": "Centered USB-C and widened six-part support inlet",
-    "inlet_width_mm": 16,
-    "assumed_plug_side_clearance_mm": 1,
+    "mechanical_assessment_version": "Four screw-mounted FDM supports and flat module retainers",
     "nominal_USB_paths": {
       "A6": 46.6874771605753,
       "B6": 48.125942791632745,
@@ -1160,45 +1157,64 @@
       "B7": 48.125038720326174,
       "orientation_A_skew_mm": 1.7993600565091583e-06,
       "orientation_B_skew_mm": 0.0009040713065715522
-    }
+    },
+    "camera_cap_notch_width_mm": 16
   },
   "mechanical_prototype": {
-    "stage": "Simplified six-part printable prototype. Not physically tested.",
-    "local_artifacts": "doc.local/verification/fmc_dvp_lcd/usb-center-20261111",
-    "printed_parts": 6,
+    "stage": "FDM prototype with screw-retained modules. Physical fit and cable travel remain unverified.",
+    "printed_parts": 11,
     "PCB_mounting_screw_refs": [
       "H5",
-      "H6"
-    ],
-    "locating_peg_hole_refs": [
+      "H6",
       "H7",
       "H8"
     ],
-    "total_M2_screws": 4,
-    "nominal_printed_support_width_mm": 56.1,
-    "hinge_axes_and_modules_preserved": true,
-    "angle_step_deg": 5,
-    "minimum_sampled_camera_LCD_clearance_mm": 1.2862429369174322,
-    "USB_front_envelope_clearance_mm": 0,
-    "USB_back_envelope_clearance_mm": 0.5385164807134502,
+    "original_mounting_holes_unchanged": [
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "total_M2_screws": 13,
+    "screw_quantities": {
+      "M2x6_PCB": 4,
+      "M2x35_camera_axle": 1,
+      "M2x8_LCD_hinges": 2,
+      "M2x8_countersunk_LCD": 4,
+      "M2x10_countersunk_camera": 2
+    },
+    "nominal_printed_support_width_mm": 54,
+    "retention": "Four flat LCD tabs and one camera rear plate, with loose M2 nuts and trapped soft pads",
+    "snap_fits": false,
+    "printed_threads": false,
+    "M2_clearance_bore_mm": 2.6,
+    "camera_pivot_cad_mm": [
+      0,
+      -36,
+      4.4
+    ],
+    "LCD_pivot_cad_mm": [
+      -0.5,
+      -33.5,
+      14
+    ],
+    "print_process": {
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.2,
+      "perimeters": 3,
+      "infill_percent": 30,
+      "infill_pattern": "gyroid",
+      "camera_support_brim_mm": 3,
+      "supports": false
+    },
     "PCB_USB_side": "B.Cu",
+    "assumed_USB_plug_width_mm": 14,
     "physical_fit_and_forces_tested": false,
     "FPC_full_travel_verified": false,
-    "component_envelope_check": {
-      "components": 161,
-      "collisions": 0,
-      "motion_step_degrees": 5,
-      "FPC_and_carrier_excluded": true,
-      "assumed_height_mm": {
-        "default": 2.0,
-        "L1": 4.0
-      },
-      "package_heights_verified": false
-    },
     "source": "mechanical/camera_lcd",
     "generated_exports": "build/mechanical/camera_lcd",
-    "front_USB_candidate_interferes": true,
-    "USB_inlet_width_mm": 16
+    "validation_scope": "Nominal CAD bodies and exported meshes. Physical parts, cable bends, carrier fit and clamp forces require separate checks.",
+    "camera_cap_notch_width_mm": 16
   },
   "two_sku_translation": {
     "quad": "AiP74AVC4T774TA16.TR",

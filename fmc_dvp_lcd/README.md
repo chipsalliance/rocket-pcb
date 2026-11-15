@@ -117,19 +117,25 @@ Fabricator stackup, USB impedance, return paths, and hardware tests remain unver
 
 USB-C J4 is centered below the camera on the back at the front edge.
 The cable exits forward between the original front mounting points.
-The printed inlet is 16 mm wide for an assumed 14 mm wide plug.
-The assumed plug has about 0.54 mm minimum sampled clearance from the printed base.
+The camera cap has a 16 mm central notch. The assumed USB plug is 14 mm wide.
 Actual cable, carrier-board, and metal-bezel fit remain unverified.
 
-The simplified prototype uses two PCB mounting screws and two locating pegs.
-Two M2 screws lock the hinges. Sliding joints and release latches retain both
-modules. Printed fit, holding forces and hinge torque remain untested.
-The nominal support width is 56.1 mm. Mechanical metadata is recorded in
-`placement-rules.json`. Sources are in `mechanical/camera_lcd/`.
+The FDM prototype uses four small supports attached at H5-H8 with M2 screws.
+The original H1-H4 holes remain unchanged. Four flat tabs retain the LCD.
+A screwed rear plate retains the camera. Loose nuts replace printed snap fits.
+The design uses 11 printed parts and 13 M2 screws. Its printed width is 54 mm.
+The camera and LCD have independent hinges for nominal 0-90 degree travel.
+Use 0.4 mm nozzle and 0.2 mm layers as the slicing starting point.
+STL exports lie flat on the bed. Add a 3 mm brim when slicing the two camera supports.
+Soft back pads are trapped between the modules and retainers without adhesive.
+Pad material, clamp force, hinge torque, tolerances and cable travel need physical validation.
+Mechanical metadata is recorded in `placement-rules.json`.
+Sources are in `mechanical/camera_lcd/`.
 With FreeCAD installed, `cmake --build build --target mechanical` generates
 FCStd, STEP, STL, and motion meshes under `build/mechanical/camera_lcd/`.
 PCB outline and module geometry come from `reference.FCStd`.
 Update this reference and `parameters.json` when their geometry changes.
+Part STEP files retain assembly coordinates. STL orientations are recorded in `print-orientations.json`.
 Connector envelopes and support geometry are defined in `assembly.py`.
 Short USB connector stubs use three vias to reach F.Cu.
 The ESD device uses its optional flow-through lands and a short ground branch.
@@ -145,8 +151,7 @@ The camera uses a 1 mm high horizontal FH34SRJ-24S-0.5SH placement candidate. Th
 a vertical FH12-32S-0.5SVA footprint based on the manufacturer's staggered land
 pattern. Camera FPC thickness, exposed length, width and pin-1 orientation still need
 confirmation. The LCD contact face also remains unconfirmed. The camera
-base uses a raised bridge above the camera connector. External
-camera DVDD and AF feed links are DNP pending module confirmation. Both touch
+carrier leaves the connector area open. External camera DVDD and AF feed links are DNP pending module confirmation. Both touch
 reference selectors are DNP. Populate one only after verifying the supplied touch
 module's I/O voltage. CH347F datasheet V1.4 confirms the nominal 2.7 mm exposed
 pad. Assembly validation remains pending. The default backlight target is

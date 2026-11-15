@@ -25,22 +25,12 @@
       14,
       22,
       8
-    ],
-    "relief_min_cad_mm": [
-      -8,
-      -39.5,
-      0.7
-    ],
-    "relief_size_mm": [
-      16,
-      3.2,
-      1.35
     ]
   },
   "camera_pivot_cad_mm": [
     0,
-    -35.5,
-    4
+    -36,
+    4.4
   ],
   "lcd_pivot_cad_mm": [
     -0.5,
@@ -53,5 +43,29 @@
   ],
   "PCB_thickness_mm": 1.6,
   "assembly_pose_deg": 90,
-  "prototype_only": true
+  "prototype_only": true,
+  "reference_pivots_cad_mm": {
+    "camera": [
+      0,
+      -35.5,
+      4
+    ],
+    "lcd": [
+      -0.5,
+      -33.5,
+      14
+    ]
+  },
+  "module_offsets_cad_mm": {
+    "camera": [
+      0,
+      0,
+      0.25
+    ],
+    "lcd": [
+      0,
+      0,
+      0.33
+    ]
+  }
 }
