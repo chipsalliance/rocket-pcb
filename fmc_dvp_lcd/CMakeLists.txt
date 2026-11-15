@@ -26,7 +26,8 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_erc.rpt"
 
 add_custom_target(drc DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_drc.json")
 add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_drc.json"
-    COMMAND ${KICADCLI_PROGRAM} pcb drc --severity-all --schematic-parity
+    # Check all errors and warnings while honoring documented project exclusions.
+    COMMAND ${KICADCLI_PROGRAM} pcb drc --severity-error --severity-warning --schematic-parity
         --exit-code-violations --format json
         -o "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_drc.json"
         "${PROJECT_BASE}.kicad_pcb"

@@ -107,7 +107,10 @@ Native DRC reports zero unconnected items, geometric errors, and schematic parit
 No dangling copper, isolated fill, or narrow-copper warnings remain.
 ERC has no violations after replacing 47 local power labels with power symbols.
 The complete schematic pin-to-net map is unchanged.
-One footprint library mismatch warning remains in KiCad 10.0.8, for J4.
+J4 has one documented footprint library mismatch exclusion in the project settings.
+Its board-specific graphics and 3D model settings differ from the library.
+Pad numbers, copper, mask, paste and holes match the library.
+DRC reports zero unexcluded errors or warnings in KiCad 10.0.8.
 FID1-FID6 match the installed fiducial footprint and are excluded from the BOM.
 Some through vias lie in SMD pads. Confirm via filling and capping with the fabricator.
 Fabricator stackup, USB impedance, return paths, and hardware tests remain unverified.
@@ -153,15 +156,22 @@ mechanical check are required before the assembly can be frozen.
 
 Install KiCad 10 with its libraries, CMake 3.18 or later, Ninja and frugy.
 Initialize the `library` submodule before opening the project. FreeCAD is required for the mechanical target.
+Project library tables include the required official libraries and work without a personal KiCad configuration.
 Run these commands from the `fmc_dvp_lcd` directory:
 
 ```sh
 cmake -B build -G Ninja
-cmake --build build --target erc pdf eeprom
+cmake --build build --target erc drc pdf eeprom
 ```
 
-The `drc` target also checks schematic/PCB parity. The J4 library warning
-causes a nonzero DRC exit status. The `production` target exports
+The `drc` target checks errors, warnings and schematic/PCB parity, honoring project exclusions.
+To include excluded findings in a separate report, run:
+
+```sh
+kicad-cli pcb drc --severity-all --schematic-parity -o build/drc-all.rpt fmc_dvp_lcd.kicad_pcb
+```
+
+The `production` target exports
 development Gerbers, drill files, BOM and XML netlist.
 
 The FRU image targets the 8192-byte M24C64. The prototype serial number must be
