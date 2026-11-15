@@ -3,6 +3,10 @@
 Engineering prototype for a TY-OV5640-FD autofocus DVP camera, a 32-contact
 86-series 8080 LCD, and simultaneous CH347F JTAG/UART0 over USB-C.
 
+![FMC DVP/LCD top view](./image/fmc_dvp_lcd_3d_top.png)
+
+![FMC DVP/LCD bottom view](./image/fmc_dvp_lcd_3d_bot.png)
+
 Open `fmc_dvp_lcd.kicad_pro`. The six A4 sheets cover the system, FMC/FRU,
 camera, LCD/touch, USB debug, and power. The interfaces are designed for
 1.2 V, 1.5 V, or 1.8 V VADJ. The FRU still requests 1.8 V pending hardware
@@ -103,7 +107,8 @@ Native DRC reports zero unconnected items, geometric errors, and schematic parit
 No dangling copper, isolated fill, or narrow-copper warnings remain.
 ERC has no violations after replacing 47 local power labels with power symbols.
 The complete schematic pin-to-net map is unchanged.
-Seven footprint library mismatch warnings remain in KiCad 10.0.8, for J4 and FID1-FID6.
+One footprint library mismatch warning remains in KiCad 10.0.8, for J4.
+FID1-FID6 match the installed fiducial footprint and are excluded from the BOM.
 Some through vias lie in SMD pads. Confirm via filling and capping with the fabricator.
 Fabricator stackup, USB impedance, return paths, and hardware tests remain unverified.
 
@@ -155,8 +160,8 @@ cmake -B build -G Ninja
 cmake --build build --target erc pdf eeprom
 ```
 
-The `drc` target also checks schematic/PCB parity. The J4 and fiducial library warnings
-cause a nonzero DRC exit status. The `production` target exports
+The `drc` target also checks schematic/PCB parity. The J4 library warning
+causes a nonzero DRC exit status. The `production` target exports
 development Gerbers, drill files, BOM and XML netlist.
 
 The FRU image targets the 8192-byte M24C64. The prototype serial number must be

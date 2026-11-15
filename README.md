@@ -17,6 +17,7 @@ projects.
 | ---------------------------------------- | ------------------------------ |
 | [FMC_BASIC_PERI](./fmc_basic_peripheral) | JTAG, UART, GPIO, USB, I3C FMC |
 | [FMC_SDRAM](./fmc_sdram)                 | FMC of SDRAM and JTAG          |
+| [FMC_DVP_LCD](./fmc_dvp_lcd) | DVP camera, 8080 LCD/touch, and USB JTAG/UART prototype |
 
 ## PMOD
 

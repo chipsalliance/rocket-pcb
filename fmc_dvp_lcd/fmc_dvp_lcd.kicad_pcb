@@ -12502,7 +12502,7 @@
 		(layer "F.Cu")
 		(uuid "75911aab-8712-4178-859b-dad849bb5904")
 		(at 122.343703 64.489968)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID3"
 			(at 0 -1.5 0)
@@ -12551,7 +12551,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/884ee7e4-b9e7-5ee4-8db7-2db77a36ec00")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -12582,16 +12582,17 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 			)
 		)
 		(pad "" smd circle
 			(at 0 0)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "F.Cu" "F.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "91226459-9435-4dbb-b251-e9e1ab9ea597")
 		)
 		(embedded_fonts no)
@@ -26797,7 +26798,7 @@
 		(layer "F.Cu")
 		(uuid "eecc7666-a622-465b-b6b4-546ff64ce15a")
 		(at 80.843703 63.489968)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID5"
 			(at 2.25 0 0)
@@ -26846,7 +26847,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/0417b58a-b5df-5e5b-917b-50e4c4d25b87")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -26877,16 +26878,17 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 			)
 		)
 		(pad "" smd circle
 			(at 0 0)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "F.Cu" "F.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "7de7c5a2-8acc-48f7-9a87-04d8e48b0bc2")
 		)
 		(embedded_fonts no)
@@ -27195,7 +27197,7 @@
 		(layer "F.Cu")
 		(uuid "f4069002-02b7-4250-ba5b-555b3c240f35")
 		(at 122.343703 128.489968)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID1"
 			(at 0 1.5 0)
@@ -27244,7 +27246,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/b7ddc5ac-3611-57a1-b082-258561cc6326")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -27275,16 +27277,17 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 			)
 		)
 		(pad "" smd circle
 			(at 0 0)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "F.Cu" "F.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "8662d7f2-c6fd-4692-83cf-ff0ab595293a")
 		)
 		(embedded_fonts no)
@@ -28357,7 +28360,7 @@
 		(layer "B.Cu")
 		(uuid "05aec725-85f7-4ad5-adf2-be8e3f2809b1")
 		(at 119.843703 64.489968 180)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID4"
 			(at 0 1.5 0)
@@ -28408,7 +28411,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/3a3cd123-65f4-5d54-a6a5-3c5d2e32ef78")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -28439,7 +28442,7 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 				(justify mirror)
 			)
@@ -28447,9 +28450,10 @@
 		(pad "" smd circle
 			(at 0 0 180)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "B.Cu" "B.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "3c0efa94-a016-49a8-8e7c-05a7389160ce")
 		)
 		(embedded_fonts no)
@@ -45226,7 +45230,7 @@
 		(layer "B.Cu")
 		(uuid "67cd21e1-a5c1-49b5-b432-89bb423520df")
 		(at 119.843703 128.489968 180)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID2"
 			(at 0 -1.5 0)
@@ -45277,7 +45281,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/8b13dce4-bda0-59c2-9cbf-d0a39e83d36d")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -45308,7 +45312,7 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 				(justify mirror)
 			)
@@ -45316,9 +45320,10 @@
 		(pad "" smd circle
 			(at 0 0 180)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "B.Cu" "B.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "a0d12dca-ef4b-4355-b943-d3c0f9119a3c")
 		)
 		(embedded_fonts no)
@@ -45639,7 +45644,7 @@
 		(layer "B.Cu")
 		(uuid "82d04ded-ba9b-4a0a-8e9d-27c5ba33c77b")
 		(at 78.343703 63.489968 180)
-		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
+		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID6"
 			(at 0 -1.75 0)
@@ -45690,7 +45695,7 @@
 			)
 		)
 		(path "/1ce4231c-d3b2-52b8-8ade-c512b4cb74f4/a1ff9b21-c2df-501f-89ec-4acfd07005bb")
-		(attr smd)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -45721,7 +45726,7 @@
 			(effects
 				(font
 					(size 0.5 0.5)
-					(thickness 0.06)
+					(thickness 0.08)
 				)
 				(justify mirror)
 			)
@@ -45729,9 +45734,10 @@
 		(pad "" smd circle
 			(at 0 0 180)
 			(size 1 1)
+			(property pad_prop_fiducial_glob)
 			(layers "B.Cu" "B.Mask")
 			(solder_mask_margin 0.5)
-			(clearance 0.5)
+			(clearance 0.6)
 			(uuid "a10d9d4f-4a16-4431-94b1-db665ad1a79b")
 		)
 		(embedded_fonts no)
