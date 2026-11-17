@@ -540,7 +540,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:WQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm"
 				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -573,7 +573,18 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "WQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm*"
+			(property "ki_keywords" "Texas DDR regulator controller low-dropout regulator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "WQFN*1EP*3x3mm*P0.4mm*EP1.7x1.7mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -640,7 +651,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -17.78 180)
+					(at 5.08 -22.86 90)
 					(length 2.54)
 					(name "VTTGND"
 						(effects
@@ -676,7 +687,7 @@
 					)
 				)
 				(pin power_out line
-					(at -17.78 0 0)
+					(at 17.78 -12.7 180)
 					(length 2.54)
 					(name "VREF"
 						(effects
@@ -969,7 +980,7 @@
 					(start -15.24 20.32)
 					(end 15.24 -20.32)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1055,11 +1066,21 @@
 					)
 				)
 			)
+			(property "ki_fp_filters" "AlphaOmega?AON7544*3x3mm*P0.65mm*EP1.98x2.45mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "AON7544_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905)
-						(xy 0.254 -1.905)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -1071,8 +1092,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0)
-						(xy -2.54 0)
+						(xy 0.254 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -1084,8 +1104,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286)
-						(xy 0.762 1.27)
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1097,8 +1116,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508)
-						(xy 0.762 -0.508)
+						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
@@ -1110,8 +1128,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27)
-						(xy 0.762 -2.286)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
@@ -1123,10 +1140,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.778)
-						(xy 3.302 -1.778)
-						(xy 3.302 1.778)
-						(xy 0.762 1.778)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -1138,10 +1152,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0)
-						(xy 2.032 0.381)
-						(xy 2.032 -0.381)
-						(xy 1.016 0)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -1164,8 +1175,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54)
-						(xy 2.54 1.778)
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -1199,9 +1209,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54)
-						(xy 2.54 0)
-						(xy 0.762 0)
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -1213,10 +1221,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508)
-						(xy 2.921 0.381)
-						(xy 3.683 0.381)
-						(xy 3.81 0.254)
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -1228,10 +1233,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381)
-						(xy 2.921 -0.254)
-						(xy 3.683 -0.254)
-						(xy 3.302 0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1243,62 +1245,6 @@
 				)
 			)
 			(symbol "AON7544_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1328,6 +1274,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "[1,2,3]"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3539,26 +3503,8 @@
 		)
 		(uuid "9e380482-f263-42e9-80a3-0f6ba984efaa")
 	)
-	(wire
-		(pts
-			(xy 52.07 71.12) (xy 68.58 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1805257-e051-4e02-9a83-113d88eb667a")
-	)
-	(wire
-		(pts
-			(xy 105.41 96.52) (xy 105.41 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4eb797f-ca8b-40cf-925e-43e0d1b5b7ba")
-	)
+
+
 	(wire
 		(pts
 			(xy 121.92 146.05) (xy 121.92 151.13)
@@ -3719,16 +3665,7 @@
 		)
 		(uuid "bdfe23e7-170a-4f42-a989-464258582fe5")
 	)
-	(wire
-		(pts
-			(xy 105.41 88.9) (xy 104.14 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdfec6b1-86de-4460-a8de-155646d8466c")
-	)
+
 	(wire
 		(pts
 			(xy 101.6 163.83) (xy 102.87 163.83)
@@ -4433,85 +4370,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 105.41 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09c18887-1bff-4b37-805b-06f36726e697")
-		(property "Reference" "#PWR0221"
-			(at 105.41 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 105.41 100.6531 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 105.41 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c2caba86-6f58-4a73-848c-d9410ac43b30")
-		)
-		(instances
-			(project "fpga_candelabra"
-				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
-					(reference "#PWR0221")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	(symbol
 		(lib_id "Device:R_Small")
 		(at 60.96 63.5 90)
@@ -10971,4 +10830,102 @@
 			)
 		)
 	)
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "power:Earth")
+		(at 91.44 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8dce6ace-cf8c-55e7-9c5f-7f5943b98e5b")
+		(property "Reference" "#PWR0901"
+			(at 83.82 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 91.44 100.6531 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 91.44 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7929f6dd-99d3-5009-97cd-9b09ece190af")
+		)
+		(instances
+			(project "fpga_candelabra"
+				(path "/01ed9e92-4e50-4b41-90dc-10444aaec5f7/095efde8-9348-4a17-b275-a6dd2c6e4f2b"
+					(reference "#PWR0901")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire (pts (xy 91.44 93.98) (xy 91.44 96.52)) (stroke (width 0) (type default)) (uuid "ff8c8ad1-f49f-561e-8448-9740a47c98b9"))
+
+	(wire (pts (xy 52.07 71.12) (xy 60.96 71.12)) (stroke (width 0) (type default)) (uuid "dab5a0a4-76c7-578e-b4d7-06bf72453e0c"))
+
+	(label "DDR_VREF" (at 60.96 71.12 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "881d0c9c-3f5b-55ae-b5bb-f74fc1495a95"))
+
+	(wire (pts (xy 104.14 83.82) (xy 105.41 83.82)) (stroke (width 0) (type default)) (uuid "2f7b3016-dbe6-5f62-bc4c-a529e3ecac8e"))
+
+	(label "DDR_VREF" (at 105.41 83.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f0b83156-5395-5c2d-aa4e-977cad49db83"))
 )

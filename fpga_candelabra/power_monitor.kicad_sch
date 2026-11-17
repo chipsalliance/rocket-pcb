@@ -20,23 +20,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -8.89 -24.765 0)
+				(at -10.16 29.21 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "TPS386000"
-				(at 9.525 -24.765 0)
+				(at -10.16 26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_RGP_VQFN-20-1EP_4x4mm_P0.5mm_EP2.15x2.15mm_ThermalVias"
@@ -72,7 +74,18 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Texas*RGP*VQFN-20-1EP*4x4mm*P0.5mm*EP2.15x2.15mm*"
+			(property "ki_keywords" "Texas supervisor watchdog"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Texas*RGP*VQFN*1EP*4x4mm*P0.5mm*EP2.15x2.15mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -264,10 +277,9 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -2.54 -22.86 90)
+				(pin passive line
+					(at -5.08 -25.4 90)
 					(length 2.54)
-					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -469,7 +481,7 @@
 					(start -10.16 22.86)
 					(end 10.16 -22.86)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -5105,4 +5117,6 @@
 			)
 		)
 	)
+
+	(wire (pts (xy 118.11 87.63) (xy 123.19 87.63)) (stroke (width 0) (type default)) (uuid "4121de4d-7f28-5a94-b4ba-9de53feaab3e"))
 )
