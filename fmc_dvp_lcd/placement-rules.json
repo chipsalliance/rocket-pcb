@@ -1,0 +1,1768 @@
+{
+  "origin_mm": [
+    48.743656,
+    61.990012
+  ],
+  "seed": 20261130,
+  "signal_prefixes": [
+    "/8080 LCD {slash} touch/PANEL_CSX",
+    "/8080 LCD {slash} touch/PANEL_CTP_INT",
+    "/8080 LCD {slash} touch/PANEL_CTP_RST",
+    "/8080 LCD {slash} touch/PANEL_CTP_SCL",
+    "/8080 LCD {slash} touch/PANEL_CTP_SDA",
+    "/8080 LCD {slash} touch/PANEL_DB0",
+    "/8080 LCD {slash} touch/PANEL_DB1",
+    "/8080 LCD {slash} touch/PANEL_DB10",
+    "/8080 LCD {slash} touch/PANEL_DB11",
+    "/8080 LCD {slash} touch/PANEL_DB12",
+    "/8080 LCD {slash} touch/PANEL_DB13",
+    "/8080 LCD {slash} touch/PANEL_DB14",
+    "/8080 LCD {slash} touch/PANEL_DB15",
+    "/8080 LCD {slash} touch/PANEL_DB2",
+    "/8080 LCD {slash} touch/PANEL_DB3",
+    "/8080 LCD {slash} touch/PANEL_DB4",
+    "/8080 LCD {slash} touch/PANEL_DB5",
+    "/8080 LCD {slash} touch/PANEL_DB6",
+    "/8080 LCD {slash} touch/PANEL_DB7",
+    "/8080 LCD {slash} touch/PANEL_DB8",
+    "/8080 LCD {slash} touch/PANEL_DB9",
+    "/8080 LCD {slash} touch/PANEL_DCX",
+    "/8080 LCD {slash} touch/PANEL_IM0",
+    "/8080 LCD {slash} touch/PANEL_RDX",
+    "/8080 LCD {slash} touch/PANEL_RESET",
+    "/8080 LCD {slash} touch/PANEL_TE",
+    "/8080 LCD {slash} touch/PANEL_WRX",
+    "/8080 LCD {slash} touch/U15_BIAS",
+    "/8080 LCD {slash} touch/U3_BIAS",
+    "/AF_LDO_EN",
+    "/AF_POWER_EN",
+    "/BL_CTRL_3V0",
+    "/BL_LEDA",
+    "/BL_LEDK",
+    "/CAM_AVDD_EN",
+    "/CAM_D0",
+    "/CAM_D1",
+    "/CAM_D2",
+    "/CAM_D3",
+    "/CAM_D4",
+    "/CAM_D5",
+    "/CAM_D6",
+    "/CAM_D7",
+    "/CAM_HREF",
+    "/CAM_MCLK",
+    "/CAM_PCLK",
+    "/CAM_POWER_EN",
+    "/CAM_PWDN",
+    "/CAM_RESET",
+    "/CAM_SCL",
+    "/CAM_SDA",
+    "/CAM_VSYNC",
+    "/CTP_INT",
+    "/CTP_RST",
+    "/CTP_SCL",
+    "/CTP_SDA",
+    "/DBG_JTAG_TCK",
+    "/DBG_JTAG_TDI",
+    "/DBG_JTAG_TDO",
+    "/DBG_JTAG_TMS",
+    "/DBG_UART_RX",
+    "/DBG_UART_TX",
+    "/DVP camera/CAM_AF_MODULE",
+    "/DVP camera/CAM_D0_MODULE",
+    "/DVP camera/CAM_D1_MODULE",
+    "/DVP camera/CAM_D2_MODULE",
+    "/DVP camera/CAM_D3_MODULE",
+    "/DVP camera/CAM_D4_MODULE",
+    "/DVP camera/CAM_D5_MODULE",
+    "/DVP camera/CAM_D6_MODULE",
+    "/DVP camera/CAM_D7_MODULE",
+    "/DVP camera/CAM_DVDD_MODULE",
+    "/DVP camera/CAM_HREF_MODULE",
+    "/DVP camera/CAM_MCLK_BUF",
+    "/DVP camera/CAM_MCLK_MODULE",
+    "/DVP camera/CAM_PCLK_MODULE",
+    "/DVP camera/CAM_PWDN_BUF",
+    "/DVP camera/CAM_PWDN_MODULE",
+    "/DVP camera/CAM_RESET_BUF",
+    "/DVP camera/CAM_RESET_MODULE",
+    "/DVP camera/CAM_SCL_MODULE",
+    "/DVP camera/CAM_SDA_MODULE",
+    "/DVP camera/CAM_UNUSED",
+    "/DVP camera/CAM_VSYNC_MODULE",
+    "/DVP camera/U16_BIAS",
+    "/FMC {slash} FRU/FMC_JTAG_BYPASS",
+    "/FMC {slash} FRU/FRU_A0",
+    "/FMC {slash} FRU/FRU_A1",
+    "/FMC {slash} FRU/FRU_SCL",
+    "/FMC {slash} FRU/FRU_SDA",
+    "/FMC_PG_C2M",
+    "/LCD_BL_PWM",
+    "/LCD_CSX",
+    "/LCD_DB0",
+    "/LCD_DB1",
+    "/LCD_DB10",
+    "/LCD_DB11",
+    "/LCD_DB12",
+    "/LCD_DB13",
+    "/LCD_DB14",
+    "/LCD_DB15",
+    "/LCD_DB2",
+    "/LCD_DB3",
+    "/LCD_DB4",
+    "/LCD_DB5",
+    "/LCD_DB6",
+    "/LCD_DB7",
+    "/LCD_DB8",
+    "/LCD_DB9",
+    "/LCD_DCX",
+    "/LCD_DIR",
+    "/LCD_IM0",
+    "/LCD_OE_N",
+    "/LCD_RDX",
+    "/LCD_RESET",
+    "/LCD_TE",
+    "/LCD_WRX",
+    "/LSF_DISABLE",
+    "/Power {slash} backlight/BL_CTRL_3V3",
+    "/Power {slash} backlight/BL_PWM_N",
+    "/Power {slash} backlight/BL_SW",
+    "/Power {slash} backlight/CAM_CORE_EN",
+    "/USB JTAG {slash} UART/CH347_RESET_DRIVE",
+    "/USB JTAG {slash} UART/CH347_RESET_N",
+    "/USB JTAG {slash} UART/CH347_XI",
+    "/USB JTAG {slash} UART/CH347_XO",
+    "/USB JTAG {slash} UART/DBG_JTAG_TCK_BRIDGE",
+    "/USB JTAG {slash} UART/DBG_JTAG_TDI_BRIDGE",
+    "/USB JTAG {slash} UART/DBG_JTAG_TDO_BRIDGE",
+    "/USB JTAG {slash} UART/DBG_JTAG_TMS_BRIDGE",
+    "/USB JTAG {slash} UART/DBG_UART_RX_BRIDGE",
+    "/USB JTAG {slash} UART/DBG_UART_TX_BRIDGE",
+    "/USB JTAG {slash} UART/USB_CC1",
+    "/USB JTAG {slash} UART/USB_CC2",
+    "/USB JTAG {slash} UART/USB_DN",
+    "/USB JTAG {slash} UART/USB_DP",
+    "/USB JTAG {slash} UART/USB_VBUS",
+    "Net-(Q1-B)",
+    "Net-(Q2-B)",
+    "Net-(Q3-B)",
+    "Net-(Q4-B)",
+    "Net-(Q5-B)",
+    "Net-(Q6-B)",
+    "Net-(Q7-B)"
+  ],
+  "power_nets": [
+    "/BL_LEDA",
+    "/BL_LEDK",
+    "GND",
+    "VDD_12V",
+    "VDD_3V3",
+    "VDD_3V3_AUX",
+    "VDD_AF_2V8",
+    "VDD_CAM_2V8",
+    "VDD_CAM_DVDD_1V5",
+    "VDD_CAM_IO_1V8",
+    "VDD_CTP_REF",
+    "VDD_LCD_3V0",
+    "VDD_VADJ",
+    "VREF_LSF"
+  ],
+  "movable": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C2",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C3",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C40",
+    "C41",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C47",
+    "C48",
+    "C49",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55",
+    "C56",
+    "C8",
+    "C9",
+    "D1",
+    "L1",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R2",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R3",
+    "R30",
+    "R31",
+    "R32",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "R4",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45",
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R5",
+    "R50",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R59",
+    "R6",
+    "R60",
+    "R61",
+    "R62",
+    "R63",
+    "R64",
+    "R65",
+    "R66",
+    "R67",
+    "R68",
+    "R69",
+    "R7",
+    "R70",
+    "R71",
+    "R72",
+    "R73",
+    "R8",
+    "R9",
+    "U1",
+    "U10",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U16",
+    "U17",
+    "U18",
+    "U19",
+    "U2",
+    "U20",
+    "U21",
+    "U22",
+    "U23",
+    "U24",
+    "U25",
+    "U26",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8",
+    "U9",
+    "Y1"
+  ],
+  "decoupling": {
+    "C1": [
+      "U1",
+      "8"
+    ],
+    "C2": [
+      "J1",
+      "D36"
+    ],
+    "C3": [
+      "J1",
+      "G39"
+    ],
+    "C4": [
+      "J2",
+      "4"
+    ],
+    "C5": [
+      "J2",
+      "11"
+    ],
+    "C6": [
+      "J2",
+      "10"
+    ],
+    "C7": [
+      "J2",
+      "23"
+    ],
+    "C8": [
+      "U2",
+      "16"
+    ],
+    "C9": [
+      "U2",
+      "15"
+    ],
+    "C10": [
+      "J3",
+      "6"
+    ],
+    "C11": [
+      "U21",
+      "16"
+    ],
+    "C12": [
+      "U21",
+      "15"
+    ],
+    "C13": [
+      "U22",
+      "16"
+    ],
+    "C14": [
+      "U22",
+      "15"
+    ],
+    "C15": [
+      "U23",
+      "16"
+    ],
+    "C16": [
+      "U23",
+      "15"
+    ],
+    "C17": [
+      "U12",
+      "16"
+    ],
+    "C18": [
+      "U12",
+      "15"
+    ],
+    "C19": [
+      "U13",
+      "16"
+    ],
+    "C20": [
+      "U5",
+      "3"
+    ],
+    "C21": [
+      "U6",
+      "5"
+    ],
+    "C22": [
+      "Y1",
+      "1"
+    ],
+    "C23": [
+      "Y1",
+      "3"
+    ],
+    "C24": [
+      "U5",
+      "21"
+    ],
+    "C25": [
+      "U5",
+      "6"
+    ],
+    "C26": [
+      "U7",
+      "1"
+    ],
+    "C27": [
+      "U7",
+      "5"
+    ],
+    "C28": [
+      "U8",
+      "1"
+    ],
+    "C29": [
+      "U8",
+      "5"
+    ],
+    "C30": [
+      "U8",
+      "3"
+    ],
+    "C31": [
+      "U9",
+      "1"
+    ],
+    "C32": [
+      "U9",
+      "5"
+    ],
+    "C33": [
+      "U10",
+      "5"
+    ],
+    "C36": [
+      "U14",
+      "1"
+    ],
+    "C37": [
+      "U14",
+      "5"
+    ],
+    "C38": [
+      "U17",
+      "16"
+    ],
+    "C39": [
+      "U17",
+      "15"
+    ],
+    "C40": [
+      "U18",
+      "16"
+    ],
+    "C41": [
+      "U18",
+      "15"
+    ],
+    "C42": [
+      "U19",
+      "16"
+    ],
+    "C43": [
+      "U19",
+      "15"
+    ],
+    "C44": [
+      "U20",
+      "16"
+    ],
+    "C45": [
+      "U20",
+      "15"
+    ],
+    "C46": [
+      "U16",
+      "8"
+    ],
+    "C47": [
+      "U13",
+      "15"
+    ],
+    "C48": [
+      "U3",
+      "8"
+    ],
+    "C49": [
+      "U15",
+      "8"
+    ],
+    "C50": [
+      "U24",
+      "16"
+    ],
+    "C51": [
+      "U24",
+      "15"
+    ],
+    "C52": [
+      "U25",
+      "16"
+    ],
+    "C53": [
+      "U25",
+      "15"
+    ],
+    "C54": [
+      "U26",
+      "1"
+    ],
+    "C55": [
+      "U26",
+      "5"
+    ],
+    "C56": [
+      "U16",
+      "2"
+    ]
+  },
+  "alignment_refs": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C2",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C3",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C4",
+    "C40",
+    "C41",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C47",
+    "C48",
+    "C49",
+    "C5",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55",
+    "C56",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R2",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R3",
+    "R30",
+    "R31",
+    "R32",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "R4",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45",
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R5",
+    "R50",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R59",
+    "R6",
+    "R60",
+    "R61",
+    "R62",
+    "R63",
+    "R64",
+    "R65",
+    "R66",
+    "R67",
+    "R68",
+    "R69",
+    "R7",
+    "R70",
+    "R71",
+    "R72",
+    "R73",
+    "R8",
+    "R9"
+  ],
+  "lower_bounds_mm": [
+    21.256344,
+    4.759988,
+    63.256344,
+    64.00998799999999
+  ],
+  "obstacle_inflate_mm": 0.15,
+  "alignment_neighbour_mm": 5,
+  "swap_groups": [],
+  "fixed_coordinates": {},
+  "aligned_groups": [
+    {
+      "refs": [
+        "U12",
+        "U13",
+        "U2",
+        "U21",
+        "U22",
+        "U23"
+      ],
+      "axis": 0
+    },
+    {
+      "refs": [
+        "U20",
+        "U19",
+        "U18",
+        "U17"
+      ],
+      "axis": 0
+    },
+    {
+      "refs": [
+        "U24",
+        "U25"
+      ],
+      "axis": 0
+    },
+    {
+      "refs": [
+        "U26",
+        "U7",
+        "U8",
+        "U9",
+        "U14"
+      ],
+      "axis": 1
+    }
+  ],
+  "decoupling_max_distance_mm": {
+    "C1": 3.0,
+    "C2": 9.0,
+    "C3": 5.0,
+    "C4": 3.0,
+    "C5": 3.0,
+    "C6": 3.0,
+    "C7": 3.0,
+    "C8": 2.25,
+    "C9": 2.25,
+    "C10": 3.0,
+    "C11": 2.25,
+    "C12": 2.25,
+    "C13": 2.25,
+    "C14": 2.25,
+    "C15": 2.25,
+    "C16": 2.25,
+    "C17": 2.25,
+    "C18": 2.25,
+    "C19": 2.25,
+    "C20": 4.0,
+    "C21": 3.0,
+    "C22": 3.0,
+    "C23": 3.0,
+    "C24": 3.0,
+    "C25": 3.0,
+    "C26": 3.0,
+    "C27": 3.0,
+    "C28": 3.0,
+    "C29": 3.0,
+    "C30": 3.0,
+    "C31": 3.0,
+    "C32": 3.0,
+    "C33": 3.0,
+    "C36": 3.0,
+    "C37": 3.0,
+    "C38": 2.25,
+    "C39": 2.25,
+    "C40": 2.25,
+    "C41": 2.25,
+    "C42": 2.25,
+    "C43": 2.25,
+    "C44": 2.25,
+    "C45": 2.25,
+    "C46": 3.0,
+    "C47": 2.25,
+    "C48": 3.0,
+    "C49": 3.0,
+    "C50": 2.25,
+    "C51": 2.25,
+    "C52": 2.25,
+    "C53": 2.25,
+    "C54": 3.0,
+    "C55": 3.0,
+    "C56": 3.0
+  },
+  "backside_bypass_refs": [
+    "C38",
+    "C39",
+    "C4",
+    "C40",
+    "C41",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C5",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C6",
+    "C7"
+  ],
+  "mechanical_fixed_refs": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8"
+  ],
+  "stage": "Six-layer routing connected. Electrical and manufacturing validation remain pending.",
+  "selected_search": "final-six-layer-prototype",
+  "selected_round": "final-source-review",
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "role": "signals"
+    },
+    {
+      "layer": "In1.Cu",
+      "role": "continuous GND reference"
+    },
+    {
+      "layer": "In2.Cu",
+      "role": "power domains"
+    },
+    {
+      "layer": "In3.Cu",
+      "role": "signals"
+    },
+    {
+      "layer": "In4.Cu",
+      "role": "main 3.3 V and isolated power bridges"
+    },
+    {
+      "layer": "B.Cu",
+      "role": "signals"
+    }
+  ],
+  "nominal_thickness_mm": 1.6,
+  "stackup_dielectric_mm": [
+    0.2,
+    0.12,
+    0.8,
+    0.12,
+    0.2
+  ],
+  "stackup_manufacturer_confirmed": false,
+  "m2_mounts_native_mm": {
+    "H5": [
+      56.493656,
+      83.490012
+    ],
+    "H6": [
+      56.493656,
+      109.490012
+    ],
+    "H7": [
+      58.493656,
+      74.490012
+    ],
+    "H8": [
+      58.493656,
+      117.490012
+    ]
+  },
+  "original_interfaces_fixed": [
+    "FID1",
+    "FID2",
+    "FID3",
+    "FID4",
+    "FID5",
+    "FID6",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "J1"
+  ],
+  "front_signal_groups": [
+    "LCD data/control and touch",
+    "USB differential pair and crystal",
+    "FRU and local controls"
+  ],
+  "allowed_signal_layers": [
+    "F.Cu",
+    "In3.Cu",
+    "B.Cu"
+  ],
+  "inner_signal_routing_allowed": true,
+  "power_plane_plan": {
+    "GND": "Entire board on In1.Cu",
+    "main_domains": [
+      "VDD_3V3",
+      "VDD_VADJ",
+      "VDD_LCD_3V0"
+    ],
+    "localized_supplies": [
+      "VDD_12V",
+      "VDD_3V3_AUX",
+      "VDD_AF_2V8",
+      "VDD_CAM_2V8",
+      "VDD_CAM_DVDD_1V5",
+      "VDD_CAM_IO_1V8",
+      "VDD_CTP_REF",
+      "VREF_LSF"
+    ],
+    "filled": true,
+    "source_and_load_vias_complete": true,
+    "native_power_and_ground_unconnected": 0,
+    "native_connection_width_warnings": 0,
+    "native_isolated_copper_warnings": 0,
+    "In2_Cu_domains": [
+      "/BL_LEDA",
+      "/BL_LEDK",
+      "/DVP camera/CAM_AF_MODULE",
+      "/DVP camera/CAM_DVDD_MODULE",
+      "/USB JTAG {slash} UART/USB_VBUS",
+      "VDD_12V",
+      "VDD_3V3",
+      "VDD_3V3_AUX",
+      "VDD_AF_2V8",
+      "VDD_CAM_2V8",
+      "VDD_CAM_DVDD_1V5",
+      "VDD_CAM_IO_1V8",
+      "VDD_CTP_REF",
+      "VDD_LCD_3V0",
+      "VDD_VADJ",
+      "VREF_LSF"
+    ],
+    "connection_style": "Local surface fanout to ground on In1.Cu and supply domains on In2.Cu. In4.Cu carries main 3.3 V and isolated supply bridges.",
+    "via_unused_inner_annuli_removed": true,
+    "conditional_sources": {
+      "R8": "DNP camera core supply feed",
+      "R9": "DNP autofocus supply feed",
+      "R19_R20": "DNP touch reference selectors"
+    }
+  },
+  "camera_seat_relief": {
+    "width_mm": 17.8,
+    "length_mm": 10.0,
+    "source": "doc.local/verification/fmc_dvp_lcd/pcb-placement/camera-seat-clearance.FCStd",
+    "height_mm": 1.8,
+    "assembly_note": "Install cable and close latch before mounting seat. Cable bend clearance and operation pending.",
+    "active": false,
+    "superseded_by": "mechanical_prototype"
+  },
+  "assembly_only_silkscreen_refs": [
+    "C1",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C2",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C3",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C4",
+    "C40",
+    "C41",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C47",
+    "C48",
+    "C49",
+    "C5",
+    "C50",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55",
+    "C56",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "D1",
+    "L1",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "R1",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R2",
+    "R20",
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R3",
+    "R30",
+    "R31",
+    "R32",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39",
+    "R4",
+    "R40",
+    "R41",
+    "R42",
+    "R43",
+    "R44",
+    "R45",
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R5",
+    "R50",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R59",
+    "R6",
+    "R60",
+    "R61",
+    "R62",
+    "R63",
+    "R64",
+    "R65",
+    "R66",
+    "R67",
+    "R68",
+    "R69",
+    "R7",
+    "R70",
+    "R71",
+    "R72",
+    "R73",
+    "R8",
+    "R9",
+    "U1",
+    "U10",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U16",
+    "U17",
+    "U18",
+    "U19",
+    "U2",
+    "U20",
+    "U21",
+    "U22",
+    "U23",
+    "U24",
+    "U25",
+    "U26",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8",
+    "U9",
+    "Y1"
+  ],
+  "camera_connector_candidate": {
+    "mpn": "FH34SRJ-24S-0.5SH(50)",
+    "lcsc": "C324726",
+    "height_mm": 1.0,
+    "full_mating_confirmed": false
+  },
+  "usb_front": {
+    "edge": "camera-facing short front edge, native X minimum",
+    "side": "B.Cu",
+    "native_xy_mm": [
+      51.343656,
+      96.490012
+    ],
+    "angle_deg": 90,
+    "mouth_direction_native_xy": [
+      -1,
+      0
+    ],
+    "changed_position_refs": [
+      "J4",
+      "U4",
+      "R22",
+      "R23"
+    ],
+    "bridge_group_moved": false,
+    "socket_envelope_mm": [
+      8.94,
+      7.3,
+      3.5
+    ],
+    "assumed_plug_envelope_mm": [
+      14,
+      22,
+      8
+    ],
+    "angle_step_deg": 1,
+    "min_sampled_mechanical_clearance_mm": 0.5385164807134502,
+    "carrier_component_clearance_verified": false,
+    "cable_part_verified": false,
+    "routing_plan": "Three 0.60/0.30 mm data escape vias to F.Cu. Flow-through ESD and a short ground branch. One broad D- tuning bend. Ground reference and impedance remain unverified.",
+    "mechanical_assessment_version": "Four screw-mounted FDM supports and flat module retainers",
+    "nominal_USB_paths": {
+      "A6": 46.6874771605753,
+      "B6": 48.125942791632745,
+      "A7": 46.68747536121524,
+      "B7": 48.125038720326174,
+      "orientation_A_skew_mm": 1.7993600565091583e-06,
+      "orientation_B_skew_mm": 0.0009040713065715522
+    },
+    "camera_cap_notch_width_mm": 16
+  },
+  "mechanical_prototype": {
+    "stage": "FDM prototype with screw-retained modules. Physical fit and cable travel remain unverified.",
+    "printed_parts": 11,
+    "PCB_mounting_screw_refs": [
+      "H5",
+      "H6",
+      "H7",
+      "H8"
+    ],
+    "original_mounting_holes_unchanged": [
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "total_M2_screws": 13,
+    "screw_quantities": {
+      "M2x6_PCB": 4,
+      "M2x35_camera_axle": 1,
+      "M2x8_LCD_hinges": 2,
+      "M2x8_countersunk_LCD": 4,
+      "M2x10_countersunk_camera": 2
+    },
+    "nominal_printed_support_width_mm": 54,
+    "retention": "Four flat LCD tabs and one camera rear plate, with loose M2 nuts and trapped soft pads",
+    "snap_fits": false,
+    "printed_threads": false,
+    "M2_clearance_bore_mm": 2.6,
+    "camera_pivot_cad_mm": [
+      0,
+      -36,
+      4.4
+    ],
+    "LCD_pivot_cad_mm": [
+      -0.5,
+      -33.5,
+      14
+    ],
+    "print_process": {
+      "nozzle_mm": 0.4,
+      "layer_mm": 0.2,
+      "perimeters": 3,
+      "infill_percent": 30,
+      "infill_pattern": "gyroid",
+      "camera_support_brim_mm": 3,
+      "supports": false
+    },
+    "PCB_USB_side": "B.Cu",
+    "assumed_USB_plug_width_mm": 14,
+    "physical_fit_and_forces_tested": false,
+    "FPC_full_travel_verified": false,
+    "source": "mechanical/camera_lcd",
+    "generated_exports": "build/mechanical/camera_lcd",
+    "validation_scope": "Nominal CAD bodies and exported meshes. Physical parts, cable bends, carrier fit and clamp forces require separate checks.",
+    "camera_cap_notch_width_mm": 16
+  },
+  "two_sku_translation": {
+    "quad": "AiP74AVC4T774TA16.TR",
+    "quad_count": 12,
+    "passive": "LSF0102DCH",
+    "passive_count": 3,
+    "reference_ratio": 0.8584905660377359,
+    "reference_resistors_ohm": [
+      150,
+      910
+    ],
+    "FMC_LA_assignment_preserved": false,
+    "FRU_default_VADJ_V": 1.8
+  },
+  "back_signal_groups": [
+    "camera DVP/SCCB",
+    "JTAG/UART and FMC native JTAG bypass"
+  ],
+  "connector_escape_layers": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "repeated_cells": {
+    "LCD_translators": {
+      "refs": [
+        "U12",
+        "U13",
+        "U2",
+        "U21",
+        "U22",
+        "U23"
+      ],
+      "side": "F.Cu",
+      "column_x_mm": 86,
+      "pitch_y_mm": 8
+    },
+    "camera_translators": {
+      "refs": [
+        "U20",
+        "U19",
+        "U18",
+        "U17"
+      ],
+      "side": "B.Cu",
+      "column_x_mm": 77,
+      "pitch_y_mm": 8
+    },
+    "regulators": {
+      "refs": [
+        "U26",
+        "U7",
+        "U8",
+        "U9",
+        "U14"
+      ],
+      "side": "F.Cu",
+      "row_y_mm": 70,
+      "pitch_x_mm": 9
+    },
+    "quad_bypass": {
+      "same_side_as_IC": true,
+      "column_offset_x_mm": -5.25,
+      "pair_pitch_y_mm": 1.25
+    }
+  },
+  "capacitor_distance_scope": "Supply-pad to capacitor-pad center distances constrain placement. Supply fanout is connected. Loop inductance, impedance, and transient response remain unverified.",
+  "non_bypass_capacitors": {
+    "C2": "FMC bulk",
+    "C3": "FMC bulk",
+    "C20": "reset timing",
+    "C22": "crystal load",
+    "C23": "crystal load",
+    "C30": "regulator enable timing",
+    "C56": "LSF reference filtering"
+  },
+  "routing": {
+    "stage": "Six-layer routing connected. Electrical and manufacturing validation remain pending.",
+    "tracks": 2035,
+    "vias": 624,
+    "full_unconnected": 0,
+    "selected_nets_checked": 139,
+    "selected_nets_connected": 139,
+    "geometric_errors": 0,
+    "schematic_parity_items": 0,
+    "track_angles": [
+      "horizontal",
+      "vertical",
+      "45 degrees"
+    ],
+    "via_diameter_mm": 0.5,
+    "via_drill_mm": 0.3,
+    "general_clearance_mm": 0.127,
+    "inner_signal_tracks": 447,
+    "power_ground_fanout_complete": true,
+    "planes_filled": true,
+    "USB_impedance_verified": false,
+    "timing_verified": false,
+    "USB_nominal_path_mismatch_limit_mm": 0.01,
+    "USB_tuning_locally_uncoupled": true,
+    "power_and_ground_unconnected": 0,
+    "FMC_nets_checked": 54,
+    "FMC_nets_connected": 54,
+    "backlight_switch_node_connected": true,
+    "PCB_sha256": "929c69986b362b4f3a38794e685e10af6382c0de6e80132efc3cab80d6bc7383",
+    "LCD_data_routes": {
+      "lanes": 16,
+      "main_layer_preference": "F.Cu",
+      "escape_layers": [
+        "F.Cu",
+        "In3.Cu",
+        "B.Cu"
+      ],
+      "corners": "45 degrees",
+      "complete": true
+    },
+    "power_ground_fanout_scope": "Sixteen plane supply/reference domains and GND are connected.",
+    "min_via_annular_ring_mm": 0.1,
+    "USB_via_diameter_mm": 0.6,
+    "USB_clearance_mm": 0.2,
+    "warning_types": {
+      "lib_footprint_mismatch": 1
+    },
+    "reference_fanout": {
+      "project": "fmc_sdram",
+      "copper_layers": 4,
+      "signal_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "direct_full_replacement_selected": false,
+      "original_default_clearance_mm": 0.2,
+      "original_general_via_mm": [
+        0.6,
+        0.3
+      ],
+      "current_general_via_mm": [
+        0.5,
+        0.3
+      ],
+      "current_default_clearance_mm": 0.127,
+      "schematic_assignment_retained": false
+    },
+    "clamp_base_resistors": {
+      "R45": [
+        77.0,
+        74.0
+      ],
+      "R47": [
+        74.5,
+        81.75
+      ],
+      "R49": [
+        71.7,
+        85.9
+      ]
+    },
+    "backlight_switch_track_width_mm": 0.35,
+    "via_centres_in_SMD_pads": 72,
+    "fabricator_via_process_confirmed": false,
+    "six_layer_reference": {
+      "project": "fmc_basic_peripheral",
+      "board": "fmc_usb_gpio_spi_jtag.kicad_pcb",
+      "copper_layers": 6,
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "B.Cu"
+      ],
+      "In4_tracks": "Power only"
+    },
+    "local_placement_changes": {
+      "Q5": {
+        "native_xy_mm": [
+          73.5,
+          88.15
+        ],
+        "angle_deg": 0.0,
+        "side": "F.Cu"
+      },
+      "R49": {
+        "native_xy_mm": [
+          71.7,
+          85.9
+        ],
+        "angle_deg": 0.0,
+        "side": "F.Cu"
+      },
+      "R6": {
+        "native_xy_mm": [
+          72.225,
+          79.375
+        ],
+        "angle_deg": 180.0,
+        "side": "B.Cu"
+      },
+      "R7": {
+        "native_xy_mm": [
+          70.7,
+          80.25
+        ],
+        "angle_deg": 90.0,
+        "side": "B.Cu"
+      }
+    },
+    "ribbon_refinement": {
+      "date": "2026-11-13",
+      "reference": "MagGrid shared trunks and normal-spacing fanout",
+      "camera": {
+        "nets": [
+          "CAM_D5",
+          "CAM_D6",
+          "CAM_D7"
+        ],
+        "layer": "In3.Cu",
+        "pitch_mm": 0.4,
+        "trunk_length_mm": 22.5
+      },
+      "lcd_front": {
+        "nets": [
+          "LCD_DB4",
+          "LCD_DB5",
+          "LCD_DB6"
+        ],
+        "layer": "F.Cu",
+        "pitch_mm": 0.4,
+        "trunk_length_mm": 12.2
+      },
+      "lcd_inner": {
+        "nets": [
+          "LCD_DB0",
+          "LCD_DB3",
+          "LCD_DB2",
+          "LCD_DB1"
+        ],
+        "layer": "In3.Cu",
+        "pitch_mm": 0.952
+      },
+      "debug": {
+        "nets": [
+          "DBG_JTAG_TCK_BRIDGE",
+          "DBG_UART_TX_BRIDGE",
+          "DBG_JTAG_TDO_BRIDGE",
+          "DBG_JTAG_TMS_BRIDGE"
+        ],
+        "layer": "In3.Cu",
+        "pitch_mm": 0.2787,
+        "clock_copper_preserved": true,
+        "adjustable_trunk_length_mm": 9.7698
+      },
+      "measured_signal_scope": "139-net signal ledger excluding frozen clocks, USB pair and crystal; pad/via/branch-limited chain metric",
+      "bend_events_before": 674,
+      "bend_events_after": 662,
+      "length_mm_before": 3454.5775215163985,
+      "length_mm_after": 3383.8627776690873,
+      "moved_signal_vias": 0,
+      "component_poses_unchanged": true,
+      "schematic_assignment_unchanged": true,
+      "filled_ground_and_power_geometry_unchanged": true,
+      "ten_rounds": {
+        "iterations": 10,
+        "adopted": 9,
+        "rejected": 1,
+        "source_before_sha256": "2b1c2aa475574e29b194849d269a7c4c93f690e83c47b25cb692722f1dc592f9",
+        "bends_before": 674,
+        "bends_after": 657,
+        "editable_right_angles_before": 21,
+        "editable_right_angles_after": 0,
+        "length_mm_before": 3454.5775215163985,
+        "length_mm_after": 3397.4741866509203,
+        "parallel_pair_mm_before": 917.8909949181315,
+        "parallel_pair_mm_after": 932.7159350327364,
+        "shared_camera_trunk_mm": 22.5,
+        "shared_front_LCD_trunk_mm": 12.2,
+        "protected_trunk_spans_checked": 11,
+        "protected_trunk_spans_retained": true,
+        "pair_overlap_is_auxiliary": true
+      },
+      "baseline_PCB_sha256": "2b1c2aa475574e29b194849d269a7c4c93f690e83c47b25cb692722f1dc592f9"
+    },
+    "topology_cleanup": {
+      "date": "2026-11-13",
+      "baseline_PCB_sha256": "b7d653324398dcd4fd99d337c3aafaad40856967679449d056b1cc3e7edf3a1c",
+      "PCB_sha256": "929c69986b362b4f3a38794e685e10af6382c0de6e80132efc3cab80d6bc7383",
+      "tracks_before": 2124,
+      "tracks_after": 2054,
+      "overlap_pairs_exact_before": 97,
+      "overlap_pairs_tolerant_before": 99,
+      "overlap_pairs_after": 0,
+      "X_junctions_before": 3,
+      "X_junctions_after": 0,
+      "acute_junctions_before": 12,
+      "acute_junctions_after": 0,
+      "angle_scope": "All same-net straight-track nodes outside pad and flashed-via anchors, including branch wedges",
+      "operation": "Deduplicate and node; prune obsolete signal paths; orthogonalize; chamfer free corners; preserve perpendicular branch entry",
+      "coordinate_analysis_tolerance_mm": 2e-05,
+      "bend_events_before": 657,
+      "bend_events_after": 662,
+      "length_mm_before": 3397.4741866509203,
+      "length_mm_after": 3383.8627776690873,
+      "protected_common_trunks": 11,
+      "all_original_vias_retained": true,
+      "clock_USB_crystal_copper_preserved": true,
+      "filled_ground_and_power_geometry_unchanged": true,
+      "remaining_warning": "J4 lib_footprint_mismatch"
+    },
+    "three_round_review": {
+      "date": "2026-11-13",
+      "PCB_sha256": "3549bf42ac157f99441dbea40cbcf0876785d2d35e72696f0e65200aff36a505",
+      "rounds": 3,
+      "accepted_rounds": [
+        1,
+        2,
+        3
+      ],
+      "operation": "Optimize full branch topology before corner shaping, then search signal and supply shortcuts",
+      "signal_chain_bend_events": 656,
+      "signal_chain_length_mm": 3380.7220908439754,
+      "protected_common_trunks": 11,
+      "all_pads_vias_and_frozen_copper_preserved": true,
+      "filled_planes_unchanged": true,
+      "remaining_warning": "J4 lib_footprint_mismatch"
+    },
+    "historical_snapshot": true,
+    "superseded_by": "validation"
+  },
+  "fpga_pin_assignment": {
+    "mapping_file": "data/vcu118_j22_io.json",
+    "verified_VCU118_J22_GPIOs": 54,
+    "changed_J1_net_members": 17,
+    "other_net_members_changed": 8,
+    "MGT_resources_used": false,
+    "fixed_clock_contacts": [
+      {
+        "signal": "CAM_MCLK",
+        "contact": "G7",
+        "vcu118_j22_package": "AL36",
+        "is_input_clock": "False"
+      },
+      {
+        "signal": "CAM_PCLK",
+        "contact": "H7",
+        "vcu118_j22_package": "AJ32",
+        "is_input_clock": "True"
+      },
+      {
+        "signal": "DBG_JTAG_TCK",
+        "contact": "D20",
+        "vcu118_j22_package": "R34",
+        "is_input_clock": "True"
+      }
+    ],
+    "capacity_screening_passed": true,
+    "complete_routability_proven": true,
+    "baseline_commit": "bd3b896",
+    "joint_assignment": {
+      "changed_logical_channel_assignments": 4,
+      "changed_active_FMC_assignments": 12,
+      "changed_direction_straps": 0,
+      "completed_physical_paths_reused": true,
+      "clock_channels_and_contacts_preserved": true,
+      "global_optimum_proven": false
+    },
+    "touch_bus_update": {
+      "paired_LSF_channels": [
+        "U3:1",
+        "U3:2"
+      ],
+      "FMC_contacts": [
+        "C15",
+        "H14"
+      ],
+      "clock_bindings_changed": false
+    }
+  },
+  "dummy_copper": {
+    "group": "FMC_DVP_LCD_DUMMY_COPPER",
+    "size_mm": 1.0,
+    "gap_ratio_xy": [
+      0.35,
+      0.35
+    ],
+    "offset_ratio_xy": [
+      0.81,
+      1.08
+    ],
+    "neighbor_shift_ratio_xy": [
+      0.125,
+      0.125
+    ],
+    "clearance_ratio": 0.3,
+    "edge_clearance_ratio": 0.5,
+    "hole_clearance_ratio": 0.3,
+    "guard_ratio": 0.01,
+    "mask_clearance_ratio": 0.25,
+    "layers": [
+      "F.Cu",
+      "B.Cu"
+    ],
+    "avoid_courtyards": true,
+    "sensitive_nets": [
+      {
+        "patterns": [
+          "*CLK*",
+          "*TCK*",
+          "*CH347_X*",
+          "*USB_D?",
+          "*BL_SW"
+        ],
+        "clearance_ratio": 1.5
+      }
+    ],
+    "sensitive_footprints": [
+      {
+        "refs": [
+          "Y*"
+        ],
+        "clearance_ratio": 2.0
+      }
+    ],
+    "group_uuid": "93789429-68fe-5d6d-8c8b-3444c6cadca1",
+    "members_sha256": "4c4343e1ac7cc4bb27bb41a7acd0978dc262163c9e78c9f3df2609a2ea713dc0",
+    "count_by_layer": {
+      "F.Cu": 723,
+      "B.Cu": 804
+    },
+    "PCB_sha256": "6513d8cf995287819cf7592560944594241e1289fb42fcae8be27ab599af2e81",
+    "purpose": "Decorative isolated outer-layer copper under solder mask. Not a verified warpage or signal-integrity improvement."
+  },
+  "power_indicators": {
+    "row_y_mm": 128.2,
+    "pitch_mm": 6,
+    "side": "F.Cu",
+    "order": [
+      "VADJ",
+      "3V3",
+      "AUX",
+      "12V"
+    ],
+    "LED": "GL1206UO01",
+    "LCSC": "C51933322",
+    "VADJ_detector": "MMBT3904",
+    "VADJ_LED_requires_main_3V3": true,
+    "meaning": "Supply presence, not power-good",
+    "poses": {
+      "D2": [
+        107,
+        128.2,
+        0
+      ],
+      "D3": [
+        95,
+        128.2,
+        0
+      ],
+      "D4": [
+        101,
+        128.2,
+        0
+      ],
+      "D5": [
+        89,
+        128.2,
+        0
+      ],
+      "R74": [
+        108.4,
+        125.7,
+        270
+      ],
+      "R75": [
+        96.4,
+        125.7,
+        270
+      ],
+      "R76": [
+        102.4,
+        125.7,
+        270
+      ],
+      "R77": [
+        90.4,
+        125.7,
+        270
+      ],
+      "Q8": [
+        85.3,
+        126.5,
+        0
+      ],
+      "R78": [
+        81,
+        125.55,
+        0
+      ],
+      "R79": [
+        81,
+        128,
+        180
+      ]
+    },
+    "supply_feed_layer": "In4.Cu",
+    "added_vias": 10,
+    "reference_note": "Cathode uses KiCad pad 1. The supplier LED drawing labels cathode terminal 2.",
+    "color": "orange",
+    "package": "1206",
+    "body_dimensions_mm": [
+      3.2,
+      1.6,
+      0.9
+    ]
+  },
+  "front_ground_contacts": {
+    "reference": "fmc_basic_peripheral/fmc_usb_gpio_spi_jtag.kicad_pcb",
+    "groups": [
+      "FMC_FRONT_CONTACT_H3",
+      "FMC_FRONT_CONTACT_H4"
+    ],
+    "copper_layer": "B.Cu",
+    "mask_layer": "B.Mask",
+    "net": "GND",
+    "edge_clearance_mm": 0.5,
+    "original_hole_geometry_preserved": true,
+    "chassis_isolation_verified": false,
+    "outline_inset_mm": 0.52
+  },
+  "validation": {
+    "PCB_sha256": "6513d8cf995287819cf7592560944594241e1289fb42fcae8be27ab599af2e81",
+    "KiCad_version": "10.0.8",
+    "ERC_errors": 0,
+    "ERC_warnings": 0,
+    "DRC_errors": 0,
+    "DRC_warnings": 7,
+    "unconnected_items": 0,
+    "schematic_parity_items": 0,
+    "warning_types": {
+      "lib_footprint_mismatch": 7
+    },
+    "warning_references": [
+      "J4",
+      "FID1",
+      "FID2",
+      "FID3",
+      "FID4",
+      "FID5",
+      "FID6"
+    ],
+    "hardware_validated": false,
+    "manufacturing_approved": false
+  }
+}

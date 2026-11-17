@@ -1,0 +1,48 @@
+(version 1)
+(rule "Mounting holes H1"
+	(constraint edge_clearance
+		(min -1mm)
+	)
+	(condition "A.intersectsCourtyard('H1')")
+)
+(rule "Mounting holes H2"
+	(constraint edge_clearance
+		(min -1mm)
+	)
+	(condition "A.intersectsCourtyard('H2')")
+)
+(rule "Mounting holes H3"
+	(constraint edge_clearance
+		(min -1mm)
+	)
+	(condition "A.intersectsCourtyard('H3')")
+)
+(rule "Mounting holes H4"
+	(constraint edge_clearance
+		(min -1mm)
+	)
+	(condition "A.intersectsCourtyard('H4')")
+)
+
+# The standard VSSOP-8 land pattern has 0.35 mm pads on 0.50 mm pitch.
+# JLCPCB specifies 0.15 mm minimum SMD pad-to-pad clearance for different nets.
+# Only pad pairs within one of the three LSF0102 footprints use this limit.
+# https://jlcpcb.com/capabilities/Capabilities
+(rule "LSF0102 internal pad clearance"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U3') && B.memberOfFootprint('U3')) || (A.memberOfFootprint('U15') && B.memberOfFootprint('U15')) || (A.memberOfFootprint('U16') && B.memberOfFootprint('U16')))")
+)
+
+# Isolated decorative copper. These limits apply only to the generated group.
+(rule "Dummy copper spacing"
+  (constraint clearance (min 0.30mm))
+  (constraint physical_clearance (min 0.30mm))
+  (constraint edge_clearance (min 0.50mm))
+  (condition "A.memberOfGroup('FMC_DVP_LCD_DUMMY_COPPER') || B.memberOfGroup('FMC_DVP_LCD_DUMMY_COPPER')")
+)
+
+# Contact copper retains normal edge clearance despite the mounting-pad exceptions.
+(rule "FMC front contact edge clearance"
+  (constraint edge_clearance (min 0.50mm))
+  (condition "A.memberOfGroup('FMC_FRONT_CONTACT_H3') || A.memberOfGroup('FMC_FRONT_CONTACT_H4')")
+)
