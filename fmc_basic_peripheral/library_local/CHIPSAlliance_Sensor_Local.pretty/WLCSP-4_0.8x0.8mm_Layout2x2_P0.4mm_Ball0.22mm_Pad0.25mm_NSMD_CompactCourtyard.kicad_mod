@@ -1,0 +1,266 @@
+(footprint "WLCSP-4_0.8x0.8mm_Layout2x2_P0.4mm_Ball0.22mm_Pad0.25mm_NSMD_CompactCourtyard"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "4-ball WLCSP, nominal 0.8x0.8mm body, 2x2 array, 0.4mm pitch; 0.22mm design ball, 0.25mm copper lands, 0.32mm NSMD mask openings. Shared by AK09918C, MMC5603NJ and QMC6308/QMC6309; device body and ball tolerances differ. Land selection is an engineering compromise, verify device recommendations and assembly tolerances. NSMD guidance: NXP AN10439 Rev.7 Table 2, https://assets.nexperia.com/documents/application-note/AN10439.pdf Courtyard: 0.15mm beyond nominal body/lands for dense placement; deliberate exception to KLC F5.3 WLCSP 1.0mm default.")
+	(tags "WLP WLCSP CSP BGA 4 ball 0.4mm pitch magnetometer compass")
+	(property "Reference" "REF**"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(uuid "21c1e067-00a0-4b35-80c5-c1eee392c73c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WLCSP-4_0.8x0.8mm_Layout2x2_P0.4mm_Ball0.22mm_Pad0.25mm_NSMD"
+		(at 0 1.8 0)
+		(layer "F.Fab")
+		(uuid "c30f328d-d2a6-4af9-9470-4505102805c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88188bd5-dbea-4e03-899a-4a7afa222eff")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4aa2ad4-def7-40cf-bd38-b2b407239dfe")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(solder_mask_margin 0.035)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.58 -0.58)
+		(end -0.58 -0.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e49b418-6ff1-41a4-a256-708105f9b5d2")
+	)
+	(fp_line
+		(start -0.58 -0.58)
+		(end -0.38 -0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a71187f7-c952-40cd-99d5-aa1d29c0fe35")
+	)
+	(fp_line
+		(start -0.58 -0.38)
+		(end -0.38 -0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ed369104-5c53-47ae-882e-8ae449b673b1")
+	)
+	(fp_line
+		(start -0.58 0.58)
+		(end -0.58 0.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f851b790-742c-4db3-a0cb-68e5326b4731")
+	)
+	(fp_line
+		(start -0.58 0.58)
+		(end 0.58 0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ecd00c89-402f-4dac-be9a-6d8ea0852bf1")
+	)
+	(fp_line
+		(start 0.58 -0.58)
+		(end 0.38 -0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2f5633ce-788e-4657-bf0c-0ecb326a1e07")
+	)
+	(fp_line
+		(start 0.58 -0.58)
+		(end 0.58 0.58)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "279ba499-b4e4-42d5-a429-5cc328a2f24e")
+	)
+	(fp_line
+		(start -0.55 -0.55)
+		(end 0.55 -0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2508d7ca-43fe-4327-bc31-349f5c3d0a44")
+	)
+	(fp_line
+		(start -0.55 0.55)
+		(end -0.55 -0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb6ca014-0530-4a65-b14e-644046d746f0")
+	)
+	(fp_line
+		(start -0.55 0.55)
+		(end 0.55 0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4dca228e-80ab-45a4-947e-fbea9e057bf0")
+	)
+	(fp_line
+		(start 0.55 0.55)
+		(end 0.55 -0.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8fa64a12-8692-4d01-b420-eda3f8744f4e")
+	)
+	(fp_line
+		(start -0.4 -0.2)
+		(end -0.2 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e8319c69-cce8-4164-9f44-706e338c80b0")
+	)
+	(fp_line
+		(start -0.4 0.4)
+		(end -0.4 -0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4bee6c4d-10b1-46d1-bcd3-2e7b482acaca")
+	)
+	(fp_line
+		(start 0.4 -0.4)
+		(end -0.2 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7a8519c6-3848-4264-a00e-8186f92025ff")
+	)
+	(fp_line
+		(start 0.4 0.4)
+		(end -0.4 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1cd9026c-f7df-4f73-b686-c2cbafea2854")
+	)
+	(fp_line
+		(start 0.4 0.4)
+		(end 0.4 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0bf40496-a0ac-4747-987a-cdb5abc5fe16")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.8 0)
+		(layer "F.Fab")
+		(uuid "f1b29342-ce59-4281-a2f5-98312bba49f0")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "A1" smd circle
+		(at -0.2 -0.2)
+		(size 0.25 0.25)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "461d6b00-e3a2-4cc0-817b-f4436e8dd9c9")
+	)
+	(pad "A2" smd circle
+		(at 0.2 -0.2)
+		(size 0.25 0.25)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fec724be-a1a5-4ddd-873b-d268df5b9152")
+	)
+	(pad "B1" smd circle
+		(at -0.2 0.2)
+		(size 0.25 0.25)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cd00b90b-c9b9-4b95-9e42-01f0a401ca45")
+	)
+	(pad "B2" smd circle
+		(at 0.2 0.2)
+		(size 0.25 0.25)
+		(property pad_prop_bga)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8de23470-6684-4799-b0eb-5611f7ddd347")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/library/CHIPSAlliance_Sensor.3dshapes/WLCSP-4_0.8x0.8mm_Layout2x2_P0.4mm_Ball0.22mm_Pad0.25mm_NSMD.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

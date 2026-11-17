@@ -3561,13 +3561,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/library/CHIPSAlliance_Connector.3dshapes/PinHeader_2x06_P2.54mm_Horizontal.step"
 			(offset
-				(xyz 0 -12.7 0)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -6543,17 +6543,8 @@
 			(layer "F.SilkS")
 			(uuid "c16faf36-2511-4e09-9528-2eabbbb425a9")
 		)
-		(fp_rect
-			(start -5.1 -4.4)
-			(end 5.1 4.4)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "c2938beb-b70d-412c-a15c-5042255ca66a")
-		)
+		(fp_rect (start -5.35 -4.45) (end 5.35 4.45) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd")
+		(uuid "c2938beb-b70d-412c-a15c-5042255ca66a"))
 		(fp_rect
 			(start -4.47 -3.905)
 			(end 4.47 3.905)

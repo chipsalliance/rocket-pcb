@@ -439,7 +439,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "CHIPSAlliance_Package_DFN_QFN:Texas_RHL_VQFN-14-1EP_3.5x3.5mm_P0.5mm_EP2.05x2.05mm"
 				(at -2.54 -17.78 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -472,7 +472,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C57461"
+			(property "ki_keywords" "Texas buck regulator"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -483,7 +483,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "*Texas_VQFN-RHL-14* Texas?RHL?VQFN?14?1EP?3.5x3.5mm?P0.5mm?EP2.05x2.05mm Texas?RHL?VQFN?14?1EP?3.5x3.5mm?P0.5mm?EP2.05x2.05mm?ThermalVias"
+			(property "ki_fp_filters" "Texas?RHL?VQFN*1EP*3.5x3.5mm*P0.5mm*EP2.05x2.05mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -506,42 +506,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 12.7 0)
-					(length 2.54)
-					(name "PVIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -639,24 +603,6 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "PH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 12.7 12.7 180)
 					(length 2.54)
@@ -711,12 +657,9 @@
 						)
 					)
 				)
-			)
-			(symbol "TPS54821_1_0"
-				(pin passive line
+				(pin power_in line
 					(at 0 -17.78 90)
 					(length 2.54)
-					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -724,7 +667,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "[2,3]"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -732,10 +675,9 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -10.16 12.7 0)
 					(length 2.54)
-					(hide yes)
 					(name "PVIN"
 						(effects
 							(font
@@ -743,7 +685,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "[4,5]"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -751,10 +693,9 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at 12.7 5.08 180)
 					(length 2.54)
-					(hide yes)
 					(name "PH"
 						(effects
 							(font
@@ -762,7 +703,7 @@
 							)
 						)
 					)
-					(number "12"
+					(number "[11,12]"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -776,7 +717,7 @@
 					(start -7.62 15.24)
 					(end 10.16 -15.24)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -862,11 +803,21 @@
 					)
 				)
 			)
+			(property "ki_fp_filters" "AlphaOmega?AON7544*3x3mm*P0.65mm*EP1.98x2.45mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "AON7544_0_1"
 				(polyline
 					(pts
-						(xy 0.254 1.905)
-						(xy 0.254 -1.905)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -878,8 +829,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0)
-						(xy -2.54 0)
+						(xy 0.254 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -891,8 +841,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286)
-						(xy 0.762 1.27)
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -904,8 +853,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.508)
-						(xy 0.762 -0.508)
+						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
@@ -917,8 +865,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27)
-						(xy 0.762 -2.286)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
@@ -930,10 +877,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.778)
-						(xy 3.302 -1.778)
-						(xy 3.302 1.778)
-						(xy 0.762 1.778)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
 						(width 0)
@@ -945,10 +889,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 0)
-						(xy 2.032 0.381)
-						(xy 2.032 -0.381)
-						(xy 1.016 0)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
 						(width 0)
@@ -971,8 +912,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54)
-						(xy 2.54 1.778)
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
 						(width 0)
@@ -1006,9 +946,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.54)
-						(xy 2.54 0)
-						(xy 0.762 0)
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
 					)
 					(stroke
 						(width 0)
@@ -1020,10 +958,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.794 0.508)
-						(xy 2.921 0.381)
-						(xy 3.683 0.381)
-						(xy 3.81 0.254)
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
 					)
 					(stroke
 						(width 0)
@@ -1035,10 +970,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.302 0.381)
-						(xy 2.921 -0.254)
-						(xy 3.683 -0.254)
-						(xy 3.302 0.381)
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
 					)
 					(stroke
 						(width 0)
@@ -1050,62 +982,6 @@
 				)
 			)
 			(symbol "AON7544_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1135,6 +1011,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "[1,2,3]"
 						(effects
 							(font
 								(size 1.27 1.27)

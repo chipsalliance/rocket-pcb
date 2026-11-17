@@ -15,86 +15,91 @@
 	)
 	(lib_symbols
 		(symbol "CHIPSAlliance_Connector:ACA-SPI-004-K02"
-			(pin_names
-				(offset 1.016)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at -5.08 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(justify left bottom)
 				)
 			)
 			(property "Value" "ACA-SPI-004-K02"
 				(at -5.08 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(justify left)
 				)
 			)
 			(property "Footprint" "CHIPSAlliance_Connector:SOIC-Socket_LOTES_ACA-SPI-004_2x04_P1.27mm"
 				(at -5.08 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20201125/C962129_3BCCA5D90998541809E80F476B537BA8.pdf"
 				(at -5.08 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "SPI 8PIN SMT 1.27MM PITCH, BLACK, HF SPI Socket"
 				(at -5.08 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "SPI Socket"
-				(at -5.08 5.08 0)
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC?Socket?LOTES?ACA?SPI?004*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(symbol "ACA-SPI-004-K02_0_1"
-				(polyline
-					(pts
-						(xy 0 5.08)
-						(xy 0 1.27)
-						(xy 1.27 0)
-						(xy 1.27 -2.54)
-						(xy 0 -3.81)
-						(xy 0 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -7.62)
@@ -106,20 +111,32 @@
 						(type background)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 1.27) (xy 1.27 0) (xy 1.27 -2.54) (xy 0 -3.81) (xy 0 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
 					(name "1"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -130,14 +147,14 @@
 					(name "2"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -148,14 +165,14 @@
 					(name "3"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -166,14 +183,14 @@
 					(name "4"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -184,14 +201,14 @@
 					(name "5"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "5"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -202,14 +219,14 @@
 					(name "6"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "6"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -220,14 +237,14 @@
 					(name "7"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "7"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -238,19 +255,20 @@
 					(name "8"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "8"
 						(effects
 							(font
-								(size 1.778 1.778)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CHIPSAlliance_Power:GND"
 			(power)
